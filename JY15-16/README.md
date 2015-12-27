@@ -1,2 +1,2 @@
 # JY15-16
-Junior Year
+My CompSci and related files for 2015-2016
