@@ -1,0 +1,48 @@
+Scaramouche
+G
+1952
+Dr. Strangelove
+PG
+1964
+2001: A Space Odyssey
+G
+1968
+Jaws
+PG
+1975
+Rocky
+PG 
+1976
+Star Wars
+PG
+1977
+Eraserhead
+NR
+1978
+Alien
+R
+1979
+An American Werewolf in London
+R
+1981
+Raiders of the Lost Ark
+PG
+1981
+The Thing
+R
+1982
+The Evil Dead
+NC-17
+1983
+This Is Spinal Tap
+R
+1984
+The Princess Bride
+PG
+1987
+Raising Arizona
+PG-13
+1987
+The Shawshank Redemption
+R
+1994
