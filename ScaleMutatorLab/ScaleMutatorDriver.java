@@ -10,7 +10,7 @@ public class ScaleMutatorDriver								   //Driver Program
    public static void main(String[]args)
    {
       screen = new ScaleMutatorPanel();
-      JFrame frame = new JFrame("The Great Scale Mutator");	//window titleq
+      JFrame frame = new JFrame("The Great Scale Mutator");	//window title
       frame.setSize(800, 800);					               //Size of game window
       frame.setLocation(100, 50);				               //location of game window on the screen
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -7,10 +7,12 @@ public class scaleMutator
    public static void swap(int[] list, int a, int b)
    {
    //*********WRITE THIS METHOD***************
-  
+  int temp = list[a];
+  list[a]=list[b];
+  list[b]=temp;
    //*****************************************
    }
-
+6
 //pre:  list is not null
 //post: nums is sorted in ascending order - modifies the array that is sent
 //i.e., given list:[4,2,7,5] -> changes list to [2,4,5,7]
