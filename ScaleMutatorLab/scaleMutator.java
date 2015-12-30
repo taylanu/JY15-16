@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //Rev. Dr. Douglas R Oberle - Washington, DC
 public class scaleMutator
 {
@@ -7,12 +9,12 @@ public class scaleMutator
    public static void swap(int[] list, int a, int b)
    {
    //*********WRITE THIS METHOD***************
-  int temp = list[a];
-  list[a]=list[b];
-  list[b]=temp;
+	   int temp = list[a];
+	   list[a]=list[b];
+	   list[b]=temp;
    //*****************************************
    }
-6
+   
 //pre:  list is not null
 //post: nums is sorted in ascending order - modifies the array that is sent
 //i.e., given list:[4,2,7,5] -> changes list to [2,4,5,7]
@@ -20,7 +22,7 @@ public class scaleMutator
    public static void selSort(int[] list)
    {
    //*********WRITE THIS METHOD***************
-
+	   Arrays.sort(list);
    //*****************************************
    }
 
@@ -31,7 +33,10 @@ public class scaleMutator
    {
       int[]retVal = list.clone();
       //*********WRITE THIS METHOD***************
+      for(int i=0;i<=list.length;i++){
+      	
 
+      }
       //*****************************************
       return retVal;
    }

@@ -1,7 +1,6 @@
 //Rev. Dr. Douglas R Oberle - Washington, DC
 
 import javax.sound.midi.*;
-import java.util.Vector;
 import java.io.*;
 import java.util.*;
 
