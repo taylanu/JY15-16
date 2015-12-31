@@ -1,6 +1,7 @@
-import java.util.Arrays;
+import java.util.*;
 
 //Rev. Dr. Douglas R Oberle - Washington, DC
+
 public class scaleMutator
 {
 //pre:  a and b are valid index #s of list, which is not null
@@ -25,7 +26,6 @@ public class scaleMutator
 	   Arrays.sort(list);
    //*****************************************
    }
-
 //pre:   list is not null
 //post:  returns a new array with the same elements of list, but scrambled (put in random order)
 //needs to work with an array of any size
@@ -33,9 +33,9 @@ public class scaleMutator
    {
       int[]retVal = list.clone();
       //*********WRITE THIS METHOD***************
-      for(int i=0;i<=list.length;i++){
-      	
-
+     Random val = new Random();
+      for(int i=retVal.length-1;i>=0;i--){
+    	  int j = val.nextInt(i+1);
       }
       //*****************************************
       return retVal;
@@ -48,7 +48,12 @@ public class scaleMutator
    public static int[] reverse(int[]list)
    {
      //*********WRITE THIS METHOD***************
-     
+	   //Practically swap method again
+	   for(int i = 0; i < list.length / 2; i++){
+	       int temp = list[i];
+	       list[i] = list[list.length - i - 1];
+	       list[list.length - i - 1] = temp;
+	   }
       return list; 	//temporary statement to keep us compiling
      //*****************************************
    }
@@ -60,8 +65,14 @@ public class scaleMutator
    public static int[] makePalindrome(int[]list)
    {
      //*********WRITE THIS METHOD***************
-     
-      return list; 	//temporary statement to keep us compiling
+     /*int[] palindrome = new int[list.length*2-1];
+     for(int i =0;i<=palindrome.length;i++){
+    	if(i<=list.length)
+    		palindrome[i]=list[i];
+    	else
+    		palindrome[i]=list[i-1];
+     }*/
+      return list;//temporary statement to keep us compiling
      //*****************************************
    }
 
@@ -125,6 +136,6 @@ public class scaleMutator
      
       return list; 	//temporary statement to keep us compiling
      //*****************************************
-   }
+   }   
 }
 
