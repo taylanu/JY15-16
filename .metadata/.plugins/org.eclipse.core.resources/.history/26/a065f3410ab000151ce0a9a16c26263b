@@ -107,11 +107,11 @@ public class scaleMutator
    public static int[] shuffle(int[]list)
    {
      //*********WRITE THIS METHOD***************
-    	 //Collections.shuffle();
+     
       return list; 	//temporary statement to keep us compiling
      //*****************************************
    }
-   
+
 //pre:  list is not null, note is between 22 and 108
 //post:  makes a new array containing each element of list, but where every other element is note
 //[list0, note, list1, note, list2, note, list3, note, list4, note,...]

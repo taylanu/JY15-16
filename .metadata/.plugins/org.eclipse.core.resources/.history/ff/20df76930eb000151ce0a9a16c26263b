@@ -107,7 +107,7 @@ public class scaleMutator
    public static int[] shuffle(int[]list)
    {
      //*********WRITE THIS METHOD***************
-    	 //Collections.shuffle();
+    	 Collections.shuffle();
       return list; 	//temporary statement to keep us compiling
      //*****************************************
    }
