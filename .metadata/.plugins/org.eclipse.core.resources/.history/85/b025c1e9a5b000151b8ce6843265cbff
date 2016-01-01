@@ -67,12 +67,14 @@ public class scaleMutator
    {
      //*********WRITE THIS METHOD***************
 	   int[] pdrome = new int[(list.length * 2) - 1];
-	  
-	      for(int i = 0; i < list.length; i++){
+	   int plength = pdrome.length;//Just to ease the code's aesthetics
+	   int llength = list.length;//Just to ease the code's aesthetics
+	   
+	      for(int i = 0; i < llength; i++){
 	         pdrome[i] = list[i];
 	      }
-	      for(int i = list.length; i < pdrome.length; i++){
-	         pdrome[i] = pdrome[pdrome.length-1-i];
+	      for(int i = llength; i < plength; i++){
+	         pdrome[i] = pdrome[plength - 1 - i];
 	      }
       return pdrome;//temporary statement to keep us compiling
      //*****************************************
@@ -88,12 +90,10 @@ public class scaleMutator
    {
      //*********WRITE THIS METHOD***************
 	   int[] shuffled = new int[a.length+b.length];
-	   int count=0;
-	   
-		  for(int i=0;i<shuffled.length-1;i+=2){
-			  shuffled[i]=a[count];
-			  shuffled[i+1]=b[count];
-			  count++;
+		  for(int i=0, j=0;i<shuffled.length-1;i+=2){
+			  shuffled[i]=a[j];
+			  shuffled[i+1]=b[j];
+			  j++;
 		  }
       return shuffled; 	//temporary statement to keep us compiling
      //*****************************************
@@ -108,15 +108,8 @@ public class scaleMutator
    public static int[] shuffle(int[]list)
    {
      //*********WRITE THIS METHOD***************
-	   int[] shuffled = list.clone();
-	      int count = 0;
-	      
-	      for(int i=0; i < shuffled.length-1;i=i+2){
-	         shuffled[i] = list[count];
-	         shuffled[i + 1] = list[list.length-1-count];
-	         count++;
-	      }
-      return shuffled; 	//temporary statement to keep us compiling
+
+      return list; 	//temporary statement to keep us compiling
      //*****************************************
 }
    
@@ -128,19 +121,8 @@ public class scaleMutator
    public static int[] mixWithNote(int[] list, int note)
    {
      //*********WRITE THIS METHOD***************
-	   int[] notes= new int[list.length*2];
-	   int count=0;
-	   
-	   for(int i=0;i<notes.length;i++){
-		   if(i%2==0){
-			   notes[i]=note;
-		   }
-		   else{
-			   notes[i]=list[count];
-			   count++;
-		   }
-	   }
-      return notes; 	//temporary statement to keep us compiling
+
+      return list; 	//temporary statement to keep us compiling
      //*****************************************
    }
 
@@ -151,16 +133,8 @@ public class scaleMutator
    public static int[] triads(int[] list)
    {
      //*********WRITE THIS METHOD***************
-	   int[] triads = new int[(list.length-2) * 3];
-	   int count = 0;
-	   
-	      for(int i=0; i < triads.length; i=i+3){
-	         triads[i] = list[count];
-	         triads[i+1] = list[count+1];
-	         triads[i+2] = list[count+2];
-	         count++;
-	      }
-      return triads; 	//temporary statement to keep us compiling
+     
+      return list; 	//temporary statement to keep us compiling
      //*****************************************
    }
    
