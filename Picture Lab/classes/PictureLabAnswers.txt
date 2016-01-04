@@ -1,0 +1,26 @@
+APCS Picture Lab Answers
+
+	A1:
+		1. 8 bits or one byte.
+		2. 3 bytes or 24 bits.
+		3. 307200 pixels (640*480).
+	A2:
+		1. To create pink, you combine Red and White; on the RGB scale,
+      you set Red to 255 and green and blue to 128.
+      2. To make yellow, you combine Red 255 and Green 255 and removed Blue.
+      3. To make purple, you set Red 255 and Blue 255 and remove Green.
+      4. To make white, against popular belief, you combine 255 of each color.
+   A3:
+      1. At the top left corner, the row value is N/A
+      2. At the top left corner, the column value is N/A
+      3. Before N/A, the right most column index was 639
+      4. Before N/A, the bottom most row index was 479
+      5. The row index increases from top to bottom
+      6. The column index will increase from left to right
+      7. [done]
+   A4:
+      1. 0
+      2. 0
+      3. 639      
+      
+      

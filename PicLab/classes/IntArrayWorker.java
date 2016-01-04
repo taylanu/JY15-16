@@ -44,7 +44,10 @@ public class IntArrayWorker
     }
     return total;
   }
-  
+  //INSERTED GETCOUNT METHOD
+  public int getCount(){
+   
+  }
   /**
    * Method to fill with an increasing count
    */
