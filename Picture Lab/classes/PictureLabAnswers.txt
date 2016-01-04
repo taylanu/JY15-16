@@ -5,11 +5,11 @@ A1
   3. 307200 pixels
 
 A2
-  1. java.awt.Color[r=255,g=102,b=204]
-  2. java.awt.Color[r=255,g=255,b=51]
-  3. java.awt.Color[r=204,g=51,b=255]
-  4. java.awt.Color[r=255,g=255,b=255]
-  5. java.awt.Color[r=102,g=102,b=102]
+  1. Pink is [r=255,g=102,b=204]
+  2. Yellow is [r=255,g=255,b=51]
+  3. Purple is [r=204,g=51,b=255]
+  4. White is [r=255,g=255,b=255]
+  5. Dark grey is [r=102,g=102,b=102]
 
 A3
   1. 0
@@ -28,6 +28,7 @@ A5
   5. Yes
   6. Yes
   7. No
+{review this activity}
 
 A6
   1. Wrote Method
@@ -37,3 +38,9 @@ A7
   1. 90
   2. 112
 
+A8
+  1. [Wrote copy method]
+  2. [Wrote MyCollage method]
+  
+A9
+Group Work; disregarded
