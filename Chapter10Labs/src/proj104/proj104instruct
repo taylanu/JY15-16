@@ -1,0 +1,3 @@
+Project 10-4 Instructions
+Add a Triangle class to the Shape hierarchy from this chapter. Note the following points:
+	- A triangle is specified by three vertices or pairs of coordinates. The first pair is the position (xPos,yPos)
