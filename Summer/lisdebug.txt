@@ -1,0 +1,22 @@
+
+ ----jGRASP exec: javac -g LIS.java
+
+LIS.java:10: error: not a statement
+    int = x,ans;
+    ^
+LIS.java:10: error: ';' expected
+    int = x,ans;
+       ^
+LIS.java:10: error: not a statement
+    int = x,ans;
+          ^
+LIS.java:10: error: ';' expected
+    int = x,ans;
+           ^
+LIS.java:10: error: not a statement
+    int = x,ans;
+            ^
+5 errors
+
+ ----jGRASP wedge2: exit code for process is 1.
+ ----jGRASP: operation complete.

@@ -1,0 +1,12 @@
+proj53 instructions:
+
+Develop a new class for representing fractions. The numerator and denominator of a fraction are integers. 
+The constructor expects these values as parameters. Define accessor methods to obtain the numberator and the denominator. 
+Use the rules of fraction arithmetic to define methods to add, subtract, multiply, and divide fractions.
+Each of these methods expects a fraction object as a parameter. This object is considered to be the right operand
+of the operation. The left operand is the reciever object, that is, the one containing the instance  variables for the
+numerator and denominator. Each arithmetic method builds a new instance of the fraction class with the results of its
+calculation and returns it as the method's value. Finally include a toString() method that returns a string of the form
+<numerator>/<denominator>. Write a tester program that excercises all of the methods.
+
+Check book for fraction arithmetic rules if needed.

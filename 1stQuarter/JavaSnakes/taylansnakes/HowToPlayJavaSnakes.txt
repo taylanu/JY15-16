@@ -1,0 +1,52 @@
+Java Snakes
+
+Navigate your snake, avoiding walls, your tail and the tail of your opponent.
+Try to box in your opponent, causing them to crash.  Each player has 3 lives.
+
+Powerups may appear to be consumed by a player:
+   *Flower powerups will make the recipient grow.  The number in the flower denotes the size that the snake will grow.
+   
+   *Blue flowers will cause the snake to separate from its tail, leaving it as a wall in the map.
+   
+   *Red flowers will give the snake a larger head, and with it the ability to run through one wall or snake tail.
+    When striking a snakes tail with the Red powerup, the tail will separate at the point of impact and be left as a wall.
+
+Points are gained by eating powerups and surviving each round.  Extra points are earned if you cause your opponent to hit your tail.
+
+Keyboard commands:
+
+P:  change the rate in which powerups appear (NEVER, RARE, OFTEN)
+
+Z:  change the start size of the snakes (3 or 200)
+
+M:  change the map type (OPEN, BOXED, RANDOM)
+
+N:  change the number of players (2 - multiplayer, 1 - single player vs AI opponent)
+   There are 12 AI personality types, with regards to their preferences for powerups, predictability and skill
+
+T:  change the rules for speed increases (NONE, BY ROUND, 8 FLOWERS):
+   None:       game speed stays the same
+   9 Flowers:  game speed increases after each cycle of 8 flower powerups.
+   By Round:   game speed increases after each round when a player dies.
+
+<,
+>: increase or decrease the game speed
+
+ESC:  quit the game
+
+R:    reset the game
+
+-,
++:    resize the game window
+
+Purple player controls:
+W: UP
+A: LEFT
+S: DOWN
+D: RIGHT
+
+Orange player controls:
+UP ARROW
+LEFT ARROW
+DOWN ARROW
+RIGHT ARROW
