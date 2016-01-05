@@ -1,0 +1,43 @@
+Taylan Unal APCS Picture Lab
+A1:
+  1. 8 bits
+  2. 3 bytes
+  3. 307200 pixels
+
+A2:
+  1. Pink is [r=255,g=102,b=204]
+  2. Yellow is [r=255,g=255,b=51]
+  3. Purple is [r=204,g=51,b=255]
+  4. White is [r=255,g=255,b=255]
+  5. Dark grey is [r=102,g=102,b=102]
+
+A3:
+  1. Col 0
+  2. Row 0
+  3. Col 639
+  4. Row 479
+  5. Row indexes increase from Top to bottom
+  6. Column indexes increase from Left to right
+  7. [done; understood pixelization]
+  
+A4:
+[Exercises only]
+
+A5:
+  1. It is used in Picture.java, but the method is not explicitly written in the program, but rather was extended from SimplePicture
+  2. As described above, getPixels2D is in SimplePicture
+  3. It doesn't compile
+  4. It does compile
+  5. It does compile
+  6. It does compile
+  7. It doesn't compile
+
+A7:
+  1. The code would run 90 times (10 outer*9 inner)
+  2. The code would run 112 times (8 outer*16 inner)
+
+A8:
+[Exercises only]
+  
+A9:
+Group Work; disregarded
