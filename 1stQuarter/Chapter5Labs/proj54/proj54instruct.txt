@@ -1,6 +1,0 @@
-proj 54 instructions:
-
-Redo the Lucky Sevens dice-playing program from Chapter 4so that it uses dice objects.
-That is, design and implement a Dice class. Each instance of this class should contain the die's current
-side. There should be an accessor method for a die's current value. The method roll is the only mutator method.
-Be sure to test the Dice class in a simple tester program before incorporating it into the application
