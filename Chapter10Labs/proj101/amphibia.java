@@ -8,4 +8,7 @@ public class amphibia extends chordata{
 		backbone=true;
 		warmblooded=false;
 	}
+	public amphibia(String c,int num,double w){
+		
+	}
 }

@@ -3,7 +3,7 @@ package proj101;
 public class newt extends amphibia{
 
 	public static void main(String[] args) {
-		amphibia newt = new amphibia();
+		amphibia newt = new amphibia("Red-Orange",3,42.3);
 		System.out.println(newt);
 		System.out.println("Darwinian Trap Card Activated!");
 		natSelect();
@@ -13,7 +13,7 @@ public class newt extends amphibia{
 		// Darwin ;) //
 			Scanner reader = new Scanner(System.in);
 			alive = false;
-			System.out.println("Your animal has died.");
+			System.out.println("Your newt has died.");
 			System.out.println("Its genes were not passed on");
 			System.out.println("Play Again? (y/n)");
 			
