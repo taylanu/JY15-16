@@ -6,6 +6,18 @@ public class animalia {
 	
 	public animalia(){
 		alive=true;
-		celltype="multicellular";
+		celltype="Multicellular";
+	}
+	
+	public boolean getAlive(){
+		return alive;
+	}
+	
+	public String getCellType(){
+		return celltype;
+	}
+	
+	public boolean isOrganism(){
+		return true;
 	}
 }
