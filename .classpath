@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="10_3-4 Shell/|10_3-4 Shell/" kind="src" path="Chapter10Labs"/>
+	<classpathentry kind="src" path="Chapter3Labs"/>
+	<classpathentry kind="src" path="Chapter4Labs"/>
+	<classpathentry kind="src" path="Chapter5Labs"/>
+	<classpathentry kind="src" path="Chapter6Labs"/>
+	<classpathentry kind="src" path="Chapter9Labs"/>
+	<classpathentry kind="src" path="Projects"/>
+	<classpathentry kind="src" path="Summer"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

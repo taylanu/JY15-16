@@ -1,11 +1,16 @@
 package proj101;
+
 //KINGDOM
+import java.util.*;
+
 public class animalia {
 	private boolean alive;
 	private String celltype;
+	private double weight;
+	private String color;
 	
 	public animalia(){
-		alive=true;
+		setAlive(true);
 		celltype="Multicellular";
 	}
 	
@@ -19,5 +24,20 @@ public class animalia {
 	
 	public boolean isOrganism(){
 		return true;
+	}
+	public void setAlive(boolean alive) {
+		this.alive = alive;
+	}
+	public double getWeight(){
+		return weight;
+	}
+	public void setWeight(double w){
+		weight = w;
+	}
+	public String getColor(){
+		return color;
+	}
+	public void setColor(String c){
+		color=c;
 	}
 }

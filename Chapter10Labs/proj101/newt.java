@@ -1,28 +1,42 @@
 package proj101;
 
-public class newt extends amphibia{
+import java.util.*;
 
-	public static void main(String[] args) {
-		amphibia newt = new amphibia("Red-Orange",3,42.3);
-		System.out.println(newt);
-		System.out.println("Darwinian Trap Card Activated!");
-		natSelect();
-	}
+public class newt extends amphibia{
+	private int age;
+	private double weight;
+	private String color;
 	
-	public void natSelect(){
+	public newt(String c, int a, double w){
+		super();
+		age=a;
+		weight=w;
+		color=c;
+	}
+	public int getAge(){
+		return age;
+	}
+	public String getColor(){
+		return color;
+	}
+	public double getWeight(){
+		return weight;
+	}
+	/*public void natSelect(){
 		// Darwin ;) //
-			Scanner reader = new Scanner(System.in);
-			alive = false;
+			Scanner reader = new Scanner(System.);
+			setAlive(false);
 			System.out.println("Your newt has died.");
 			System.out.println("Its genes were not passed on");
 			System.out.println("Play Again? (y/n)");
 			
-			if(System.nextChar()=='y'){
+			if(nextChar()=='y'){
 				System.out.println("Starting Simulation...");
-				animalia();
+				super.animalia.();
 			}
 			else{
 				System.out.println("Quitting Simulation...");
 			}
 		}
+		*/
 }

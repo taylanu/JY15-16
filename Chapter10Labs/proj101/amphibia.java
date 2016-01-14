@@ -1,14 +1,14 @@
 package proj101;
+
 //CLASS
-public class amphibia extends chordata{
+import java.util.*;
+public class amphibia extends animalia{
 	private boolean backbone;
 	private boolean warmblooded;
 	
 	public amphibia(){
+		super();
 		backbone=true;
 		warmblooded=false;
-	}
-	public amphibia(String c,int num,double w){
-		
 	}
 }
