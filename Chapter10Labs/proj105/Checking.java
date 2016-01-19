@@ -1,34 +1,47 @@
 package proj105;
 //Taylan Unal 1/14/16
 
-public class Checking extends BankAccount{
+public class Checking extends BankAccount implements BankActions{
 	private double balance;
 	private double interest;
 	private int txlimit;
 	
 		public Checking(){
-		balance="0.00";
-		interest="0.00";
-		txlimit="999";
+		balance=0.00;
+		interest=0.00;
+		txlimit=999;
 		}
 		
-		public double getBalance(){
-			return "$" + balance;
-		}
-		public double getInterest(){
-			return (interest*100) + "%";
+		//Methods used in each of the specific classes.
+		////Getters////
+		public double getInterest(){ //Returns Interest Rate in %age form. If unnecessary, simply divide by 100 when used.
+			return (interest*100);
 		}
 		public double getTxLimit(){
 			return txlimit;
 		}
-		public void setBalance(double b){
-			balance=b;
-		}
+		////Getters////
+		////Setters////
 		public void setInterest(double i){
 			interest=i;
 		}
 		public void setTxLimit(int tx){
 			txlimit=tx;
+		}
+		////Setters////
+		//Methods used in each of the specific classes
+		
+		//Implemented methods from BankActions
+		public void deposit(double d) {
+			balance+=d;
+		}
+
+		public void withdraw(double w) {
+			balance-=w;	
+		}
+
+		public double checkBal() {
+			return balance;
 		}
 
 }

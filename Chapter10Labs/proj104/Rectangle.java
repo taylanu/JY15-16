@@ -1,5 +1,4 @@
 package proj104;
-
 //Jered Tupik - 11/15/2012
 //Taylan Unal - 1/13/16
    import java.awt.*;
