@@ -37,12 +37,10 @@ public class Savings extends BankAccount implements BankActions{
 	}
 
 	public void deposit(double d) {
-		// TODO Auto-generated method stub
 		balance+=d;
 	}
 
 	public void withdraw(double w) {
-		// TODO Auto-generated method stub
 		balance-=w;
 	}
 

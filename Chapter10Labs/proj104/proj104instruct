@@ -1,3 +1,5 @@
 Project 10-4 Instruct:
 
 Add a triangle class to the Shape hierarchy from this chapter.
+
+UPDATE: Triangle mostly complete, but distance formula must be implemented somewhere.
