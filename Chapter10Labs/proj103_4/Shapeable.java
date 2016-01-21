@@ -1,4 +1,4 @@
-package proj104;
+package proj103_4;
 
 //Jered Tupik - 11/15/2012
    import java.awt.*;
@@ -10,5 +10,6 @@ package proj104;
       public double getYPos();
       public void move(double xLoc, double yLoc);
       public void stretchBy(double Factor);
-      public String toString();
+      @Override
+	public String toString();
    }

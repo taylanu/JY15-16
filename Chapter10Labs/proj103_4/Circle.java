@@ -1,8 +1,7 @@
-package proj104;
+package proj103_4;
 
 //Jered Tupik - 11/15/2012
 //Taylan Unal - 1/13/16
-
    import java.awt.*;
 
    public class Circle extends AbstractShape{
@@ -25,7 +24,8 @@ package proj104;
       }
    
    //@Override
-      public String toString(){
+      @Override
+	public String toString(){
          String data = "";
          data = data + "Circle" + "\nRadius: " + radius + "\n" + super.toString();
          return data;
@@ -41,11 +41,12 @@ package proj104;
    
    //Pre: Radius != null
    //Post: Returns the Area of the Circle
-      public double area(){
+      @Override
+	public double area(){
          return Math.PI * (radius * radius);
       }
       
-   //PROJ104 Added 
+   //PROJ103 Added 
    //Pre: Radius != null
    //Post: Returns the circumference of the circle
       public double circum(){
@@ -54,13 +55,15 @@ package proj104;
       
    //Pre: G != null, Radius != null
    //Post: Draws the Circle
-      public void draw(Graphics g){
+      @Override
+	public void draw(Graphics g){
          g.drawOval((int)this.getXPos(), (int)this.getYPos(), (int)radius, (int)radius);
       }
    
    //Pre: Factor != null
    //Post: 'Stretches' the Circle by Factor
-      public void stretchBy(double factor){
+      @Override
+	public void stretchBy(double factor){
          radius *= factor;
       }
    }
