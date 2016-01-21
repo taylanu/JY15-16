@@ -1,4 +1,4 @@
-package proj104;
+package proj103_4;
 
  //Jered Tupik - 11/15/2012
 // Taylan Unal - 1/13/16
@@ -28,7 +28,8 @@ package proj104;
       }
    
    //@Override
-      public String toString(){
+      @Override
+	public String toString(){
          String data = "";
          data = "Wheel" + "\nRadius: " + radius + "\nSpokes: " + spokes + "\n(X, Y)Position: ("
              + this.getXPos() + ", " + this.getYPos() + ")" + " " + "\nArea: " + this.area();
@@ -50,7 +51,8 @@ package proj104;
    
    //Pre: G != null, Spokes != null, xPos != null, yPos != null
    //Post: Draws the Wheel
-      public void draw(Graphics g){
+      @Override
+	public void draw(Graphics g){
          super.draw(g);
          for(int i = 0; i <= 360; i = i + (360 / spokes)){
             if(i != 0){

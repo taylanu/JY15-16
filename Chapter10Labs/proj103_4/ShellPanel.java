@@ -1,4 +1,4 @@
-package proj103;
+package proj103_4;
 
 //Jered Tupik - 11/16/2012
    import java.awt.*;
@@ -17,7 +17,8 @@ package proj103;
          w = new Wheel(150, 150, 100, 20);
       }
    
-      public void paintComponent(Graphics g){
+      @Override
+	public void paintComponent(Graphics g){
          r.draw(g);
          c.draw(g);
          w.draw(g);

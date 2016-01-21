@@ -1,4 +1,5 @@
-package proj104;
+package proj103_4;
+
 //Jered Tupik - 11/15/2012
 //Taylan Unal - 1/13/16
    import java.awt.*;
@@ -26,7 +27,8 @@ package proj104;
       }
    
    //@Override
-      public String toString(){
+      @Override
+	public String toString(){
          String data = "";
          data = data + "Rectangle" + "\nWidth: " + width + "\nHeight: " + height + "\n" + super.toString();
          return data;
@@ -51,7 +53,8 @@ package proj104;
    
    //Pre: Width != null, Height != null
    //Post: Returns the Area of a Rectangle
-      public double area(){
+      @Override
+	public double area(){
          return width * height;
       }
       
@@ -64,7 +67,8 @@ package proj104;
    
    //Pre: G != null, Width != null, Height != null, xPos != null, yPos != null
    //Post: Draws the Rectangle
-      public void draw(Graphics G){
+      @Override
+	public void draw(Graphics G){
          G.drawLine((int)this.getXPos(), (int)this.getYPos(), (int)(this.getXPos() + width), (int)this.getYPos());
          G.drawLine((int)this.getXPos(), (int)this.getYPos(), (int)this.getXPos(), (int)(this.getYPos() + height));
          G.drawLine((int)(this.getXPos() + width), (int)this.getYPos(), (int)(this.getXPos() + width), (int)(this.getYPos() + height));
@@ -73,7 +77,8 @@ package proj104;
    
    //Pre: Factor != null
    //Post: 'Stretches' the Rectangle by Factor
-      public void stretchBy(double factor){
+      @Override
+	public void stretchBy(double factor){
          height += factor;
          width += factor;
       }
