@@ -1,25 +1,22 @@
 package proj103_4;
 
-//Jered Tupik - 11/15/2012
+//Jered Tupik - 11/15/2012 
 //Taylan Unal - 1/13/16
    import java.awt.*;
 
-   public abstract class AbstractShape implements Shapeable
-   {
+   public abstract class AbstractShape implements Shapeable{
    //Data Fields
       protected double xPos;
       protected double yPos;
    
    //DEFAULT CONSTRUCTOR
       public AbstractShape(){
-      
          xPos = 0;
          yPos = 0;
       }
    
    //CUSTOM CONSTRUCTOR
       public AbstractShape(double xP, double yP){
-      
          xPos = xP;
          yPos = yP;
       }

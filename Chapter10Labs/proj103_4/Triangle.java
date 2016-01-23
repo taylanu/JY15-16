@@ -8,13 +8,9 @@ public class Triangle extends AbstractShape implements Shapeable{
 	   //Data Fields
 	private double base;
  	private double height;
-	/*private double x1;
-	private double y1;
-	private double x2;
-	private double y2;
-	private double x3;
-	private double y3;*/
-	
+	private double x1; private double x2; private double x3;
+	private double y1; private double y2; private double y3;
+
 	 //DEFAULT CONSTRUCTOR
     public Triangle(){
        super();
@@ -23,42 +19,20 @@ public class Triangle extends AbstractShape implements Shapeable{
  
  //CUSTOM CONSTRUCTOR
     public Triangle(double x1, double y1, double x2, double y2, double x3, double y3){
-    
        super(x1, y1);
        
     }
 	   
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-<<<<<<< HEAD
-<<<<<<< HEAD
 		return 0.5*base*height;
-=======
-		return 1/2*base*height;
->>>>>>> master
-=======
-		return 1/2*base*height;
->>>>>>> master
 	}
 	
-
 	@Override
-	   public void draw(Graphics G)
-	   {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
+	   public void draw(Graphics G){//drawLine is method called from java.awt.Graphics.
 	      G.drawLine((int)xPos,(int)yPos,(int)x2,(int)y2);
 	      G.drawLine((int)x2,(int)y2,(int)x3,(int)y3);
 	      G.drawLine((int)x3,(int)y3,(int)xPos,(int)yPos);
->>>>>>> master
-=======
-	      G.drawLine((int)xPos,(int)yPos,(int)x2,(int)y2);
-	      G.drawLine((int)x2,(int)y2,(int)x3,(int)y3);
-	      G.drawLine((int)x3,(int)y3,(int)xPos,(int)yPos);
->>>>>>> master
 	   }
 
 	@Override
@@ -73,7 +47,8 @@ public class Triangle extends AbstractShape implements Shapeable{
        data = data + "Triangle" + "\nWidth: " + base + "\nHeight: " + height + "\n" + super.toString();
        return data;
     }
- 
+    
+    //Base and Height Methods//
     public double getBase(){
        return base;
     }

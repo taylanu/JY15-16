@@ -1,46 +1,59 @@
 package RaceHorseLab;
 
-public class Horse {
-	private int location;//horse location on race track out of 15 unit track length. Where 1 is start and 15 is finish line
-	private int index;
+//NEIGH!
+public class Horse{
 	
-	public Horse(){
-		location=1;
-		index=0;//There will be no horse with index of 0.
-	}
-	public Horse(int l, int i){
-		location=l;
-		index=i;
-	}
-	public int getLocation(){
-		return location;
-	}
-	public int getIndex(){
-		return index;
-	}
-	public void advance(){
-		if(location<15)
-			location++;
-	}
-	public void raceStride(){
-		for(int i=0;i<45;i++){
-			for(int j=0;j<15;j++){//for Horse 0
-				
-			}
-			for(int k=0;k<15;k++){//for Horse 1
-				
-			}
-			for(int l=0;l<15;l++){//for Horse 2
-				
-			}
-		}
-	}
-	public String toString(){
-		return "|S------------F|" + "\n" + "|---------------|" + "\n" + "|---------------|" + "\n" + "|---------------|";
-	}
+   private int location, index;
+   
+   //Default Constructor
+   public Horse(){
+      location = 1;
+      index = 0;
+   }
+   
+   //Custom Constructor
+   public Horse(int loc, int i){
+      location = loc;
+      index = i;
+   }
+   
+   //Getters
+   public int getLocation(){
+      return location;
+   }
+   public int getIndex(){
+      return index;
+   }
+   
+   //Movement
+   public void advance(){
+      if(location < 15)
+         location++;
+   }
+   public void raceStride(){
+      int ran = (int)(Math.random() * 100) + 1;
+      if(ran < 50)
+         advance();
+   }
+   
+   public String toString(){
+      String str = new String();
+      String first = new String ("");
+      String second = new String("");
+      if(location > 1){
+         for(int i = 1; i < location; i++){
+            first += "-";
+         }
+      }
+      if(location < 15)
+      {
+         for(int i = location + 1; i <= 15; i++)
+         {
+            second = second + "-";
+         }
+      }
+     str = "|S|" + first + index + second + "|F|";
+     return str;
+   }
+   
 }
-
-/*System.out.println("|S------------F|");//Demonstrating how start and finish positions lie on track.
-System.out.println("|---------------|");
-System.out.println("|---------------|");		FIRST ATTEMPT
-System.out.println("|---------------|");*/
