@@ -32,7 +32,11 @@ public class Triangle extends AbstractShape implements Shapeable{
 	public double area() {
 		// TODO Auto-generated method stub
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return 0.5*base*height;
+=======
+		return 1/2*base*height;
+>>>>>>> master
 =======
 		return 1/2*base*height;
 >>>>>>> master
@@ -43,7 +47,13 @@ public class Triangle extends AbstractShape implements Shapeable{
 	   public void draw(Graphics G)
 	   {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+	      G.drawLine((int)xPos,(int)yPos,(int)x2,(int)y2);
+	      G.drawLine((int)x2,(int)y2,(int)x3,(int)y3);
+	      G.drawLine((int)x3,(int)y3,(int)xPos,(int)yPos);
+>>>>>>> master
 =======
 	      G.drawLine((int)xPos,(int)yPos,(int)x2,(int)y2);
 	      G.drawLine((int)x2,(int)y2,(int)x3,(int)y3);
