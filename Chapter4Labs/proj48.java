@@ -2,12 +2,7 @@
 Modify the program of Project 4-7 so that the user can specify the base (2+) as well. The first line of the output should display
 which base was entered.
 */
-//COMPLETE
-import java.awt.*;
-import java.awt.event.*;
 import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
 
 public class proj48{
    public static void main(String[] arg){

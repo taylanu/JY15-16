@@ -197,7 +197,8 @@ public class ScaleMutatorPanel extends JPanel
    }
 
    //post: draws contents to the panel
-   public void paintComponent(Graphics g)
+   @Override
+public void paintComponent(Graphics g)
    {
       super.paintComponent(g); 
       g.setColor(Color.blue.darker().darker());		//draw a blue boarder around the board
@@ -394,7 +395,7 @@ public class ScaleMutatorPanel extends JPanel
          e.printStackTrace();
       }
    
-      music.add(new MidiEvent(mmessage,(long)0));
+      music.add(new MidiEvent(mmessage,0));
    
       filename = TrackName+".mid";
     

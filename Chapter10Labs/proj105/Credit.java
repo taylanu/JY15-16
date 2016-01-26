@@ -41,14 +41,17 @@ public class Credit extends BankAccount implements BankActions{
 	////Setters////
 	
 	//Implemented methods from BankActions
+	@Override
 	public double checkBal() {
 		return balance;
 	}
 
+	@Override
 	public void deposit(double d) {
 		balance-=d;
 	}
 
+	@Override
 	public void withdraw(double w) {
 		balance+=w;
 	}

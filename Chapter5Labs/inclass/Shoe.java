@@ -11,6 +11,7 @@
 			size = s;
 			color = c;
 	}
+	@Override
 	public String toString(){
 		return ("Your shoe is " + color + " and is size " + size + ".");
 	}

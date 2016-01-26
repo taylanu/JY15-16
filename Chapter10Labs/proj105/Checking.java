@@ -32,14 +32,17 @@ public class Checking extends BankAccount implements BankActions{
 		//Methods used in each of the specific classes
 		
 		//Implemented methods from BankActions
+		@Override
 		public void deposit(double d) {
 			balance+=d;
 		}
 
+		@Override
 		public void withdraw(double w) {
 			balance-=w;	
 		}
 
+		@Override
 		public double checkBal() {
 			return balance;
 		}

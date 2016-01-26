@@ -3,12 +3,7 @@ Modify program of Proj. 4-8 so that it processes a file of inputs. Each line of 
 The program should read the data from each line, compute the result and display each set of inputs and their result on an
 output line in the terminal window.
 */
-//COMPLETE
-import java.awt.*;
-import java.awt.event.*;
 import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
 import java.io.*;
 
 public class proj49{

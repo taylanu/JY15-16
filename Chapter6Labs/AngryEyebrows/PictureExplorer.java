@@ -107,7 +107,7 @@
          pictureFrame = new JFrame(); // create the JFrame
          pictureFrame.setResizable(true);  // allow the user to resize it
          pictureFrame.getContentPane().setLayout(new BorderLayout()); // use border layout
-         pictureFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // when close stop
+         pictureFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE); // when close stop
          pictureFrame.setTitle(picture.getTitle());
          PictureExplorerFocusTraversalPolicy newPolicy = new PictureExplorerFocusTraversalPolicy();
          pictureFrame.setFocusTraversalPolicy(newPolicy);
@@ -230,7 +230,8 @@
       // handle previous x button press
          xPrevButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      xIndex--;
                      if (xIndex < 0)
                         xIndex = 0;
@@ -241,7 +242,8 @@
       // handle previous y button press
          yPrevButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      yIndex--;
                      if (yIndex < 0)
                         yIndex = 0;
@@ -252,7 +254,8 @@
       // handle next x button press
          xNextButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      xIndex++;
                      if (xIndex >= picture.getWidth())
                         xIndex = picture.getWidth() - 1;
@@ -263,7 +266,8 @@
       // handle next y button press
          yNextButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      yIndex++;
                      if (yIndex >= picture.getHeight())
                         yIndex = picture.getHeight() - 1;
@@ -292,14 +296,16 @@
          xValue = new JTextField(Integer.toString(xIndex + numberBase),6);
          xValue.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent e) {
+                   @Override
+				public void actionPerformed(ActionEvent e) {
                      displayPixelInformation(xValue.getText(),yValue.getText());
                   }
                });
          yValue = new JTextField(Integer.toString(yIndex + numberBase),6);
          yValue.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent e) {
+                   @Override
+				public void actionPerformed(ActionEvent e) {
                      displayPixelInformation(xValue.getText(),yValue.getText());
                   }
                });
@@ -431,8 +437,8 @@
          
          // calculate how to position the current position in the middle of the viewing
          // area
-            int viewX = xPos - (int) (rectWidth / 2);
-            int viewY = yPos - (int) (rectHeight / 2);
+            int viewX = xPos - rectWidth / 2;
+            int viewY = yPos - rectHeight / 2;
          
          // reposition the viewX and viewY if outside allowed values
             if (viewX < 0)
@@ -488,7 +494,8 @@
    * Called when the mouse is dragged (button held down and moved)
    * @param e MouseEvent to track
    */
-       public void mouseDragged(MouseEvent e)
+       @Override
+	public void mouseDragged(MouseEvent e)
       {
          displayPixelInformation(e);
       }
@@ -609,14 +616,16 @@
    * Method called when the mouse is moved with no buttons down
    * @param e the mouse event
    */
-       public void mouseMoved(MouseEvent e)
+       @Override
+	public void mouseMoved(MouseEvent e)
       {}
    
    /**
    * Method called when the mouse is clicked
    * @param e the mouse event
    */
-       public void mouseClicked(MouseEvent e)
+       @Override
+	public void mouseClicked(MouseEvent e)
       {
          displayPixelInformation(e);
       }
@@ -625,7 +634,8 @@
    * Method called when the mouse button is pushed down
    * @param e the mouse event
    */ 
-       public void mousePressed(MouseEvent e)
+       @Override
+	public void mousePressed(MouseEvent e)
       {
          displayPixelInformation(e);
       }
@@ -634,7 +644,8 @@
    * Method called when the mouse button is released
    * @param e the mouse event
    */
-       public void mouseReleased(MouseEvent e)
+       @Override
+	public void mouseReleased(MouseEvent e)
       {
       }
    
@@ -642,7 +653,8 @@
    * Method called when the component is entered (mouse moves over it)
    * @param e the mouse event
    */
-       public void mouseEntered(MouseEvent e)
+       @Override
+	public void mouseEntered(MouseEvent e)
       {
       }
    
@@ -650,7 +662,8 @@
    * Method called when the mouse moves over the component
    * @param e the mouse event
    */
-       public void mouseExited(MouseEvent e)
+       @Override
+	public void mouseExited(MouseEvent e)
       {
       }
    
@@ -673,7 +686,8 @@
      *
      * @param a ActionEvent to track
      */
-       public void actionPerformed(ActionEvent a)
+       @Override
+	public void actionPerformed(ActionEvent a)
       {
       
          if(a.getActionCommand().equals("Update"))
@@ -750,7 +764,8 @@
         /**
          * Method to get the next component for focus
          */
-          public Component getComponentAfter(Container focusCycleRoot,
+          @Override
+		public Component getComponentAfter(Container focusCycleRoot,
                                            Component aComponent) {
             if (aComponent.equals(xValue))
                return yValue;
@@ -761,7 +776,8 @@
         /**
          * Method to get the previous component for focus
          */
-          public Component getComponentBefore(Container focusCycleRoot,
+          @Override
+		public Component getComponentBefore(Container focusCycleRoot,
                                        Component aComponent) {
             if (aComponent.equals(xValue))
                return yValue;
@@ -769,15 +785,18 @@
                return xValue;
          }
          
-          public Component getDefaultComponent(Container focusCycleRoot) {
+          @Override
+		public Component getDefaultComponent(Container focusCycleRoot) {
             return xValue;
          }
       
-          public Component getLastComponent(Container focusCycleRoot) {
+          @Override
+		public Component getLastComponent(Container focusCycleRoot) {
             return yValue;
          }
       
-          public Component getFirstComponent(Container focusCycleRoot) {
+          @Override
+		public Component getFirstComponent(Container focusCycleRoot) {
             return xValue;
          }
       }

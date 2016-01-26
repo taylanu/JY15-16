@@ -81,7 +81,8 @@ public class Fraction
    }
    // </end Math>
    // Returner
-   public String toString()
+   @Override
+public String toString()
    {
       String str;
       str = numerator + "/" + denominator;

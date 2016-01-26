@@ -30,27 +30,27 @@ public class HorseDriver{
       }
       
       else if((h0.getLocation()==15) && (h1.getLocation()==15) && (h2.getLocation()!=15)){
-         return "Horse 1 and Horse 2 have tied!";
+         return "Horse 0 and Horse 1 have tied!";
       }
       
       else if((h0.getLocation()==15) && (h1.getLocation()!=15) && (h2.getLocation()==15)){
-         return "Horse 1 and Horse 3 have tied!";
+         return "Horse 0 and Horse 2 have tied!";
       }
       
       else if((h0.getLocation()!=15) && (h1.getLocation()==15) && (h2.getLocation()==15)){
-         return "Horse 2 and Horse 3 have tied!";
+         return "Horse 1 and Horse 2 have tied!";
       }
       
       else if((h0.getLocation()==15) && (h1.getLocation()!=15) && (h2.getLocation()!=15)){
-         return "Horse 1 has won!";
+         return "Horse 0 has won!";
       }
       
       else if((h0.getLocation()!=15) && (h1.getLocation()==15) && (h2.getLocation()!=15)){
-         return "Horse 2 has won!";
+         return "Horse 1 has won!";
       }
       
       else{
-         return "Horse 3 has won!";
+         return "Horse 2 has won!";
       }
       
    }

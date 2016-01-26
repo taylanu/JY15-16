@@ -254,7 +254,7 @@
          Container frameContainer = soundFrame.getContentPane();
       
          frameContainer.setLayout(new BorderLayout());
-         soundFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+         soundFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
       //also on close we need to remove the soundView listener?
       
       //creates the play panel
@@ -335,7 +335,8 @@
          clearSelectionButton = makeButton("Clear Selection",false,selectionPanel);
          clearSelectionButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent e) {
+                   @Override
+				public void actionPerformed(ActionEvent e) {
                      clearSelection();
                   }
                });
@@ -522,7 +523,8 @@
       // handle previous button press
          prevButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      currentPixelPosition--;
                      if (currentPixelPosition < 0)
                         currentPixelPosition = 0;
@@ -535,7 +537,8 @@
       // handle next button press
          nextButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      currentPixelPosition++;
                      if (currentPixelPosition * framesPerPixel >= sound.getNumSamples())
                         currentPixelPosition = (int) ((sound.getNumSamples() - 1) / framesPerPixel);
@@ -548,7 +551,8 @@
       // handle first button press
          firstButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      currentPixelPosition = 0;
                      updateIndexValues();
                      checkScroll();
@@ -559,7 +563,8 @@
       // handle last button press
          lastButton.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent evt) {
+                   @Override
+				public void actionPerformed(ActionEvent evt) {
                      currentPixelPosition = (int) ((sound.getNumSamples() - 1) / framesPerPixel);
                      updateIndexValues();
                      checkScroll();
@@ -571,7 +576,8 @@
          indexValue = new JTextField(Integer.toString(0),8);
          indexValue.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent e) {
+                   @Override
+				public void actionPerformed(ActionEvent e) {
                   
                   // zoom in around user entered value
                      handleZoomIn(Integer.parseInt(indexValue.getText()));
@@ -614,7 +620,8 @@
          numSamplesPerPixelField.setToolTipText("Click here to zoom in (decrease) or out (increase))");
          numSamplesPerPixelField.addActionListener(
                 new ActionListener() {
-                   public void actionPerformed(ActionEvent e) {
+                   @Override
+				public void actionPerformed(ActionEvent e) {
                   
                   // zoom in around user entered value
                      handleFramesPerPixel(Integer.parseInt(numSamplesPerPixelField.getText()));
@@ -664,7 +671,8 @@
    * Handle a mouse click event
    * @param e the mouse event
    */
-       public void mouseClicked(MouseEvent e)
+       @Override
+	public void mouseClicked(MouseEvent e)
       {
          currentPixelPosition = e.getX();
       
@@ -695,7 +703,8 @@
    * Method to handle a mouse press
    * @param e the mouse event
    */
-       public void mousePressed(MouseEvent e)
+       @Override
+	public void mousePressed(MouseEvent e)
       {
          mousePressedX = e.getX();
       }
@@ -704,7 +713,8 @@
    * Method to handle a mouse release
    * @param e the mouse event
    */
-       public void mouseReleased(MouseEvent e)
+       @Override
+	public void mouseReleased(MouseEvent e)
       {
          mouseReleasedX = e.getX();
       
@@ -752,21 +762,24 @@
    * Method to handle a mouse entered event
    * @param e the mouse event 
    */
-       public void mouseEntered(MouseEvent e)
+       @Override
+	public void mouseEntered(MouseEvent e)
       {}
    
    /**
    * Method to handle a mouse exited event
    * @param e the mouse event 
    */
-       public void mouseExited(MouseEvent e)
+       @Override
+	public void mouseExited(MouseEvent e)
       {}
    
    /**
    * Method to handle a mouse dragged event
    * @param e the mouse event 
    */
-       public void mouseDragged(MouseEvent e)
+       @Override
+	public void mouseDragged(MouseEvent e)
       {
          mouseDragged = true;
       
@@ -779,14 +792,16 @@
    * Method to handle a mouse move event
    * @param e the mouse event 
    */
-       public void mouseMoved(MouseEvent e)
+       @Override
+	public void mouseMoved(MouseEvent e)
       {}
    
    /**
    * Method to handle the line event update
    * @param e the line event
    */
-       public void update(LineEvent e)
+       @Override
+	public void update(LineEvent e)
       {
          if(e.getType().equals(LineEvent.Type.OPEN))
          {
@@ -827,7 +842,8 @@
    * Method to handle an action event
    * @param e the action event
    */
-       public void actionPerformed(ActionEvent e)
+       @Override
+	public void actionPerformed(ActionEvent e)
       {
          if(e.getActionCommand() == "Play Entire Sound")
          {
@@ -926,7 +942,7 @@
             
             // calculate how to position the current position in the middle of the viewing
             // area
-               int barXPos = currentPixelPosition - (int) (rectWidth / 2);
+               int barXPos = currentPixelPosition - rectWidth / 2;
                int barYPos = (int) (sampleHeight - rect.getHeight()) / 2;
             
             // check if the barPos is less than 0 or greater than max
@@ -1070,9 +1086,9 @@
          framesPerPixel = sound.getLengthInFrames() / sampleWidth;
       
          int divisor = (sound.getLengthInFrames()/sampleWidth);
-         currentPixelPosition = (int)(currentPixelPosition/divisor);
-         selectionStart = (int)(selectionStart/divisor);
-         selectionStop = (int)(selectionStop/divisor);
+         currentPixelPosition = currentPixelPosition/divisor;
+         selectionStart = selectionStart/divisor;
+         selectionStop = selectionStop/divisor;
       
          if(DEBUG)
             System.out.println("Zoom Out:  currentPixelPosition = " +
@@ -1142,9 +1158,9 @@
          framesPerPixel = numFrames;
       
          int divisor = (sound.getLengthInFrames()/sampleWidth);
-         currentPixelPosition = (int)(currIndex/divisor); // new curr pixel
-         selectionStart = (int)(selectionStart/divisor);
-         selectionStop = (int)(selectionStop/divisor);
+         currentPixelPosition = currIndex/divisor; // new curr pixel
+         selectionStart = selectionStart/divisor;
+         selectionStop = selectionStop/divisor;
       
          soundPanel.setPreferredSize
             (new Dimension(sampleWidth, 
@@ -1340,7 +1356,8 @@
       * Method to draw the Sampling Panel 
       * @param g the graphics context
       */
-          public void paintComponent(Graphics g)
+          @Override
+		public void paintComponent(Graphics g)
          {
             Rectangle rectToPaint = g.getClipBounds();
          
@@ -1374,8 +1391,8 @@
             i < (rectToPaint.getX() + rectToPaint.getWidth() -1); i++)
             {
                g2.draw(new 
-                  Line2D.Float((Point2D.Float)points.elementAt(i),
-                               (Point2D.Float)points.elementAt(i+1)));
+                  Line2D.Float(points.elementAt(i),
+                               points.elementAt(i+1)));
             }
          
          //draw the center line

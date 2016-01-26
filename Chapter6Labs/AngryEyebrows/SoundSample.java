@@ -64,7 +64,8 @@
    * this object
    * @return a string with information about this object
    */
-       public String toString()
+       @Override
+	public String toString()
       {
          return "Sample at index " + frameNumber + " has value " + getValue();
       }

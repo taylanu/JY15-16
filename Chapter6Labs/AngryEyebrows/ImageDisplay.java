@@ -100,7 +100,8 @@
    * Method to return the preferred size
    * @return the preferred size of this component
    */
-       public Dimension getPreferredScrollableViewportSize()
+       @Override
+	public Dimension getPreferredScrollableViewportSize()
       {
          return prefSize;
       }
@@ -112,7 +113,8 @@
    * @param direction neg is up or left and pos is right or down
    * @return the unit increment for arrow clicks
    */
-       public int getScrollableUnitIncrement(Rectangle visibleRect, 
+       @Override
+	public int getScrollableUnitIncrement(Rectangle visibleRect, 
                                         int orientation, 
                                         int direction)
       { 
@@ -125,7 +127,8 @@
    * @param direction neg is up or left and pos is right or down
    * @return the block increment for clicking in scroll area
    */
-       public int getScrollableBlockIncrement(Rectangle visibleRect, 
+       @Override
+	public int getScrollableBlockIncrement(Rectangle visibleRect, 
                                         int orientation, 
                                         int direction)
       {
@@ -136,7 +139,8 @@
    * Method to check if the viewport width is the source width
    * @return true if viewport and source have same width
    */
-       public boolean getScrollableTracksViewportWidth()
+       @Override
+	public boolean getScrollableTracksViewportWidth()
       { 
          return false; }
    
@@ -144,7 +148,8 @@
    * Method to check if the viewport height is the source height
    * @return true if viewport and soure have same height
    */
-       public boolean getScrollableTracksViewportHeight()
+       @Override
+	public boolean getScrollableTracksViewportHeight()
       { 
          return false; }
    
@@ -152,7 +157,8 @@
    * Method to handle displaying this object
    * @param g the graphics object for drawing with
    */
-       public void paintComponent(Graphics g)
+       @Override
+	public void paintComponent(Graphics g)
       {
          super.paintComponent(g);
          int num = 3;

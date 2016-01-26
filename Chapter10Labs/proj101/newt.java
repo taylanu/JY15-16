@@ -1,7 +1,5 @@
 package proj101;
 
-import java.util.*;
-
 public class newt extends amphibia{
 	private int age;
 	private double weight;
@@ -16,9 +14,11 @@ public class newt extends amphibia{
 	public int getAge(){
 		return age;
 	}
+	@Override
 	public String getColor(){
 		return color;
 	}
+	@Override
 	public double getWeight(){
 		return weight;
 	}

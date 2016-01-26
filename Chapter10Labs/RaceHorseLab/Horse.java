@@ -21,6 +21,7 @@ public class Horse{
    public int getLocation(){
       return location;
    }
+   
    public int getIndex(){
       return index;
    }
@@ -30,13 +31,15 @@ public class Horse{
       if(location < 15)
          location++;
    }
+   
    public void raceStride(){
       int ran = (int)(Math.random() * 100) + 1;
       if(ran < 50)
          advance();
    }
    
-   public String toString(){
+   @Override
+public String toString(){
       String str = new String();
       String first = new String ("");
       String second = new String("");
@@ -45,10 +48,9 @@ public class Horse{
             first += "-";
          }
       }
-      if(location < 15)
-      {
-         for(int i = location + 1; i <= 15; i++)
-         {
+      
+      if(location < 15){
+         for(int i = location + 1; i <= 15; i++){
             second = second + "-";
          }
       }

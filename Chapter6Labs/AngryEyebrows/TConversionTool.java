@@ -393,7 +393,7 @@
       * forces java to recognize the byte as unsigned.  so, we return to
       * the calling function a number between 0 and 256.
       */
-         return ((int) b & 0xFF);
+         return (b & 0xFF);
       }
    
        public static int unsignedByteToInt16(byte[] buffer, int offset, 

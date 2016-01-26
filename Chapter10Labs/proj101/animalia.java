@@ -1,8 +1,5 @@
 package proj101;
 
-//KINGDOM
-import java.util.*;
-
 public class animalia {
 	private boolean alive;
 	private String celltype;

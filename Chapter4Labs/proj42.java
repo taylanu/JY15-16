@@ -3,7 +3,6 @@ Write a program that takes the lengths of three sides of a triangle as inputs. t
 whether or not the triangle is a right triangle.
 */
 import java.util.*;
-import java.io.*;
 
 public class proj42{
    public static void main(String[] arg){

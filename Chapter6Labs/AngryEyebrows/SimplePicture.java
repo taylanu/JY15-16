@@ -196,7 +196,8 @@
    * Method to get the buffered image
    * @return the buffered image 
    */
-       public BufferedImage getBufferedImage() 
+       @Override
+	public BufferedImage getBufferedImage() 
       {
          return bufferedImage;
       }
@@ -223,7 +224,8 @@
    * Method to get the file name associated with the picture
    * @return  the file name associated with the picture
    */
-       public String getFileName() { 
+       @Override
+	public String getFileName() { 
          return fileName; }
    
    /**
@@ -239,7 +241,8 @@
    * Method to get the title of the picture
    * @return the title of the picture
    */
-       public String getTitle() 
+       @Override
+	public String getTitle() 
       { 
          return title; }
    
@@ -247,7 +250,8 @@
    * Method to set the title for the picture
    * @param title the title to use for the picture
    */
-       public void setTitle(String title) 
+       @Override
+	public void setTitle(String title) 
       {
          this.title = title;
          if (pictureFrame != null)
@@ -258,14 +262,16 @@
    * Method to get the width of the picture in pixels
    * @return the width of the picture in pixels
    */
-       public int getWidth() { 
+       @Override
+	public int getWidth() { 
          return bufferedImage.getWidth(); }
    
    /**
    * Method to get the height of the picture in pixels
    * @return  the height of the picture in pixels
    */
-       public int getHeight() { 
+       @Override
+	public int getHeight() { 
          return bufferedImage.getHeight(); }
    
    /**
@@ -290,7 +296,8 @@
    * Method to get an image from the picture
    * @return  the buffered image since it is an image
    */
-       public Image getImage()
+       @Override
+	public Image getImage()
       {
          return bufferedImage;
       }
@@ -301,7 +308,8 @@
    * @param y the y coordinate of the pixel
    * @return the pixel value as an integer (alpha, red, green, blue)
    */
-       public int getBasicPixel(int x, int y)
+       @Override
+	public int getBasicPixel(int x, int y)
       {
          return bufferedImage.getRGB(x,y);
       }
@@ -312,7 +320,8 @@
    * @param y the y coordinate of the pixel
    * @param rgb the new rgb value of the pixel (alpha, red, green, blue)
    */     
-       public void setBasicPixel(int x, int y, int rgb)
+       @Override
+	public void setBasicPixel(int x, int y, int rgb)
       {
          bufferedImage.setRGB(x,y,rgb);
       }
@@ -323,7 +332,8 @@
    * @param y  the y location of the pixel in the picture
    * @return a Pixel object for this location
    */
-       public Pixel getPixel(int x, int y)
+       @Override
+	public Pixel getPixel(int x, int y)
       {
       // create the pixel object for this picture and the given x and y location
          Pixel pixel = new Pixel(this,x,y);
@@ -355,7 +365,8 @@
    * Method to load the buffered image with the passed image
    * @param image  the image to use
    */
-       public void load(Image image)
+       @Override
+	public void load(Image image)
       {
       // get a graphics context to use to draw on the buffered image
          Graphics2D graphics2d = bufferedImage.createGraphics();
@@ -370,7 +381,8 @@
    /**
    * Method to show the picture in a picture frame
    */
-       public void show()
+       @Override
+	public void show()
       {
       // if there is a current picture frame then use it 
          if (pictureFrame != null)
@@ -467,7 +479,8 @@
    * @param fileName the name of the file to write the picture to
    * @return true if success else false
    */
-       public boolean load(String fileName)
+       @Override
+	public boolean load(String fileName)
       {
          try {
             this.loadOrFail(fileName);
@@ -721,7 +734,8 @@
    * Method to return a string with information about this picture
    * @return a string with information about the picture 
    */
-       public String toString()
+       @Override
+	public String toString()
       {
          String output = "Simple Picture, filename " + fileName + 
             " height " + getHeight() + " width " + getWidth();

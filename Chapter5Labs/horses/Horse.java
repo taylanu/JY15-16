@@ -40,7 +40,8 @@ public class Horse
       }
    }
    //Movement Returner
-   public String toString()
+   @Override
+public String toString()
    {
       String str = new String();
       String first = new String ("");

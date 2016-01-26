@@ -3,7 +3,6 @@ read book. too long to type.
 */
 //COMPLETED
 import java.util.*;
-import java.io.*;
 
 public class proj46{
    public static void main(String[] arg){

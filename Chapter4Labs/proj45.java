@@ -6,7 +6,6 @@ and displays the resulting value.
 */
 // COMPLETE
 import java.util.*;
-import java.io.*;
 
 public class proj45{
    public static void main(String[] arg){

@@ -73,7 +73,8 @@
       
       }
       //post: construct and return string representation of  the student
-      public String toString()
+      @Override
+	public String toString()
       {
          String str;
          str = "Name:    " + name  + "\n" +

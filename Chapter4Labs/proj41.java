@@ -5,7 +5,6 @@ two integers as inputs and displays their quotient and remainder as outputs. Do 
 entered in any order, but be sure to divide the larger integer by the smaller integer.
 */
 import java.util.*;
-import java.io.*;
 
 public class proj41{
    public static void main(String[] arg){

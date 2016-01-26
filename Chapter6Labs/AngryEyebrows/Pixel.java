@@ -346,7 +346,8 @@
    * Method to return a string with information about this pixel
    * @return a string with information about this pixel
    */
-       public String toString()
+       @Override
+	public String toString()
       {
          return "Pixel red=" + getRed() + " green=" + getGreen() + 
             " blue=" + getBlue();

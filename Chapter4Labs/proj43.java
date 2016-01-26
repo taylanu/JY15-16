@@ -3,7 +3,6 @@ A 2 minute telephone call to Lexington, VA, costs $1.15. Each additional minute 
 length of a call in minutes as input and calculates and displays the cost.
 */
 import java.util.*;
-import java.io.*;
 
 public class proj43{
    public static void main(String[] arg){

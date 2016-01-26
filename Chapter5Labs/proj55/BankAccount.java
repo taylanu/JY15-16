@@ -30,7 +30,8 @@ public class BankAccount
       balance = balance - w;
    }
    //The Returner
-   public String toString()
+   @Override
+public String toString()
    {
       String str; 
       str = "Name: " + name + "\nBalance: " + balance;

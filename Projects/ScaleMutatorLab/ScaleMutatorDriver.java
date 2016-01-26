@@ -24,17 +24,20 @@ public class ScaleMutatorDriver								   //Driver Program
 
    public static class listen implements KeyListener
    {
-      public void keyTyped(KeyEvent e)
+      @Override
+	public void keyTyped(KeyEvent e)
       {}
    
-      public void keyPressed(KeyEvent e)
+      @Override
+	public void keyPressed(KeyEvent e)
       {
          if(e.getKeyCode()==KeyEvent.VK_SHIFT)
             shiftIsPressed=true;
          screen.processUserInput(e.getKeyCode(), shiftIsPressed);
       }
    
-      public void keyReleased(KeyEvent e)
+      @Override
+	public void keyReleased(KeyEvent e)
       {
          if(e.getKeyCode()==KeyEvent.VK_SHIFT)
             shiftIsPressed=false;

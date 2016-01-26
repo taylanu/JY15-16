@@ -70,7 +70,8 @@
    * @return a string with information about the picture such as fileName,
    * height and width.
    */
-       public String toString() {
+       @Override
+	public String toString() {
          String output = "Picture, filename " + getFileName() + 
             " height " + getHeight() 
             + " width " + getWidth();

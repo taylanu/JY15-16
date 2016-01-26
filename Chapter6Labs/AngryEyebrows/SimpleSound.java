@@ -1678,7 +1678,8 @@
    * Obtains a string representation of this JavaSound. 
    * @return a String representation of this JavaSound.
    */
-       public String toString()
+       @Override
+	public String toString()
       {
          String output = "SimpleSound";
       

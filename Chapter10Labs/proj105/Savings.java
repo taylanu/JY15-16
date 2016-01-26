@@ -32,14 +32,17 @@ public class Savings extends BankAccount implements BankActions{
 	}
 	//Setters
 
+	@Override
 	public double checkBal() {
 		return balance;
 	}
 
+	@Override
 	public void deposit(double d) {
 		balance+=d;
 	}
 
+	@Override
 	public void withdraw(double w) {
 		balance-=w;
 	}

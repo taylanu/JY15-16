@@ -6,20 +6,20 @@ class Frac {
 		// Extra credit for reduced fractions and for equal statements.
 	//MATHS!	
 	 public void addfrac(){
-      numer = (int)(unumer * rdenom) + (rnumer * udenom);
-      denom = (int)(udenom * rdenom);
+      numer = unumer * rdenom + (rnumer * udenom);
+      denom = udenom * rdenom;
 	}
     public void subfrac(){
-      numer = (int)(unumer * rdenom) - (rnumer * udenom);
-      denom = (int)(udenom * rdenom);
+      numer = unumer * rdenom - (rnumer * udenom);
+      denom = udenom * rdenom;
 	}
    public void multfrac(){
-      numer = (int)(unumer * rnumer);
-      denom = (int)(udenom * rdenom);
+      numer = unumer * rnumer;
+      denom = udenom * rdenom;
 	}
    public void divfrac(){
-      numer = (int)(unumer * rdenom);
-      denom = (int)(rnumer * udenom);
+      numer = unumer * rdenom;
+      denom = rnumer * udenom;
 	}
 	
 	public void askop(){
