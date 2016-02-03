@@ -1,56 +1,26 @@
 package RaceHorseLab;
 
 public class Philly extends Horse{
-
+	   private int power;
 	public Philly() {
 		// Super method to call from Horse.
+		super();
+		power = (int)(Math.random()*61)+30;
 	}
-	
-//Getters//
-	@Override
-	public int getLocation() {
-		// TODO Auto-generated method stub
-		return super.getLocation();
-	}
-
-	@Override
-	public int getIndex() {
-		// TODO Auto-generated method stub
-		return super.getIndex();
-	}
-//Getters//
-
-//Actions//
-	@Override
-	public void advance() {
-		// TODO Auto-generated method stub
-		super.advance();
-	}
-
-	@Override
-	public void raceStride() {
-		// TODO Auto-generated method stub
-		super.raceStride();
-	}
-//Actions//
-	
+	public Philly(int loc, int i){
+		  super(loc, i);
+	      power = (int)(Math.random() * 61) + 30;
+		   }
+	public void raceStride(){
+	      int rand = (int)(Math.random() * 100) + 1;
+	      if(rand < power)
+	      {
+	         super.advance();
+	      }
+	   }
 	@Override
 	public String toString(){
-	      String str = new String();
-	      String first = new String ("");
-	      String second = new String("");
-	      if(getLocation() > 1){
-	         for(int i = 1; i < getLocation(); i++){
-	            first += "-";
-	         }
-	      }
-	      
-	      if(getLocation() < 15){
-	         for(int i = getLocation() + 1; i <= 15; i++){
-	            second = second + "-";
-	         }
-	      }
-	     str = "|S|" + first + getIndex() + second + "|F|";
-	     return str;
+		String str = super.toString() + "*";//Concats the star to the end of the lane with Philly
+	      return str;
 	}
 }

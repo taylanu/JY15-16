@@ -1,20 +1,20 @@
 package RaceHorseLab;
 
 //GIDDY UP!
-public class PhillyDriver{
+public class HorseArrDriver{
 	 public static void main(String arg[]){
-		      Horse h0, h1, h2;
+		      Philly h0, h1, h2;
 		      String str;
 		      
-		      h0 = new Horse(1,0);
-		      h1 = new Horse(1, 1);
-		      h2 = new Horse(1, 2);
+		      h0 = new Philly(1,0);
+		      h1 = new Philly(1, 1);
+		      h2 = new Philly(1, 2);
 		      
 		      str = race(h0, h1, h2);
 		      System.out.println(str);
 	}
 	
-	public static String race(Horse h0, Horse h1, Horse h2){
+	public static String[] race(Philly[]){
      
 		System.out.println("\n\n\n" + h0 + "\n" + h1 + "\n" + h2);
       //Sets limit to horse's movement.

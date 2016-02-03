@@ -33,12 +33,11 @@ public class Horse{
    }
    
    public void raceStride(){
-      int ran = (int)(Math.random() * 100) + 1;
-      if(ran < 50)
+      int rand = (int)(Math.random() * 100) + 1;
+      if(rand < 50)
          advance();
    }
    
-   @Override
 public String toString(){
       String str = new String();
       String first = new String ("");

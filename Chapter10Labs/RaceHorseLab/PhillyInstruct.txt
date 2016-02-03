@@ -12,6 +12,6 @@ Use the super command so that you don't have to recreate the wheel on this one.
 
 Now in the driver program, make the following modifications:
 
-Rather than individual instances of Horses, make an array of horses.  When the program starts, ask the user how many horses they want to run, and adjust the code so that it works for an array of any size.
+Rather than individual instances of Horses, make an array of horses. When the program starts, ask the user how many horses they want to run, and adjust the code so that it works for an array of any size.
 
 Make it such that each of the horses in the array will have a 50% probability of initializing to a Philly as opposed to a regular Horse.

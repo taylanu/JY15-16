@@ -1,14 +1,83 @@
 package WidgetLab;
+import java.util.*;
+import java.io.*;
 
 public class Widget implements Comparable{
+	   private int pounds;
+	   private int ounces;
+	   
+	   public Widget()
+	   {
+	      pounds = 0;
+	      ounces = 0;
+	   }
+	   
+	   public Widget(int p, int o)
+	   {
+	      pounds = p; 
+	      ounces = o;
+	   }
+	   
+	   public int getPounds()
+	   {
+	      return pounds;
+	   }
+	   public int getOunces(){
+		      return ounces;
+	   }
+	   public void setPounds(int p)
+	   {
+	      pounds = p;
+	   }
+	   public void setOunces(int o){
+		      ounces = o;
+	   }
 
-	@Override
+
+	   public String toString(){
+	      return "It weighs " + pounds +" lbs., and " + ounces + " oz.";
+	   }
+	  
+	   public boolean equals(Widget w){
+	      if(pounds == w.getPounds() && ounces == w.getOunces())
+	         return true;
+	      else
+	         return false;
+	   }
+	
+	   @Override
 	public int compareTo(Object arg) {
-		// TODO Auto-generated method stub
-		return 0;
+		      Widget w = (Widget)arg;
+		      if(this.equals(w))
+		         return 0;
+		      else if(pounds < w.getPounds())
+		         return -1;
+		      else if(pounds == w.getPounds() && ounces < w.getOunces())
+		         return -1;
+		      else if(pounds > w.getPounds())
+		         return 1;
+		      else
+		         return 1;
+		   }
+	   //Operations
+		   public void add(Widget w){
+		      ounces += w.getOunces();
+		      pounds += w.getPounds();
+		      simplify();
+		   }
+		   public void subtract(Widget w){
+		      ounces -= w.getOunces();
+		      pounds -= w.getPounds();
+		      simplify();
+		   }
+		   public void simplify(){
+		      if(ounces >= 16){
+		         pounds += (ounces / 16);
+		         ounces %= 16;
+		      }
+		   }
+		   //Operations
 	}
-
-}
 
 /* 
  * ASSIGNMENT

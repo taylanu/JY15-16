@@ -9,12 +9,14 @@ package proj103_4;
       private Rectangle r;
       private Circle c;
       private Wheel w;
+      private Triangle t;
    
    //DEFAULT CONSTRUCTOR
       public ShellPanel(){
          r = new Rectangle(350, 350, 100, 50);
          c = new Circle(300, 300, 50);
          w = new Wheel(150, 150, 100, 20);
+         t = new Triangle(200,400,200, 200, 30, 25);
       }
    
       @Override
@@ -22,5 +24,6 @@ package proj103_4;
          r.draw(g);
          c.draw(g);
          w.draw(g);
+         t.draw(g);
       }
    }
