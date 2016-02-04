@@ -1,39 +1,43 @@
 package WidgetLab;
-import java.util.*;
-import java.io.*;
+/* 
+ * ASSIGNMENT
+ * Create a Widget class that implements Comparable.  
+ * Put in constructors, accessors, modifiers, and any needed instance methods.
+ * In the main() method, create an array of Widgets. Read the data, pounds on one line and ounces on the
+ * next line, from widget.txt. For this assignment, just ignore the name field.  
+ * Than call any of your sort(Comparable[]) methods, passing the Widget array.  
+*/
 
 public class Widget implements Comparable{
 	   private int pounds;
 	   private int ounces;
 	   
-	   public Widget()
-	   {
+	   public Widget(){
 	      pounds = 0;
 	      ounces = 0;
 	   }
-	   
-	   public Widget(int p, int o)
-	   {
+	   public Widget(int p, int o){
 	      pounds = p; 
 	      ounces = o;
 	   }
 	   
-	   public int getPounds()
-	   {
+	   //Getters
+	   public int getPounds(){
 	      return pounds;
 	   }
 	   public int getOunces(){
 		      return ounces;
 	   }
-	   public void setPounds(int p)
-	   {
+	   //Getters
+	   //Setters
+	   public void setPounds(int p){
 	      pounds = p;
 	   }
 	   public void setOunces(int o){
 		      ounces = o;
 	   }
-
-
+	   //Setters
+	   @Override
 	   public String toString(){
 	      return "It weighs " + pounds +" lbs., and " + ounces + " oz.";
 	   }
@@ -78,12 +82,3 @@ public class Widget implements Comparable{
 		   }
 		   //Operations
 	}
-
-/* 
- * ASSIGNMENT
- * Create a Widget class that implements Comparable.  
- * Put in constructors, accessors, modifiers, and any needed instance methods.
- * In the main() method, create an array of Widgets. Read the data, pounds on one line and ounces on the
- * next line, from widget.txt. For this assignment, just ignore the name field.  
- * Than call any of your sort(Comparable[]) methods, passing the Widget array.  
-*/
