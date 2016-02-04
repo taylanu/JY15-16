@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Angry Eyebrows"/>
+	<classpathentry kind="src" path="JavaSnakes/JavaSnakes"/>
+	<classpathentry kind="src" path="JavaTanks/JavaTanks/completedtanks"/>
+	<classpathentry kind="src" path="JavaTanks/JavaTanks/originaltanks"/>
+	<classpathentry kind="src" path="Magpie/Magpie/activity2"/>
+	<classpathentry kind="src" path="Magpie/Magpie/activity3"/>
+	<classpathentry kind="src" path="Magpie/Magpie/activity4"/>
+	<classpathentry kind="src" path="MovieProject/MovieProject/MovieProject"/>
+	<classpathentry kind="src" path="personal"/>
+	<classpathentry kind="src" path="PictureLab/PicLab/classes"/>
+	<classpathentry excluding="text version/" kind="src" path="ScaleMutatorLab"/>
+	<classpathentry kind="src" path="ScaleMutatorLab/text version"/>
+	<classpathentry kind="src" path="Summer"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
