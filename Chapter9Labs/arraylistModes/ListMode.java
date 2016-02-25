@@ -1,4 +1,4 @@
-package proj93;
+package arraylistModes;
 import java.util.*;
 import java.io.*;
 

@@ -1,10 +1,10 @@
 package proj115;
 
-public class Suit implements Comparable{
-   static public final Suit spade = new Suit(4, "spades");
-   static public final Suit heart = new Suit(3, "hearts");
-   static public final Suit diamond = new Suit(2, "diamonds");
-   static public final Suit club = new Suit(1, "club");
+public class Suit implements Comparable<Object>{
+   static public final Suit spade = new Suit(4, "Spades");
+   static public final Suit heart = new Suit(3, "Hearts");
+   static public final Suit diamond = new Suit(2, "Diamonds");
+   static public final Suit club = new Suit(1, "Clubs");
    private int order;
    private String name;
    
