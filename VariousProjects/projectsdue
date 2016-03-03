@@ -1,0 +1,13 @@
+Project 9-1: Write program that takes 10 integers as input, then program places even integers into array called evenList, odd integers into oddList, and negative integers into negativeList. Program displays contents of 3 arrays after all integers are entered.
+
+Project 9-2: Write program that takes 10 doubles as inputs, program displays average of numbers as well as all numbers that are greater than average. As part of program, write method that takes array of doubles as a parameter and returns the average of the data in the array.
+
+Project 9-3: The mode of a list of numbers listed most often. Write program that takes 10 numbers as input and displays mode of the numbers. Your program should use parallel arrays and a method that takes an array of numbers as a parameter and returns the value that appears most often in the array.
+
+Project 9-4: The median of a list of number is the value in the middle of the list if the list is arranged in order. Add to the program of Project 9-3 the capability of displaying the median of the list of numbers.
+
+Project 9-5: Modify the program of Project 9-4 so that it displays not only the median and mode of the list of numbers but also a table of the numbers and their associated frequencies.
+
+Project 9-7: A magic square is a two dimensional array of positive integers such that the sum of each row, column, and diagonal is the same constant. The
+following example is a magic square whose constant is 34. Write a program that takes 16 integers as inputs. The program should determine whether or not
+the square and display the result in a text area.
