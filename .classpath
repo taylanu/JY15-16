@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="Chapter10Labs"/>
 	<classpathentry kind="src" path="ReferenceClasses"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Chapter12Labs"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

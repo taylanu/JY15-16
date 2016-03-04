@@ -1,0 +1,3 @@
+Project 12-2 Instruct
+
+Write a recursvie method that returns a string with the charachters in reverse order and test teh method with a Tester program. The string and index position should be parameters. If the position is less than the string's length, recurse with the rest of the string after this position and treturn the restult of appending the characther at this posititon to the result, otherwise, return the empty string.

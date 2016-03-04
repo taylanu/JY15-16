@@ -1,0 +1,6 @@
+Project 12-3 Instructions:
+
+Design, implement, and test a recursive method that expects a positive integer parameter and returns a string representing that integer with commas in the appropriate places. The method might be called as follows:
+
+	String formattedInt = insertCommas(1000000); //Returns "1,000,000"
+(Hint: Recurse by repeated division and build the string by concatenating after each recursive call)

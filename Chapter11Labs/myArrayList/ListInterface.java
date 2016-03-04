@@ -12,7 +12,6 @@ public interface ListInterface<anyType>
    															// elements at position index + 1 and higher to the
    															// left (subtracts 1 from their indices) and adjusts
    															// size;  returns the element formerly at index
-       
        public anyType set(int index, anyType x);	//changes the element at a specific index to x, returning the element that was originally there
        
        public int size();								//returns the number of elements in the list

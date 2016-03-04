@@ -1,0 +1,6 @@
+Project 12-1 Instructions
+
+Use a Tester program to implement and test a recursive method to compute the greatest common divisor (gcd) of two integers. The recursive definition of a gcd is:
+
+	gcd(a, b) = b, when a = 0 
+	gcd(a, b) = gcd(b, a % b), when a > 0
