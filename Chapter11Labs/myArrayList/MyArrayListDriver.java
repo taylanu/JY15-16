@@ -1,5 +1,4 @@
 package myArrayList;
-
     public class MyArrayListDriver
    {
        public static void main(String[]args)
