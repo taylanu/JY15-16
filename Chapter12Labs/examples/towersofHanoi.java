@@ -1,4 +1,4 @@
-package bookExamples;
+package examples;
 
 import java.util.Scanner;
 
