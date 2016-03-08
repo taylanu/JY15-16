@@ -8,14 +8,14 @@ public class reverse {
 		System.out.println("Enter a word:");
 		String word = input.next();
 		String ans = reverse(word);
-		System.out.println("The reverse of " + word + " is " + ans);
+		System.out.println("The reversed version of " + word + " is " + ans);
 	}
 	
 public static String reverse(String word){
 	if(word.length()==1)
 		return word;
 	
-	return word.substring(word.length()) + word.substring(0, word.length()-1);
+	return word.charAt(word.length() - 1) + reverse(word.substring(0, word.length() - 1));
 	}
 
 }
