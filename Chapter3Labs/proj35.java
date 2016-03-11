@@ -1,5 +1,5 @@
 /*
-Modify the program of Project 3-4 so that it prompts the user for the 
+Modify the program of Project 3-4 so that it prompts the user for the
 regular and overtime hours of each of the five working days.
 */
 
@@ -23,7 +23,7 @@ public class proj34 {
     thrghrs = reader.nextDouble();
         System.out.println("How many hours did you work on Friday?");
     frrghrs = reader.nextDouble();
-    
+
         System.out.println("How many overtime hours do you work a week?");
     othrs = reader.nextDouble();
         System.out.println("How many overtime hours did you work on Monday?");
@@ -36,10 +36,10 @@ public class proj34 {
     thothrs = reader.nextDouble();
         System.out.println("How many overtime hours did you work on Friday?");
     frothrs = reader.nextDouble();
-    
+
     rgrate = (hrly * rghrs);
     otrate = (hrly * othrs * 1.5);
     wkpay = (rgrate + otrate);
         System.out.println("Your weekly pay is " + wkpay + " dollars");
-    } 
+    }
 }

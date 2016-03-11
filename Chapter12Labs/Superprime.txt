@@ -1,3 +1,0 @@
-A superprime number is a prime number with this additional quality: all of the numbers formed by repeatedly chopping off the last digit of the number are also prime. For example: 
-3739 is prime, 373 is prime, 37 is prime, 3 is prime. So 3739 is a superprime number. 
-Write a program that prompts for a positive integer and displays all superprime numbers of that length, or "None" if there are none. Display these values in ascending order.

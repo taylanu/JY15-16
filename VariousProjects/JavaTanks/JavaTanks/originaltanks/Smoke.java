@@ -6,7 +6,7 @@
       private Color color, fadeTo;	//start color, color to fade to each frame
       private int radius;				//circle size
       private boolean redDone, greenDone, blueDone, totalDone;	//to see when color is the same as fadeTo
-   
+
       public Smoke(int dx, int dy, Color c, Color f, int r)
       {
          x = dx;
@@ -19,7 +19,7 @@
          blueDone = false;
          totalDone = false;
       }
-      
+
       public void fadeColor()
       {
          int startR = color.getRed();
@@ -47,66 +47,66 @@
          else
             blueDone = true;
          color = new Color(startR, startG, startB);
-      	   
+
          if(redDone && greenDone && blueDone)
             totalDone = true;
       }
-      
+
       public void makeBigger()
       {
          radius++;
       }
-      
+
       public boolean colorEqualsFadeTo()
       {
          return totalDone;
       }
-      
+
       public int getX()
       {
          return x;
       }
-   
+
       public int getY()
       {
          return y;
       }
-   
+
       public void setX(int dx)
       {
          x = dx;
       }
-   
+
       public void setY(int dy)
       {
          y = dy;
       }
-   
+
       public Color getColor()
       {
          return color;
       }
-   	
+
       public Color getFadeToColor()
       {
          return fadeTo;
       }
-   
+
       public void setColor(Color c)
       {
          color = c;
       }
-   	
+
       public void setFadeToColor(Color c)
       {
          fadeTo = c;
       }
-   
+
       public int getRadius()
       {
          return radius;
       }
-   
+
       public void setRadius(int r)
       {
          radius = r;

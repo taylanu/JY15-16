@@ -1,19 +1,19 @@
 /**
  * A program to carry on conversations with a human user.
- * This version: 
+ * This version:
  * <ul><li>
- *    Uses advanced search for keywords 
- * </li></ul> 
- *    
+ *    Uses advanced search for keywords
+ * </li></ul>
+ *
  * @author Laurie White
  * @version April 2012
  */
- 
+
 public class Magpie3
 {
 	/**
 	 * Get a default greeting
-	 * 
+	 *
 	 * @return a greeting
 	 */
 	public String getGreeting()
@@ -23,7 +23,7 @@ public class Magpie3
 
 	/**
 	 * Gives a response to a user statement
-	 * 
+	 *
 	 * @param statement
 	 *            the user statement
 	 * @return a response based on the rules given
@@ -56,7 +56,7 @@ public class Magpie3
       {
          response = "He sounds like a good teacher.";
       }
-      else if (findKeyword(statement, "school") >= 0 
+      else if (findKeyword(statement, "school") >= 0
             || findKeyword(statement, "science") >= 0
             || findKeyword(statement, "history") >= 0
             || findKeyword(statement, "math") >= 0
@@ -89,7 +89,7 @@ public class Magpie3
 	 * sensitive. This method will check that the given goal
 	 * is not a substring of a longer string (so, for
 	 * example, "I know" does not contain "no").
-	 * 
+	 *
 	 * @param statement
 	 *            the string to search
 	 * @param goal
@@ -156,7 +156,7 @@ public class Magpie3
 	 * is not a substring of a longer string (so, for
 	 * example, "I know" does not contain "no"). The search
 	 * begins at the beginning of the string.
-	 * 
+	 *
 	 * @param statement
 	 *            the string to search
 	 * @param goal
@@ -171,7 +171,7 @@ public class Magpie3
 
 	/**
 	 * Pick a default response to use if nothing else fits.
-	 * 
+	 *
 	 * @return a non-committal string
 	 */
 	private String getRandomResponse()

@@ -5,13 +5,13 @@ public class Checking extends BankAccount implements BankActions{
 	private double balance;
 	private double interest;
 	private int txlimit;
-	
+
 		public Checking(){
 		balance=0.00;
 		interest=0.00;
 		txlimit=999;
 		}
-		
+
 		//Methods used in each of the specific classes.
 		////Getters////
 		public double getInterest(){ //Returns Interest Rate in %age form. If unnecessary, simply divide by 100 when used.
@@ -30,7 +30,7 @@ public class Checking extends BankAccount implements BankActions{
 		}
 		////Setters////
 		//Methods used in each of the specific classes
-		
+
 		//Implemented methods from BankActions
 		@Override
 		public void deposit(double d) {
@@ -39,7 +39,7 @@ public class Checking extends BankAccount implements BankActions{
 
 		@Override
 		public void withdraw(double w) {
-			balance-=w;	
+			balance-=w;
 		}
 
 		@Override

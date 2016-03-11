@@ -10,11 +10,11 @@ public class reverse {
 		String ans = reverse(word);
 		System.out.println("The reversed version of " + word + " is " + ans);
 	}
-	
+
 public static String reverse(String word){
 	if(word.length()==1)
 		return word;
-	
+
 	return word.charAt(word.length() - 1) + reverse(word.substring(0, word.length() - 1));
 	}
 

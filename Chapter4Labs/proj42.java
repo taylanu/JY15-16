@@ -13,7 +13,7 @@ public class proj42{
       System.out.println("Enter the length of the second side of your triangle");
       s2 = input.nextInt();
       System.out.println("Enter the length of the third side of your triangle");
-      s3 = input.nextInt();     
+      s3 = input.nextInt();
    if ((s1 * s1) + (s2 * s2) >= (s3 * s3)){
    System.out.println("You have a right triangle");}
    else {

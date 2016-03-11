@@ -6,7 +6,7 @@ public class animalDriver {
 			newt Jimmy = new newt("Orange",3,5.3);
 			newt Johnny = new newt("Black",5,23.4);
 			newt Jackie = new newt("Grey",12,31.2);
-			
+
 			System.out.println("You have 3 newts.");
 			System.out.println("Each of them are alive.");
 			System.out.println("Your youngest newt is " + Jimmy.getAge() + " years old, is " + Jimmy.getColor() + " and weighs " + Jimmy.getWeight() + " grams.");

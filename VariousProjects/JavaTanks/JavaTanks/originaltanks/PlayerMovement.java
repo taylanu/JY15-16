@@ -5,10 +5,10 @@
       protected static final int UP	 	= 0;		//movement directions to use as index for moveDir array
       protected static final int RIGHT = 1;
       protected static final int DOWN	= 2;
-      protected static final int LEFT	= 3;  
-   
+      protected static final int LEFT	= 3;
+
       protected static final int SPEED=1;			//when player moves from one cell to the next, this is how many pixels they move in each frame (designated by the timer)
-   
+
    //post:  if bomberRun is active, creates a bomber to traverse across the screen to drop bombs
        public static void addBomber()
       {
@@ -30,7 +30,7 @@
                   }
                }
                if(weFoundIt)
-                  break;     
+                  break;
             }
             if(highestRow == 0)	//no room for a plane, so we will skip bomber run this turn
             {
@@ -44,16 +44,16 @@
                if(bomberIndex >= planeImages.length / 2 || (turnBased && leftsTurn))	//RIGHT bomber
                {
                   startCol = board[0].length;
-                  startAngle = 270;   
+                  startAngle = 270;
                }
                bomber = new Player("BOMBER", startRow, startCol, planeImages, ANIMATION_DELAY, startAngle);
                bomber.setY(startRow*SIZE);
                bomber.setX(startCol*SIZE);
             }
          }
-      
+
       }
-   
+
       //post:  activates bombers if necessary, moves players smothly across the screen by updating intermediate x & y values
        public static void movePlayerSmoothly()
       {
@@ -63,11 +63,11 @@
             if(bomber!=null && numFrames%2==0)
             {
                //System.out.println(numFrames);
-               if(bomberIndex < planeImages.length / 2)		//LEFT bomber moves right  
+               if(bomberIndex < planeImages.length / 2)		//LEFT bomber moves right
                   bomber.setX(bomber.getX() + SPEED);
                else
                   bomber.setX(bomber.getX() - SPEED);
-              
+
                if(Math.random() < .02 && !players[0].onFire() && !players[1].onFire())
                {
                   int shotOwner = 0;								//LEFT player's bomber
@@ -78,12 +78,12 @@
                      shotOwner = 1;
                      angle = 180;
                      if(bomber.getX() < players[shotOwner].findX(SIZE))
-                        okToBomb = true;   
+                        okToBomb = true;
                   }
                   else													//LEFT player's bomber
                   {
                      if(bomber.getX() > players[shotOwner].findX(SIZE))
-                        okToBomb = true; 
+                        okToBomb = true;
                   }
                   if(okToBomb)
                   {
@@ -91,7 +91,7 @@
                      int index = shots.size()-1;			//we already created the shell, so shoot the last one created
                      shots.get(index).shoot(angle, 3, windPower);
                   }
-               }		
+               }
                if(bomber.getX() < -(SIZE*4) || bomber.getX() > screenWidth + (SIZE*4))
                   bomber = null;
             }
@@ -103,28 +103,28 @@
             {
                if(curr.isMovingUp() && curr.getRow()>0 && board[curr.getRow()-1][curr.getCol()]==false)
                   curr.setRow(curr.getRow()-1);
-               else 
+               else
                   if(curr.isMovingDown() && curr.getRow()<board.length-1 && board[curr.getRow()+1][curr.getCol()]==false)
                      curr.setRow(curr.getRow()+1);
                   else
                      if(curr.isMovingLeft() && curr.getCol()>0 && board[curr.getRow()][curr.getCol()-1]==false)
                         curr.setCol(curr.getCol()-1);
-                     else 
+                     else
                         if(curr.isMovingRight() && curr.getCol()<board[0].length-1 && board[curr.getRow()][curr.getCol()+1]==false)
                            curr.setCol(curr.getCol()+1);
-               curr.clearDirections();            
+               curr.clearDirections();
             }
             else
             {
                if(curr.isMovingUp() && curr.getRow()>0)
                   curr.addMoveIncrY(-1*SPEED);
-               else 
+               else
                   if(curr.isMovingDown() && curr.getRow()<board.length-1)
                      curr.addMoveIncrY(SPEED);
                   else
                      if(curr.isMovingLeft() && curr.getCol()>0)
                         curr.addMoveIncrX(-1*SPEED);
-                     else 
+                     else
                         if(curr.isMovingRight() && curr.getCol()<board[0].length-1)
                            curr.addMoveIncrX(SPEED);
             }
@@ -137,8 +137,8 @@
                   curr.setDirection(DOWN);
                }
             }
-         
+
          }
       }
-   
+
    }

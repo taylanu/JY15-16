@@ -3,7 +3,7 @@
       public static void main (String[] args)
       {
          Student s1, s2, s3;
-         
+
          s1 = new Student();
          s1.setName("Bill");
          s1.setScore(1, 84);

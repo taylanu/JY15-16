@@ -6,16 +6,19 @@ public class commas {
 	static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
 		System.out.println("Enter a large number:");
-		long num = input.nextLong();
-		commas(num);
-	}
-	
-public static void commas(long num){
-	if(num%1000==0)
-		System.out.println(num);
-	//else
-		//commas(num/1000);
-	//how to separate the parts of number.
+		int num = input.nextInt();
+		String formatted = commas(num);
+		System.out.println("Your formatted number is " + formatted);
 	}
 
+public static String commas(int num){
+	String formnum = new String("" + num);
+	if(num/1000==0)
+		return formnum;
+	else{
+		return commas(num/1000) + "," + formnum.substring(formnum.length() - 3);
+	}
+	//how to separate the parts of number??
+	//solved.
+	}
 }

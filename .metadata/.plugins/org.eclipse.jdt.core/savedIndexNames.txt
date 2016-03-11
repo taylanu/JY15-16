@@ -1,2 +1,0 @@
-INDEX VERSION 1.127+C:\Users\tayla\Documents\GitHub\JY15-16\.metadata\.plugins\org.eclipse.jdt.core
-2391531407.index

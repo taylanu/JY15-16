@@ -12,7 +12,7 @@ public class proj48{
    base = input.nextDouble();
    System.out.println("Give me an number of your choosing.");
    exp = input.nextDouble();
-  
+
    if (exp >= 0) {
 	   System.out.println("Your base was " + base);
 	   System.out.println("Your answer is " + (int)Math.pow(base,exp));

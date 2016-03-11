@@ -1,8 +1,8 @@
 Project 10-5 Instructions
 
-Design a class hierarchy for bank accounts. The concrete types of accounts are checking accounts, savings accounts, 
-and credit accounts. Common behavior includes deposits, withdrawals, and obtaining a balance. Credit and savings accounts 
-have an interest rate. Credit accounts have a credit line or maximum amount that may be borrowed. 
+Design a class hierarchy for bank accounts. The concrete types of accounts are checking accounts, savings accounts,
+and credit accounts. Common behavior includes deposits, withdrawals, and obtaining a balance. Credit and savings accounts
+have an interest rate. Credit accounts have a credit line or maximum amount that may be borrowed.
 Be sure your design includes the appropriate interface, abstract class, and concrete classes.
 
 COMPLETED

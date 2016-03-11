@@ -8,26 +8,26 @@ public class LuckySeven
       int initial, maxMon, roll, maxRoll, currentMon;
       Dice d1, d2;
       Scanner input;
-      
+
       d1 = new Dice();
       d2 = new Dice();
-      
+
       input = new Scanner(System.in);
       //Start
       System.out.println("Enter the initial amount of money: ");
       initial = input.nextInt();
-      
+
       maxMon = initial;
       currentMon = initial;
       roll = 0;
       maxRoll = 0;
-      
+
       while(currentMon > 0)
       {
          roll++;
          d1.roll();
          d2.roll();
-      
+
          if(d1.getNum() + d2.getNum() == 7)
          {
             currentMon = currentMon + 4;
@@ -36,7 +36,7 @@ public class LuckySeven
          {
             currentMon = currentMon - 1;
          }
-      
+
          if(currentMon > maxMon)
          {
             maxMon = currentMon;

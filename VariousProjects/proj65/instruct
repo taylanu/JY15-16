@@ -1,4 +1,4 @@
-The Euclidean algorithm can be used to find the greatest common divbisor (gcd) of two positive integers (n1, n2). 
+The Euclidean algorithm can be used to find the greatest common divbisor (gcd) of two positive integers (n1, n2).
 
 You can use this algorithm in the following manner:
 A. Compute the remainder of dividing the larger number by the smaller number.

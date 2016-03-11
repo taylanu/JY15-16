@@ -7,9 +7,9 @@ import java.awt.Font;
 
 public class ScaleMutatorPanel extends JPanel
 {
-  
+
    private static final int SIZE=40;	            //size of untis being drawn
-  
+
    public static int INSTRUMENT = 0;			      //the melody instrument the user picks (piano is 0, 0<=INSTRUMENT<128)
    public static int WHOLENOTE=190;				      //resolution of a whole note for MIDI syncing
    public static final int OCTAVE = 12;				//add this to a note to go up an octave, subtract to go down
@@ -18,28 +18,28 @@ public class ScaleMutatorPanel extends JPanel
    private static MidiChannel[] channels=null;		//MIDI channels
    private static Instrument[] instr;					//MIDI instrument bank
 
-   	                                             //intervals of scales						   
+   	                                             //intervals of scales
    private static final int [][] intervals = {{0,2,4,5,7,9,11,12}, {0,2,3,5,7,9,11,12}, {0,3,5,6,7,10,12}, {0,2,3,5,7,8,11,12}};
    private static final String[] scaleName = {"Major",             "Minor",             "Blues",           "Harm Minor"};
    private static int scaleIndex;                  //index of user's scale choice
    public static int key;                          //the key the user picks
    public static int [] scale;			            //the scale or mode the user picks
    public static int [] scaleOrig;                 //original scale picked so user can restore it
-    
+
    public ScaleMutatorPanel()                     //constructor
    {
       key = -1;
       scaleIndex = -1;
       scale = null;
       scaleOrig = null;
-      try 
+      try
       {
          Synthesizer synth = MidiSystem.getSynthesizer();
          synth.open();
          channels = synth.getChannels();
          instr = synth.getDefaultSoundbank().getInstruments();
       }
-      catch (Exception ignored) 
+      catch (Exception ignored)
       {}
       channels[0].programChange(instr[INSTRUMENT].getPatch().getProgram());
    }
@@ -49,9 +49,9 @@ public class ScaleMutatorPanel extends JPanel
 	//post:  processes user input - select key/scale/mutation (sent from the driver)
    public void processUserInput(int k, boolean shiftIsPressed)
    {
-      if(k==KeyEvent.VK_Q || k==KeyEvent.VK_ESCAPE)					//End the program	
+      if(k==KeyEvent.VK_Q || k==KeyEvent.VK_ESCAPE)					//End the program
          System.exit(1);
-      if(key == -1 && ((k>=KeyEvent.VK_A && k<=KeyEvent.VK_G) || k==KeyEvent.VK_R))                            
+      if(key == -1 && ((k>=KeyEvent.VK_A && k<=KeyEvent.VK_G) || k==KeyEvent.VK_R))
       {                                         //key has not been picked yet
          if(k==KeyEvent.VK_R)
             key = (int)(Math.random()*12) + 60;	//user picks random key
@@ -70,7 +70,7 @@ public class ScaleMutatorPanel extends JPanel
          else if(k==KeyEvent.VK_B)
             key = 71;
          if(shiftIsPressed)                     //make the key sharp
-            key++;   
+            key++;
       }
       else if(scaleIndex == -1)                 //scale has not been picked yet
       {
@@ -94,19 +94,19 @@ public class ScaleMutatorPanel extends JPanel
          }
       }                          //END: scale has not been picked yet
       else
-      {  
+      {
          if(k==KeyEvent.VK_UP)   //increase note length
          {
             if(WHOLENOTE < 1000)
                WHOLENOTE+=10;
-            repaint();			
+            repaint();
             return;
          }
          if(k==KeyEvent.VK_DOWN) //decrease note length
          {
             if(WHOLENOTE > 40)
                WHOLENOTE-=10;
-            repaint();			
+            repaint();
             return;
          }
          if(k==KeyEvent.VK_RIGHT) //increase instrument bank
@@ -116,7 +116,7 @@ public class ScaleMutatorPanel extends JPanel
                INSTRUMENT++;
                channels[0].programChange(instr[INSTRUMENT].getPatch().getProgram());
             }
-            repaint();			
+            repaint();
             return;
          }
          if(k==KeyEvent.VK_LEFT) //decrease instrument bank
@@ -126,7 +126,7 @@ public class ScaleMutatorPanel extends JPanel
                INSTRUMENT--;
                channels[0].programChange(instr[INSTRUMENT].getPatch().getProgram());
             }
-            repaint();			
+            repaint();
             return;
          }
          if(k==KeyEvent.VK_S)        //start over
@@ -135,13 +135,13 @@ public class ScaleMutatorPanel extends JPanel
             scaleIndex = -1;
             scale = null;
             scaleOrig = null;
-            repaint();			
+            repaint();
             return;
          }
          if(k==KeyEvent.VK_W)        //write to MIDI file
          {
             writeToMidiFile(scale);
-            repaint();			
+            repaint();
             return;
          }
          int opt = -1;
@@ -152,7 +152,7 @@ public class ScaleMutatorPanel extends JPanel
          else if(k==KeyEvent.VK_2)        //reverse
             opt=2;
          else if(k==KeyEvent.VK_3)        //palindrome
-            opt=3; 
+            opt=3;
          else if(k==KeyEvent.VK_4)        //shuffle with self
             opt=4;
          else if(k==KeyEvent.VK_5)        //shuffle with reverse
@@ -160,22 +160,22 @@ public class ScaleMutatorPanel extends JPanel
          else if(k==KeyEvent.VK_6)        //scramble
             opt=6;
          else if(k==KeyEvent.VK_7)        //mix with root
-            opt=7; 
+            opt=7;
          else if(k==KeyEvent.VK_8)        //triads
             opt=8;
          else if(k==KeyEvent.VK_9)        //restore original
             opt=9;
          else if(k==KeyEvent.VK_0)        //extra credit mutation
             opt=0;
-      
+
          if(opt>=0 && opt<=9)
-         {   
+         {
             if(opt==1)                    //sort
                scaleMutator.selSort(scale);
             else if(opt==2)               //reverse
                scale = scaleMutator.reverse(scale);
             else if(opt==3)               //palindrome
-               scale = scaleMutator.makePalindrome(scale); 
+               scale = scaleMutator.makePalindrome(scale);
             else if(opt==4)               //shuffle with self
                scale = scaleMutator.shuffle(scale);
             else if(opt==5)               //shuffle with reverse
@@ -183,7 +183,7 @@ public class ScaleMutatorPanel extends JPanel
             else if(opt==6)               //scramble
                scale = scaleMutator.scramble(scale);
             else if(opt==7)               //mix with root
-               scale = scaleMutator.mixWithNote(scale, scale[0]); 
+               scale = scaleMutator.mixWithNote(scale, scale[0]);
             else if(opt==8)               //triads
                scale = scaleMutator.triads(scale);
             else if(opt==9)               //restore original
@@ -200,10 +200,10 @@ public class ScaleMutatorPanel extends JPanel
    @Override
 public void paintComponent(Graphics g)
    {
-      super.paintComponent(g); 
+      super.paintComponent(g);
       g.setColor(Color.blue.darker().darker());		//draw a blue boarder around the board
       g.fillRect(0, 0, (20*SIZE), (15*SIZE));
-      
+
       int x = 0, y=0;
       g.setFont(new Font("Monospaced", Font.PLAIN,(int)(SIZE*.5)));
       g.setColor(Color.yellow);
@@ -244,7 +244,7 @@ public void paintComponent(Graphics g)
          }
       }
    }
-   
+
    //pre:  scale != null and is non-empty
    //post: returns a version of the scale where all notes are lowered so that the lowest note is 0
    //      used to draw notes as ovals on the screen in paintComponent
@@ -257,9 +257,9 @@ public void paintComponent(Graphics g)
       int [] ans = scale.clone();
       for(int i=0; i < ans.length; i++)
          ans[i] -= min;
-      return ans;      
+      return ans;
    }
-   
+
     //pre:  num >= 0 and is a MIDI note value
     //post: return its corresponding key (multiples of 12 are C)
     //      returns "?" if it is not found
@@ -267,38 +267,38 @@ public void paintComponent(Graphics g)
    public static String intToKey(int num)
    {
       while(num>=12)			//strip out any octaves
-         num-=OCTAVE;    	
+         num-=OCTAVE;
       switch(num)
       {
-         case 0: 
+         case 0:
             return "C";
-         case 1: 
+         case 1:
             return "C#";
-         case 2: 
+         case 2:
             return "D";
-         case 3: 
+         case 3:
             return "D#";
-         case 4: 
+         case 4:
             return "E";
-         case 5: 
+         case 5:
             return "F";
-         case 6: 
+         case 6:
             return "F#";
-         case 7: 
+         case 7:
             return "G";
-         case 8: 
+         case 8:
             return "G#";
-         case 9: 
+         case 9:
             return "A";
-         case 10: 
+         case 10:
             return "A#";
-         case 11: 
+         case 11:
             return "B";
       }
       return "?";			//unknown note value sent
    }
 
-//pre:  list != null and is non-empty, all values >= 0      
+//pre:  list != null and is non-empty, all values >= 0
 //post: returns a String of list contents in {42, 58, 46} format given list, false
 //      returns a String of list contents in {B, -, D#} format given list, true
 //      used in paintComponent to show the mutated scale as musical notes or pitch values
@@ -345,7 +345,7 @@ public void paintComponent(Graphics g)
       }
       channels[0].allNotesOff(); 				//turn sounds off
    }
-   
+
    //pre:  scale != null, non-empty, comprised of values >= 0
    //post: writes the scale to a MIDI file
    public static void writeToMidiFile(int[]scale)
@@ -355,23 +355,23 @@ public void paintComponent(Graphics g)
       Sequence song = null;
       try
       {
-         sequencer = MidiSystem.getSequencer(); 
+         sequencer = MidiSystem.getSequencer();
          sequencer.open();
       }
-      catch (MidiUnavailableException e) 
+      catch (MidiUnavailableException e)
       {
          e.printStackTrace();
       }
-   
-      try 
+
+      try
       {
          song = new Sequence(javax.sound.midi.Sequence.PPQ,24);
       }
-      catch (InvalidMidiDataException e) 
+      catch (InvalidMidiDataException e)
       {
          e.printStackTrace();
       }
-   
+
       int tracking = 0;						   //where the current event will be placed in the song, constantly updated
       Track music = song.createTrack();	//the MIDI track we write our notes into
       setTempo(WHOLENOTE, 0, music);
@@ -379,65 +379,65 @@ public void paintComponent(Graphics g)
       final int TEXT = 0x01;
       addEvent(music, TEXT, scaleName[scaleIndex].getBytes(), tracking);   //add the name of the track to the MIDI file
       tracking = playScale(scale, tracking, 0, music);
-      String songInfo = "";     
+      String songInfo = "";
       String TrackName = scaleName[scaleIndex] + key;
       songInfo+=("You have chosen to compose a sequence in the "+scaleName[scaleIndex]+" scale\n");
-      songInfo+=("Please open and run '"+TrackName+".mid' in this folder"+"\n");      
+      songInfo+=("Please open and run '"+TrackName+".mid' in this folder"+"\n");
       System.out.println(songInfo);
     //****  set track name (meta event)  ****
       MetaMessage mmessage = new MetaMessage();
-      try 
+      try
       {
          mmessage.setMessage(0x03 ,TrackName.getBytes(), TrackName.length());
       }
-      catch (InvalidMidiDataException e) 
+      catch (InvalidMidiDataException e)
       {
          e.printStackTrace();
       }
-   
+
       music.add(new MidiEvent(mmessage,0));
-   
+
       filename = TrackName+".mid";
-    
-      int[] allowedTypes = MidiSystem.getMidiFileTypes(song); 
-   	
-      if (allowedTypes.length == 0) 
-      { 
+
+      int[] allowedTypes = MidiSystem.getMidiFileTypes(song);
+
+      if (allowedTypes.length == 0)
+      {
          System.err.println("No supported MIDI file types.");
-      } 
-      else 
-      { 
+      }
+      else
+      {
          try
          {
             try
             {
                MidiSystem.write(song, allowedTypes[0], new java.io.File(filename));//write to the file
             }
-            catch (java.io.FileNotFoundException e) 
+            catch (java.io.FileNotFoundException e)
             {
                e.printStackTrace();
             }
-         
+
          }
-         catch(java.io.IOException ex) 
+         catch(java.io.IOException ex)
          {
             System.out.println("\n\n\nERROR:\nPlease close the media player and run again");
          }
       }
-   
+
    }
-   
+
    //pre:  newTempo > 0, where >=0, music!=null
    //post: adds a TEMPO meta event to set the speed of the song
    private static void setTempo(int newTempo, int where, Track music)
    {
       MetaMessage mmessage = new MetaMessage();
       int l = 60*1000000/newTempo;
-      try 
+      try
       {
          mmessage.setMessage(0x51,new byte[]{(byte)(l/65536), (byte)(l%65536/256), (byte)(l%256)}, 3);
       }
-      catch (InvalidMidiDataException e) 
+      catch (InvalidMidiDataException e)
       {
          e.printStackTrace();
       }
@@ -449,17 +449,17 @@ public void paintComponent(Graphics g)
    private static ShortMessage ChangeInstrument(int inst, int channel)
    {
       ShortMessage temp=new ShortMessage();
-      try 
+      try
       {
          temp.setMessage(ShortMessage.PROGRAM_CHANGE, channel, inst, 100);
       }
-      catch (InvalidMidiDataException e) 
+      catch (InvalidMidiDataException e)
       {
          e.printStackTrace();
       }
       return temp;
    }
-   
+
    private static void addEvent(Track track, int type, byte[] data, long where)
    {
       MetaMessage message = new MetaMessage();
@@ -474,7 +474,7 @@ public void paintComponent(Graphics g)
          e.printStackTrace();
       }
    }
-   
+
    //plays the melody sent with sent durations at tracking position 'where'
 	//melodyNotes and melodyDurations should have the same length
 	//returns current tracking position
@@ -495,13 +495,13 @@ public void paintComponent(Graphics g)
             {
                e.printStackTrace();
             }
-         
+
          }
          catch (MidiUnavailableException e)
          {
             e.printStackTrace();
          }
-      
+
       }
       return where;
    }
@@ -509,7 +509,7 @@ public void paintComponent(Graphics g)
 //writes a sound of pitch 'note', durartion 'noteLength', volume 'VELOCITY' at location 'where' in chanel 'chnl' in the Track 'music'
 	//returns the updated tracking position - doesn't add a sound if 'note' is <= 0 but places a rest
    private static int playNote(int note, int noteLength, int myVelocity, int where, int chnl, Track music) throws InvalidMidiDataException, MidiUnavailableException
-   {	
+   {
       if(noteLength < 0)
          noteLength = Math.abs(noteLength);
       if(note>0)
@@ -517,10 +517,10 @@ public void paintComponent(Graphics g)
          ShortMessage on = new ShortMessage();
          ShortMessage off = new ShortMessage();
          on.setMessage(ShortMessage.NOTE_ON, chnl, note, myVelocity);
-         off.setMessage(ShortMessage.NOTE_OFF,chnl, note, myVelocity);   
+         off.setMessage(ShortMessage.NOTE_OFF,chnl, note, myVelocity);
          music.add(new MidiEvent(on, where));
          music.add(new MidiEvent(off, where+noteLength));
-      }  
+      }
       return where+noteLength;
    }
 

@@ -16,7 +16,7 @@ public class MovieDatabase
          System.out.println("1)  show all movies");
          System.out.println("2)  search by title");
          System.out.println("3)  list by rating");
-         System.out.println("4)  list by decade");     
+         System.out.println("4)  list by decade");
          opt = input.nextInt();
          input.nextLine();
          if(opt==1)
@@ -45,7 +45,7 @@ public class MovieDatabase
                   }
       }
    }
-   
+
    public static void searchByTitle(Movie [] list, String target)
    {
       for(Movie x: list)
@@ -55,7 +55,7 @@ public class MovieDatabase
             System.out.println(x);
       }
    }
-   
+
    public static void searchByRating(Movie [] list, String target)
    {
       for(Movie x: list)
@@ -81,7 +81,7 @@ public class MovieDatabase
       for(Movie x: list)
          System.out.println(x);
    }
-   
+
    public static Movie[] readFromFile(String fileName)throws IOException
    {
       Scanner input = new Scanner(new FileReader("movies.txt"));
@@ -96,7 +96,7 @@ public class MovieDatabase
             break;
          String year = input.nextLine();
          temp.add(new Movie(title, rating, Integer.parseInt(year)));
-      }   
+      }
       Movie[] ans = new Movie[temp.size()];
       for(int i=0; i<ans.length; i++)
          ans[i] = temp.get(i);

@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class IntSort{
-	
+
    public static void main(String arg[]){
       int[] evenList = new int[10];
       int[] oddList = new int[10];
@@ -25,7 +25,7 @@ public class IntSort{
             oddCount++;
          }
       }
-      
+
       System.out.println("Your Even Array:");
       arrayPrint(evenList, evenCount);
       System.out.println("Your Odd Array:");
@@ -42,7 +42,7 @@ public class IntSort{
          for(int i = 1; i < size; i++){
             str = str + ", " + list[i];
          }
-         System.out.println(str + "]"); 
+         System.out.println(str + "]");
       }
    }
 }

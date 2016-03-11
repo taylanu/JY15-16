@@ -7,8 +7,8 @@ import java.awt.event.*;
       public static TanksPanel screen;					//Game window
       public static JFrame frame;
       public static int width, height;
-   
-   
+
+
       public static void main(String[]args)
       {
          screen = new TanksPanel();
@@ -20,38 +20,38 @@ import java.awt.event.*;
          frame.setLocation(0, 0);						//location of game window on the screen
          frame.setExtendedState(Frame.NORMAL);  	//MAXIMIZED_BOTH, MAXIMIZED_VERT, or ICONIFIED
          frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-         frame.setContentPane(screen);		
+         frame.setContentPane(screen);
          frame.setVisible(true);
          frame.addKeyListener(new listen());			//Get input from the keyboard
-      
+
       }
-      
-      public static class listen implements KeyListener 
+
+      public static class listen implements KeyListener
       {
          @Override
 		public void keyTyped(KeyEvent e)
          {
          }
-         
+
          @Override
 		public void keyPressed(KeyEvent e)
          {//send key input to the Panel
             if(e.getKeyCode() != KeyEvent.VK_R)		//R resets the game, and if allowed to process this while a key is pressed, resets happen too quickly
                screen.processKey(e.getKeyCode(), "keyPressed");
          }
-      
+
          @Override
 		public void keyReleased(KeyEvent e)
          {
             int k=e.getKeyCode();
-         
+
             if(k==KeyEvent.VK_PLUS || k==KeyEvent.VK_EQUALS || k==KeyEvent.VK_ADD)		//larger battlefield
             {
-               if(width < (screen.getCellSize()*70) + (screen.getCellSize()*10) && height < (screen.getCellSize()*46) + (screen.getCellSize()*4))			
+               if(width < (screen.getCellSize()*70) + (screen.getCellSize()*10) && height < (screen.getCellSize()*46) + (screen.getCellSize()*4))
                {				//battlefield size       +  menu screen size
                   screen.processKey(k, "keyReleased");
                   width += screen.getCellSize()*5;
-                  height += screen.getCellSize()*2;  
+                  height += screen.getCellSize()*2;
                   frame.setSize(width, height);				//Size of game window
                   frame.setExtendedState(Frame.NORMAL); //MAXIMIZED_BOTH, MAXIMIZED_VERT, ICONIFIED
                   frame.repaint();
@@ -70,7 +70,7 @@ import java.awt.event.*;
                }
             }
             else
-               screen.processKey(k, "keyReleased");  
+               screen.processKey(k, "keyReleased");
          }
       }
    }

@@ -21,7 +21,7 @@ public class TableModeMedian
       }
       return median;
    }
-   
+
    public static int[] findModes(int[] modeList)
    {
       int [] data = new int[10];
@@ -31,8 +31,8 @@ public class TableModeMedian
       int [] modes = new int[modeList.length];
       int index = 0;
       for(int i=0; i<freq.length; i++){
-         if(freq[i] == max){			 				 
-            modes[index] = data[i];		
+         if(freq[i] == max){
+            modes[index] = data[i];
             index++;
          }
       }
@@ -42,7 +42,7 @@ public class TableModeMedian
    {
       Scanner input = new Scanner(System.in);
       for(int i=0; i < nums.length; i++)
-      {    
+      {
          System.out.println("Enter a number");
          nums[i] = input.nextInt();
       }
@@ -82,12 +82,12 @@ public class TableModeMedian
       return ans;
    }
    public static void main(String arg[]){
-   
+
       int[] list = new int[10];
       int[] modeList = new int[list.length];
-      
+
       fill(list);
-               
+
       int[] modes = findModes(modeList);
       double median = findMed(list);
       System.out.println("The mode for your set was ");

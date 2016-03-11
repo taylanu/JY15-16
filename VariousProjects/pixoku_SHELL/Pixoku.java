@@ -20,9 +20,9 @@
       protected static final ImageIcon CROSSHAIR = new ImageIcon("images/crossHair.GIF");	//user crosshair/cursor
       protected static final ImageIcon TITLE 	 = new ImageIcon("themes/misc1.GIF");		//title screen
       protected static ImageIcon solution;				//image that may appear on top of the board when solved
-   
+
       protected static int size=30;							//size of cell being drawn
-   
+
    //This array will be represented graphically on the screen
       protected static int[][] board;						//the board that contains the solution
                                                    	//	(0 for unpainted, 1 for painted)
@@ -30,7 +30,7 @@
                                                    	//	(0 for unpainted, 2 for unpainted but x-ed out, 3 for unpainted but marked as a mistake, 1 for painted, -1 for painted but given as a hint)
       protected static int score;							//1 point for each correct pixel, -2 for each mistake
       protected static int numErrors;						//counts the number of mistakes
-      protected static int hint;								//3 hints given for each game 
+      protected static int hint;								//3 hints given for each game
       protected static boolean titleScreen;				//should the title screen be displayed?
       protected static boolean solved;						//has the board been solved or not?  used for display
       protected static boolean paintMode;					//are we in paint mode (to create puzzles)
@@ -58,7 +58,7 @@
       protected static final byte OPTION_X = 10;
       protected static final byte OPTION_E = 11;
       protected static final byte OPTION_H = 12;
-   
+
       protected static String message;							//displays in game messages
       protected static String theme;							//hint for the player
       protected static String description;					//the title of the image when it is solved
@@ -71,22 +71,22 @@
       protected static ArrayList<Integer> [] colCount;	//an array of ArrayLists for each col to store the pixel count for columns
       protected static int maxRowCount;						//the max list size from rowCount, used to set the number fileds displayed
       protected static int maxColCount;						//the max list size from colCount, used to set the number fileds displayed
-   
+
       protected static final String[] levels = {"OPEN", "EASY", "MEDIUM", "HARD"};
       protected static int difficulty;									//index to set the difficulty level of the puzzles as an index for levels array
-   
+
    //A moveable cursor will start in the center of the field
       protected static int playerR;			//start row for the player cursor
       protected static int playerC;			//start col for the player cursor
-   
+
       protected static int mouseX;			//locations for the mouse pointer
       protected static int mouseY;
-   
+
       protected static long startTime;		//record how long it took to solve the puzzle
       protected static long endTime;
-      protected static int completionTime;	
-   
-   //sound elements						
+      protected static int completionTime;
+
+   //sound elements
    //intervals of scales						Major							minor						Blues				Harmonic minor
       protected static int [][] intervals = {{0,2,4,5,7,9,11,12}, {0,2,3,5,7,9,11,12}, {0,3,5,6,7,10,12}, {0,2,3,5,7,8,11,12}};
       protected static MidiChannel[] channels=null;		//MIDI channels
@@ -94,8 +94,8 @@
       protected static int [] instrumentList = {0,1,2,3,4,5,8,9,10,12,13,14,45,108,112,113,114,115};
       protected static int instrument;							//current instrument to be played
       protected static int [] scale;							//scale to be played
-   
-   
+
+
       public Pixoku()							//constructor
       {
          try 										//sound elements
@@ -105,7 +105,7 @@
             channels = synth.getChannels();
             instr = synth.getDefaultSoundbank().getInstruments();
          }
-            catch (Exception ignored) 
+            catch (Exception ignored)
             {}
          addMouseListener( this );
          addMouseMotionListener( this );
@@ -120,7 +120,7 @@
          randomHighScores = new ArrayList<Score>();
          Utilities.readHighScores("themes/fileList.txt", fileNames);
          Utilities.readHighScores("themes/randomScores.txt", randomHighScores);
-         if(Math.random() < .5)  
+         if(Math.random() < .5)
             createRandomBoard();				//start with a random pixel board
          else
          {		//start with a themed board read from a randomly picked file
@@ -129,7 +129,7 @@
                message = "Not found.  Selecting random board.";
          }
       }
-     
+
    //post:  initialize the board and data fields
       private static void setupBoard()
       {
@@ -137,16 +137,16 @@
          mouseY = 0;
          Utilities.initBoard(board);
       //ex out any row or column that has no pixels colored in it
-      
+
          for(int r=0; r<rowCount.length; r++)
-            if(rowCount[r].isEmpty())   
+            if(rowCount[r].isEmpty())
                for(int c=0; c<guess[0].length; c++)
                   guess[r][c] = 3;		//computer marked ex
          for(int c=0; c<colCount.length; c++)
-            if(colCount[c].isEmpty())   
+            if(colCount[c].isEmpty())
                for(int r=0; r<guess.length; r++)
                   guess[r][c] = 3;		//computer marked ex
-      
+
          score = 0;
          numErrors = 0;
          hint = 3;
@@ -154,12 +154,12 @@
          paintMode = false;
          textInput = false;
          solution = null;
-      
+
       //sound elements
          channels[0].allNotesOff();
          int instrIndex = (int)(Math.random()*instrumentList.length);
-         instrument = instrumentList[instrIndex];							//pick random instrument	
-         int scaleIndex = (int)(Math.random()*intervals.length);		
+         instrument = instrumentList[instrIndex];							//pick random instrument
+         int scaleIndex = (int)(Math.random()*intervals.length);
          scale = (intervals[scaleIndex]).clone();										//pick random scale
          int key = (int)(Math.random()*12) + 48;							//pick random key
          for(int i=0; i<scale.length; i++)									//adjust scale to random key
@@ -167,8 +167,8 @@
          channels[0].programChange(instr[instrument].getPatch().getProgram());
          Utilities.playStartScale();
       }
-   
-   //*****COMPLETE THIS METHOD********	
+
+   //*****COMPLETE THIS METHOD********
    //pre:   grid is a nonempty array comprised of 0s and 1s
    //post:  returns a new int array that is an inverted image of the argument grid - 0's become 1's and 1's become 0's
    //       given 1 0 0, returns 0 1 1
@@ -176,10 +176,10 @@
    //			grid is to remain unchanged
       public static int [][] invert(int [][] grid)
       {
-      
+
          return grid;	//temporary statement to keep things compiling
       }
-   
+
    //*****COMPLETE THIS METHOD********
    //pre:   grid is a nonempty array comprised of 0s and 1s
    //post:  returns a new int array that is the horizontal mirror image of the argument grid
@@ -188,13 +188,13 @@
    //			grid is to remain unchanged
       public static int [][] mirrorFlip(int [][] grid)
       {
-      
+
          return grid;	//temporary statement to keep things compiling
       }
-   
+
    //*****COMPLETE THIS METHOD********
    //pre:  guess and board are the same dimensions
-   //post: returns true if guess and board have black pixels (value 1 or -1) in the same location, and  
+   //post: returns true if guess and board have black pixels (value 1 or -1) in the same location, and
    //      the same unpainted pixels (value 0, 2 or 3) in the same location.
    //      computes the score, with 1 point for each pixel, (minus the number of errors * 2), plus the (number of unused hints *2)
    //NOTE: painted pixels are value 1 for regular, -1 for painted pixel given as a hint
@@ -203,7 +203,7 @@
       {
          return false;	//temporary statement to keep things compiling
       }
-   
+
    //pre:	rowCount has as many elements as there are in grid.length.  All ArrayLists in rowCount have been constructed.
    //			colCount has as many elements as there are in grid[0].length.  All elements have been constructed.
    //    	grid is either the solution board (board) or the guessing board (guess - which is also the user-defined puzzle canvas)
@@ -222,17 +222,17 @@
    //			colCount[4] will be [1].		colCount[5] will be [2]  		colCount[6] will be [1,1] and colCount[7] will be [1].
       private static void countPixels(int[][] grid)
       {
-      //count the pixels in each row   
-         for(int r=0;r<grid.length;r++)	
+      //count the pixels in each row
+         for(int r=0;r<grid.length;r++)
          {
             int count=0;
             for(int c=0;c<grid[0].length;c++)
             {
                if(grid[r][c]==1)	//colored pixel
                   count++;
-               else 
+               else
                   if(count>0)
-                  {   
+                  {
                      rowCount[r].add(count);
                      count=0;
                   }
@@ -240,27 +240,27 @@
             if(count>0)
                rowCount[r].add(count);
          }
-      
-      //count the pixels in each col  
-         for(int c=0;c<grid[0].length;c++) 
+
+      //count the pixels in each col
+         for(int c=0;c<grid[0].length;c++)
          {
             int count=0;
-            for(int r=0;r<grid.length;r++)	
+            for(int r=0;r<grid.length;r++)
             {
                if(grid[r][c]==1)	//colored pixel
                   count++;
-               else 
+               else
                   if(count>0)
-                  {   
+                  {
                      colCount[c].add(count);
                      count=0;
                   }
             }
             if(count>0)
                colCount[c].add(count);
-         } 
+         }
       }
-   
+
    //pre:  grid is either the solution board (board) or the guessing board (guess - which is also the user-defined puzzle canvas)
    //post: initializes pixel count lists, fills them and determines the max dimensions to properly display them on the board
       public static void pixelCount(int[][] grid)
@@ -281,9 +281,9 @@
             if(list.size() > maxColCount)
                maxColCount = list.size();
       }
-   
+
    //post:  fills up the board with random 0s and 1s and initializes the guessing board to all 0s
-      public static void createRandomBoard()	
+      public static void createRandomBoard()
       {
          int min = 4;						//OPEN - 4x4 to 15x15
          int range = 12;
@@ -303,7 +303,7 @@
             range = 8;
          }
          int numRows = (int)(Math.random()*range)+min;		//array has a random size
-         int numColumns = (int)(Math.random()*range)+min;  
+         int numColumns = (int)(Math.random()*range)+min;
          board = new int[numRows][numColumns];
          guess = new int[numRows][numColumns];
          for(int r=0;r<board.length;r++)					//fill with random values (0,1)
@@ -337,7 +337,7 @@
          filename = "random";
          startTime = System.currentTimeMillis();
       }
-   
+
    //post:  loads in a file with a theme, returns false if it had to pick a random board
       public static boolean createThemedBoard(String forceFile)
       {
@@ -347,7 +347,7 @@
          filename = null;
          int min = 0;						//used to pick randoms within a range depending on difficulty level
          int range = fileNames.size();
-      
+
          if(difficulty == 1)				//EASY - pick within the first half of the list, start to half way through the list
          {
             min = 0;
@@ -363,41 +363,41 @@
             min = fileNames.size() / 2;
             range = fileNames.size() / 2 + 1;
          }
-      
-      
+
+
          scoreIndex = (int)(Math.random()*range) + min;
          while (scoreIndex >= fileNames.size())
             scoreIndex = (int)(Math.random()*range) + min;
-      
+
          if(forceFile==null || forceFile.length()==0)
             filename = fileNames.get(scoreIndex).getFileName();
          else
          {
             scoreIndex = -1;
-            filename  = forceFile.toLowerCase();  
+            filename  = forceFile.toLowerCase();
             for(int i=0; i<fileNames.size(); i++)
                if(filename.equals(fileNames.get(i).getFileName()))
                {
                   scoreIndex = i;
                   break;
-               }    
+               }
             if(scoreIndex == -1)		//we could not find that file
             {
-            
+
                scoreIndex = (int)(Math.random()*range) + min;
                while (scoreIndex >= fileNames.size())
                   scoreIndex = (int)(Math.random()*range) + min;
-            
+
                filename = fileNames.get(scoreIndex).getFileName();
                state = false;
-            }    
+            }
          }
          if(filename!=null)
          {
             if(!Utilities.readFileToBoard("themes/"+filename))
             {
                createRandomBoard();
-               state = false; 
+               state = false;
             }
             else
             {
@@ -409,20 +409,20 @@
                   flipped = true;
                }
                if(Math.random() < .5)	//50% of the time, make the image its photographic negative
-                  board = invert(board);    
+                  board = invert(board);
                solutionImage = fileNames.get(scoreIndex).getSolutionImage();
             }
          }
          else
          {
-            createRandomBoard(); 
+            createRandomBoard();
             state = false;
          }
          setupBoard();
          startTime = System.currentTimeMillis();
          return state;
       }
-   
+
    //THIS METHOD IS ONLY CALLED THE MOMENT A KEY IS HIT - NOT AT ANY OTHER TIME
    //pre:   arg key is a valid keycode
    //post:  changes the cursor's position depending on the key that was pressed (sent from the driver)
@@ -432,7 +432,7 @@
       {
          ArrayList<Score> list = fileNames;
          boolean state = true;		//did the intended file load properly?  Used for message sent if not
-      
+
          if(titleScreen)
          {
             titleScreen = false;
@@ -441,17 +441,17 @@
          }
          if(theme.equals("random"))
             list = randomHighScores;
-      
+
          if(key==java.awt.event.KeyEvent.VK_ESCAPE)
          {
             if(updateScores)
             {
                Utilities.selSortSize(randomHighScores);
-               Utilities.updateScores(randomHighScores, "themes/randomScores.txt");    
-               Utilities.updateScores(fileNames, "themes/fileList.txt");    
+               Utilities.updateScores(randomHighScores, "themes/randomScores.txt");
+               Utilities.updateScores(fileNames, "themes/fileList.txt");
             }
             System.exit(1);
-         }   
+         }
          if(!textInput)	//not in text input mode
          {
             message = "";
@@ -474,7 +474,7 @@
                         message += (char)(key);
                }
             }
-            else if(key==java.awt.event.KeyEvent.VK_BACK_SPACE && message.length() > 0) 
+            else if(key==java.awt.event.KeyEvent.VK_BACK_SPACE && message.length() > 0)
                message = message.substring(0, message.length()-1);
             else if(key==java.awt.event.KeyEvent.VK_ENTER)
             {
@@ -501,7 +501,7 @@
                         fileNames.get(scoreIndex).setScoreInfo(filename, solutionImage, player, score, completionTime, guess.length*guess[0].length);
                      updateScores = true;
                   }
-               }   
+               }
                textInput = false;
                for(int i=0; i<whichText.length; i++)
                   whichText[i] = false;
@@ -511,7 +511,7 @@
             repaint();			//refresh the screen
             return;
          }
-      
+
          if(key == java.awt.event.KeyEvent.VK_R)				//reset random game or invert painted image
          {
             if(paintMode)
@@ -522,7 +522,7 @@
             else
                createRandomBoard();;
          }
-         else if(key == java.awt.event.KeyEvent.VK_T)			
+         else if(key == java.awt.event.KeyEvent.VK_T)
          {
             if(paintMode)		//user types in theme of their user made puzzle - used to generate the file name
             {
@@ -576,7 +576,7 @@
          {
             if(paintMode)			//we are exiting paint mode before writing to a file
             {
-               if(Math.random() < .5)  
+               if(Math.random() < .5)
                   createRandomBoard();				//start with a random pixel board
                else
                {
@@ -596,12 +596,12 @@
                paintMode = true;
             }
          }
-         else if(key == java.awt.event.KeyEvent.VK_ADD || key == java.awt.event.KeyEvent.VK_PLUS || key == java.awt.event.KeyEvent.VK_EQUALS)	
+         else if(key == java.awt.event.KeyEvent.VK_ADD || key == java.awt.event.KeyEvent.VK_PLUS || key == java.awt.event.KeyEvent.VK_EQUALS)
          {
             if(paintMode)
             {
                if(guess.length < 16)
-                  Utilities.clearCanvas(guess.length+1,guess[0].length+1);	
+                  Utilities.clearCanvas(guess.length+1,guess[0].length+1);
             }
             else	//game mode - resize screen
             {
@@ -609,12 +609,12 @@
                   size++;
             }
          }
-         else if(key == java.awt.event.KeyEvent.VK_SUBTRACT || key == java.awt.event.KeyEvent.VK_MINUS || key == java.awt.event.KeyEvent.VK_UNDERSCORE)	
+         else if(key == java.awt.event.KeyEvent.VK_SUBTRACT || key == java.awt.event.KeyEvent.VK_MINUS || key == java.awt.event.KeyEvent.VK_UNDERSCORE)
          {
             if(paintMode)
             {
                if(guess.length > 3)
-                  Utilities.clearCanvas(guess.length-1,guess[0].length-1);	
+                  Utilities.clearCanvas(guess.length-1,guess[0].length-1);
             }
             else	//game mode - resize screen
             {
@@ -623,7 +623,7 @@
             }
          }
          else if(key == java.awt.event.KeyEvent.VK_D)
-         {	
+         {
             if(paintMode)
             {
                textInput = true;												//enter description for user made puzzle
@@ -633,7 +633,7 @@
                difficulty = (difficulty+1) % levels.length;			//change difficulty level
          }
          else if(key == java.awt.event.KeyEvent.VK_F)
-         {	
+         {
             if(paintMode)
             {
                if(theme.length() == 0 || description.length()==0)	//write to file
@@ -644,8 +644,8 @@
                   solutionImage = "none";
                   fileNames.add(new Score(filename, solutionImage, "AAA", 0, 0, guess.length*guess[0].length));
                   Utilities.selSortSize(fileNames);
-                  Utilities.writeToFile(filename);	
-                  updateScores = true;	
+                  Utilities.writeToFile(filename);
+                  updateScores = true;
                   paintMode = false;
                   state = createThemedBoard(filename);
                   if(!state)
@@ -670,14 +670,14 @@
                for(int i=0; i<fileNames.size(); i++)
                   fileNames.get(i).setScoreInfo("AAA", 0, 0);
                for(int i=0; i<randomHighScores.size(); i++)
-                  randomHighScores.get(i).setScoreInfo("AAA", 0, 0);  
+                  randomHighScores.get(i).setScoreInfo("AAA", 0, 0);
                updateScores = true;
             }
             else if( guess[playerR][playerC]!=-1 && guess[playerR][playerC]!=3 && !solved)
             {//you can't alter what the computer places - hint or showing a mistake
                if( guess[playerR][playerC]==2)
                   guess[playerR][playerC] = 0;
-               else 
+               else
                   guess[playerR][playerC] = 2;
             }
          }
@@ -690,10 +690,10 @@
                   channels[0].allNotesOff();						//sound elements
                   guess[playerR][playerC] = 0;
                }
-               else 
+               else
                {
                   int note = (int)(Math.random()*scale.length);	//sound elements
-                  channels[0].noteOn(scale[note], 80);			
+                  channels[0].noteOn(scale[note], 80);
                   guess[playerR][playerC] = 1;
                }
                solved = checkForWin();
@@ -717,10 +717,10 @@
                   channels[0].allNotesOff();							//sound elements
                   guess[playerR][playerC] = 0;
                }
-               else 
-               { 
+               else
+               {
                   int note = (int)(Math.random()*scale.length);	//sound elements
-                  channels[0].noteOn(scale[note], 80);	
+                  channels[0].noteOn(scale[note], 80);
                   guess[playerR][playerC] = 1;
                }
                pixelCount(guess);
@@ -732,11 +732,11 @@
                if(guess[playerR][playerC] == 1)
                {
                   int note = (int)(Math.random()*scale.length);	//sound elements
-                  channels[0].noteOn(scale[note], 80);	
+                  channels[0].noteOn(scale[note], 80);
                }
                else
                   channels[0].allNotesOff();						//sound elements
-            
+
                solved = checkForWin();
                if(solved && completionTime == -1)
                {
@@ -749,15 +749,15 @@
          }
          repaint();			//refresh the screen
       }
-   
+
       public void paintComponent(Graphics g)
       {
-         super.paintComponent(g); 
+         super.paintComponent(g);
          Utilities.drawPixelCount(g);
          Utilities.showBoard(g);					//draw the contents of the array board on the screen
          Utilities.drawInstructions(g);
       }
-   
+
    //***BEGIN MOUSE STUFF***
       private class Listener implements ActionListener
       {
@@ -766,7 +766,7 @@
             repaint();
          }
       }
-   
+
       public void mouseClicked( MouseEvent e )
       {
          int button = e.getButton();
@@ -830,23 +830,23 @@
          }
          repaint();
       }
-   
+
       public void mousePressed( MouseEvent e )
       {}
-   
+
       public void mouseReleased( MouseEvent e )
       {}
-   
+
       public void mouseEntered( MouseEvent e )
       {}
-   
+
       public void mouseMoved( MouseEvent e)
       {
          mouseX = e.getX();
          mouseY = e.getY();
          int mouseR = (mouseY/size - maxColCount);
          int mouseC = (mouseX/size - maxRowCount);
-      
+
          if((mouseX >= (maxRowCount*size) && mouseX<=(maxRowCount*size+(guess[0].length*size)))
          && (mouseY >= (maxColCount*size) && mouseY<=(maxColCount*size+(guess.length*size)))
          && mouseR>=0 && mouseR<guess.length && mouseC>=0 && mouseC<guess[0].length)
@@ -861,16 +861,16 @@
          else
          {
             playerR = guess.length/2;							//put player position in the middle
-            playerC = guess[0].length/2;   
+            playerC = guess[0].length/2;
          }
          repaint();			//refresh the screen
       }
-   
+
       public void mouseDragged( MouseEvent e)
       {}
-   
+
       public void mouseExited( MouseEvent e )
       {}
-   
-   
+
+
    }

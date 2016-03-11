@@ -13,7 +13,7 @@ public class gcd {
 		int ans = gcd(firstInt,secondInt);
 		System.out.println("The GCD of your two values is " + ans);
 	}
-	
+
 	public static int gcd(int a, int b){
 		if(b==0)
 			return a;

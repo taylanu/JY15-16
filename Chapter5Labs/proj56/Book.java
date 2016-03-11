@@ -13,15 +13,15 @@ public class Book
       title = t;
       author = a;
    }
-   
+
    // The Retrievers
    public String getTitle()
-   {  
+   {
       return title;
    }
-   
+
    public String getAuthor()
-   {  
+   {
       return author;
    }
    //Returner
@@ -29,5 +29,5 @@ public class Book
 public String toString()
    {
       return (title + " by " + author);
-   } 
+   }
 }

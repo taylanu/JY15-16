@@ -2,42 +2,42 @@ package RaceHorseLab;
 
 //NEIGH!
 public class Horse{
-	
+
    private int location, index;
-   
+
    //Default Constructor
    public Horse(){
       location = 1;
       index = 0;
    }
-   
+
    //Custom Constructor
    public Horse(int loc, int i){
       location = loc;
       index = i;
    }
-   
+
    //Getters
    public int getLocation(){
       return location;
    }
-   
+
    public int getIndex(){
       return index;
    }
-   
+
    //Movement
    public void advance(){
       if(location < 15)
          location++;
    }
-   
+
    public void raceStride(){
       int rand = (int)(Math.random() * 100) + 1;
       if(rand < 50)
          advance();
    }
-   
+
 public String toString(){
       String str = new String();
       String first = new String ("");
@@ -47,7 +47,7 @@ public String toString(){
             first += "-";
          }
       }
-      
+
       if(location < 15){
          for(int i = location + 1; i <= 15; i++){
             second = second + "-";
@@ -56,5 +56,5 @@ public String toString(){
      str = "|S|" + first + index + second + "|F|";
      return str;
    }
-   
+
 }

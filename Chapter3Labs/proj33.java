@@ -1,5 +1,5 @@
 /*
-3-3: The kinetic energy of a moving object is given by the formula KE=(1/2)mv^2, where m is the object's 
+3-3: The kinetic energy of a moving object is given by the formula KE=(1/2)mv^2, where m is the object's
 mass and v is its velocity. Modify the program of Chapter 2, Project 2-5, so that it prints the object's
 kinetic energy as well as its momentum.
 */

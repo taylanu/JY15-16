@@ -15,28 +15,28 @@
             temp = "ATARI";
          if(QBASICtheme)
          {
-            tankImages[0][0] = "images/players/playerRightR0.GIF";	
-            tankImages[0][1] = "images/players/playerRightD0.GIF";	
-            tankImages[0][2] = "images/players/playerRightR1.GIF";	
-             
-            tankImages[1][0] = "images/players/playerLeftL0.GIF";	
-            tankImages[1][1] = "images/players/playerLeftD0.GIF";	
-            tankImages[1][2] = "images/players/playerLeftL1.GIF";	
+            tankImages[0][0] = "images/players/playerRightR0.GIF";
+            tankImages[0][1] = "images/players/playerRightD0.GIF";
+            tankImages[0][2] = "images/players/playerRightR1.GIF";
+
+            tankImages[1][0] = "images/players/playerLeftL0.GIF";
+            tankImages[1][1] = "images/players/playerLeftD0.GIF";
+            tankImages[1][2] = "images/players/playerLeftL1.GIF";
          }
          else
          {
-            tankImages[0][0] = "images/players/"+temp+"player0.GIF";	 
-            tankImages[0][1] = "images/players/"+temp+"player0.GIF";	 
-            tankImages[0][2] = "images/players/"+temp+"player0.GIF";	 
-         
-            tankImages[1][0] = "images/players/"+temp+"player1.GIF";	
-            tankImages[1][1] = "images/players/"+temp+"player1.GIF";	
-            tankImages[1][2] = "images/players/"+temp+"player1.GIF";	
-         }  
+            tankImages[0][0] = "images/players/"+temp+"player0.GIF";
+            tankImages[0][1] = "images/players/"+temp+"player0.GIF";
+            tankImages[0][2] = "images/players/"+temp+"player0.GIF";
+
+            tankImages[1][0] = "images/players/"+temp+"player1.GIF";
+            tankImages[1][1] = "images/players/"+temp+"player1.GIF";
+            tankImages[1][2] = "images/players/"+temp+"player1.GIF";
+         }
          //EXPLOSIONS and BOMBERS****************
          for(int i=0; i<4; i++)
          {
-            planeImages[i][0] = "images/players/"+temp+"bomber"+i+".GIF";	 
+            planeImages[i][0] = "images/players/"+temp+"bomber"+i+".GIF";
             explosionImages[0][i] = "images/explosion/"+temp+"explosion"+i+".GIF";
             puffImages[0][i] = "images/explosion/"+temp+"puff"+i+".GIF";
             if(QBASICtheme || ATARItheme)		//we want the QBASIC and ATARI theme to share the same fire images
@@ -51,17 +51,17 @@
             {
                if(fireImages[r][c] != null)
                {
-                  fire[r][c] = new ImageIcon( fireImages[r][c]);      
+                  fire[r][c] = new ImageIcon( fireImages[r][c]);
                }
                if(bananaImages[r][c] != null)
                {
-                  banana[r][c] = new ImageIcon( bananaImages[r][c]);      
+                  banana[r][c] = new ImageIcon( bananaImages[r][c]);
                }
             }
          }
          bomb = new ImageIcon("images/ordinance/bomb.gif");
       }
-   
+
     //post:  returns true if the round needs to be reset (a player has been hit)
    //			for a real time game, all shells will have had to impacted before we see if the round is over
        public static boolean roundOver()
@@ -70,7 +70,7 @@
             return (players[0].onFire() || players[1].onFire());
          return ((players[0].onFire() || players[1].onFire()) && shots.size() == 0);
       }
-   
+
     //pre:  r & c are valid indexes of board array
      //post: returns true if there is a player within 1 spot of row r, col c
        private static boolean thereIsAPlayerHere(int r, int c)
@@ -82,7 +82,7 @@
          }
          return false;
       }
-   
+
     //post: draws the turret at the designated angle for the player
        private static void drawTurret(Graphics g, Player curr)
       {
@@ -97,11 +97,11 @@
             g.drawLine(startX, screenHeight - startY, endX, screenHeight - endY);
          }
       }
-   
-   
+
+
    	//post:  shows different pictures on the screen in grid format depending on the values stored in the array board
    	//			0-blank, 1-white, 2-black and gives priority to drawing the player
-       public static void showBoard(Graphics g)	
+       public static void showBoard(Graphics g)
       {
          g.setColor(Color.gray.brighter());
          g.fillRect(0, 0, screenWidth+(SIZE*10), screenHeight+(SIZE*3));
@@ -118,14 +118,14 @@
                   g.setColor(skyColor);
             }
             else
-               g.setColor(skyColor);		
+               g.setColor(skyColor);
             g.fillRect(0, 0, screenWidth, screenHeight);
          }
-         //draw a sun or moon  
+         //draw a sun or moon
          if(QBASICtheme)
          {}		//QBASIC gorillas sky already has a sun in it
          else
-         {	
+         {
             g.setColor(sunColor);
             if(ATARItheme)
                g.fillRect(sunX, sunY, sunRad, sunRad);
@@ -166,8 +166,8 @@
                      else
                         g.drawImage(ground[0].getImage(), x, y, SIZE, SIZE, null);  //scaled image
                   }
-                  else														
-                  {	
+                  else
+                  {
                      if(roundOver() && sky.getImageLoadStatus() == MediaTracker.COMPLETE)
                      {	//sky is illuminated when a player is on fire
                         if(Math.random() < .5)
@@ -243,7 +243,7 @@
             Explosion curr = explosions.get(i);
             int eX = curr.getX();
             int eY = curr.getY();
-            if(eX < 0 || eY < 0 || eX > screenWidth || eY > screenHeight || curr.getAnimationIndex() >= explosionImages[0].length-1)	
+            if(eX < 0 || eY < 0 || eX > screenWidth || eY > screenHeight || curr.getAnimationIndex() >= explosionImages[0].length-1)
             {//remove out-of-bounds or expired explosions
                explosions.remove(i);
                i--;
@@ -263,19 +263,19 @@
          g.setColor(Color.gray.brighter());
          g.fillRect(screenWidth, 0, screenWidth+(SIZE*10), screenHeight+(SIZE*3));
          g.fillRect(0, screenHeight, screenWidth+(SIZE*10), screenHeight+(SIZE*3));
-      
+
          g.setFont(new Font("Monospaced", Font.BOLD, (SIZE)));
-         
+
          if((leftsTurn || !turnBased) && !roundOver())
             g.setColor(Color.blue);
          else
             g.setColor(Color.black);
-         
+
          if(QBASICtheme && !leftsTurn && turnBased && !roundOver())
             g.drawString("ANGLE: ?", SIZE/2, screenHeight + SIZE);	//hide values when other players go like in QBASIC gorillas
-         else   
+         else
             g.drawString("ANGLE:"+players[0].getAngle(), SIZE/2, screenHeight + SIZE);
-         
+
          if(howitzerMode)
          {
             g.setColor(Color.black);
@@ -287,11 +287,11 @@
          {
             if(QBASICtheme && !leftsTurn && turnBased && !roundOver())
                g.drawString("POWER: ?", SIZE/2, screenHeight + SIZE*2);
-            else  
+            else
                g.drawString("POWER:"+players[0].getPower(), SIZE/2, screenHeight + SIZE*2);
          }
          g.drawString("SCORE:"+players[0].getScore(), SIZE/2, screenHeight + SIZE*3);
-      	
+
       	//SHOW CENTER INFO
          g.setColor(Color.green.darker());
          if(!roundOver())
@@ -306,9 +306,9 @@
                g.drawString("TURN :<<", screenWidth/2 - (SIZE*2), screenHeight + SIZE);
             else
                g.drawString("TURN :>>", screenWidth/2 - (SIZE*2), screenHeight + SIZE);
-            if(windPower > 0)   
+            if(windPower > 0)
                g.drawString("WIND :>>"+wind+" "+windStatus, screenWidth/2 - (SIZE*2), screenHeight + SIZE*2);
-            else if(windPower < 0)   
+            else if(windPower < 0)
                g.drawString("WIND :<<"+wind+" "+windStatus, screenWidth/2 - (SIZE*2), screenHeight + SIZE*2);
             else
                g.drawString("WIND :<>"+(int)windPower, screenWidth/2 - (SIZE*2), screenHeight + SIZE*2);
@@ -323,7 +323,7 @@
             else if(players[1].onFire())
                g.drawString("<< WINS", screenWidth/2 - 3, screenHeight + SIZE);
          }
-      	
+
       	//SHOW RIGHT PLAYER STATS
          if((!leftsTurn || !turnBased)  && !roundOver())
             g.setColor(Color.red);
@@ -331,7 +331,7 @@
             g.setColor(Color.black);
          if(QBASICtheme && leftsTurn && turnBased && !roundOver())
             g.drawString("ANGLE: ?", (screenWidth - SIZE*6), screenHeight + SIZE);
-         else 
+         else
             g.drawString("ANGLE:"+(180-players[1].getAngle()), (screenWidth - SIZE*6), screenHeight + SIZE);
          if(howitzerMode)
          {
@@ -348,7 +348,7 @@
                g.drawString("POWER:"+players[1].getPower(), (screenWidth - SIZE*6), screenHeight + SIZE*2);
          }
          g.drawString("SCORE:"+players[1].getScore(), (screenWidth - SIZE*6), screenHeight + SIZE*3);
-      
+
          //SHOW GAME OPTIONS AND KEYBOARD COMMANDS TO THE RIGHT OF THE BATTLEFIELD
          x = screenWidth;
          y = 0;
@@ -369,13 +369,13 @@
             g.setColor(Color.green.darker());
             g.drawString("THEME: ATARI2600", x, y+=SIZE);
          }
-         else  
+         else
             g.drawString("THEME:   REGULAR", x, y+=SIZE);
-      
+
          g.setColor(Color.black);
          if(turnBased)
             g.drawString("MODE: TURN BASED", x, y+=SIZE);
-         else 
+         else
          {
             g.setColor(Color.green.darker());
             g.drawString("MODE:  REAL TIME", x, y+=SIZE);
@@ -386,12 +386,12 @@
             g.setColor(Color.green.darker());
             g.drawString("ROUND:  HOWITZER", x, y+=SIZE);
          }
-         else 
+         else
             g.drawString("ROUND:   REGULAR", x, y+=SIZE);
          g.setColor(Color.black);
          if(terrainDestroyable)
             g.drawString("DIRT:DESTROYABLE", x, y+=SIZE);
-         else 
+         else
          {
             g.setColor(Color.green.darker());
             g.drawString("DIRT:  IMMOVABLE", x, y+=SIZE);
@@ -402,7 +402,7 @@
             g.setColor(Color.green.darker());
             g.drawString("AIRSTRIKE:CALLED", x, y+=SIZE);
          }
-         else 
+         else
             g.drawString("AIRSTRIKE:  NONE", x, y+=SIZE);
          g.setColor(Color.green.darker());
          g.drawString("________________", x, y+=SIZE);
@@ -430,7 +430,7 @@
          g.drawString("QUIT :       ESC", x, y+=SIZE);
          g.setColor(Color.green.darker());
          g.drawString("________________", x, y+=SIZE);
-      
+
       }
-   
+
    }

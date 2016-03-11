@@ -4,7 +4,7 @@ public class newt extends amphibia{
 	private int age;
 	private double weight;
 	private String color;
-	
+
 	public newt(String c, int a, double w){
 		super();
 		age=a;
@@ -29,7 +29,7 @@ public class newt extends amphibia{
 			System.out.println("Your newt has died.");
 			System.out.println("Its genes were not passed on");
 			System.out.println("Play Again? (y/n)");
-			
+
 			if(nextChar()=='y'){
 				System.out.println("Starting Simulation...");
 				super.animalia.();

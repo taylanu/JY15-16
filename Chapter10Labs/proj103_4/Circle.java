@@ -5,24 +5,24 @@ package proj103_4;
    import java.awt.*;
 
    public class Circle extends AbstractShape{
-   
+
    //Data Fields
       protected double radius;
-   
+
    //DEFAULT CONSTRUCTOR
       public Circle(){
-      
+
          super();
          radius = 1;
       }
-   
+
    //CUSTOM CONSTRUCTOR
       public Circle(double xP, double yP, double r){
-      
+
          super(xP, yP);
          radius = r;
       }
-   
+
    //@Override
       @Override
 	public String toString(){
@@ -30,36 +30,36 @@ package proj103_4;
          data = data + "Circle" + "\nRadius: " + radius + "\n" + super.toString();
          return data;
       }
-   
+
       public double getRadius(){
          return radius;
       }
-   
+
       public void setRadius(double r){
          radius = r;
       }
-   
+
    //Pre: Radius != null
    //Post: Returns the Area of the Circle
       @Override
 	public double area(){
          return Math.PI * (radius * radius);
       }
-      
-   //PROJ103 Added 
+
+   //PROJ103 Added
    //Pre: Radius != null
    //Post: Returns the circumference of the circle
       public double circum(){
     	  return Math.PI * 2 * radius;
       }
-      
+
    //Pre: G != null, Radius != null
    //Post: Draws the Circle
       @Override
 	public void draw(Graphics g){
          g.drawOval((int)this.getXPos(), (int)this.getYPos(), (int)radius, (int)radius);
       }
-   
+
    //Pre: Factor != null
    //Post: 'Stretches' the Circle by Factor
       @Override

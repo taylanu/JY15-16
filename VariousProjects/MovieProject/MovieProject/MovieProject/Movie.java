@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Taylan Unal 
+ * Copyright 2015 Taylan Unal
  */
 
 public class Movie {

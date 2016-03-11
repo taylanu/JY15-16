@@ -13,7 +13,7 @@ public class Horse
       location = loc;
       index = i;
    }
-   
+
    //Retrievers
    public int getLocation()
    {

@@ -17,7 +17,7 @@ public class ScaleMutatorDriver								   //Driver Program
       frame.setContentPane(screen);
       frame.setVisible(true);
       frame.addKeyListener(new listen());		               //Get input from the keyboard
-   
+
    }
 
    private static boolean shiftIsPressed=false;
@@ -27,7 +27,7 @@ public class ScaleMutatorDriver								   //Driver Program
       @Override
 	public void keyTyped(KeyEvent e)
       {}
-   
+
       @Override
 	public void keyPressed(KeyEvent e)
       {
@@ -35,7 +35,7 @@ public class ScaleMutatorDriver								   //Driver Program
             shiftIsPressed=true;
          screen.processUserInput(e.getKeyCode(), shiftIsPressed);
       }
-   
+
       @Override
 	public void keyReleased(KeyEvent e)
       {

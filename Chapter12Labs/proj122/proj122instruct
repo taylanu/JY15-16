@@ -1,6 +1,6 @@
 Project 12-2 Instruct
 
-Write a recursive method that returns a string with the characters in reverse order and test the method with a Tester program. 
+Write a recursive method that returns a string with the characters in reverse order and test the method with a Tester program.
 The string and index position should be parameters. If the position is less than the string's length, recurse with the rest of
 the string after this position and return the result of appending the character at this position to the result,
 otherwise, return the empty string.

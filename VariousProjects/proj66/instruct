@@ -1,3 +1,3 @@
-Review case study in Chapter 4 in which Lucky Sevens gambling game program was created. Remove the code that deals with the maximum amount held. 
-Then modify the program so that it runs the simulation 100 times and prints the average number of rolls. (while loop inside for loop so that it 
+Review case study in Chapter 4 in which Lucky Sevens gambling game program was created. Remove the code that deals with the maximum amount held.
+Then modify the program so that it runs the simulation 100 times and prints the average number of rolls. (while loop inside for loop so that it
 loops 100 times. Accumulate the total count and at the end divide by 100)

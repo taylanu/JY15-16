@@ -12,13 +12,13 @@
          }
          System.out.println();
       }
-   
-   
+
+
       public static void main(String[]arg)		//should display:	100
       {														//						011
          int[][]board = {{1,0,0},{0,1,1}};		//
-         show(board);									//						011					
-         show(Pixoku.invert(board));				//						100					
-         show(Pixoku.mirrorFlip(board));			//						
+         show(board);									//						011
+         show(Pixoku.invert(board));				//						100
+         show(Pixoku.mirrorFlip(board));			//
       }														//						001
    }															//						110

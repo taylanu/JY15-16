@@ -1,4 +1,4 @@
-  
+
     public class Explosion extends Entity
    {
    	//pre: 	r and c must be valid indecies of the board in MyGridExample
@@ -8,5 +8,5 @@
       {
          super(n,X,Y,image,ad);
       }
-   
+
    }

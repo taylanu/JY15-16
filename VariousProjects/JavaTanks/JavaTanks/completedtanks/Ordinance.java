@@ -17,7 +17,7 @@
          return dist;
          //************************************************************************
       }
-   
+
     //post: when terrain is destroyed, any dirt above it will collapse down
       public static void collapseDirt()
       {
@@ -32,19 +32,19 @@
                      swap(r, c, r-1, c);
                   }
                }
-            } 
+            }
          }
       }
-   
-   
+
+
    //swap dirt positions between (r1,c1) and (r2,c2)
       private static void swap(int r1, int c1, int r2, int c2)
       {
          boolean temp = board[r1][c1];
          board[r1][c1] = board[r2][c2];
-         board[r2][c2] = temp; 
+         board[r2][c2] = temp;
       }
-   
+
     //pre:  cur != null
     //post: returns true if the Shell curr collides with terrain - destroys terrain
       private static boolean checkWallCollision(Shell curr)
@@ -53,7 +53,7 @@
             return false;
          int cX = curr.getX();
          int cY = curr.getY(screenHeight);
-           
+
          for(int r=0;r<board.length;r++)		//see if there is a wall that stops the bullet
          {
             for(int c=0;c<board[0].length;c++)
@@ -74,17 +74,17 @@
                      channels[0].noteOn((int)(Math.random()*11)+35, (int)(Math.random()*31)+60);
                      return true;
                   }
-                  
+
                }
             }
          }
          return false;
       }
-   
+
     //pre:  cur != null
     //post: returns true if the Shell curr collides with a bomber - destroys bomber and updates score
       private static boolean checkPlaneCollision(Shell curr)
-      {		
+      {
          if(curr==null || curr.getType().equals("bomb"))		//we don't want a plane to get hit by its owm bomb
             return false;
          int cX = curr.getX();
@@ -108,7 +108,7 @@
          }
          return false;
       }
-   
+
     //pre:  cur != null
     //post: returns true if the Shell curr collides with a player (tank) - destroyes tanks and updates score
       private static boolean checkPlayerCollision(Shell curr)
@@ -142,7 +142,7 @@
          }
          return false;
       }
-   
+
     //post: advances shells in flight, checks for and resolves collisions between shells and terrain as well as other players
       public static void runBullets()
       {
@@ -172,7 +172,7 @@
                String size = "SMALL";
                if(hitPlayer || hitPlane)
                   size = "BIG";
-               int eX = curr.getX()-(SIZE/2); 
+               int eX = curr.getX()-(SIZE/2);
                int eY = curr.getY(screenHeight)-(SIZE);
                if(eX > 0 && eY > 0 && eX < screenWidth && eY < screenHeight)
                {
@@ -186,7 +186,7 @@
                if(curr.getType().equals("shell"))
                   leftsTurn = !leftsTurn;
                continue;
-            }         
+            }
          }
          for(int i=0; i<smokeTrail.size(); i++)
          {
@@ -203,5 +203,5 @@
                s.makeBigger();
          }
       }
-   
+
    }

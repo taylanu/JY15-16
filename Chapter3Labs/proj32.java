@@ -1,5 +1,5 @@
 /*
-3-2: Write a program that takes the radius of a sphere (a double) as input and 
+3-2: Write a program that takes the radius of a sphere (a double) as input and
 outputs the sphere's diameter, circumference, surface area, and volume.
 */
 import java.util.*;

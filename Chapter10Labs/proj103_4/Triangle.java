@@ -19,7 +19,7 @@ public class Triangle extends AbstractShape implements Shapeable{
        x3 = 0;
        y3 = 1;
     }
- 
+
  //CUSTOM CONSTRUCTOR
     public Triangle(double Px1, double Py1, double Px2, double Py2, double Px3, double Py3){
        super(Px1, Py1);
@@ -28,11 +28,11 @@ public class Triangle extends AbstractShape implements Shapeable{
        x3 = Px3;
        y3 = Py3;
     }
-	   
+
 	public double area() {
 		return (Math.abs((xPos * y2) - (x2 * yPos) + (x2 * y3) - (x3 * y2) + (x3 * yPos) - (xPos * y3)))/2;
 	}
-	
+
 	   public void draw(Graphics G){//drawLine is method called from java.awt.Graphics.
 	      G.drawLine((int)xPos,(int)yPos,(int)x2,(int)y2);
 	      G.drawLine((int)x2,(int)y2,(int)x3,(int)y3);
@@ -45,12 +45,12 @@ public class Triangle extends AbstractShape implements Shapeable{
 	      x3 = xPos + (x3 - xPos) * Factor;
 	      y3 = yPos + (y3 - yPos) * Factor;
 	}
-	
+
 	public String toString(){
        String data ="Point 1 is at:" + super.toString() + "\nPoint 2 is at:\t(" + x2 + "," + y2 + ")\nPoint 3 is at\t (" + x3 + "," + y3 + ")\nThe Perimeter is:\t" + perimeter();
        return data;
     }
-    
+
     private double perimeter() {
     	double d1 = distance(xPos, yPos, x2, y2);//Side 1
         double d2 = distance(x2, y2, x3, y3);//Side 2
@@ -62,11 +62,11 @@ public class Triangle extends AbstractShape implements Shapeable{
     public double getBase(){
        return base;
     }
- 
+
     public void setBase(double b){
        base = b;
     }
- 
+
     public double getHeight(){
        return height;
     }

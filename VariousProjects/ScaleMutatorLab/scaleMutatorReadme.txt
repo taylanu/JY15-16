@@ -14,7 +14,7 @@ You can not write out to a MIDI file if one of the same name is already opened i
 
 For those that do not want graphics, a text only version is available in:
 
-text version/scaleMutatorSHELL.java 
+text version/scaleMutatorSHELL.java
 
 For the extra credit sequence, I have created the Music Sketchpad, which can be unzipped and run.
 It will give you a place to draw and hear notes to arrange in a sequence that you can then program for extra credit

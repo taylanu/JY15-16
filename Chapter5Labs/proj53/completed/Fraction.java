@@ -3,26 +3,26 @@ import java.util.*;
 public class Fraction
 {
    private int numerator, denominator;
-   
+
    public Fraction()
    {
       numerator = 1;
       denominator = 1;
    }
-   
+
    public Fraction(int n, int d)
    {
       numerator = n;
       denominator = d;
    }
-   
+
    public Fraction(Fraction f)
    {
       numerator = f.getNumerator();
       denominator = f.getDenominator();
    }
    //The Retrievers
-   public void setNumerator(int n) 
+   public void setNumerator(int n)
    {
       numerator = n;
    }
@@ -38,7 +38,7 @@ public class Fraction
    {
       return denominator;
    }
-   
+
    //<MATH Section>
    public Fraction addition(Fraction f)
    {
@@ -49,7 +49,7 @@ public class Fraction
       add.setDenominator(den);
       return add;
    }
-   
+
    public Fraction subtraction(Fraction f)
    {
       Fraction sub = new Fraction();
@@ -59,7 +59,7 @@ public class Fraction
       sub.setDenominator(den);
       return sub;
    }
-   
+
    public Fraction multiplication(Fraction f)
    {
       Fraction mul = new Fraction();
@@ -69,7 +69,7 @@ public class Fraction
       mul.setDenominator(den);
       return mul;
    }
-   
+
    public Fraction division(Fraction f)
    {
       Fraction div = new Fraction();
@@ -87,5 +87,5 @@ public String toString()
       String str;
       str = numerator + "/" + denominator;
       return str;
-   }   
+   }
 }

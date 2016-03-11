@@ -7,7 +7,7 @@ public class Credit extends BankAccount implements BankActions{
 	private int txlimit;
 	private double credLim;
 	private int billDue;//Days until bill must be paid.
-	
+
 	//Constructor//
 	public Credit(){
 		balance=0;
@@ -39,7 +39,7 @@ public class Credit extends BankAccount implements BankActions{
 		credLim=l;
 	}
 	////Setters////
-	
+
 	//Implemented methods from BankActions
 	@Override
 	public double checkBal() {

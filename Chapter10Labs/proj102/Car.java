@@ -7,10 +7,10 @@ public abstract class Car {
 	private double fuelLevel;
 	private int wheels;
 	private boolean hasWheels;
-	
+
 	private int passCount;
 	private boolean isMoving;
-	
+
 	public Car(){
 		fuelType="gasoline";
 		fuelLevel=100.0;
@@ -18,7 +18,7 @@ public abstract class Car {
 		passCount=1;
 		isMoving=false;
 	}
-	
+
 	/**
 	 * @return the hasWheels
 	 */

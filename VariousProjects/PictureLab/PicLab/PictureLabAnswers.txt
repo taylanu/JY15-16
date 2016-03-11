@@ -19,7 +19,7 @@ A3:
   5. Row indexes increase from Top to bottom
   6. Column indexes increase from Left to right
   7. [done; understood pixelization]
-  
+
 A4:
 [Exercises only]
 
@@ -38,6 +38,6 @@ A7:
 
 A8:
 [Exercises only]
-  
+
 A9:
 Group Work; disregarded

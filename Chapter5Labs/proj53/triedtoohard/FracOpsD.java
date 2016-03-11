@@ -13,7 +13,7 @@
       numer = (int)(unumer * rdenom);
       denom = (int)(rnumer * udenom);
 	}
-	
+
 	public void askop(){
 		System.out.println("Type the letter of the operation you would like to perform");
 		System.out.println("[A = Addition] [S = Subtraction] [M = Multiplication] [D = Division]");
@@ -51,7 +51,7 @@
 		udenom = input.nextInt();
 		String rfrac = (unumer + "/" + udenom);
 		}
-		
+
 	public static void randfrac(){
 		public int getRnumer(){
 			return rnumer;

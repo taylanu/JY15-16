@@ -1,7 +1,7 @@
 proj53 instructions:
 
-Develop a new class for representing fractions. The numerator and denominator of a fraction are integers. 
-The constructor expects these values as parameters. Define accessor methods to obtain the numberator and the denominator. 
+Develop a new class for representing fractions. The numerator and denominator of a fraction are integers.
+The constructor expects these values as parameters. Define accessor methods to obtain the numberator and the denominator.
 Use the rules of fraction arithmetic to define methods to add, subtract, multiply, and divide fractions.
 Each of these methods expects a fraction object as a parameter. This object is considered to be the right operand
 of the operation. The left operand is the reciever object, that is, the one containing the instance  variables for the

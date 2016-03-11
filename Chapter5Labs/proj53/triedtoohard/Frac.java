@@ -1,10 +1,10 @@
-import java.math.*; import java.util.*; import java.io.*; public 
+import java.math.*; import java.util.*; import java.io.*; public
 class Frac {
 		private int rnumer,rdenom,unumer,udenom,ufrac,rfrac,numer,denom;
 		private String frac;
 		Scanner input = new Scanner(System.in);
 		// Extra credit for reduced fractions and for equal statements.
-	//MATHS!	
+	//MATHS!
 	 public void addfrac(){
       numer = unumer * rdenom + (rnumer * udenom);
       denom = udenom * rdenom;
@@ -21,7 +21,7 @@ class Frac {
       numer = unumer * rdenom;
       denom = rnumer * udenom;
 	}
-	
+
 	public void askop(){
 		System.out.println("Type the letter of the operation you would like to perform");
 		System.out.println("[A = Addition] [S = Subtraction] [M = Multiplication] [D = Division]");
@@ -62,9 +62,9 @@ if (e1 == e2){
 	}
 	public int getDenom{
 		return denom
-	}	
+	}
 	*/
-/* 
+/*
 import java.util.*;
 import java.io.*;
 public class Frac

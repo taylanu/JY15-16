@@ -1,19 +1,19 @@
   /*
    * conversion tools from tritonus (http://www.tritonus.org)
    */
-  
+
   /*
    *      TConversionTool.java
-   */ 
-  
+   */
+
   /*
    *  Copyright (c) 1999,2000 by Florian Bomers <florian@bome.com>
    *  Copyright (c) 2000 by Matthias Pfisterer <matthias.pfisterer@gmx.de>
    *
    *
    *   This program is free software; you can redistribute it and/or modify
-   *   it under the terms of the GNU Library General Public License as 
-   *   published by the Free Software Foundation; either version 2 of the 
+   *   it under the terms of the GNU Library General Public License as
+   *   published by the Free Software Foundation; either version 2 of the
    *   License, or (at your option) any later version.
    *
    *   This program is distributed in the hope that it will be useful,
@@ -26,72 +26,72 @@
    *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
    *
    */
-    public class TConversionTool 
+    public class TConversionTool
    {
-   
+
    /**
-   * Converts 2 successive bytes starting at <code>byteOffset</code> in 
+   * Converts 2 successive bytes starting at <code>byteOffset</code> in
    * <code>buffer</code> to a signed integer sample with 16bit range.
    * <p>
    * For little endian, buffer[byteOffset] is interpreted as low byte,
    * whereas it is interpreted as high byte in big endian.
    * <p> This is a reference function.
-   */ 
-       public static int bytesToInt16( byte [] buffer, int byteOffset, 
-                                  boolean bigEndian) 
-      { 
+   */
+       public static int bytesToInt16( byte [] buffer, int byteOffset,
+                                  boolean bigEndian)
+      {
          return bigEndian?
             ((buffer[byteOffset]<<8) | (buffer[byteOffset+1] & 0xFF)):
-            
+
             ((buffer[byteOffset+1]<<8) | (buffer[byteOffset] & 0xFF));
-      } 
-   
+      }
+
    /**
-   * Converts 3 successive bytes starting at <code>byteOffset</code> in 
+   * Converts 3 successive bytes starting at <code>byteOffset</code> in
    * <code>buffer</code> to a signed integer sample with 24bit range.
    * <p>
    * For little endian, buffer[byteOffset] is interpreted as lowest byte,
    * whereas it is interpreted as highest byte in big endian.
    * <p> This is a reference function.
-   */ 
-       public static int bytesToInt24( byte [] buffer, int byteOffset, 
-                                  boolean bigEndian) 
-      { 
+   */
+       public static int bytesToInt24( byte [] buffer, int byteOffset,
+                                  boolean bigEndian)
+      {
          return bigEndian?
-            ((buffer[byteOffset]<<16) // let Java handle sign-bit 
-            | ((buffer[byteOffset+1] & 0xFF)<<8) // inhibit sign-bit handling 
+            ((buffer[byteOffset]<<16) // let Java handle sign-bit
+            | ((buffer[byteOffset+1] & 0xFF)<<8) // inhibit sign-bit handling
             | ((buffer[byteOffset+2] & 0xFF))):
-            
-            ((buffer[byteOffset+2]<<16) // let Java handle sign-bit 
-            | ((buffer[byteOffset+1] & 0xFF)<<8) // inhibit sign-bit handling 
+
+            ((buffer[byteOffset+2]<<16) // let Java handle sign-bit
+            | ((buffer[byteOffset+1] & 0xFF)<<8) // inhibit sign-bit handling
             | (buffer[byteOffset] & 0xFF));
-      } 
-   
+      }
+
    /**
-   * Converts a 4 successive bytes starting at <code>byteOffset</code> in 
+   * Converts a 4 successive bytes starting at <code>byteOffset</code> in
    * <code>buffer</code> to a signed 32bit integer sample.
    * <p>
    * For little endian, buffer[byteOffset] is interpreted as lowest byte,
    * whereas it is interpreted as highest byte in big endian.
    * <p> This is a reference function.
-   */ 
-       public static int bytesToInt32( byte [] buffer, int byteOffset, 
-                                  boolean bigEndian) 
-      { 
+   */
+       public static int bytesToInt32( byte [] buffer, int byteOffset,
+                                  boolean bigEndian)
+      {
          return bigEndian?
-            ((buffer[byteOffset]<<24) // let Java handle sign-bit 
-            | ((buffer[byteOffset+1] & 0xFF)<<16) // inhibit sign-bit handling 
-            | ((buffer[byteOffset+2] & 0xFF)<<8) // inhibit sign-bit handling 
+            ((buffer[byteOffset]<<24) // let Java handle sign-bit
+            | ((buffer[byteOffset+1] & 0xFF)<<16) // inhibit sign-bit handling
+            | ((buffer[byteOffset+2] & 0xFF)<<8) // inhibit sign-bit handling
             | (buffer[byteOffset+3] & 0xFF)):
-            
-            ((buffer[byteOffset+3]<<24) // let Java handle sign-bit 
-            | ((buffer[byteOffset+2] & 0xFF)<<16) // inhibit sign-bit handling 
-            | ((buffer[byteOffset+1] & 0xFF)<<8) // inhibit sign-bit handling 
+
+            ((buffer[byteOffset+3]<<24) // let Java handle sign-bit
+            | ((buffer[byteOffset+2] & 0xFF)<<16) // inhibit sign-bit handling
+            | ((buffer[byteOffset+1] & 0xFF)<<8) // inhibit sign-bit handling
             | (buffer[byteOffset] & 0xFF));
-      } 
-   
+      }
+
    /////////////////////// ULAW ///////////////////////////////////////////
-   
+
       private static final boolean ZEROTRAP=true;
       private static final short BIAS=0x84;
       private static final int CLIP=32635;
@@ -113,9 +113,9 @@
          7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
          7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7
          };
-   
-   
-   /* u-law to linear conversion table */ 
+
+
+   /* u-law to linear conversion table */
       private static short [] u2l = {
          -32124, -31100, -30076, -29052, -28028, -27004, -25980, -24956,
          -23932, -22908, -21884, -20860, -19836, -18812, -17788, -16764,
@@ -149,12 +149,12 @@
          244, 228, 212, 196, 180, 164, 148, 132,
          120, 112, 104, 96, 88, 80, 72, 64,
          56, 48, 40, 32, 24, 16, 8, 0
-         }; 
-       public static short ulaw2linear( byte ulawbyte) 
-      { 
+         };
+       public static short ulaw2linear( byte ulawbyte)
+      {
          return u2l[ulawbyte & 0xFF];
-      } 
-   
+      }
+
    /**
    * Converts a linear signed 16bit sample to a uLaw byte.
    * Ported to Java by fb.
@@ -165,14 +165,14 @@
    */
        public static byte linear2ulaw(int sample) {
          int sign, exponent, mantissa, ulawbyte;
-      
+
          if (sample>32767) sample=32767;
          else if (sample<-32768) sample=-32768;
       /* Get the sample into sign-magnitude. */
          sign = (sample >> 8) & 0x80;    /* set aside the sign */
          if (sign != 0) sample = -sample;    /* get magnitude */
          if (sample > CLIP) sample = CLIP;    /* clip the magnitude */
-      
+
       /* Convert from 16 bit linear to ulaw. */
          sample = sample + BIAS;
          exponent = exp_lut1[(sample >> 7) & 0xFF];
@@ -182,8 +182,8 @@
             if (ulawbyte == 0) ulawbyte = 0x02;  /* optional CCITT trap */
          return((byte) ulawbyte);
       }
-   
-   
+
+
    /*
    * This source code is a product of Sun Microsystems, Inc. and is provided
    * for unrestricted use.  Users may copy or modify this source code without
@@ -206,14 +206,14 @@
    *
    * For further information see John C. Bellamy's Digital Telephony, 1982,
    * John Wiley & Sons, pps 98-111 and 472-476.
-   */ 
+   */
       private static final byte QUANT_MASK = 0xf; /* Quantization field mask. */
       private static final byte SEG_SHIFT = 4;  /* Left shift for segment number. */
       private static final short[] seg_end = {
          0xFF, 0x1FF, 0x3FF, 0x7FF, 0xFFF, 0x1FFF, 0x3FFF, 0x7FFF
          };
-   
-   
+
+
    /*
    * conversion table alaw to linear
    */
@@ -250,28 +250,28 @@
          1888, 1824, 2016, 1952, 1632, 1568, 1760, 1696,
          688, 656, 752, 720, 560, 528, 624, 592,
          944, 912, 1008, 976, 816, 784, 880, 848
-         }; 
-   
-       public static short alaw2linear( byte ulawbyte) 
-      { 
+         };
+
+       public static short alaw2linear( byte ulawbyte)
+      {
          return a2l[ulawbyte & 0xFF];
-      } 
-   
-       public static byte linear2alaw(short pcm_val) 
+      }
+
+       public static byte linear2alaw(short pcm_val)
       /* 2's complement (16-bit range) */
       {
          byte mask;
          byte seg=8;
          byte aval;
-      
+
          if (pcm_val >= 0) {
             mask = (byte) 0xD5;  /* sign (7th) bit = 1 */
-         } 
+         }
          else {
             mask = 0x55;  /* sign bit = 0 */
             pcm_val = (short) (-pcm_val - 8);
          }
-      
+
       /* Convert the scaled magnitude to segment number. */
          for (int i = 0; i < 8; i++) {
             if (pcm_val <= seg_end[i]) {
@@ -279,7 +279,7 @@
                break;
             }
          }
-      
+
       /* Combine the sign, segment, and quantization bits. */
          if (seg >= 8)  /* out of range, return maximum value. */
             return (byte) ((0x7F ^ mask) & 0xFF);
@@ -292,111 +292,111 @@
             return (byte) ((aval ^ mask) & 0xFF);
          }
       }
-   
-   
-   
-   
+
+
+
+
    /**
    * Converts a 16 bit sample of type <code>int</code> to 2 bytes in an array.
    * <code>sample</code> is interpreted as signed (as Java does).
    * <p>
-   * For little endian, buffer[byteOffset] is filled with low byte of sample, 
+   * For little endian, buffer[byteOffset] is filled with low byte of sample,
    * and buffer[byteOffset+1] is filled with high byte of sample + sign bit.
    * <p> For big endian, this is reversed.
-   * <p> Before calling this function, it should be assured that 
+   * <p> Before calling this function, it should be assured that
    * <code>sample</code> is in the 16bit range - it will not be clipped.
    * <p> This is a reference function.
-   */ 
-       public static void intToBytes16( int sample, byte [] buffer, int byteOffset, 
-                                   boolean bigEndian) 
-      { 
-         if (bigEndian) 
+   */
+       public static void intToBytes16( int sample, byte [] buffer, int byteOffset,
+                                   boolean bigEndian)
+      {
+         if (bigEndian)
          {
             buffer[byteOffset++]=( byte ) (sample >> 8);
             buffer[byteOffset]=( byte ) (sample & 0xFF);
-         } 
-         else 
+         }
+         else
          {
             buffer[byteOffset++]=( byte ) (sample & 0xFF);
             buffer[byteOffset]=( byte ) (sample >> 8);
          }
-      } 
-   
+      }
+
    /**
    * Converts a 24 bit sample of type <code>int</code> to 3 bytes in an array.
    * <code>sample</code> is interpreted as signed (as Java does).
    * <p>
-   * For little endian, buffer[byteOffset] is filled with low byte of sample, 
-   * and buffer[byteOffset+2] is filled with the high byte of sample + 
+   * For little endian, buffer[byteOffset] is filled with low byte of sample,
+   * and buffer[byteOffset+2] is filled with the high byte of sample +
    * sign bit.
    * <p> For big endian, this is reversed.
-   * <p> Before calling this function, it should be assured that 
+   * <p> Before calling this function, it should be assured that
    * <code>sample</code> is in the 24bit range - it will not be clipped.
    * <p> This is a reference function.
-   */ 
-       public static void intToBytes24( int sample, byte [] buffer, 
-                                   int byteOffset, boolean bigEndian) 
-      { 
-         if (bigEndian) 
+   */
+       public static void intToBytes24( int sample, byte [] buffer,
+                                   int byteOffset, boolean bigEndian)
+      {
+         if (bigEndian)
          {
             buffer[byteOffset++]=( byte ) (sample >> 16);
             buffer[byteOffset++]=( byte ) ((sample >>> 8) & 0xFF);
             buffer[byteOffset]=( byte ) (sample & 0xFF);
-         } 
-         else 
+         }
+         else
          {
             buffer[byteOffset++]=( byte ) (sample & 0xFF);
             buffer[byteOffset++]=( byte ) ((sample >>> 8) & 0xFF);
             buffer[byteOffset]=( byte ) (sample >> 16);
          }
-      } 
-   
+      }
+
    /**
    * Converts a 32 bit sample of type <code>int</code> to 4 bytes in an array.
    * <code>sample</code> is interpreted as signed (as Java does).
    * <p>
-   * For little endian, buffer[byteOffset] is filled with lowest byte of 
-   * sample, and buffer[byteOffset+3] is filled with the high byte of 
+   * For little endian, buffer[byteOffset] is filled with lowest byte of
+   * sample, and buffer[byteOffset+3] is filled with the high byte of
    * sample + sign bit.
    * <p> For big endian, this is reversed.
    * <p> This is a reference function.
-   */ 
-       public static void intToBytes32( int sample, byte [] buffer, 
-                                   int byteOffset, boolean bigEndian) 
-      { 
-         if (bigEndian) 
+   */
+       public static void intToBytes32( int sample, byte [] buffer,
+                                   int byteOffset, boolean bigEndian)
+      {
+         if (bigEndian)
          {
             buffer[byteOffset++]=( byte ) (sample >> 24);
             buffer[byteOffset++]=( byte ) ((sample >>> 16) & 0xFF);
             buffer[byteOffset++]=( byte ) ((sample >>> 8) & 0xFF);
             buffer[byteOffset]=( byte ) (sample & 0xFF);
-         } 
-         else 
+         }
+         else
          {
             buffer[byteOffset++]=( byte ) (sample & 0xFF);
             buffer[byteOffset++]=( byte ) ((sample >>> 8) & 0xFF);
             buffer[byteOffset++]=( byte ) ((sample >>> 16) & 0xFF);
             buffer[byteOffset]=( byte ) (sample >> 24);
          }
-      } 
-   
+      }
+
    /*
    * Byte<->Int conversions for unsigned pcm data were written
    * by myself with help from Real's Java How-To:
    * http://www.rgagnon.com/javadetails/java-0026.html
    */
-   
-       public static int unsignedByteToInt(byte b) 
+
+       public static int unsignedByteToInt(byte b)
       {
-      /* 
+      /*
       * & 0xFF while seemingly doing nothing to the individual bits,
       * forces java to recognize the byte as unsigned.  so, we return to
       * the calling function a number between 0 and 256.
       */
          return (b & 0xFF);
       }
-   
-       public static int unsignedByteToInt16(byte[] buffer, int offset, 
+
+       public static int unsignedByteToInt16(byte[] buffer, int offset,
                                          boolean isBigEndian)
       {
       /*
@@ -405,7 +405,7 @@
       * now we have a 16 bit number that java will recognize as
       * unsigned, so we return a number in the range [0, 65536]
       */
-      
+
          if(isBigEndian)
          {
             return ( (unsignedByteToInt(buffer[offset]) << 8) |
@@ -416,9 +416,9 @@
             return( (unsignedByteToInt(buffer[offset+1]) << 8) |
                unsignedByteToInt(buffer[offset]));
          }
-      
+
       }
-   
+
        public static int unsignedByteToInt24(byte[] buffer, int offset,
                                         boolean isBigEndian)
       {
@@ -435,7 +435,7 @@
                unsignedByteToInt(buffer[offset]));
          }
       }
-   
+
        public static int unsignedByteToInt32(byte[] buffer, int offset,
                                         boolean isBigEndian)
       {
@@ -454,16 +454,16 @@
                unsignedByteToInt(buffer[offset]) );
          }
       }
-   
+
        public static byte intToUnsignedByte(int sample)
       {
       /*
       * does the reverse of the function above
-      * we have an integer that is signed, so we're in the range 
-      * [-128, 127], we want to convert to an unsigned number in 
+      * we have an integer that is signed, so we're in the range
+      * [-128, 127], we want to convert to an unsigned number in
       * the range [0,256], then put that into an unsigned byte
       * all while java tries to treat everythign as signed.
-      * 
+      *
       * so.... say we want to set the sample value to -128
       * in our unsigned byte, this translates to 0, so we want
       * java's representation of -128: 10000000 to instead be stored
@@ -482,29 +482,29 @@
       * something a little more tricky... say we want to store the value 32
       * now this translates to 32--128 = 160 in unsigned representation
       * so we start with 32 = 00100000 and we want to go to
-      *                 160 = 10100000 
+      *                 160 = 10100000
       *
       * see, we just flip the sign bit, its the same as adding 128 which
       * is how we translate between  [-128,127] and [0,256].
       */
          return((byte)(sample ^ -128));
       }
-   
-   
-   
-       public static void intToUnsignedBytes16(int sample, byte [] buffer, 
-                                          int byteOffset, boolean bigEndian) 
+
+
+
+       public static void intToUnsignedBytes16(int sample, byte [] buffer,
+                                          int byteOffset, boolean bigEndian)
       {
-      
-      /* 
+
+      /*
       * for this comment only, treat ^ not as XOR as we use it in java
-      * but as an exponent symbol like on a calculator, i thought 2^15 
+      * but as an exponent symbol like on a calculator, i thought 2^15
       * would be clearer than 32768.
       * the theory here is very simmilar to the 8 bit conversion we
       * did above.  only now we have 16 bits we want to write into.
       * so, we're going from the range [-2^15, 2^15-1] into the range
       * [0, 2^16].  again, to translate, we just need to add 2^15 to
-      * our number, so we get the first byte, by shifting right 8 bits, 
+      * our number, so we get the first byte, by shifting right 8 bits,
       * (note: >>> is unsigned shift), and then XOR with -128 to flip the
       * sign bit.  for the second byte, we just want the last 8 bits
       * of our integer, so we & with 0xff to tell java to treat this
@@ -521,8 +521,8 @@
             buffer[byteOffset] = (byte)(sample & 0xff);
          }
       }
-   
-       public static void intToUnsignedBytes24(int sample, byte [] buffer, 
+
+       public static void intToUnsignedBytes24(int sample, byte [] buffer,
                                           int byteOffset, boolean bigEndian)
       {
          if(bigEndian)
@@ -538,8 +538,8 @@
             buffer[byteOffset] = (byte)(sample & 0xff);
          }
       }
-   
-       public static void intToUnsignedBytes32(int sample, byte [] buffer, 
+
+       public static void intToUnsignedBytes32(int sample, byte [] buffer,
                                           int byteOffset, boolean bigEndian)
       {
          if(bigEndian)

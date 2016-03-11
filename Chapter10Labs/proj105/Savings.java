@@ -5,7 +5,7 @@ public class Savings extends BankAccount implements BankActions{
 	private double balance;
 	private double apy;
 	private int txlimit;
-	
+
 	//Constructor//
 	public Savings(){
 		balance=0;
@@ -13,7 +13,7 @@ public class Savings extends BankAccount implements BankActions{
 		txlimit=6;
 	}
 	//Constructor//
-	
+
 	//Getters
 	public double getAPY(){
 		return (apy*100);
@@ -22,7 +22,7 @@ public class Savings extends BankAccount implements BankActions{
 		return txlimit;
 	}
 	//Getters
-	
+
 	//Setters
 	public void setAPY(double y){
 		apy=y;

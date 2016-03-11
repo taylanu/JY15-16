@@ -3,7 +3,7 @@
  * Class that represents a sample of a sound.  It knows what sound object
  * it comes from and knows what frame number this sample is in the sound
  * object.
- * 
+ *
  * @author Barbara Ericson
  * @Copyright 2004 Georgia Tech
  */
@@ -11,12 +11,12 @@
    {
    /** the sound that this element belongs to */
       private SimpleSound sound = null;
-   
+
    /** the frame number of this sample in the buffer */
       private int frameNumber = 0;
-   
+
    ///////////////////// Constructors //////////////////////////////////
-   
+
    /**
    * Constructor that takes a sound and valueArray
    * @param sound the sound object this sample comes from
@@ -27,24 +27,24 @@
          this.sound = sound;
          this.frameNumber = frameNumber;
       }
-   
+
    /////////////////// Methods /////////////////////////////////////////
-   
+
    /**
    * Method to get the value of this sample as in int
    * and handle the possible sound exception
    * @return the value of this sample as an int
    */
-       public int getValue() { 
+       public int getValue() {
          int value = 0;
          try {
             value = sound.getSampleValue(frameNumber);
-         } 
+         }
              catch (SoundException ex) {
             }
          return value;
       }
-   
+
    /**
    * Method to set the value of this sample and
    * handle the sound exception
@@ -54,11 +54,11 @@
       {
          try {
             sound.setSampleValue(frameNumber,value);
-         } 
+         }
              catch (SoundException ex) {
             }
       }
-   
+
    /**
    * Method to return a string with the information about
    * this object

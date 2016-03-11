@@ -26,7 +26,7 @@ public static void main(String[] args) throws FileNotFoundException{
     System.out.println("Enter the target word.");
     String target = input.nextLine();
     File file1 = new File(fileName);
-    
+
     if(countWord(target, file1) == 0){
         System.out.println("Your target word couldn't be found in the file.");
      }
@@ -38,20 +38,20 @@ public static void main(String[] args) throws FileNotFoundException{
 
 /*//Implemented from http://stackoverflow.com/questions/19973543/scanner-keeps-throwing-filenotfound-exception#19973734
  * Try catch code to help prevent filenotfoundexceptions
-    try {  
+    try {
     System.out.println(f.exists());
     new Scanner(f);
-} 
+}
 //catch the exception
 catch(FileNotFoundException e) {
-    e.printStackTrace();   
+    e.printStackTrace();
 	}
 }
 	*/
 
-/* //Implemented from code created by http://www.roseindia.net/java/beginners/DirectoryListing.shtml 
+/* //Implemented from code created by http://www.roseindia.net/java/beginners/DirectoryListing.shtml
 //Just for style points if I can get it to work :)
-	
+
 private static void dirlist(String fname) {
 		File dir = new File(fname);
 	    String[] chld = dir.list();
@@ -66,7 +66,7 @@ private static void dirlist(String fname) {
 			  System.out.println(fileName);
 	  }
 	}
-	
+
   }
 }
 */

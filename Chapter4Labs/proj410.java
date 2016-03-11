@@ -1,8 +1,8 @@
 /*
  * Teacher in most school districts are paid on a schedule that provides a salary based on their number of years of teaching experience.
- * For example, a beginning teacher in the Benningham School District might be paid $20,000 for the first year. For each year of experience 
+ * For example, a beginning teacher in the Benningham School District might be paid $20,000 for the first year. For each year of experience
  * after this up to 10 years a 2 percent increase over the preceding value is received. Write a program that displays a salary schedule for
- * teachers in a school district. The inputs are the starting salary, the percentage increase, and the number of years in the schedule. 
+ * teachers in a school district. The inputs are the starting salary, the percentage increase, and the number of years in the schedule.
  * Each row in the schedule should contain the year, number, and salary for that year.
 */
 //COMPLETE

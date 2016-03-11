@@ -5,9 +5,9 @@ Try to box in your opponent, causing them to crash.  Each player has 3 lives.
 
 Powerups may appear to be consumed by a player:
    *Flower powerups will make the recipient grow.  The number in the flower denotes the size that the snake will grow.
-   
+
    *Blue flowers will cause the snake to separate from its tail, leaving it as a wall in the map.
-   
+
    *Red flowers will give the snake a larger head, and with it the ability to run through one wall or snake tail.
     When striking a snakes tail with the Red powerup, the tail will separate at the point of impact and be left as a wall.
 

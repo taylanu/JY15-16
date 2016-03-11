@@ -11,7 +11,7 @@ Jaws
 PG
 1975
 Rocky
-PG 
+PG
 1976
 Star Wars
 PG

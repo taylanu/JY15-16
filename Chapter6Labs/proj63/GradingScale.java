@@ -6,9 +6,9 @@ public class GradingScale
    {
 	  int grade;
       String letterG; // letter grade
-      
+
 	  Scanner input = new Scanner(System.in);
-	  
+
       System.out.println("What is your current grade in your class (from 0 to 100)");
       grade = input.nextInt();
       checkBounds(grade);
@@ -34,7 +34,7 @@ public class GradingScale
       if(grade >= 86 && grade <= 89)
          return "B+";
       if(grade >= 82 && grade <= 85)
-         return "B";   
+         return "B";
       if(grade >= 80 && grade <= 81)
          return "B-";
       if(grade >= 76 && grade <= 79)

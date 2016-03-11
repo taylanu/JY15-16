@@ -99,9 +99,9 @@ Class SimplePicture</H2>
 
 <P>
 A class that represents a simple picture.  A simple picture may have
- an associated file name and a title.  A simple picture has pixels, 
- width, and height.  A simple picture uses a BufferedImage to 
- hold the pixels.  You can show a simple picture in a 
+ an associated file name and a title.  A simple picture has pixels,
+ width, and height.  A simple picture uses a BufferedImage to
+ hold the pixels.  You can show a simple picture in a
  PictureFrame (a JFrame).  You can also explore a simple picture.
 <P>
 
@@ -218,7 +218,7 @@ A class that represents a simple picture.  A simple picture may have
 <TD><CODE><B><A HREF="SimplePicture.html#explore()">explore</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to open a picture explorer on a copy (in memory) of this 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to open a picture explorer on a copy (in memory) of this
  simple picture</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -391,7 +391,7 @@ A class that represents a simple picture.  A simple picture may have
 <TD><CODE><B><A HREF="SimplePicture.html#load(java.lang.String)">load</A></B>(<A HREF="http://java.sun.com/j2se/1.5/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;fileName)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to read the contents of the picture from a filename  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to read the contents of the picture from a filename
  without throwing errors</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -509,7 +509,7 @@ A class that represents a simple picture.  A simple picture may have
 <TD><CODE><B><A HREF="SimplePicture.html#write(java.lang.String)">write</A></B>(<A HREF="http://java.sun.com/j2se/1.5/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;fileName)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to write the contents of the picture to a file with 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to write the contents of the picture to a file with
  the passed name without throwing errors</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -518,7 +518,7 @@ A class that represents a simple picture.  A simple picture may have
 <TD><CODE><B><A HREF="SimplePicture.html#writeOrFail(java.lang.String)">writeOrFail</A></B>(<A HREF="http://java.sun.com/j2se/1.5/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;fileName)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to write the contents of the picture to a file with 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method to write the contents of the picture to a file with
  the passed name</TD>
 </TR>
 </TABLE>
@@ -553,8 +553,8 @@ public <B>SimplePicture</B>()</PRE>
  a width of 200 and a height of 100 that is all white.
  A no-argument constructor must be given in order for a class to
  be able to be subclassed.  By default all subclasses will implicitly
- call this in their parent's no-argument constructor unless a 
- different call to super() is explicitly made as the first line 
+ call this in their parent's no-argument constructor unless a
+ different call to super() is explicitly made as the first line
  of code in a constructor.
 <P>
 </DL>
@@ -579,7 +579,7 @@ public <B>SimplePicture</B>(int&nbsp;width,
                      int&nbsp;height)</PRE>
 <DL>
 <DD>A constructor that takes the width and height desired for a picture and
- creates a buffered image of that size.  This constructor doesn't 
+ creates a buffered image of that size.  This constructor doesn't
  show the picture.  The pixels will all be white.
 <P>
 <DL>
@@ -712,7 +712,7 @@ explore</H3>
 <PRE>
 public void <B>explore</B>()</PRE>
 <DL>
-<DD>Method to open a picture explorer on a copy (in memory) of this 
+<DD>Method to open a picture explorer on a copy (in memory) of this
  simple picture
 <P>
 <DD><DL>
@@ -885,7 +885,7 @@ getPictureWithHeight</H3>
 <PRE>
 public <A HREF="Picture.html" title="class in &lt;Unnamed&gt;">Picture</A> <B>getPictureWithHeight</B>(int&nbsp;height)</PRE>
 <DL>
-<DD>Method to create a new picture of the passed height. 
+<DD>Method to create a new picture of the passed height.
  The aspect ratio of the width and height will stay
  the same.
 <P>
@@ -904,7 +904,7 @@ getPictureWithWidth</H3>
 <PRE>
 public <A HREF="Picture.html" title="class in &lt;Unnamed&gt;">Picture</A> <B>getPictureWithWidth</B>(int&nbsp;width)</PRE>
 <DL>
-<DD>Method to create a new picture of the passed width. 
+<DD>Method to create a new picture of the passed width.
  The aspect ratio of the width and height will stay
  the same.
 <P>
@@ -1078,7 +1078,7 @@ load</H3>
 <PRE>
 public boolean <B>load</B>(<A HREF="http://java.sun.com/j2se/1.5/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;fileName)</PRE>
 <DL>
-<DD>Method to read the contents of the picture from a filename  
+<DD>Method to read the contents of the picture from a filename
  without throwing errors
 <P>
 <DD><DL>
@@ -1318,7 +1318,7 @@ write</H3>
 <PRE>
 public boolean <B>write</B>(<A HREF="http://java.sun.com/j2se/1.5/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;fileName)</PRE>
 <DL>
-<DD>Method to write the contents of the picture to a file with 
+<DD>Method to write the contents of the picture to a file with
  the passed name without throwing errors
 <P>
 <DD><DL>
@@ -1337,7 +1337,7 @@ writeOrFail</H3>
 public void <B>writeOrFail</B>(<A HREF="http://java.sun.com/j2se/1.5/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;fileName)
                  throws <A HREF="http://java.sun.com/j2se/1.5/docs/api/java/io/IOException.html" title="class or interface in java.io">IOException</A></PRE>
 <DL>
-<DD>Method to write the contents of the picture to a file with 
+<DD>Method to write the contents of the picture to a file with
  the passed name
 <P>
 <DD><DL>

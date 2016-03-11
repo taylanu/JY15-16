@@ -6,7 +6,7 @@
 			size = 5;
 			color = "White";
 	}
-		
+
 	public Shoe(double s, String c){
 			size = s;
 			color = c;

@@ -4,15 +4,15 @@
       private int test1;
       private int test2;
       private int test3;
-   
-   
+
+
       public Student()
       {
          name ="";
          test1 = 0;
          test2 = 0;
          test3 = 0;
-      
+
       }
       public Student(String nm,int t1,int t2,int t3)
       {
@@ -43,16 +43,16 @@
          if(i == 1) test1 = score;
          if(i == 2) test2 = score;
          else test3 = score;
-      
+
       }
       //post: return score i
       public int getScore(int i)
       {
-         if(i == 1) 
+         if(i == 1)
             return test1;
-         else if(i == 2) 
+         else if(i == 2)
             return test2;
-         else 
+         else
             return test3;
       }
       //post: compute and return average
@@ -70,7 +70,7 @@
          if(test2>highScore)highScore = test2;
          if(test3>highScore)highScore = test3;
          return highScore;
-      
+
       }
       //post: construct and return string representation of  the student
       @Override

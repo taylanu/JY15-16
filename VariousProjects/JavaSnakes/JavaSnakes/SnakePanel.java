@@ -25,13 +25,13 @@ public class SnakePanel extends JPanel
 
    private static int SIZE=19;						//size of cell being drawn
    private static final int numRows = 30;			//dimensions of the board
-   private static final int numColumns = 40;		
-														
+   private static final int numColumns = 40;
+
    private static final String [] powerups = {"NONE", "RARE", "OFTEN"};			//powerup options
    private static final String [] maps = {"OPEN", "BOXED", "RANDOM"};			//map options
    private static final String [] speed = {"NONE", "BY ROUND", "8 FLOWERS"};	//speed change options
 
-  //sound elements						
+  //sound elements
   //intervals of scales						Major							minor							Harmonic minor
    protected static int [][] intervals = {{0,2,4,5,7,9,11,12}, {0,2,3,5,7,9,11,12}, {0,2,3,5,7,8,11,12}};
    protected static MidiChannel[] channels=null;		//MIDI channels
@@ -44,7 +44,7 @@ public class SnakePanel extends JPanel
 //This array will be represented graphically on the screen
    private static int[][] board;	      //0 - empty tile, 1 - wall
 
-   private static int countDown;       //used to count down the start of each round 
+   private static int countDown;       //used to count down the start of each round
    private static int deathPause;		//delay play after someone dies so we can see who it was
    private static boolean playNow;     //pause game until you press ENTER to play
    private static boolean aftermath;   //pause the game to show who won the game (by color of text)
@@ -73,17 +73,17 @@ public class SnakePanel extends JPanel
          channels = synth.getChannels();
          instr = synth.getDefaultSoundbank().getInstruments();
       }
-      catch (Exception ignored) 
+      catch (Exception ignored)
       {}
-   
+
       DELAY=200;
       playNow = false;
       aftermath = false;
       numPlayers = 2;
       board = new int[numRows][numColumns];
-      p1 = new Player(0, 0, 0, "Orange", startSize);	
-      p2 = new Player(0, 0, 0, "Purple", startSize);	
-   
+      p1 = new Player(0, 0, 0, "Orange", startSize);
+      p2 = new Player(0, 0, 0, "Purple", startSize);
+
       t = new Timer(DELAY, new Listener());				//the higher the value of the first argument, the slower the enemy will move
       t.start();
       initialize();
@@ -92,34 +92,34 @@ public class SnakePanel extends JPanel
 //post:  initialize the game board, done in the constructor and if game is reset from the main menu options
    public void initialize()
    {
-      clearMap();       
+      clearMap();
       powerupOption = (int)(Math.random()*powerups.length);
       startSize = 3;
       if(Math.random() < .5)
          startSize = 200;
-      mapType = (int)(Math.random()*maps.length);	
+      mapType = (int)(Math.random()*maps.length);
       speedChange = (int)(Math.random()*speed.length);
       resetGame();
       pelletNum = 1;
       deathPause = 0;
       DELAY = 200;
-      t.setDelay(DELAY); 
+      t.setDelay(DELAY);
       //sound elements
       channels[0].allNotesOff();
-      pickRandomScale();  
+      pickRandomScale();
       channels[0].allNotesOff(); 				//turn sounds off
    }
 
    public void pickRandomScale()
    {
       int instrIndex = (int)(Math.random()*instrumentList.length);
-      instrument = instrumentList[instrIndex];							//pick random instrument	
-      int scaleIndex = (int)(Math.random()*intervals.length);		
+      instrument = instrumentList[instrIndex];							//pick random instrument
+      int scaleIndex = (int)(Math.random()*intervals.length);
       scale = (intervals[scaleIndex]).clone();										//pick random scale
       int key = (int)(Math.random()*12) + 48;							//pick random key
       for(int i=0; i<scale.length; i++)									//adjust scale to random key
          scale[i] += key;
-      channels[0].programChange(instr[instrument].getPatch().getProgram());  
+      channels[0].programChange(instr[instrument].getPatch().getProgram());
    }
 
 //post:  reset the round :players (and maybe the map) when a player dies.
@@ -149,7 +149,7 @@ public class SnakePanel extends JPanel
    {
       for(int r=0;r<board.length;r++)					//initialize to blank
          for(int c=0;c<board[0].length;c++)
-            board[r][c] = 0;      
+            board[r][c] = 0;
    }
 
 //post:  create a map with borders around the edges - maybe with portals to the other side
@@ -193,7 +193,7 @@ public class SnakePanel extends JPanel
       int numWalls = (int)(Math.random() * 10);
       if(Math.random() < .5)			//50% a random map will also be boxed
          makeBoxedMap();
-      int mapType = (int)(Math.random()*3);  //0-both blocks and walls, 1-just blocks, 2-just walls   
+      int mapType = (int)(Math.random()*3);  //0-both blocks and walls, 1-just blocks, 2-just walls
       if(mapType == 0 || mapType == 1)
       {
          for(int i=0; i<numBlocks; i++)
@@ -233,19 +233,19 @@ public class SnakePanel extends JPanel
       int numRows = board.length;
       int numColumns = board[0].length;
       boolean wallIsThere = true;
-   	
+
       //********************************FIX 1a*************************************************/
-         
+
       while (wallIsThere){
          pelletR = (int)(Math.random() * numRows);
-         pelletC = (int)(Math.random() * numColumns);   										
-      
-         if(board[pelletR][pelletC] != 1)	
+         pelletC = (int)(Math.random() * numColumns);
+
+         if(board[pelletR][pelletC] != 1)
             wallIsThere = false;
       }
-         
+
       //********************************end FIX 1a**********************************************/
-   
+
       powerupR = -1;
       powerupC = -1;
       powerupNum = (int)(Math.random()*2)+1;
@@ -268,12 +268,12 @@ public class SnakePanel extends JPanel
       if(powerupSpawn)
       {
        //**********************************FIXED 1b*****************************************************/
-         wallIsThere = true;	
+         wallIsThere = true;
          while (wallIsThere){
             powerupR = (int)(Math.random() * numRows);
-            powerupC = (int)(Math.random() * numColumns);   										
-         
-            if(board[powerupR][powerupC] != 1)	
+            powerupC = (int)(Math.random() * numColumns);
+
+            if(board[powerupR][powerupC] != 1)
                wallIsThere = false;
          }
       //***********************************end FIXED 1b************************************************/
@@ -293,7 +293,7 @@ public class SnakePanel extends JPanel
             board[r][c] = 0;
       for(int r = p2R-bufferSize; r < p2R+bufferSize && r >= 0 && r < board.length; r++)
          for(int c = p2C-bufferSize; c < p2C+bufferSize && c >=0 && c < board[0].length; c++)
-            board[r][c] = 0;      
+            board[r][c] = 0;
    }
 
 //pre:  g!=null, p!=null, parts!=null
@@ -316,16 +316,16 @@ public class SnakePanel extends JPanel
          if(i==0) 				//draw the head
          {
             if(p.getDir() == KeyEvent.VK_UP || p.getDir() == KeyEvent.VK_W || p.getDir() == KeyEvent.VK_DOWN || p.getDir() == KeyEvent.VK_S)
-               g.drawImage(parts[0].getImage(), x, y-shift, (int)(SIZE*powerup), (int)(SIZE*1.5), null);  
+               g.drawImage(parts[0].getImage(), x, y-shift, (int)(SIZE*powerup), (int)(SIZE*1.5), null);
             else
-               g.drawImage(parts[1].getImage(), x-shift, y, (int)(SIZE*1.5),(int)(SIZE*powerup), null);  
+               g.drawImage(parts[1].getImage(), x-shift, y, (int)(SIZE*1.5),(int)(SIZE*powerup), null);
          }
          else if(p.dead() && deathPause > 0) //if dead, flash body parts randomly
             g.drawImage(parts[(int)(Math.random()*2)+2].getImage(), x, y, SIZE, SIZE, null);
          else if(i%2 != 0)		//odd index
-            g.drawImage(parts[2].getImage(), x, y, SIZE, SIZE, null);  
+            g.drawImage(parts[2].getImage(), x, y, SIZE, SIZE, null);
          else
-            g.drawImage(parts[3].getImage(), x, y, SIZE, SIZE, null);  
+            g.drawImage(parts[3].getImage(), x, y, SIZE, SIZE, null);
       }
    }
 
@@ -333,7 +333,7 @@ public class SnakePanel extends JPanel
 //post:  shows different pictures on the screen in grid format depending on the values stored in the array board
 //			0-blank, 1-wall and gives priority to drawing the player
 //       also show player names, scores, keyboard commands, main menu commands
-   public void showBoard(Graphics g)	
+   public void showBoard(Graphics g)
    {
       int x =0, y=0;		//upper left corner location of where image will be drawn
       for(int r=0;r<board.length;r++)
@@ -345,29 +345,29 @@ public class SnakePanel extends JPanel
                g.drawImage(blank.getImage(), x, y, SIZE, SIZE, null);  //scaled image
             else
                if(board[r][c]==1)			//wall
-                  g.drawImage(wall.getImage(), x, y, SIZE, SIZE, null);  
-                   
+                  g.drawImage(wall.getImage(), x, y, SIZE, SIZE, null);
+
             if(r==pelletR && c==pelletC)	//draw the pellet on the board after the cell has been drawn
             {
-               g.drawImage(pellet[0].getImage(), x, y, SIZE, SIZE, null);  
+               g.drawImage(pellet[0].getImage(), x, y, SIZE, SIZE, null);
                g.setFont(new Font("Monospaced", Font.BOLD, SIZE));
                g.setColor(Color.red.darker());
                g.drawString(""+pelletNum, x+(SIZE/4), (int)(y+(SIZE/1.25)));
-            }	
+            }
             if(r==powerupR && c==powerupC)	//draw the powerup on the board after the cell has been drawn
             {
-               g.drawImage(pellet[powerupNum].getImage(), x, y, SIZE, SIZE, null);  
-            }		 
+               g.drawImage(pellet[powerupNum].getImage(), x, y, SIZE, SIZE, null);
+            }
             x+=SIZE;
          }
          y+=SIZE;
       }
       drawSnake(g, p1, orange);				//draw players
       drawSnake(g, p2, purple);
-   
+
       if(countDown > 1)
       {
-         g.drawImage(pellet[0].getImage(), ((board[0].length*SIZE)/2) - (SIZE*2), ((board.length*SIZE)/2) - (SIZE*2), SIZE*4, SIZE*4, null);  
+         g.drawImage(pellet[0].getImage(), ((board[0].length*SIZE)/2) - (SIZE*2), ((board.length*SIZE)/2) - (SIZE*2), SIZE*4, SIZE*4, null);
          g.setFont(new Font("Monospaced", Font.BOLD, SIZE*3));
          g.setColor(Color.red.darker());
          if(!playNow)
@@ -386,7 +386,7 @@ public class SnakePanel extends JPanel
             g.setColor(Color.red.darker());
             g.drawString(""+countDown, (((board[0].length*SIZE)/2) - (SIZE*2))+(SIZE), (((board.length*SIZE)/2) - (SIZE*2))+(SIZE*3));
          }
-      }	
+      }
       x = SIZE;
       y += SIZE;
       g.setFont(new Font("Monospaced", Font.BOLD, SIZE));
@@ -405,7 +405,7 @@ public class SnakePanel extends JPanel
       g.drawString(""+p1.getName()+":"+p1.getScore(), x, y);
       g.drawString("LIVES:"+p1.getLives(), x, y+=SIZE);
       g.drawString("KEYS: ARROWS", x, y+=SIZE);
-   
+
       g.setColor(Color.blue.darker().darker());
       x = ((SIZE * board[0].length) / 2) - (SIZE * 5);
       y -= SIZE * 2;
@@ -425,12 +425,12 @@ public class SnakePanel extends JPanel
 //post: returns true if k and dir are opposite directions
    private boolean oppositeDirs(int k, int dir)
    {
-      return  ((k==KeyEvent.VK_UP    && dir==KeyEvent.VK_DOWN) || 
+      return  ((k==KeyEvent.VK_UP    && dir==KeyEvent.VK_DOWN) ||
          (k==KeyEvent.VK_DOWN  && dir==KeyEvent.VK_UP)   ||
          (k==KeyEvent.VK_RIGHT && dir==KeyEvent.VK_LEFT) ||
          (k==KeyEvent.VK_LEFT && dir==KeyEvent.VK_RIGHT) ||
-         
-         (k==KeyEvent.VK_W && dir==KeyEvent.VK_S) || 
+
+         (k==KeyEvent.VK_W && dir==KeyEvent.VK_S) ||
          (k==KeyEvent.VK_S && dir==KeyEvent.VK_W) ||
          (k==KeyEvent.VK_A && dir==KeyEvent.VK_D) ||
          (k==KeyEvent.VK_D && dir==KeyEvent.VK_A));
@@ -442,27 +442,27 @@ public class SnakePanel extends JPanel
 //			keeps the player in the bounds of the size of the array board, then the enemy moves
    public void processUserInput(int k)
    {
-      if(k==KeyEvent.VK_Q || k==KeyEvent.VK_ESCAPE)//End the program	
+      if(k==KeyEvent.VK_Q || k==KeyEvent.VK_ESCAPE)//End the program
          System.exit(1);
       if(k==KeyEvent.VK_R)									//reset game
-      {	
+      {
          playNow = false;
          initialize();
-         return;   
+         return;
       }
       if(k==KeyEvent.VK_P)									//change powerup options
          powerupOption = (powerupOption + 1) % powerups.length;
       if(k==KeyEvent.VK_T)									//change how speed increases
          speedChange = (speedChange + 1) % speed.length;
       if(k==KeyEvent.VK_N)									//change number of players
-      {    
+      {
          numPlayers = ((numPlayers) % 2)+1;
          if(numPlayers == 2)
-            p2 = new Player(0, 0, 0, "Purple", startSize);	
-         else 
+            p2 = new Player(0, 0, 0, "Purple", startSize);
+         else
             if(numPlayers == 1)
-               p2 = new AIplayer(0, 0, 0, "Purple", startSize);	
-      
+               p2 = new AIplayer(0, 0, 0, "Purple", startSize);
+
          resetGame();
          return;
       }
@@ -485,16 +485,16 @@ public class SnakePanel extends JPanel
       if((k==KeyEvent.VK_PERIOD) && DELAY >= 5)
       {
          DELAY -= 5;
-         t.setDelay(DELAY);   
+         t.setDelay(DELAY);
       }
       if((k==KeyEvent.VK_COMMA) && DELAY < 995)
       {
          DELAY += 5;
-         t.setDelay(DELAY);   
+         t.setDelay(DELAY);
       }
       if((k==KeyEvent.VK_MINUS || k==KeyEvent.VK_SUBTRACT || k==KeyEvent.VK_UNDERSCORE) && SIZE > 5)
          SIZE--;
-      if(k==KeyEvent.VK_PLUS || k==KeyEvent.VK_ADD || k==KeyEvent.VK_EQUALS) 
+      if(k==KeyEvent.VK_PLUS || k==KeyEvent.VK_ADD || k==KeyEvent.VK_EQUALS)
          SIZE++;
       if(k==KeyEvent.VK_ENTER)
       {
@@ -502,18 +502,18 @@ public class SnakePanel extends JPanel
          if(aftermath)
          {
             aftermath = false;
-            p1 = new Player(0, 0, 0, "Orange", startSize);	
+            p1 = new Player(0, 0, 0, "Orange", startSize);
             if(numPlayers==2)
-               p2 = new Player(0, 0, 0, "Purple", startSize);	
+               p2 = new Player(0, 0, 0, "Purple", startSize);
             else
                if(numPlayers == 1)
-                  p2 = new AIplayer(0, 0, 0, "Purple", startSize);	
+                  p2 = new AIplayer(0, 0, 0, "Purple", startSize);
             resetGame();
-            return;   
-         }  
+            return;
+         }
       }
-      if((k==KeyEvent.VK_UP || k==KeyEvent.VK_RIGHT || k==KeyEvent.VK_DOWN || k==KeyEvent.VK_LEFT) && !oppositeDirs(k, p1.getDir())) 
-         p1.setDir(k);  
+      if((k==KeyEvent.VK_UP || k==KeyEvent.VK_RIGHT || k==KeyEvent.VK_DOWN || k==KeyEvent.VK_LEFT) && !oppositeDirs(k, p1.getDir()))
+         p1.setDir(k);
       if(numPlayers==2 && (k==KeyEvent.VK_W || k==KeyEvent.VK_D || k==KeyEvent.VK_S || k==KeyEvent.VK_A) && !oppositeDirs(k, p2.getDir()))
          p2.setDir(k);
       repaint();			//refresh the screen
@@ -535,7 +535,7 @@ public class SnakePanel extends JPanel
             channels[0].noteOn((int)(Math.random()*11)+50, 120);
             if(board[p1.getRow()][p1.getCol()]==1)		//we run into a wall, so bust through
                board[p1.getRow()][p1.getCol()] = 0;	//clear the wall there
-            else													//we ran into a snake (ourselves:p1, or p2)	
+            else													//we ran into a snake (ourselves:p1, or p2)
             {
                if(p1index >= 0)
                {													//we hit ourself
@@ -562,7 +562,7 @@ public class SnakePanel extends JPanel
                         p2Dies = true;
                   }
                   else
-                  {											
+                  {
                      ArrayList<Point> snake = p2.getTail();
                      for(int j=p2index+1; j<snake.size(); j++)
                      {
@@ -581,7 +581,7 @@ public class SnakePanel extends JPanel
          {
             p1Dies = true;
          }
-      }  
+      }
       p2index = snakeAt(p2, p2);
       p1index = snakeAt(p2, p1);
       if(wallAt(p2.getRow(), p2.getCol()) || p1index >=0 || p2index>=0)				//p2 hits something
@@ -593,7 +593,7 @@ public class SnakePanel extends JPanel
             channels[0].noteOn((int)(Math.random()*11)+50, 120);
             if(board[p2.getRow()][p2.getCol()]==1)		//we run into a wall, so bust through
                board[p2.getRow()][p2.getCol()] = 0;	//clear the wall there
-            else													//we ran into a snake (ourselves:p2, or p1)	
+            else													//we ran into a snake (ourselves:p2, or p1)
             {
                if(p2index >= 0)
                {													//we hit ourself
@@ -620,7 +620,7 @@ public class SnakePanel extends JPanel
                         p1Dies = true;
                   }
                   else
-                  {								
+                  {
                      ArrayList<Point> snake = p1.getTail();
                      for(int j=p1index+1; j<snake.size(); j++)
                      {
@@ -639,20 +639,20 @@ public class SnakePanel extends JPanel
          {
             p2Dies = true;
          }
-      }  
+      }
       if(p1Dies)
       {
          channels[0].allNotesOff(); 				//turn sounds off
          channels[0].programChange(instr[47].getPatch().getProgram());
          channels[0].noteOn((int)(Math.random()*11)+30, 120);
-      
+
          p1.changeLives(-1);
          if(!aftermath)
             p2.addScore(10);            //survival bonus
          if(speed[speedChange].equals("BY ROUND") && DELAY >= 20)
          {
             DELAY -= 20;
-            t.setDelay(DELAY);   
+            t.setDelay(DELAY);
          }
          deathPause = 10;
          p1.setDead(true);
@@ -662,14 +662,14 @@ public class SnakePanel extends JPanel
          channels[0].allNotesOff(); 				//turn sounds off
          channels[0].programChange(instr[47].getPatch().getProgram());
          channels[0].noteOn((int)(Math.random()*11)+30, 120);
-      
+
          p2.changeLives(-1);
          if(!aftermath)
             p1.addScore(10);            //survival bonus
          if(speed[speedChange].equals("BY ROUND") && DELAY >= 20)
          {
             DELAY -= 20;
-            t.setDelay(DELAY);   
+            t.setDelay(DELAY);
          }
          deathPause = 10;
          p2.setDead(true);
@@ -679,11 +679,11 @@ public class SnakePanel extends JPanel
          int note = pelletNum - 1;
          if(note >= scale.length)
             note = scale.length-1;
-         channels[0].programChange(instr[instrument].getPatch().getProgram());  
+         channels[0].programChange(instr[instrument].getPatch().getProgram());
          channels[0].noteOn(scale[note], 80);
          spawnPellet();
          if(startSize==3)
-            p1.grow(pelletNum);	
+            p1.grow(pelletNum);
          p1.addScore(pelletNum);
          if(pelletNum < 8)
             pelletNum++;
@@ -691,7 +691,7 @@ public class SnakePanel extends JPanel
          {
             pelletNum = 1;
             DELAY -= 15;
-            t.setDelay(DELAY);  
+            t.setDelay(DELAY);
          }
       }
       if(p2.getRow()==pelletR && p2.getCol() == pelletC)
@@ -699,19 +699,19 @@ public class SnakePanel extends JPanel
          int note = pelletNum - 1;
          if(note >= scale.length)
             note = scale.length-1;
-         channels[0].programChange(instr[instrument].getPatch().getProgram());  
+         channels[0].programChange(instr[instrument].getPatch().getProgram());
          channels[0].noteOn(scale[note], 80);
          spawnPellet();
          if(startSize==3)
             p2.grow(pelletNum);
          p2.addScore(pelletNum);
          if(pelletNum < 8)
-            pelletNum++;	
+            pelletNum++;
          else if(speed[speedChange].equals("8 FLOWERS") && DELAY >= 15)
          {
             pelletNum = 1;
             DELAY -= 15;
-            t.setDelay(DELAY);  
+            t.setDelay(DELAY);
          }
       }
       if(p1.getRow()==powerupR && p1.getCol()==powerupC)
@@ -734,8 +734,8 @@ public class SnakePanel extends JPanel
             spawnPellet();
          }
          else if(powerupNum == 2)
-         { //give wall buster     
-            channels[0].noteOn(scale[0]-12, 80);       
+         { //give wall buster
+            channels[0].noteOn(scale[0]-12, 80);
             p1.toggleWallBuster();						//switch powerup on
          }
       }
@@ -764,7 +764,7 @@ public class SnakePanel extends JPanel
             p2.toggleWallBuster();						//switch powerup on
          }
       }
-   
+
    }
 
 //pre:   us != null, check != null
@@ -821,7 +821,7 @@ public class SnakePanel extends JPanel
    @Override
 public void paintComponent(Graphics g)
    {
-      super.paintComponent(g); 
+      super.paintComponent(g);
       g.setColor(Color.blue);		//draw a blue boarder around the board
       g.fillRect(0, 0, (board[0].length*SIZE), (board.length*SIZE));
       showBoard(g);					//draw the contents of the array board on the screen
@@ -841,9 +841,9 @@ public void paintComponent(Graphics g)
                   p2.addScore(10*p2.getLives());  //survival bonus
                if(p2.getLives() < 1 || p1.getLives() >= 1)
                   p1.addScore(10*p1.getLives());  //survival bonus
-               pelletNum = 1;   
+               pelletNum = 1;
                DELAY = 200;
-               t.setDelay(DELAY);     
+               t.setDelay(DELAY);
             }
             playNow = false;
             aftermath = true;

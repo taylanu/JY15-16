@@ -5,17 +5,17 @@ package proj103_4;
    import java.awt.*;
 
    public class Wheel extends Circle{
-   
+
    //Data Fields
       private int spokes;
-   
+
    //DEFAULT CONSTRUCTOR
       public Wheel(){
-      
+
          super();
          spokes = 2;
       }
-   
+
    //CUSTOM CONSTRUCTOR
       public Wheel(double xP, double yP, double r, int s){
          super(xP, yP, r);
@@ -26,7 +26,7 @@ package proj103_4;
             spokes = s % 360;
          }
       }
-   
+
    //@Override
       @Override
 	public String toString(){
@@ -35,11 +35,11 @@ package proj103_4;
              + this.getXPos() + ", " + this.getYPos() + ")" + " " + "\nArea: " + this.area();
          return data;
       }
-   
+
       public int getSpokes(){
          return spokes;
       }
-   
+
       public void setSpokes(int s){
          if(s == 360){
             spokes = 360;
@@ -48,7 +48,7 @@ package proj103_4;
             spokes = s % 360;
          }
       }
-   
+
    //Pre: G != null, Spokes != null, xPos != null, yPos != null
    //Post: Draws the Wheel
       @Override

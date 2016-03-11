@@ -3,7 +3,7 @@ public class BankAccount
 {
    private String name;
    private int balance;
-   
+
    public BankAccount(String n, int b)
    {
       name = n;
@@ -14,7 +14,7 @@ public class BankAccount
    {
       return name;
    }
-   
+
    public int getBalance()
    {
       return balance;
@@ -24,7 +24,7 @@ public class BankAccount
    {
       balance = balance + d;
    }
-   
+
    public void withdraw(int w)
    {
       balance = balance - w;
@@ -33,7 +33,7 @@ public class BankAccount
    @Override
 public String toString()
    {
-      String str; 
+      String str;
       str = "Name: " + name + "\nBalance: " + balance;
       return str;
    }

@@ -4,7 +4,7 @@
    import java.util.ArrayList;
 
    public class AIplayer extends Player
-   {  
+   {
    //info about the game world that we need to know to make decisions on how to move
       private int pelletR, pelletC, powerupR, powerupC;  //location of powerups
       private int[][] board;                             //location of walls
@@ -17,7 +17,7 @@
       private static String[] fNames = {"Antigone", "Beatrice", "Catherine", "Doris", "Eunice", "Francis"};
    //female names favor pellets over powerups
       private static int numLefts, numRights;				//make sure we don't do 4 lefts or rights in a row
-   
+
    //pre:  0 <= r < #board rows, 0 < = c < #board columns, d is a vaild keycode direction, startSize > 0
    //args: start row, start col, start direction, name, start size
       public AIplayer(int r, int c, int d, String n, int startSize)
@@ -33,15 +33,15 @@
          if(Math.random() < .5)
             favorsPowerups = true;
          int personality = (int)(Math.random()*mNames.length);    //0-5 (used as index for name array)
-         unpredictability =  personality*2 / 100.0;               //0-0.1 (used for Math.random - % chance they will make a random turn as a last priority)        
+         unpredictability =  personality*2 / 100.0;               //0-0.1 (used for Math.random - % chance they will make a random turn as a last priority)
          if(favorsPowerups)
             setName(mNames[personality]);
          else
             setName(fNames[personality]);
          numLefts = 0;
-         numRights = 0;   
+         numRights = 0;
       }
-   
+
    //post: returns true if there is a clear path to a pellet or powerup to the right
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletToRight(boolean powerup)
@@ -54,7 +54,7 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(r == pR && c < pC)
          {
             for(int i=c; i<=pC && i<board[0].length; i++)
@@ -66,7 +66,7 @@
          }
          return false;
       }
-   
+
    //post: returns true if there is a clear path to a pellet or powerup to the left
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletToLeft(boolean powerup)
@@ -79,7 +79,7 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(r == pR && c > pC)
          {
             for(int i=c; i>=pC && i >= 0; i--)
@@ -91,7 +91,7 @@
          }
          return false;
       }
-   
+
    //post: returns true if there is a clear path to a pellet or powerup above the player
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletAbove(boolean powerup)
@@ -104,7 +104,7 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(c == pC && r > pR)
          {
             for(int i=r; i>=pR && i >=0; i--)
@@ -116,7 +116,7 @@
          }
          return false;
       }
-   
+
    //post: returns true if there is a clear path to a pellet or powerup below the player
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletBelow(boolean powerup)
@@ -129,7 +129,7 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(c == pC && r < pR)
          {
             for(int i=r; i<=pR && i<board.length; i++)
@@ -141,7 +141,7 @@
          }
          return false;
       }
-   
+
    //post: returns true if there is a pellet or powerup above-right
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletAboveRight(boolean powerup)
@@ -154,12 +154,12 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(r > pR && c < pC)
             return true;
          return false;
       }
-   
+
     //post: returns true if there is a pellet or powerup above-left
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletAboveLeft(boolean powerup)
@@ -172,12 +172,12 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(r > pR && c > pC)
             return true;
          return false;
       }
-   
+
    //post: returns true if there is a pellet or powerup below-right
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletBelowRight(boolean powerup)
@@ -190,12 +190,12 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(r < pR && c < pC)
             return true;
          return false;
       }
-   
+
    //post: returns true if there is a pellet or powerup below-left
    //args:  if powerup is false, we are looking for a growth pellet.  if powerup is true, we are looking at a special powerup
       private boolean pelletBelowLeft(boolean powerup)
@@ -208,13 +208,13 @@
          {
             pR = powerupR;
             pC = powerupC;
-         }  
+         }
          if(r < pR && c > pC)
             return true;
          return false;
       }
-   
-   //post:  change the player's dir in order to avoid walls (priority 1) 
+
+   //post:  change the player's dir in order to avoid walls (priority 1)
    //                                           get powerups (priority 2)
    //                                           turn to get powerups (priority 3)
    //                                           seek powerups (priority 4)
@@ -228,12 +228,12 @@
          powerupR = pwR;
          powerupC = pwC;
          p1 = p;
-      
+
          ArrayList<Point> tail = this.getTail();
          int dir = this.getDir();
          int row = (int)(tail.get(0).getX());
          int col = (int)(tail.get(0).getY());
-      //*************avoid walls (priority 1)************************ 
+      //*************avoid walls (priority 1)************************
          if(dir==KeyEvent.VK_UP && ((row > 0 && SnakePanel.blocked(row-1, col)) || (row==0 && SnakePanel.blocked(board.length-1, col))))
          {//moving up and front is blocked, try to move left or right
             if(Math.random() < .5)
@@ -241,14 +241,14 @@
                if((col < board[0].length-1 && !SnakePanel.blocked(row, col+1)) || (col==board[0].length-1 && !SnakePanel.blocked(row, 0)))
                   dir = KeyEvent.VK_RIGHT;
                else
-                  dir = KeyEvent.VK_LEFT;   
+                  dir = KeyEvent.VK_LEFT;
             }
             else
             {
                if((col > 0 && !SnakePanel.blocked(row, col-1)) || (col==0 && !SnakePanel.blocked(row, board[0].length-1)))
                   dir = KeyEvent.VK_LEFT;
                else
-                  dir = KeyEvent.VK_RIGHT; 
+                  dir = KeyEvent.VK_RIGHT;
             }
          }
          else if(dir==KeyEvent.VK_DOWN && ((row < board.length-1 && SnakePanel.blocked(row+1, col)) || (row==board.length-1 && SnakePanel.blocked(0, col))))
@@ -258,14 +258,14 @@
                if((col < board[0].length-1 && !SnakePanel.blocked(row, col+1)) || (col==board[0].length-1 && !SnakePanel.blocked(row, 0)))
                   dir = KeyEvent.VK_RIGHT;
                else
-                  dir = KeyEvent.VK_LEFT;   
+                  dir = KeyEvent.VK_LEFT;
             }
             else
             {
                if((col > 0 && !SnakePanel.blocked(row, col-1)) || (col==0 && !SnakePanel.blocked(row, board[0].length-1)))
                   dir = KeyEvent.VK_LEFT;
                else
-                  dir = KeyEvent.VK_RIGHT; 
+                  dir = KeyEvent.VK_RIGHT;
             }
          }
          else if(dir==KeyEvent.VK_RIGHT && ((col < board[0].length-1 && SnakePanel.blocked(row, col+1)) || (col==board[0].length-1 && SnakePanel.blocked(row, 0))))
@@ -275,15 +275,15 @@
                if((row < board.length-1 && !SnakePanel.blocked(row+1, col)) || (row==board.length-1 && !SnakePanel.blocked(0, col)))
                   dir = KeyEvent.VK_DOWN;
                else
-                  dir = KeyEvent.VK_UP;   
+                  dir = KeyEvent.VK_UP;
             }
             else
             {
                if((row > 0 && !SnakePanel.blocked(row-1, col)) || (row==0 && !SnakePanel.blocked(board.length-1, col)))
                   dir = KeyEvent.VK_UP;
                else
-                  dir = KeyEvent.VK_DOWN;   
-            
+                  dir = KeyEvent.VK_DOWN;
+
             }
          }
          else if(dir==KeyEvent.VK_LEFT && ((col > 0 && SnakePanel.blocked(row, col-1)) || (col==0 && SnakePanel.blocked(row, board[0].length-1))))
@@ -293,14 +293,14 @@
                if((row < board.length-1 && !SnakePanel.blocked(row+1, col)) || (row==board.length-1 && !SnakePanel.blocked(0, col)))
                   dir = KeyEvent.VK_DOWN;
                else
-                  dir = KeyEvent.VK_UP; 
+                  dir = KeyEvent.VK_UP;
             }
             else
             {
                if((row > 0 && !SnakePanel.blocked(row-1, col)) || (row==0 && !SnakePanel.blocked(board.length-1, col)))
                   dir = KeyEvent.VK_UP;
                else
-                  dir = KeyEvent.VK_DOWN;   
+                  dir = KeyEvent.VK_DOWN;
             }
          }
          //*******************get powerups (priority 2)*************************
@@ -318,28 +318,28 @@
             if(pelletToRight(false))
                dir = KeyEvent.VK_RIGHT;
             else if(pelletToLeft(false))
-               dir = KeyEvent.VK_LEFT;   
+               dir = KeyEvent.VK_LEFT;
          }
          else if((dir==KeyEvent.VK_LEFT || dir==KeyEvent.VK_RIGHT) && (pelletAbove(false) || pelletBelow(false)))
          {//if there is a pellet above or below us, get it
             if(pelletAbove(false))
                dir = KeyEvent.VK_UP;
             else if(pelletBelow(false))
-               dir = KeyEvent.VK_DOWN;  
+               dir = KeyEvent.VK_DOWN;
          }
          else if((dir==KeyEvent.VK_UP || dir==KeyEvent.VK_DOWN) && (pelletToRight(true) || pelletToLeft(true)))
          {	//if there is a powerup to either side, get it
             if(pelletToRight(true))
                dir = KeyEvent.VK_RIGHT;
             else if(pelletToLeft(true))
-               dir = KeyEvent.VK_LEFT;   
+               dir = KeyEvent.VK_LEFT;
          }
          else if((dir==KeyEvent.VK_LEFT || dir==KeyEvent.VK_RIGHT)  && (pelletAbove(true) || pelletBelow(true)))
          {	//if there is a powerup above or below, get it
             if(pelletAbove(true))
                dir = KeyEvent.VK_UP;
             else if(pelletBelow(true))
-               dir = KeyEvent.VK_DOWN;  
+               dir = KeyEvent.VK_DOWN;
          }
          //************************seek powerups (priority 4)***********************
          else if(dir==KeyEvent.VK_LEFT && pelletAboveRight(true) && row > 0 && !SnakePanel.blocked(row-1, col) && !favorsPowerups)
@@ -358,7 +358,7 @@
             dir = KeyEvent.VK_DOWN;
          else if(dir==KeyEvent.VK_UP && pelletBelowLeft(true) && col > 0 && !SnakePanel.blocked(row, col-1) && !favorsPowerups)
             dir = KeyEvent.VK_LEFT;
-         
+
          else if(dir==KeyEvent.VK_LEFT && pelletAboveRight(false) && row > 0 && !SnakePanel.blocked(row-1, col) && favorsPowerups)
             dir = KeyEvent.VK_UP;
          else if(dir==KeyEvent.VK_DOWN && pelletAboveRight(false) && col < board[0].length -1 && !SnakePanel.blocked(row, col+1) && favorsPowerups)
@@ -384,7 +384,7 @@
                {//make sure we don't try to make 4 turns in the same direction in succession
                   if((dir==KeyEvent.VK_UP && numRights < 4) || (dir==KeyEvent.VK_DOWN && numLefts < 4))
                      dir = KeyEvent.VK_RIGHT;
-               }   
+               }
                else if(col > 0 && !SnakePanel.blocked(row, col-1))
                {//make sure we don't try to make 4 turns in the same direction in succession
                   if((dir==KeyEvent.VK_DOWN && numRights < 4) || (dir==KeyEvent.VK_UP && numLefts < 4))
@@ -452,5 +452,5 @@
          this.setDir(dir);
          //System.out.println("L:"+numLefts+" R:"+numRights);
       }
-   
+
    }

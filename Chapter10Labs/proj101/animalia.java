@@ -5,20 +5,20 @@ public class animalia {
 	private String celltype;
 	private double weight;
 	private String color;
-	
+
 	public animalia(){
 		setAlive(true);
 		celltype="Multicellular";
 	}
-	
+
 	public boolean getAlive(){
 		return alive;
 	}
-	
+
 	public String getCellType(){
 		return celltype;
 	}
-	
+
 	public boolean isOrganism(){
 		return true;
 	}

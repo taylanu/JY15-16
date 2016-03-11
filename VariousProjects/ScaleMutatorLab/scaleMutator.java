@@ -15,7 +15,7 @@ public class scaleMutator
 	   list[b]=temp;
    //*****************************************
    }
-   
+
 //pre:  list is not null
 //post: nums is sorted in ascending order - modifies the array that is sent
 //i.e., given list:[4,2,7,5] -> changes list to [2,4,5,7]
@@ -26,7 +26,7 @@ public class scaleMutator
 	   Arrays.sort(list);
    //*****************************************
    }
-   
+
 //pre:   list is not null
 //post:  returns a new array with the same elements of list, but scrambled (put in random order)
 //needs to work with an array of any size
@@ -37,7 +37,7 @@ public class scaleMutator
       for(int i = 0; i < list.length; i++){
          int index = (int)(Math.random() * (list.length - 1 - i)) + i;
          swap(retVal, i, index);
-      } 
+      }
       //*****************************************
       return retVal;
    }
@@ -67,7 +67,7 @@ public class scaleMutator
    {
      //*********WRITE THIS METHOD***************
 	   int[] pdrome = new int[(list.length * 2) - 1];
-	  
+
 	      for(int i = 0; i < list.length; i++){
 	         pdrome[i] = list[i];
 	      }
@@ -89,7 +89,7 @@ public class scaleMutator
      //*********WRITE THIS METHOD***************
 	   int[] shuffled = new int[a.length+b.length];
 	   int count=0;
-	   
+
 		  for(int i=0;i<shuffled.length-1;i+=2){
 			  shuffled[i]=a[count];
 			  shuffled[i+1]=b[count];
@@ -110,7 +110,7 @@ public class scaleMutator
      //*********WRITE THIS METHOD***************
 	   int[] shuffled = list.clone();
 	      int count = 0;
-	      
+
 	      for(int i=0; i < shuffled.length-1;i=i+2){
 	         shuffled[i] = list[count];
 	         shuffled[i + 1] = list[list.length-1-count];
@@ -119,7 +119,7 @@ public class scaleMutator
       return shuffled; 	//temporary statement to keep us compiling
      //*****************************************
 }
-   
+
 //pre:  list is not null, note is between 22 and 108
 //post:  makes a new array containing each element of list, but where every other element is note
 //[list0, note, list1, note, list2, note, list3, note, list4, note,...]
@@ -130,7 +130,7 @@ public class scaleMutator
      //*********WRITE THIS METHOD***************
 	   int[] notes= new int[list.length*2];
 	   int count=0;
-	   
+
 	   for(int i=0;i<notes.length;i++){
 		   if(i%2==0){
 			   notes[i]=note;
@@ -153,7 +153,7 @@ public class scaleMutator
      //*********WRITE THIS METHOD***************
 	   int[] triads = new int[(list.length-2) * 3];
 	   int count = 0;
-	   
+
 	      for(int i=0; i < triads.length; i=i+3){
 	         triads[i] = list[count];
 	         triads[i+1] = list[count+1];
@@ -163,14 +163,14 @@ public class scaleMutator
       return triads; 	//temporary statement to keep us compiling
      //*****************************************
    }
-   
+
    //post:  student invents their own mutation to the scale
    public static int[] extraCredit(int[] list)
    {
      //*********WRITE THIS METHOD***************
-     
+
       return list; 	//temporary statement to keep us compiling
      //*****************************************
-   }   
+   }
 }
 

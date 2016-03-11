@@ -12,7 +12,7 @@ public class proj45{
    double iter, sum, denom, ans, i;
    sum = 0;
    denom = 1;
-   
+
    Scanner input = new Scanner(System.in);
       System.out.println("Enter the number of iterations you would like to use.");
       iter = input.nextDouble();

@@ -2,15 +2,15 @@ import java.util.*;
 import java.io.*;
 
 public class GradeDriver{
-	
+
    public static void main(String arg[]) throws IOException{
-	
+
       int grade, sum = 0, num = 0, min = 100, max = 0;
       double avg;
       String letter, avgL;
       Scanner input;
       input = new Scanner(new File("gradelist.txt"));
-      
+
       while(input.hasNext()){
          grade = input.nextInt();
          letter = LGrade(grade);
@@ -25,11 +25,11 @@ public class GradeDriver{
       }
       avg = (double)(sum)/num;
       avgL = LGrade((int)(avg + 0.5)); // teacher rounds up grades
-      
-      System.out.println("The Class Average was: " + avg + ", or an " + avgL + "\nThe Lowest Grade in Class was: " + min + "\nThe Highest Grade in Class was: " + max + "\nNumber of Students that took the Test: " + num); 
+
+      System.out.println("The Class Average was: " + avg + ", or an " + avgL + "\nThe Lowest Grade in Class was: " + min + "\nThe Highest Grade in Class was: " + max + "\nNumber of Students that took the Test: " + num);
    }
-   
-   public static String LGrade(int grade){ 
+
+   public static String LGrade(int grade){
       String letter;
       if(grade >= 96 && grade <= 100)
          letter = "A+";
@@ -40,7 +40,7 @@ public class GradeDriver{
       else if(grade >= 86 && grade <= 89)
          letter = "B+";
       else if(grade >= 82 && grade <= 85)
-         letter = "B";   
+         letter = "B";
       else if(grade >= 80 && grade <= 81)
          letter = "B-";
       else if(grade >= 76 && grade <= 79)
@@ -57,8 +57,8 @@ public class GradeDriver{
          letter = "D-";
       else
          letter = "F";
-         
-      return letter;  
+
+      return letter;
 }
-   
+
 }

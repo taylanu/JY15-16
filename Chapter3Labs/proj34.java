@@ -18,10 +18,10 @@ public class proj34 {
     rghrs = reader.nextDouble();
         System.out.println("How many overtime hours do you work a week?");
     othrs = reader.nextDouble();
-    
+
     rgrate = (hrly * rghrs);
     otrate = (hrly * othrs * 1.5);
     wkpay = (rgrate + otrate);
         System.out.println("Your weekly pay is " + wkpay + " dollars");
-    } 
+    }
 }

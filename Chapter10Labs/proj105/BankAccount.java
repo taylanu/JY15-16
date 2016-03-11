@@ -2,10 +2,10 @@ package proj105;
 //Taylan Unal 1/14/16
 
 public abstract class BankAccount{
-	
+
 	private double value;
 	private static String owner;
-		
+
 		public BankAccount(){
 			setValue(0);
 			setOwner("");
@@ -38,5 +38,5 @@ public abstract class BankAccount{
 		public void setOwner(String owner) {
 			BankAccount.owner = owner;
 		}
-	
+
 }

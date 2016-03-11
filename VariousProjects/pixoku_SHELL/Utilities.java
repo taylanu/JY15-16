@@ -25,7 +25,7 @@
                   g.setColor(Color.yellow);
                   if(solutionCheckCol(c))
                      g.setColor(Color.red.darker());
-                  if(value < 10)					//single digit, shift right so it is centered   
+                  if(value < 10)					//single digit, shift right so it is centered
                      g.drawString(""+value, x+(size/4), y+size);
                   else
                      g.drawString(""+value, x, y+size);
@@ -34,7 +34,7 @@
             }
             x+=size;
          }
-         y=(maxColCount*size);	
+         y=(maxColCount*size);
          for(int r=0;r<board.length;r++)
          {
             x =0;										//reset the row distance
@@ -54,17 +54,17 @@
                x+=size;
             }
             y+=size;
-         
+
          }
       }
-   
+
       //pre:   g != null
    	//post:  shows different pictures on the screen in grid format depending on the values stored in the array board
    	//			-1:red, 0:white, 1:black, 2:X, 3:square and gives priority to drawing the cursor on top
-      public static void showBoard(Graphics g)	
-      {   
+      public static void showBoard(Graphics g)
+      {
          int x, y = (maxColCount*size);
-      
+
          for(int r=0;r<guess.length;r++)
          {
             x = (maxRowCount*size);						//reset the row distance
@@ -73,9 +73,9 @@
                if(paintMode)	//show the user canvas
                {
                   if(guess[r][c]==0)					//non-painted space
-                     g.drawImage(BLANK.getImage(), x, y, size, size, null);  
+                     g.drawImage(BLANK.getImage(), x, y, size, size, null);
                   else										//painted pixel
-                     g.drawImage(BLACK.getImage(), x, y, size, size, null);  
+                     g.drawImage(BLACK.getImage(), x, y, size, size, null);
                }
                else
                   if(solved)	//show the original board with black and white pixels without borders
@@ -83,59 +83,59 @@
                      if(board[r][c]==0)					//non-painted space
                      {
                         if(solutionImage!=null && solutionImage.length() > 0 && !solutionImage.equals("none"))
-                           g.drawImage(BLANK.getImage(), x, y, size, size, null);  
+                           g.drawImage(BLANK.getImage(), x, y, size, size, null);
                         else										//painted pixel
-                           g.drawImage(WHITE.getImage(), x, y, size, size, null);  
+                           g.drawImage(WHITE.getImage(), x, y, size, size, null);
                      }
-                     else			
+                     else
                      {							//painted pixel
                         if(solutionImage!=null && solutionImage.length() > 0 && !solutionImage.equals("none"))
                            g.drawImage(PAINTED.getImage(), x, y, size, size, null);
                         else
-                           g.drawImage(BLACK.getImage(), x, y, size, size, null);  	
-                        
+                           g.drawImage(BLACK.getImage(), x, y, size, size, null);
+
                      }
                   }
-                  else			//show the guessing board with bordered blank, painted, ex-ed out and mistake pixels 
+                  else			//show the guessing board with bordered blank, painted, ex-ed out and mistake pixels
                      if(guess[r][c]==0)					//unmarked spaces
-                        g.drawImage(BLANK.getImage(), x, y, size, size, null);  
+                        g.drawImage(BLANK.getImage(), x, y, size, size, null);
                      else
                         if(guess[r][c]==1)				//painted spaces
-                           g.drawImage(PAINTED.getImage(), x, y, size, size, null);  
-                        else 
+                           g.drawImage(PAINTED.getImage(), x, y, size, size, null);
+                        else
                            if(guess[r][c]==2)			//spaces marked with an X
-                              g.drawImage(EXOUT.getImage(), x, y, size, size, null);  
-                           else 
+                              g.drawImage(EXOUT.getImage(), x, y, size, size, null);
+                           else
                               if(guess[r][c]==3)		//spaces marked by the computer as a mistake
-                                 g.drawImage(MISTAKE.getImage(), x, y, size, size, null);  
+                                 g.drawImage(MISTAKE.getImage(), x, y, size, size, null);
                               else							//spaces marked by the computer as a hint
-                                 g.drawImage(RED.getImage(), x, y, size, size, null); 		 
-                                     			
+                                 g.drawImage(RED.getImage(), x, y, size, size, null);
+
                if(!solved && r==playerR && c==playerC)	//draw the crosshair on the guess after the cell has been drawn
-                  g.drawImage(CROSSHAIR.getImage(), x, y, size, size, null);  
-               
+                  g.drawImage(CROSSHAIR.getImage(), x, y, size, size, null);
+
                x+=size;
             }
             y+=size;
          }
          if(titleScreen)
          {
-            x =(maxRowCount*size);	
-            y =(maxColCount*size); 
+            x =(maxRowCount*size);
+            y =(maxColCount*size);
             int width = guess[0].length*size;
-            int height = guess.length*size;    
-            g.drawImage(TITLE.getImage(), x, y, width, height, null);            
+            int height = guess.length*size;
+            g.drawImage(TITLE.getImage(), x, y, width, height, null);
             return;
-         }  
-         if(!paintMode && solved && solutionImage!=null && solutionImage.length() > 0 && !solutionImage.equals("none")) 
+         }
+         if(!paintMode && solved && solutionImage!=null && solutionImage.length() > 0 && !solutionImage.equals("none"))
          {	//draw a picture on top of the board
             long currTime = (System.currentTimeMillis() - startTime) / 1000;
             if(currTime % 2 == 0)
             {
-               x =(maxRowCount*size);	
-               y =(maxColCount*size); 
+               x =(maxRowCount*size);
+               y =(maxColCount*size);
                int width = guess[0].length*size;
-               int height = guess.length*size;    
+               int height = guess.length*size;
                if(solution == null)
                {
                   if(flipped)
@@ -143,11 +143,11 @@
                   else
                      solution = new ImageIcon("themes/"+solutionImage);
                }
-               g.drawImage(solution.getImage(), x, y, width, height, null);   
+               g.drawImage(solution.getImage(), x, y, width, height, null);
             }
          }
       }
-   
+
      //pre: x & y are the current position that an option will be written out to the screen.  Option is a valid index of whichOption array, g != null
      //post:if the mouse is hovering over a game option, highlight it with a different color and set the command in the whichOption array
       public static void highlightMousePosition(Graphics g, int x, int y, int option)
@@ -167,12 +167,12 @@
             whichOption[option] = false;
          }
       }
-   
+
       //pre:   g != null
       //post:  displays the key commands and score info
       public static void drawInstructions(Graphics g)
       {
-         int x =(maxRowCount*size + board[0].length*size), 
+         int x =(maxRowCount*size + board[0].length*size),
              y =(maxColCount*size);		//upper left corner location of where image will be drawn
          ArrayList<Score> list = fileNames;
          if(theme.equals("random"))
@@ -191,7 +191,7 @@
             g.drawString("Paint the entire   ", x, y+=size);
             g.drawString("picture to complete", x, y+=size);
             g.drawString("the puzzle.        ", x, y+=size);
-            g.drawString("-------------------", x, y+=size);				
+            g.drawString("-------------------", x, y+=size);
             g.drawString("CLICK/KEY to begin.", x, y+=size);
             return;
          }
@@ -260,7 +260,7 @@
                   g.drawString("HIGH SCORE ACHIEVED!", x, y+=size);
                else if(scoreIndex >= 0 && scoreIndex < list.size())
                   g.drawString(list.get(scoreIndex).showScore(), x, y+=size);
-               
+
                //g.setColor(Color.yellow.darker());
                if(highScore && scoreIndex >= 0 && scoreIndex < list.size() && player.equals("AAA"))
                {
@@ -342,7 +342,7 @@
                }
             }
       }
-      
+
    	//pre:  fileName exists as a text file and contains 0 and 1 separated by a space, every row has the same # characters
    	// 	first two values in the file are the #rows and #columns - returns true if read in successfully
     	//post: fills up the board array with data from fineName
@@ -351,12 +351,12 @@
          int r = 0, c = 0;
          int numRows = 0;
          int numCols = 0;
-      
+
          try
          {
             java.util.Scanner input = new java.util.Scanner(new FileReader(fileName));
             int value = 0;
-                   
+
             try
             {
                description = input.nextLine();								//read image description to be revealed when the puzzle is complete
@@ -367,17 +367,17 @@
                {
                   System.out.println("File " + fileName + " is corrupt");
                   return false;
-               }			
+               }
                catch (java.util.NoSuchElementException ex2)			//file is corrupted or doesn't exist
                {
                   System.out.println("File " + fileName + " is corrupt");
                   return false;
-               }	
+               }
             if(numRows<=0 || numCols<=0)
             {
                System.out.println("File " + fileName + " is corrupt");
                return false;
-            }	 		
+            }
             board = new int[numRows][numCols];
             guess = new int[numRows][numCols];
             while (r*c <= numRows*numCols && input.hasNextInt())		//while there is another value in the file
@@ -390,47 +390,47 @@
                   {
                      System.out.println("File " + fileName + " is corrupt");
                      return false;
-                  
-                  }			
+
+                  }
                   catch (java.util.NoSuchElementException ex2)			//file is corrupted or doesn't exist
                   {
                      System.out.println("File " + fileName + " is corrupt");
                      return false;
-                  
-                  }	
+
+                  }
                   catch (java.lang.ArrayIndexOutOfBoundsException ex3)			//file is corrupted or doesn't exist
                   {
                      System.out.println("File " + fileName + " is corrupt");
                      return false;
-                  
-                  }	
+
+                  }
                if(c>=board[0].length)
                {
                   r++;
                   c=0;
-               }   
+               }
                if(r< board.length && c < board[0].length)
                {
                   board[r][c] = value;
-                  guess[r][c] = 0;	
+                  guess[r][c] = 0;
                   c++;
                }
             }
-            input.close();	
+            input.close();
          }
             catch (IOException ex3)			//file is corrupted or doesn't exist - clear high scores and remake the file
             {
                System.out.println("File " + fileName + " is corrupt");
                return false;
-            }	
+            }
          if(r!=numRows-1 || c!=numCols)
          {
             System.out.println("File " + fileName + " is corrupt");
-            return false;			
+            return false;
          }
          return true;
       }
-   
+
      //pre:  fileName is the name of a valid file in the themes folder comprised of <puzzle file name> <player name> <score> <time> <total # cells>
      //post: fills up list with puzzle high scores from fileName
       public static void readHighScores(String fileName, ArrayList<Score> list)
@@ -454,31 +454,31 @@
                   {
                      System.out.println("File is corrupt");
                      return;
-                  
-                  }			
+
+                  }
                   catch (java.util.NoSuchElementException ex2)			//file is corrupted or doesn't exist
                   {
                      System.out.println("File is corrupt");
                      return;
-                  
-                  }	
+
+                  }
             }
-            input.close();	
+            input.close();
          }
             catch (IOException ex3)			//file is corrupted or doesn't exist - clear high scores and remake the file
             {
                System.out.println("File does not exist");
                return;
-            }		
+            }
       }
-   
+
     //pre:  fileName is the name of the user created puzzle theme and is unique to the list of files in fileList.txt
     //post: Writes the image to file
       public static void writeToFile(String fileName)
       {
          PrintStream imageWriter = null;
          File imageFile = new File("themes/"+fileName);
-               
+
          while(imageWriter == null){
             try{
                imageWriter = new PrintStream(new FileOutputStream(imageFile, true));
@@ -515,7 +515,7 @@
          }
          imageWriter.close();
       }
-   
+
       //pre:  given the name of an image file i.e."themes/arcade3.txt"
    	//post: returns the name of the theme   i.e."arcade" to be displayed in the game info window
       public static String trimTheme(String word)
@@ -527,15 +527,15 @@
             word = word.substring(7);
          if(word.endsWith(".txt"))
             word = word.substring(0,word.length()-4);
-         int i=0; 
+         int i=0;
          for(i=0; i<word.length(); i++)
             if(Character.isDigit(word.charAt(i)))
                break;
          if(i>0)
-            word = word.substring(0,i);      
+            word = word.substring(0,i);
          return word;
       }
-     
+
    //pre:   list contains all theme file names, word is not null and contains the user made puzzle theme name
    //post:  returns true if we can find word within list
       private static boolean search(ArrayList<Score>list, String word)
@@ -545,9 +545,9 @@
                return true;
          return false;
       }
-     
+
      //pre:  given the name of a user created puzzle theme
-     //post: checks to see if there is a file with that name already - adds a unique number after it if there is 
+     //post: checks to see if there is a file with that name already - adds a unique number after it if there is
       public static String setFileName(String word)
       {
          int num = 1;
@@ -556,12 +556,12 @@
             num++;
          return word+num+".txt";
       }
-   	
+
    	//pre:  grid is either the solution board (board) or the guessing board (guess - which is also the user-defined puzzle canvas)
       public static void initBoard(int[][] grid)
       {
          playerR = grid.length/2;							//start player position in the middle
-         playerC = grid[0].length/2;   	
+         playerC = grid[0].length/2;
          pixelCount(grid);
          message = "";
          player = "AAA";
@@ -569,30 +569,30 @@
          completionTime = -1;
          whichText = new boolean[4];
          for(int i=0; i<whichText.length; i++)
-            whichText[i] = false;   
+            whichText[i] = false;
          whichOption = new boolean[13];
          for(int i=0; i<whichOption.length; i++)
-            whichOption[i] = false;   
+            whichOption[i] = false;
       }
-   
+
     //pre:  guess and board are the same dimensions
    //post: replaces incorrect painted pixels with error ex's to take away from the score for each one
       public static void checkForErrors()
       {
          int numPixels = 0;
-         for(int r=0;r<guess.length;r++)					
+         for(int r=0;r<guess.length;r++)
             for(int c=0;c<guess[0].length;c++)
             {
                if(Math.abs(guess[r][c])==1 && board[r][c]!=1)//player painted a cell that is not in the solution
                {
                   guess[r][c]=3;										//change to the boxed-exed cell
-                  numPixels++;  
+                  numPixels++;
                }
                else
                   if(guess[r][c]==2 && board[r][c]==1)		//player exed out a cell that is in the solution
                   {
                      guess[r][c]=-1;								//change to a red cell
-                     numPixels++;  
+                     numPixels++;
                   }
             }
          if(numPixels==0)
@@ -612,7 +612,7 @@
          }
          numErrors += numPixels;
       }
-   
+
     //post:  hint option - reveals 1, 2 or 3 unguessed pixels (random)
       public static void helpPlayer()
       {
@@ -621,14 +621,14 @@
          if(hint>0)
          {
             int numFree = 0;							//the number of free random painted pixels we will help the player with
-            for(int r=0;r<guess.length;r++)					
+            for(int r=0;r<guess.length;r++)
                for(int c=0;c<guess[0].length;c++)
                {
                   if(Math.abs(guess[r][c])!=1 && board[r][c]==1)
                   {//store the row and col of the unguessed spot so we can choose some random ones
                      rows.add(r);
                      cols.add(c);
-                  }  
+                  }
                }
             if(rows.size()==0)
                return;
@@ -637,14 +637,14 @@
             else
                numFree = (int)(Math.random()*3) + 1;
             for(int i=0; i<numFree; i++)
-            {   
+            {
                int index = (int)(Math.random()*rows.size());
                int freeRow = rows.get(index);
                int freeCol = cols.get(index);
-               guess[freeRow][freeCol] = -1;	
-            }   
+               guess[freeRow][freeCol] = -1;
+            }
             channels[0].allNotesOff(); 				//turn sounds off
-            channels[0].noteOn(scale[scale.length-1]+12, 80);	   
+            channels[0].noteOn(scale[scale.length-1]+12, 80);
             hint--;
          }
          else
@@ -655,20 +655,20 @@
             //System.out.println("All hints have been used up");
          }
       }
-     
+
      //pre:  0 <= c < guess[0].length
-     //post: checks the guess board at a certain column (c) to see if the number of pixels painted matches the pixel count for that column 
+     //post: checks the guess board at a certain column (c) to see if the number of pixels painted matches the pixel count for that column
       public static boolean solutionCheckCol(int c)
       {
          ArrayList<Integer>temp = new ArrayList();
          int count=0;
-         for(int r=0;r<board.length;r++)	
+         for(int r=0;r<board.length;r++)
          {
             if(Math.abs(guess[r][c])==1)	//colored pixel
                count++;
-            else 
+            else
                if(count>0)
-               {   
+               {
                   temp.add(count);
                   count=0;
                }
@@ -678,26 +678,26 @@
          if(temp.size() != (colCount[c]).size())
             return false;
          for(int i=0; i<temp.size(); i++)
-         {    
+         {
             if(!(temp.get(i)).equals((colCount[c]).get(i)))
                return false;
          }
-         return true;	
+         return true;
       }
-   
+
      //pre:  0 <= r < guess.length
-     //post: checks the guess board at a certain row (r) to see if the number of pixels painted matches the pixel count for that row 
+     //post: checks the guess board at a certain row (r) to see if the number of pixels painted matches the pixel count for that row
       public static boolean solutionCheckRow(int r)
       {
          ArrayList<Integer>temp = new ArrayList();
          int count=0;
-         for(int c=0;c<board[0].length;c++)	
+         for(int c=0;c<board[0].length;c++)
          {
             if(Math.abs(guess[r][c])==1)	//colored pixel
                count++;
-            else 
+            else
                if(count>0)
-               {   
+               {
                   temp.add(count);
                   count=0;
                }
@@ -707,17 +707,17 @@
          if(temp.size() != (rowCount[r]).size())
             return false;
          for(int i=0; i<temp.size(); i++)
-         {    
+         {
             if(!(temp.get(i)).equals((rowCount[r]).get(i)))
                return false;
          }
-         return true;	
+         return true;
       }
-   
-   //pre:  numRows, numColumns > 0   
+
+   //pre:  numRows, numColumns > 0
    //post:  gets the board ready for paint mode
       public static void clearCanvas(int numRows, int numColumns)
-      { 
+      {
          board = new int[numRows][numColumns];
          guess = new int[numRows][numColumns];
          for(int r=0;r<board.length;r++)					//fill with values (0)
@@ -728,14 +728,14 @@
             }
          initBoard(guess);
       }
-   
+
    //post:  clear the array of highlighted options (for when the mouse moves off of the options list)
       public static void clearHighlightedOptions()
       {
          for(int i=0; i<whichOption.length; i++)
             whichOption[i] = false;
       }
-      
+
    	//post:  return the index of which option is highlighted (to call the correct command when the mouse is clicked)
       public static int thereIsOptionHighlighted()
       {
@@ -743,9 +743,9 @@
             if(whichOption[i])
                return i;
          return -1;
-      
+
       }
-   
+
    	//pre:  nums is non-empty and a and b are valid indecies of the array
    	//post: nums[a] swaps values with nums[b]
       public static void swap(ArrayList<Score> nums, int a, int b)
@@ -754,7 +754,7 @@
          nums.set(a, nums.get(b));
          nums.set(b,temp);
       }
-   
+
    	//pre:  nums is non-empty
    	//post: array is sorted by puzzle name
       public static void selSortName(ArrayList<Score> nums)
@@ -771,7 +771,7 @@
             swap (nums, i, min);
          }
       }
-      
+
    		//pre:  nums is non-empty
    	//post: array is sorted by puzzle size (total # of cells)
       public static void selSortSize(ArrayList<Score> nums)
@@ -788,8 +788,8 @@
             swap (nums, i, min);
          }
       }
-   
-   
+
+
    //pre:  list != null
    //post: writes to high scores file (fileName) from the high score list
       public static void updateScores(ArrayList<Score>list, String fileName)
@@ -808,7 +808,7 @@
             {
             }
       }
-      
+
    	//pre:  list != null
    	//post:  looks to see if the player achieved a high score
       public static boolean checkForHighScore(ArrayList<Score>list)
@@ -819,18 +819,18 @@
             if(theme.equals("random"))	//no high score recorded for a random puzzle of this size, so add one
             {
                list.add(new Score("random"+size, "none", "AAA", 0, 0, size));
-               scoreIndex = list.size()-1; 
+               scoreIndex = list.size()-1;
             }
             else
                return false;
          }
-         Score temp = new Score("AAA", "none", "AAA", score, completionTime, size);   
+         Score temp = new Score("AAA", "none", "AAA", score, completionTime, size);
          Score current = list.get(scoreIndex);
          if(temp.compareTo(current) > 0)
             return true;
          return false;
       }
-   
+
     //post:  play the randomly selected scale and tone at the start of the game
       public static void playStartScale()
       {
@@ -852,7 +852,7 @@
             }
          channels[0].allNotesOff(); 				//turn sounds off
       }
-   
+
    //post:  play the randomly selected scale and tone adter the player wins
       public static void playWinScale()
       {
@@ -874,5 +874,5 @@
             }
          channels[0].allNotesOff(); 				//turn sounds off
       }
-   
+
    }

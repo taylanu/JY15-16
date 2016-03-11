@@ -55,7 +55,7 @@ import java.util.*;
       							* repeat the whole process  */
       }
    	
-   //post:  calcualtes the prime factorization of number and returns the list containing factors
+   //post:  calculates the prime factorization of number and returns the list containing factors
        public static ArrayList<Integer> calculateFactors(int number)
       {
          /*	place number in myList, generate the prime factorizations and return the list.*/

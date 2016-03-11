@@ -4,7 +4,7 @@ public class Patron
    private Book b1, b2, b3;
    private String name;
    private int numBooks = 0;
-   
+
    public Patron()
    {
       name = "John Doe";
@@ -37,7 +37,7 @@ public class Patron
       numBooks = 2;
    }
 
-   
+
    public Patron(String n, Book bo, Book bt, Book bth)
    {
       name = n;
@@ -46,9 +46,9 @@ public class Patron
       b3 = bth;
       numBooks = 3;
    }
-   
-   
-   public void borrow(Book b) 
+
+
+   public void borrow(Book b)
    {
       numBooks++;
       if(numBooks == 1)
@@ -69,7 +69,7 @@ public class Patron
          numBooks = 3;
       }
    }
-   
+
    public Boolean isItBorrowed(String t)
    {
       if((b1!= null &&  b1.getTitle().equals(t)) || (b2 != null && b2.getTitle().equals(t)) || (b3 != null && b3.getTitle().equals(t)== true))
@@ -81,7 +81,7 @@ public class Patron
          return false;
       }
    }
-   
+
    public void turnIn(String t)
    {
       if(this.isItBorrowed(t)== true)
@@ -96,14 +96,14 @@ public class Patron
       }
       else
          System.out.println("This person doesn't own that book.");
-            
-      
+
+
    }
    @Override
 public String toString()
    {
       return ("Name: " + name + "\nBook 1: " + b1 + "\nBook 2: " + b2 + "\nBook 3: " + b3);
-   
+
    }
 
 

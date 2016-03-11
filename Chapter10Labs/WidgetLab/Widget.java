@@ -1,26 +1,26 @@
 package WidgetLab;
-/* 
+/*
  * ASSIGNMENT
- * Create a Widget class that implements Comparable.  
+ * Create a Widget class that implements Comparable.
  * Put in constructors, accessors, modifiers, and any needed instance methods.
  * In the main() method, create an array of Widgets. Read the data, pounds on one line and ounces on the
- * next line, from widget.txt. For this assignment, just ignore the name field.  
- * Than call any of your sort(Comparable[]) methods, passing the Widget array.  
+ * next line, from widget.txt. For this assignment, just ignore the name field.
+ * Than call any of your sort(Comparable[]) methods, passing the Widget array.
 */
 
 public class Widget implements Comparable{
 	   private int pounds;
 	   private int ounces;
-	   
+
 	   public Widget(){
 	      pounds = 0;
 	      ounces = 0;
 	   }
 	   public Widget(int p, int o){
-	      pounds = p; 
+	      pounds = p;
 	      ounces = o;
 	   }
-	   
+
 	   //Getters
 	   public int getPounds(){
 	      return pounds;
@@ -41,14 +41,14 @@ public class Widget implements Comparable{
 	   public String toString(){
 	      return "It weighs " + pounds +" lbs., and " + ounces + " oz.";
 	   }
-	  
+
 	   public boolean equals(Widget w){
 	      if(pounds == w.getPounds() && ounces == w.getOunces())
 	         return true;
 	      else
 	         return false;
 	   }
-	
+
 	   @Override
 	public int compareTo(Object arg) {
 		      Widget w = (Widget)arg;
