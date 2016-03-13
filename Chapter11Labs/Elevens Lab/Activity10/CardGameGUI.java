@@ -1,3 +1,5 @@
+package Activity10;
+
 import java.awt.Point;
 import java.awt.Graphics;
 import java.awt.Dimension;

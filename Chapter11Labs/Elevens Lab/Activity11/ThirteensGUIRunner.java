@@ -1,3 +1,5 @@
+package Activity11;
+
 /**
  * This is a class that plays the GUI version of the Thirteens game.
  * See accompanying documents for a description of how Thirteens is played.

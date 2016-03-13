@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry excluding="Activity1 Starter Code/|Activity1 Starter Code/" kind="src" path="Elevens Lab"/>
 	<classpathentry kind="src" path="coolCode"/>
-	<classpathentry kind="src" path="Activity5"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
