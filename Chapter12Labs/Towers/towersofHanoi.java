@@ -1,4 +1,4 @@
-package examples;
+package Towers;
 
 import java.util.Scanner;
 

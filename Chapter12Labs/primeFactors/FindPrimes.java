@@ -54,7 +54,7 @@ import java.util.*;
       							* replace the first non-prime with its smallest factor and add the cofactor to the end
       							* repeat the whole process  */
       }
-   	
+   
    //post:  calculates the prime factorization of number and returns the list containing factors
        public static ArrayList<Integer> calculateFactors(int number)
       {
