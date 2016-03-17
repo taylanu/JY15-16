@@ -1,4 +1,4 @@
-package examples;
+package reference;
 //smarter perfectShuffle
 //http://www.java-tips.org/java-se-tips-100019/24-java-lang/1895-merge-sort-implementation-in-java.html
 public class mergeSort {
@@ -15,9 +15,10 @@ public class mergeSort {
 		int[] temp = new int[left.length + right.length];
 		int x=0, y = 0;//iterators
 		while(left[x]<left.length && right[y]<right.length){
-			if(left[x]<right[y])
+			if(left[x]<right[y]){
 			x++;
 			y++;
+			}
 		}
 		return temp;
 		// TODO Auto-generated method stub

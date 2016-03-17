@@ -1,4 +1,4 @@
-package examples;
+package reference;
 
 public class factorial {
     public static long factorial(int n){

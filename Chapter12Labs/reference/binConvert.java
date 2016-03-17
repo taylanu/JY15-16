@@ -1,4 +1,4 @@
-package examples;
+package reference;
 //example from a stackoverflow thread.
 public class binConvert {
 	public static int binConvert(int num){

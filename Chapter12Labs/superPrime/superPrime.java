@@ -8,7 +8,7 @@ static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
 		System.out.println("Enter a number");
 		int usernum = input.nextInt(); 
-		System.out.println(sPrime(usernum));
+		System.out.println("Your number " + sPrime(usernum) + " is a SuperPrime");
 		
 	}
 	public static long sPrime(long num){
