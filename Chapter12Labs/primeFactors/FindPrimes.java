@@ -5,9 +5,8 @@ import java.util.*;
     public class FindPrimes{
     	
       private static ArrayList<Integer> myList = new ArrayList<Integer>();
-      
+      public static int firstPrime=0;
       public static void main(String[] arg){
-     
         System.out.println(8 + ":" + calculateFactors(8));
         myList.clear();
         System.out.println(60 + ":" + calculateFactors(60));
@@ -17,7 +16,6 @@ import java.util.*;
    //post: returns true if value is a prime number
        public static boolean isPrime(int num){
     	if(num<2)
-    		//System.out.println("The number one is not prime");
     		return false;
     	if(num==2)//two is prime
     		return true;
@@ -31,23 +29,21 @@ import java.util.*;
    
    //post:  returns the index of the first non-prime number in myList.
    //			returns -1 if all numbers are prime
-       private static int findNotPrime(){
-    	   for(int i=0;i<myList.size();i++){
-    		   if(isPrime(myList.get(i))==false){
-    			   return i;
-    		   }
-    		   else
-    			   return -1;
+       /*ex:	[60] will return 0
+ 		[2,30] will return 1
+ 		[2,2,15] returns 2
+ 		[2,2,3,5] returns -1
+ */	//temporary return so program compiles
+       
+       private static int findNotPrime(int num){
+    	   if(isPrime(num)==false){
+    		   firstPrime=num;
+    		   return num;
     	   }
+    	   else
+    		   return -1;
+       }
     		   
-      /*ex:	[60] will return 0
-      		[2,30] will return 1
-      		[2,2,15] returns 2
-      		[2,2,3,5] returns -1
-      */
-         return -1;		//temporary return so program compiles
-      }
-   
    //post:  returns the smallest factor of a number
        private static int findSmallestFactor(int num){
          for(int i=2;i<myList.size();i+=2){
@@ -66,7 +62,10 @@ import java.util.*;
    //
        private static void generateList(){
     	   for(int i=0;i<myList.size();i++){
-    		   if(isPrime(myList.get(i))){
+    		   if(findNotPrime(myList.get(i))==-1){
+    			   
+    		   }
+    				   //if(isPrime(myList.get(i))){
     			   
     		   }   
     	   }
