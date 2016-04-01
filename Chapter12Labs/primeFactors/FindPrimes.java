@@ -14,17 +14,17 @@ import java.util.*;
         System.out.println(75 + ":" + calculateFactors(75));
      }
    //post: returns true if value is a prime number
-       public static boolean isPrime(int num){
-    	if(num<2)
-    		return false;
-    	if(num==2)//two is prime
-    		return true;
-    	if(num%2==0)  
-         return false;
-    	for(int i=3;(int)Math.pow(i, 2) <= num; i+=2)
-    		if(num % 1 ==0)
-    			return false;
-		return true;
+       public static boolean isPrime(int val){
+		if(val <= 1)
+           return false;
+        else{
+           for(int i = 2; i < val; i++){
+              if(val % i == 0){
+                 return false;
+              }
+           } 
+        }
+        return true;
       }
    
    //post:  returns the index of the first non-prime number in myList.
@@ -35,46 +35,42 @@ import java.util.*;
  		[2,2,3,5] returns -1
  */	//temporary return so program compiles
        
-       private static int findNotPrime(int num){
-    	   if(isPrime(num)==false){
-    		   firstPrime=num;
-    		   return num;
-    	   }
-    	   else
-    		   return -1;
+       private static int findNotPrime(){
+    	   for(int i = 0; i < myList.size(); i++){
+              if(!isPrime(myList.get(i))){
+                 return i;
+              }
+           }
+           return -1;
        }
     		   
    //post:  returns the smallest factor of a number
        private static int findSmallestFactor(int num){
-         for(int i=2;i<myList.size();i+=2){
-        	 if(isPrime(num%2)){
-        		 findSmallestFactor(num%2);
-        	 }
-         }
-         return num%2;//after for loop runs, will return smallest factor.
-    	   /* ex:findSmallestFactor(8) -> 2
-         		findSmallestFactor(9) -> 3
-      			findSmallestFactor(7) -> 7
-         */
+    	   for(int i = 2; i <= num; i++){
+              if(num % i == 0){
+                 return i;
+              }
+           }
+           return -1;
       }
    
    //post:	recursive method that places the prime factorization into myList
    //
        private static void generateList(){
-    	   for(int i=0;i<myList.size();i++){
-    		   if(findNotPrime(myList.get(i))==-1){
-    			   
-    		   }
-    				   //if(isPrime(myList.get(i))){
-    			   
-    		   }   
-    	   }
+    	   while(findNotPrime() != -1){ 
+              int index = findNotPrime(); 
+              int num = myList.get(index);
+              int small = findSmallestFactor(myList.get(index));
+              int big = num / small;
+              myList.set(index, small);
+              myList.add(myList.size(), big);
+           }
+    }   
       /*	Hint:	Check the list to find the first non-prime factor.
       			If all the numbers are prime, you are done.
       			Otherwise,	* find the smallest factor of the first non-prime and its cofactor.
       							* replace the first non-prime with its smallest factor and add the cofactor to the end
       							* repeat the whole process  */
-      }
    
    //post:  calculates the prime factorization of number and returns the list containing factors
        public static ArrayList<Integer> calculateFactors(int num){
