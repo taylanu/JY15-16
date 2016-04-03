@@ -11,7 +11,7 @@ public class commas {
 		System.out.println("Your formatted number is " + formatted);
 	}
 
-public static String commas(int num){
+public static String commas(long num){
 	String formnum = new String("" + num);
 	if(num/1000==0)
 		return formnum;

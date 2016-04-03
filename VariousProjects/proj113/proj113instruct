@@ -1,2 +1,0 @@
-Project 11-3 Instructions:
-Write a program that allows the user to search for a given word in a text file. The two inputs are the file's name and the target word. If the target is not found, the program outputs a message to that effect. Otherwise, the program outputs the number of times that the target word occurred in the file and the position where it is first encountered (counting from position 0). The program should ignore case when it compares words. (THINK toLowercase or toUppercase)

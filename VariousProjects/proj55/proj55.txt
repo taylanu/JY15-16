@@ -1,3 +1,0 @@
-proj55 instructions:
-
-Develop a new class called BankAccount. A bank account has an owner's name and a balance. Be sure to include a constructor that allows a client to supply the owner's name and an initial balance. A bank account needs accessors for the name and balance, mutators for making deposits and withdrawals, and a toString method. Test-drive your new class with a program similar to the one used to test the Student class in Section 5.3.

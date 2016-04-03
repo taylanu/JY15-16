@@ -1,0 +1,4 @@
+Type Limits
+Double: 10^308
+Int: 32,767
+Long: 2,147,483,647
