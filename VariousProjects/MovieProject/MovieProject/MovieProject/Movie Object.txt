@@ -1,6 +1,0 @@
-Movie Object::
-
-Needs Data Fields: Title(String), Rating(String), Year(int)
-Needs 3arg constructor (String,String,int)
-Needs toString()
-Needs getTitle(),getRating,getYear()
