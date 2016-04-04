@@ -1,18 +1,27 @@
-   import java.io.*;
-   import java.util.*;
+package animalguesser;
+import java.io.*;
+import java.util.*;
 //The Animal Guessing Program:	d oberle, 2006
 //This game will attempt to guess an animal that the user is thinking of by asking yes/no questions.
 //If the program does not know the animal, it will add it to its data base, making it a little smarter for the next user.
 //Implement an array as a heap.  Each index has a parent at (index/2), a left child as (index*2) and a right child at index*2+1.
 //The index path following a "no" response will go to the left child (left subtree).  
 //The index path following a "yes" response will go to the right child (right subtree).
-
-    public class animalGuesserShell
-   {
+public class animalGuesserShell{
+	Scanner input = new Scanner(System.in);
+    	public static void main(String[] args)throws IOException{
+    		//int numEntries = getFileSize("animal.txt");
+    		showArray(readFile("/home/taylanu/Documents/JY15-16/PostBookLabs/heaps/animalguesser/animal.txt"));
+    		
+            String ans = " ";
+            String[] list = readFile("/home/taylanu/Documents/JY15-16/PostBookLabs/heaps/animalguesser/animal.txt");
+            int numItems = getFileSize("animal.txt")-1;
+            
+         } 
+    	
       //pre:  "fileName" is the name of a real file containing lines of text
       //post: returns the number of lines in fileName O(n)
-       public static int getFileSize(String fileName)throws IOException
-      {
+       public static int getFileSize(String fileName)throws IOException{
          Scanner input = new Scanner(new FileReader(fileName));
          int size=0;
          while (input.hasNextLine())				//while there is another line in the file
@@ -24,10 +33,9 @@
          return size;
       }
    
-   	//pre:  "fileName" is the name of a real file containing lines of text - the first line intended to be unused
+   	  //pre:  "fileName" is the name of a real file containing lines of text - the first line intended to be unused
       //post:returns a String array of all the elements in <filename>.txt, with index 0 unused (heap) O(n)
-       public static String[] readFile(String fileName)throws IOException
-      {
+       public static String[] readFile(String fileName)throws IOException{
          int size = getFileSize(fileName);		//holds the # of elements in the file
          String[] list = new String[size];		//a heap will not use index 0;
          Scanner input = new Scanner(new FileReader(fileName));
@@ -47,16 +55,15 @@
      //post:displays all of the elements of the array words O(n)
        public static void showArray(String[] words)
       {
-         for (int i=0; i<words.length; i++)
-            System.out.println(words[i] + " ");
+         for (int i=0, j=1; i<words.length; i++,j++)
+            System.out.println(j + "." + words[i] + " ");
          System.out.println();
          System.out.println("Size of array:" + words.length);
       }
    
    //Post: puts all the elements in the array into <filename>.txt,
    //      with one element per line O(n)
-       public static void writeToFile(String[] array, String filename) throws IOException
-      {
+       public static void writeToFile(String[] array, String filename) throws IOException{
          System.setOut(new PrintStream(new FileOutputStream(filename)));
          for(int i = 0; i < array.length; i++) 
             System.out.println(array[i]);
@@ -80,12 +87,5 @@
       {
          return (ans.toLowerCase().equals("yes") || ans.toLowerCase().equals("y"));
       }
-   
-       public static void main(String argv[])throws IOException
-      {
-         Scanner input = new Scanner(System.in);
-      	
-      
-      
-      } 
+
    }

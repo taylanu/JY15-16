@@ -16,6 +16,7 @@ public class visualTowers extends JFrame {
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
+			@Override
 			public void run() {
 				try {
 					visualTowers frame = new visualTowers();

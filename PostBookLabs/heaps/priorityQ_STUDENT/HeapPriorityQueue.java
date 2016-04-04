@@ -1,3 +1,5 @@
+package priorityQ_STUDENT;
+
    //Rev Dr. D. R. Oberle  Feb 2015
    import java.util.*;
 
@@ -18,12 +20,14 @@
          this(DFLT_CAPACITY);
       }
    
-      public boolean isEmpty()
+      @Override
+	public boolean isEmpty()
       {
          return (numItems == 0);
       }
    
-      public Comparable peek()
+      @Override
+	public Comparable peek()
       {
          if (numItems == 0)
          {
@@ -39,7 +43,8 @@
       
       }
    
-      public Comparable remove()
+      @Override
+	public Comparable remove()
       {
          if (numItems == 0)
          {
@@ -66,7 +71,8 @@
       
       }
    
-      public boolean add(Comparable obj)
+      @Override
+	public boolean add(Comparable obj)
       {
          numItems++;
          if (numItems >= items.length)
@@ -81,7 +87,8 @@
          return (obj1.compareTo(obj2) > 0);
       }
    
-      public String toString()
+      @Override
+	public String toString()
       {
          String ans = "[";
          for (int i = 1; i <= numItems; i++)

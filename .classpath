@@ -5,10 +5,10 @@
 	<classpathentry kind="src" path="Chapter5Labs"/>
 	<classpathentry kind="src" path="Chapter6Labs"/>
 	<classpathentry kind="src" path="Chapter9Labs"/>
-	<classpathentry kind="src" path="VariousProjects"/>
 	<classpathentry kind="src" path="Chapter11Labs"/>
 	<classpathentry kind="src" path="Chapter10Labs"/>
 	<classpathentry kind="src" path="ReferenceClasses"/>
+	<classpathentry kind="src" path="PostBookLabs"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Chapter12Labs"/>
 	<classpathentry kind="output" path="bin"/>

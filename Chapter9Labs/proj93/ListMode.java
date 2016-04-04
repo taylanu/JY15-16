@@ -1,6 +1,5 @@
 package proj93;
 import java.util.*;
-import java.io.*;
 
 public class ListMode{
 

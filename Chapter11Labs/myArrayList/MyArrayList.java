@@ -9,7 +9,8 @@ public class MyArrayList<anyType> implements ListInterface<anyType>{
          numElements = 0;
       }
    
-       public boolean add(anyType x) {
+       @Override
+	public boolean add(anyType x) {
     	   if(numElements>=list.length)
     		   doubleCapacity();
     	list[numElements]=x;
@@ -17,7 +18,8 @@ public class MyArrayList<anyType> implements ListInterface<anyType>{
 		return true;
 	}
       
-       public boolean add(int index, anyType x) {
+       @Override
+	public boolean add(int index, anyType x) {
 		for(int i = list.length; i>index;i--){
 			list[list.length]=list[list.length+1];//unsure if works.
 		 }
@@ -43,10 +45,12 @@ public class MyArrayList<anyType> implements ListInterface<anyType>{
       	//to be used if we add an element that would be over the capacity of list
       }
 
+	@Override
 	public anyType get(int index) {//complete
 			return (anyType) list[index];
 	}
 
+	@Override
 	public anyType remove(int index) {
 		anyType y = (anyType) list[index];
         for(int i = index; i < numElements - 1; i++)
@@ -58,16 +62,19 @@ public class MyArrayList<anyType> implements ListInterface<anyType>{
        return y;
 	}
 
+	@Override
 	public anyType set(int index, anyType x) {
 		anyType y = (anyType) list[index];
 		list[index]=x;
 		return y;
 	}
 	
+	@Override
 	public int size() {
 		return numElements;
 	}
 
+	@Override
 	public String toString()
       {
          String ans = "[";

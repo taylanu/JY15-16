@@ -72,7 +72,8 @@ package reference;
 	            setBackground(Color.GRAY);
 	        }
 
-	        protected void paintComponent(Graphics g) {
+	        @Override
+			protected void paintComponent(Graphics g) {
 	            super.paintComponent(g);
 	            double barWidth = (double) (getWidth() - 6) / hue.length;
 	            int h = getHeight() - 6;
@@ -108,7 +109,8 @@ package reference;
 	        bottom.setBackground(Color.WHITE);
 	        add(bottom, BorderLayout.SOUTH);
 	        startButton.addActionListener(new ActionListener() {
-	            public void actionPerformed(ActionEvent e) {
+	            @Override
+				public void actionPerformed(ActionEvent e) {
 	                if (running)
 	                    stop();
 	                else
@@ -253,7 +255,8 @@ package reference;
 	     * array ends up sorted.
 	     */
 	    private class Runner extends Thread {
-	        public void run() {
+	        @Override
+			public void run() {
 	            try {
 	                for (int i = hue.length - 1; i > 0; i--) { // Randomize array.
 	                    int r = (int) ((i + 1) * Math.random());

@@ -597,7 +597,7 @@
          {
             if(str.getHealth() != 0)
             {
-               str.damage(((Monster)(curr)).getStompPower());
+               str.damage((curr).getStompPower());
                if(str.getHealth() == 0)
                {
                   if(str.getName().startsWith("FUEL"))	//if we stomp a fuel depot, make it explode

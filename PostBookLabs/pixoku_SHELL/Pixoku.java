@@ -750,7 +750,8 @@
          repaint();			//refresh the screen
       }
    
-      public void paintComponent(Graphics g)
+      @Override
+	public void paintComponent(Graphics g)
       {
          super.paintComponent(g); 
          Utilities.drawPixelCount(g);
@@ -761,13 +762,15 @@
    //***BEGIN MOUSE STUFF***
       private class Listener implements ActionListener
       {
-         public void actionPerformed(ActionEvent e)	//this is called for each timer iteration
+         @Override
+		public void actionPerformed(ActionEvent e)	//this is called for each timer iteration
          {
             repaint();
          }
       }
    
-      public void mouseClicked( MouseEvent e )
+      @Override
+	public void mouseClicked( MouseEvent e )
       {
          int button = e.getButton();
          if(titleScreen)
@@ -831,16 +834,20 @@
          repaint();
       }
    
-      public void mousePressed( MouseEvent e )
+      @Override
+	public void mousePressed( MouseEvent e )
       {}
    
-      public void mouseReleased( MouseEvent e )
+      @Override
+	public void mouseReleased( MouseEvent e )
       {}
    
-      public void mouseEntered( MouseEvent e )
+      @Override
+	public void mouseEntered( MouseEvent e )
       {}
    
-      public void mouseMoved( MouseEvent e)
+      @Override
+	public void mouseMoved( MouseEvent e)
       {
          mouseX = e.getX();
          mouseY = e.getY();
@@ -866,10 +873,12 @@
          repaint();			//refresh the screen
       }
    
-      public void mouseDragged( MouseEvent e)
+      @Override
+	public void mouseDragged( MouseEvent e)
       {}
    
-      public void mouseExited( MouseEvent e )
+      @Override
+	public void mouseExited( MouseEvent e )
       {}
    
    

@@ -1784,7 +1784,7 @@ public class ImageDisplay extends MMMPanel
    
       if(!gameStarted)
       {//***SELECT DIFFICULTY or show title screen info
-         y+=(int)(size);
+         y+=(size);
          g.setFont(new Font("Monospaced", Font.BOLD, (int)(size*.75)));
          g.setColor(Color.yellow.darker().darker());
       
@@ -1932,7 +1932,7 @@ public class ImageDisplay extends MMMPanel
                   }
             }
          //***SELECT GAME MODE   
-            y+=(int)(size);
+            y+=(size);
          
             g.setFont(new Font("Monospaced", Font.BOLD, (int)(size*.75)));
             g.setColor(Color.yellow.darker().darker());
@@ -1983,7 +1983,7 @@ public class ImageDisplay extends MMMPanel
                      }
                
          //***SELECT MAP   
-            y+=(int)(size);
+            y+=(size);
          
             g.setFont(new Font("Monospaced", Font.BOLD, (int)(size*.75)));
             g.setColor(Color.yellow.darker().darker());

@@ -18,7 +18,8 @@
          size = z;
       }
    
-       public int compareTo(Object arg)
+       @Override
+	public int compareTo(Object arg)
       {
          Score that = (Score)arg;
          if(this.score != that.score)			//if scores are different, higher score wins
@@ -33,7 +34,8 @@
          return "HIGH SCORE: " + player +", with " + score + " points in " + time + " sec";
       }
       
-       public String toString()
+       @Override
+	public String toString()
       {
          return fileName + " " + solutionImage + " " + player +" " + score + " " + time + " " + size;
       }

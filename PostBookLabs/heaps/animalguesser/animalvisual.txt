@@ -1,0 +1,9 @@
+animals.txt Grouped Manually
+Taylan Unal 4/4/16
+							   					Is it a mammal?
+										n/					\y
+					    Is it a bird?								    Is it feline?
+					n/		  \y					  		n/				\y
+		   Is it a fish?		   Is it flightless?					Is it a primate?		Is it a common house pet?
+		n/		\y		n/	    \y					n/			\y			n/		   \y
+Is it an alligator?	Is it a shark?	Is it a hawk?	Is it an emu?			   Is it a horse?	   Is it a gorilla?	Is it a lion?		Is it a house cat?
