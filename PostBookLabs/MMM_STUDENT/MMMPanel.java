@@ -9,8 +9,6 @@
 
    import java.util.ArrayList;
 
-   import java.io.IOException;
-
 
 //TO DO:
 // attempt depth perception - add row number to size of panels, structures and players

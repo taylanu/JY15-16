@@ -1,5 +1,4 @@
 //MONSTER MAKER UTILITIES  
-import javax.swing.ImageIcon;
 import java.awt.Graphics;
 import java.awt.Font;
 import java.awt.Color;

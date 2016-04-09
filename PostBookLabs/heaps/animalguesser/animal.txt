@@ -6,11 +6,69 @@ Is it a fish?
 Is it flightless?
 Is it a primate?
 Is it a common house pet?
-Is it an alligator?
+Does it have scales?
 Is it a shark?
-Is it a hawk?
+Is it the National Bird?
 Is it an emu?
-Is it a horse?
+Does it have a pouch?
 Is it a gorilla?
 Is it a lion?
 Is it a house cat?
+Does it live in a colony?
+Is it a snake?
+0
+0
+Can it repeat what you say
+Is it a eagle?
+0
+0
+Does it have a tail?
+Is it a kangaroo?
+0
+0
+0
+0
+0
+0
+Does it croak?
+Is it a ant?
+0
+0
+0
+0
+0
+0
+Is it a hawk?
+Is it a parrot?
+0
+0
+0
+0
+0
+0
+Is it a horse?
+Is it a rat?
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Is it an alligator?
+Is it a frog?
+0
+0
+0
+0
+0
+0
+0
+0
