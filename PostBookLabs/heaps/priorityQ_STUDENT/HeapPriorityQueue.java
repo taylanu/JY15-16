@@ -37,14 +37,17 @@ public class HeapPriorityQueue implements PriorityQueue{
       return items[1];
    }
    
-   private void reheapDown(){
+   private void reheapDown(){//used when removing top element from heap. 
+   //copy last element into root, remove the last element.
+   //Reheap-Down: continually swap the new element with the higher-priority of its two children until its children are lower-priority, or it doesnt have any children.
    //OMG - YOU HAVE TO WRITE THIS!	
    //removes head and then adjusts
    }
    
-   private void reheapUp(){
+   private void reheapUp(){//used when adding elements to heap
    //HOLY CRAP - YOU HAVE TO WRITE THIS ONE TOO!
-   //adds to end and then readjusts
+   //adds to end of the array, from left to right on lowest level of the tree
+   //Reheap-up: continually swap the new element with its parent until its parent is higher priority, or it has no parent.
 	int index = numItems;//start at 'bottom'
 	  while((index != 1) && (items[index].compareTo(items[index / 2]) < 0 )){
 		  //^^checks both that the index is not the head, and that the item referenced is not higher priority than its parent.
