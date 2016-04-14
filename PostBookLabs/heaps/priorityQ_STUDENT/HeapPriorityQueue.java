@@ -43,30 +43,24 @@ public class HeapPriorityQueue implements PriorityQueue{
    //OMG - YOU HAVE TO WRITE THIS!	
    //removes head and then adjusts
    int index = 1;//first element disregarding the unused 0 value
-   	while((index!=items.length) && (items[index]) 
-   		swap([],a,b);
-   }
    
-   //http://cs.fit.edu/~ryan/java/programs/sort/HeapSort-java.html
-   // Assuming that the root of the heap is the only element out of
- 49    // place, restore the heap property:  data[Parent] >= data[Child]
- 50    // O(log n)
- 51   // private static void reheapDown (final int [] data, int size) {
- 52     //  int root = 0;
- 53      // while (2*root+1<size) {
- 54 	 // Root is an interior node
- 55      //    final int maxChild = largerChild (data, root, size);
- 56 	 //final int r = data[root];
- 57 	 //final int max = data[maxChild];
- 58 
- 59 	// if (r>=max) break;
- 60 	 // swap
- 61 	 //data[root] = max;
- 62 	 //data[maxChild] = r;
- 63       //   root = maxChild;
- 64       //}
- 65    //}
- 66 
+   while(index*2 <= numItems && (items[index].compareTo(items[index*2]) > 0 || items[index].compareTo(items[index * 2 + 1]) > 0)){
+     if((index*2)+1 <= numItems){
+      if(items[index*2].compareTo(items[index*2+1]) <= 0)
+         {swap(items, index, index * 2);
+         index = index*2;}
+      else
+         {swap(items, index, index*2 + 1);
+         index = index*2+1;}
+     }
+     else if(index*2 == numItems){
+      if(items[index*2].compareTo(items[index*2+1]) <= 0)
+         {swap(items, index, index*2);
+         index = index*2;}
+     }      
+   }
+}
+  
    
    private void reheapUp(){//used when adding elements to heap
    //HOLY CRAP - YOU HAVE TO WRITE THIS ONE TOO!
