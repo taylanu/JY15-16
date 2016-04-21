@@ -6,6 +6,7 @@
 	<classpathentry kind="src" path="MMM_STUDENT"/>
 	<classpathentry kind="src" path="pixoku_SHELL"/>
 	<classpathentry kind="src" path="sparseMatrix"/>
+	<classpathentry kind="src" path="2012"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

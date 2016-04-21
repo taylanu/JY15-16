@@ -1,0 +1,3 @@
+proj51 Assignment:
+Add extra constructors to the Student class of this chapter's first case study
+(Student Test Scores), and test these methods thoroughly with a Tester program.
