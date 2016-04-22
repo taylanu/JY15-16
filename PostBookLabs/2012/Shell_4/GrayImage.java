@@ -38,7 +38,8 @@
              
       }
    
-      public String toString()
+      @Override
+	public String toString()
       {
          String s = "";
          for (int[] row : pixelValues)

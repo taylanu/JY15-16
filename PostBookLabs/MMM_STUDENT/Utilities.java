@@ -7,7 +7,8 @@
    import java.io.FileReader;
    import java.io.File;
    import java.util.Scanner;
-   import java.awt.event.KeyEvent;
+import java.awt.Graphics;
+import java.awt.event.KeyEvent;
 
   //handles miscelaneous methods and file IO for highscores
    public class Utilities extends MMMPanel
@@ -1354,5 +1355,89 @@
             } 
          }
       }
-   
+
+	public static void readHighScores(String string, ArrayList<Score> fileNames) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void initBoard(int[][] board) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void playStartScale() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void selSortSize(ArrayList<Score> randomHighScores) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void updateScores(ArrayList<Score> randomHighScores, String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void helpPlayer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void clearCanvas(int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static String setFileName(String theme) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static void playWinScale() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static boolean checkForHighScore(ArrayList<Score> list) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public static int thereIsOptionHighlighted() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	  static void showBoard(Graphics g) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void drawInstructions(Graphics g) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void drawPixelCount(Graphics g) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void clearHighlightedOptions() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static String trimTheme(String filename) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static void checkForErrors() {
+		// TODO Auto-generated method stub
+		
+	}
    }

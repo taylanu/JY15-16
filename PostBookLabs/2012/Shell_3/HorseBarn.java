@@ -56,7 +56,8 @@ package Shell_3;
        	}
       }
    
-      public String toString()
+      @Override
+	public String toString()
       {
          return Arrays.toString(spaces);
       }
