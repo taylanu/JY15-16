@@ -21,7 +21,7 @@ public class MMMDriver						//Driver Program
       width = (int)(height * 1.3);
       frame.setSize(width, height);					//Size of game window
       frame.setLocation(100, 50);					//location of game window on the screen
-      frame.setExtendedState(JFrame.NORMAL);  	//MAXIMIZED_BOTH, MAXIMIZED_VERT, or ICONIFIED
+      frame.setExtendedState(Frame.NORMAL);  	//MAXIMIZED_BOTH, MAXIMIZED_VERT, or ICONIFIED
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       frame.setContentPane(screen);		
       frame.setVisible(true);
@@ -34,13 +34,16 @@ public class MMMDriver						//Driver Program
 
    public static class listen implements KeyListener 
    {
-      public void keyTyped(KeyEvent e)
+      @Override
+	public void keyTyped(KeyEvent e)
       {}
    
-      public void keyPressed(KeyEvent e)
+      @Override
+	public void keyPressed(KeyEvent e)
       {}
    
-      public void keyReleased(KeyEvent e)
+      @Override
+	public void keyReleased(KeyEvent e)
       {
          int k=e.getKeyCode();
       
@@ -50,7 +53,7 @@ public class MMMDriver						//Driver Program
             {
                screen.change(k);
                height += 2;
-               frame.setExtendedState(JFrame.MAXIMIZED_BOTH);  //MAXIMIZED_BOTH, MAXIMIZED_VERT, or ICONIFIED
+               frame.setExtendedState(Frame.MAXIMIZED_BOTH);  //MAXIMIZED_BOTH, MAXIMIZED_VERT, or ICONIFIED
                frame.repaint();
             }
          }
@@ -60,7 +63,7 @@ public class MMMDriver						//Driver Program
             height = 714;
             width = (int)(height * 1.3);
             frame.setSize(width, height);				//Size of game window
-            frame.setExtendedState(JFrame.NORMAL); //MAXIMIZED_BOTH, MAXIMIZED_VERT, ICONIFIED
+            frame.setExtendedState(Frame.NORMAL); //MAXIMIZED_BOTH, MAXIMIZED_VERT, ICONIFIED
             frame.repaint();
          }
          else

@@ -11,6 +11,7 @@ public class Philly extends Horse{
 		  super(loc, i);
 	      power = (int)(Math.random() * 61) + 30;
 		   }
+	@Override
 	public void raceStride(){
 	      int rand = (int)(Math.random() * 100) + 1;
 	      if(rand < power)

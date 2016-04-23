@@ -38,6 +38,7 @@ public class Horse{
          advance();
    }
 
+@Override
 public String toString(){
       String str = new String();
       String first = new String ("");

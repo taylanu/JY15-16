@@ -29,16 +29,19 @@ public class Triangle extends AbstractShape implements Shapeable{
        y3 = Py3;
     }
 
+	@Override
 	public double area() {
 		return (Math.abs((xPos * y2) - (x2 * yPos) + (x2 * y3) - (x3 * y2) + (x3 * yPos) - (xPos * y3)))/2;
 	}
 
-	   public void draw(Graphics G){//drawLine is method called from java.awt.Graphics.
+	   @Override
+	public void draw(Graphics G){//drawLine is method called from java.awt.Graphics.
 	      G.drawLine((int)xPos,(int)yPos,(int)x2,(int)y2);
 	      G.drawLine((int)x2,(int)y2,(int)x3,(int)y3);
 	      G.drawLine((int)x3,(int)y3,(int)xPos,(int)yPos);
 	   }
 
+	@Override
 	public void stretchBy(double Factor) {
 	      x2 = xPos + (x2 - xPos) * Factor;
 	      y2 = yPos + (y2 - yPos) * Factor;
@@ -46,6 +49,7 @@ public class Triangle extends AbstractShape implements Shapeable{
 	      y3 = yPos + (y3 - yPos) * Factor;
 	}
 
+	@Override
 	public String toString(){
        String data ="Point 1 is at:" + super.toString() + "\nPoint 2 is at:\t(" + x2 + "," + y2 + ")\nPoint 3 is at\t (" + x3 + "," + y3 + ")\nThe Perimeter is:\t" + perimeter();
        return data;

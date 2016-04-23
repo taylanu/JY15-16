@@ -9,8 +9,6 @@
 
    import java.util.ArrayList;
 
-   import java.io.IOException;
-
 
 //TO DO:
 // attempt depth perception - add row number to size of panels, structures and players
@@ -2174,7 +2172,8 @@
       }
    
    
-      public void paintComponent(Graphics g)
+      @Override
+	public void paintComponent(Graphics g)
       {
          super.paintComponent(g); 
          ImageDisplay.drawMainScreen(g);
@@ -2183,7 +2182,8 @@
    
       private class Listener implements ActionListener
       {
-         public void actionPerformed(ActionEvent e)	//this is called for each timer iteration - make the enemy move randomly
+         @Override
+		public void actionPerformed(ActionEvent e)	//this is called for each timer iteration - make the enemy move randomly
          {
             if(numFrames == Integer.MAX_VALUE)					//roll over frame count and reset shot times if we get to max int value
             {
@@ -2236,7 +2236,8 @@
       }
    
    //***BEGIN MOUSE STUFF***
-      public void mouseClicked( MouseEvent e )
+      @Override
+	public void mouseClicked( MouseEvent e )
       {
          if(titleScreen)
          {
@@ -2297,16 +2298,20 @@
          }
       }
    
-      public void mousePressed( MouseEvent e )
+      @Override
+	public void mousePressed( MouseEvent e )
       {}
    
-      public void mouseReleased( MouseEvent e )
+      @Override
+	public void mouseReleased( MouseEvent e )
       {}
    
-      public void mouseEntered( MouseEvent e )
+      @Override
+	public void mouseEntered( MouseEvent e )
       {}
    
-      public void mouseMoved( MouseEvent e)
+      @Override
+	public void mouseMoved( MouseEvent e)
       {
          mouseX = e.getX();
          mouseY = e.getY();
@@ -2429,13 +2434,16 @@
       
       }
    
-      public void mouseDragged( MouseEvent e)
+      @Override
+	public void mouseDragged( MouseEvent e)
       {}
    
-      public void mouseExited( MouseEvent e )
+      @Override
+	public void mouseExited( MouseEvent e )
       {}
    
-      public void mouseWheelMoved(MouseWheelEvent e) 
+      @Override
+	public void mouseWheelMoved(MouseWheelEvent e) 
       {
          if(gameStarted && !pause)
          {

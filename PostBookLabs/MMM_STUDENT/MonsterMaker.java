@@ -1,5 +1,4 @@
 //MONSTER MAKER UTILITIES  
-import javax.swing.ImageIcon;
 import java.awt.Graphics;
 import java.awt.Font;
 import java.awt.Color;
@@ -251,7 +250,7 @@ public class MonsterMaker extends MMMPanel
    {
       ImageDisplay.showAndRotateMonster(g, Integer.parseInt(customInfo[1]));
    
-      int size = (int)(cellSize/2);
+      int size = cellSize/2;
       int x = cellSize + size;
       int y = cellSize + size;
       
@@ -350,7 +349,7 @@ public class MonsterMaker extends MMMPanel
          if(newType == 1 || newType == 2)	//Dinosaur or Robot
             animSpeed = (int)(animation_delay*1.5);
          else if (newType == 5)				//Worm
-            animSpeed = (int)(animation_delay/2);
+            animSpeed = animation_delay/2;
          if(!canRotateHead360(newType) && Boolean.parseBoolean(customInfo[9])==true)    			 
             customInfo[9] = "false";	//only some gets the 360 degree head turn
          if(!canFly(newType) && Boolean.parseBoolean(customInfo[11])==true)    			 
@@ -1020,7 +1019,7 @@ public class MonsterMaker extends MMMPanel
    
       if(cost.length() > 0)
       {
-         g.setFont(new Font("Monospaced", Font.BOLD, (int)(size)));
+         g.setFont(new Font("Monospaced", Font.BOLD, (size)));
          g.setColor(Color.yellow);
          y += size;
          g.drawString("COST: " + cost, x, y+=((int)(size*.75)));

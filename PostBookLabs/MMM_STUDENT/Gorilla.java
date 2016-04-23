@@ -25,7 +25,8 @@ public class Gorilla extends Monster
    }
 
  //returns true if the monster can grab the unit of type specified by name
-   public boolean canGrabUnit(String name)
+   @Override
+public boolean canGrabUnit(String name)
    {
       if(name.startsWith("CYCLE") || name.startsWith("CAR") || name.startsWith("CROWD") || name.equals("AIR newscopter"))
          return true;
@@ -33,7 +34,8 @@ public class Gorilla extends Monster
    }
 
 //grabs a unit of type specified by name
-   public void grabUnit(String name)
+   @Override
+public void grabUnit(String name)
    {
       String[] contents = super.getClawContents();
       if(contents[0].equals("empty"))
@@ -44,7 +46,8 @@ public class Gorilla extends Monster
    }
 
  //post:  returns the type that the monster shoots
-   public String projectileType()
+   @Override
+public String projectileType()
    {
       String[] contents = super.getClawContents();
       if(!contents[0].startsWith("CROWD") && !contents[0].startsWith("empty"))
@@ -55,7 +58,8 @@ public class Gorilla extends Monster
    }
    
 	   //eats a unit and updates health and claw contents
-   public void eatUnit()
+   @Override
+public void eatUnit()
    {
       String[] contents = super.getClawContents();
       int index = -1;		//index of claw contents that are full
@@ -93,7 +97,8 @@ public class Gorilla extends Monster
       }
    }
 
-   public String reloadingMessage()
+   @Override
+public String reloadingMessage()
    {
       return "Nothing to throw!";
    }

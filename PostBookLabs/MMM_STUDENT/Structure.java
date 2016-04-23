@@ -46,7 +46,7 @@
                   heightDiff = (int)(SIZE/1.5);
                else
                   if(super.getName().startsWith("WATER TOWER"))  
-                     heightDiff = (int)(SIZE/2);
+                     heightDiff = SIZE/2;
                   else
                      if(super.getName().equals("ELEC TOWER 1") || super.getName().startsWith("Blop"))  
                         heightDiff = 0;
@@ -58,12 +58,14 @@
          //System.out.println(this);
       }
    
-      public Structure clone()
+      @Override
+	public Structure clone()
       {
          return (new Structure(this.getName(), row, col, panel, images, this.getAnimationDelay(), isPassable, isDestroyable, height, health, sizeValue, imageIndex, propertyValue));
       }
    
-      public String toString()
+      @Override
+	public String toString()
       {	//used to store structures in a file for custom built maps
          return getName() + ":" + row + " " + col + " " + panel + " " + getAnimationDelay() + " " + isPassable + " " + isDestroyable + " " + height + " " + health + " " + imageIndex + " " + propertyValue;
       }
@@ -127,7 +129,8 @@
    
    	//post:	shows building ok (col 0) or destroyed (col 1) for building at index row i
    	//			doesn't advance the animation index
-      public ImageIcon getPicture()
+      @Override
+	public ImageIcon getPicture()
       {
          int i = imageIndex;
          ImageIcon[][][] pics = super.getPictures();
@@ -139,7 +142,8 @@
          return pics[0][0][0];
       }
    	//post:	advances the animation index but stops on the last image
-      public void advanceAnimation()
+      @Override
+	public void advanceAnimation()
       {
          int nf = super.getNumFrames();
          int ai = super.getAnimationIndex();
@@ -156,7 +160,8 @@
    
    //post:	returns an image of the structure at index i
    	//			and advances the animation index
-      public ImageIcon getPictureAndAdvance()
+      @Override
+	public ImageIcon getPictureAndAdvance()
       {
          int i = imageIndex;
          ImageIcon[][][] pics = super.getPictures();

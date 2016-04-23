@@ -263,7 +263,8 @@ public class Entity
       return y;
    }
 
-   public String toString()
+   @Override
+public String toString()
    {
       return name + x + "," + y;
    }

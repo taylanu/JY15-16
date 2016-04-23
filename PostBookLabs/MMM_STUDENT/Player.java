@@ -352,7 +352,8 @@ public class Player extends Entity
       reloadTime = rt;
    }
    
-   public void clearDirections()
+   @Override
+public void clearDirections()
    {
       super.clearDirections();
       moveIncrX = 0;
@@ -487,7 +488,8 @@ public class Player extends Entity
 
 //post:	returns an image of the player depending on which way they are facing
 //			but doesn't advance the animation index
-   public ImageIcon getPicture()
+   @Override
+public ImageIcon getPicture()
    {
       ImageIcon[][][] pictures = getPictures();
       if(pictures==null)
@@ -521,7 +523,8 @@ public class Player extends Entity
 
 //post:	returns an image of the player depending on which way they are facing
 //			and advances the animation index
-   public ImageIcon getPictureAndAdvance()
+   @Override
+public ImageIcon getPictureAndAdvance()
    {
       ImageIcon temp;
       ImageIcon[][][] pictures = getPictures();

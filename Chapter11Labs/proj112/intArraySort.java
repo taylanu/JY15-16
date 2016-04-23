@@ -1,7 +1,6 @@
 package proj112;
 
 import java.util.Scanner;
-import java.io.*;
 
 public class intArraySort {
     static int[] list = new int[10];
