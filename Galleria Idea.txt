@@ -1,0 +1,10 @@
+Proposed to Mr.Wightman, but will likely only happen next year, if ever.
+
+Galleria of Code..
+Imagine a galleria of code, a day where students can come together, just as we do with the Art Fair, where ANY student can submit programs to. One day, possibly after SOL’s end, we could have a day during lunch, where students can come down to the AUX gym, or the dance studio, and view their peer’s creations.
+From simple programs that tell you the weather today, to simple chat bots, to more complex programs like games, clients, or interactive user interfaces.
+All that we need is a spark powerful enough to keep the computer science interest blaze alive. I truly believe that students will love sharing their creations with their peers and teachers.
+This fair will serve the student, their classmates, the school, and the greater interest market for computer science.
+Hopefully, I’ll be able to build a project outline and server where students can submit their programs and have it display on the code gallery for both students and the world to see.
+
+Taylan Unal 1/5/16
