@@ -7,6 +7,7 @@ import java.util.*;
 //Implement an array as a heap.  Each index has a parent at (index/2), a left child as (index*2) and a right child at index*2+1.
 //The index path following a "no" response will go to the left child (left subtree).  
 //The index path following a "yes" response will go to the right child (right subtree).
+
 public class animalGuesserShell{
 	static Scanner input = new Scanner(System.in);
 	static String filename = "/home/taylanu/Documents/JY15-16/PostBookLabs/heaps/animalguesser/animal.txt";

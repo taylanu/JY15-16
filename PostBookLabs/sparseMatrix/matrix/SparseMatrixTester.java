@@ -1,4 +1,5 @@
-   public class SparseMatrixTester
+package matrix;
+public class SparseMatrixTester
    {
       public static void main(String[] arg)
       {

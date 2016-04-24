@@ -1,3 +1,4 @@
+package binarybisection;
 
 public class trial1 {
 public static void bisection(){

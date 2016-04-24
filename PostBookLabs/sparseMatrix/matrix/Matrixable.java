@@ -1,3 +1,4 @@
+package matrix;
    public interface Matrixable<anyType>
    {
       public anyType get(int r, int c);				//returns the element at row r, col c
