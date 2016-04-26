@@ -8,7 +8,7 @@ public class bisection {
 	public static void bisection(){
 		Scanner input = new Scanner(System.in);
 		//double x^2 = 23;
-	
+		
 		double tolerance;
 		int maxIter = 100;//temporary
 		System.out.println("What is the highest degree of your polynomial?");
