@@ -1,8 +1,7 @@
 package matrix;
-public class SparseMatrixTester
-   {
-      public static void main(String[] arg)
-      {
+public class SparseMatrixTester{
+      public static void main(String[] arg){
+    	  
          SparseMatrix<String> sm = new SparseMatrix(4, 5);
          //sm will be a 4 x 5 array of Strings
       	

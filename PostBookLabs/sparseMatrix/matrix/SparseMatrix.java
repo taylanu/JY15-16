@@ -2,20 +2,15 @@ package matrix;
 import java.util.*;
 
 public class SparseMatrix<anyType> implements Matrixable<anyType>{
-	/*public SparseMatrix(int i, int j) {
-	// TODO Auto-generated constructor stub
-	//builds 2D array for sparse matrix
-//
-}
-*/
+	//needs to have util imported.
+	//COMMENT.
+	
 	private int numElements;
 	private ArrayList<Cell<anyType>> list;//create Cells that will contain points
 	private int numRows;
 	private int numCols;
 	
 	public SparseMatrix(int r, int c) {
-		// TODO Auto-generated constructor stub
-		list = new ArrayList();
 		numElements = 0;
 		numRows = r;
 		numCols = c;
@@ -27,44 +22,80 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 	}
 
 	@Override
-	public anyType get(int r, int c) {
-		// TODO Auto-generated method stub
+	public anyType get(int r, int c) {//complete
+		for(Cell i : list)
+			if(i.getRow()==r && i.getCol()==c)
+				return (anyType) i.getVal();
 		return null;
 	}
 
 	@Override
 	public anyType set(int r, int c, Object x) {
-		// TODO Auto-generated method stub
-		return null;
+		for(Cell i : list)
+			if(i.getRow()==r && i.getCol()==c)
+				i.setVal(x);
+		return null;//should be old value, so build a temp value to store old value
 	}
 
 	@Override
 	public void add(int r, int c, Object x) {
-		// TODO Auto-generated method stub
-		
+		for(Cell i : list)
+			if(i.getRow()==r && i.getCol()==c)
+				list.add((Cell<anyType>) x);
 	}
 
 	@Override
 	public anyType remove(int r, int c) {
-		// TODO Auto-generated method stub
+		anyType temp = null;
+		for(Cell i : list)
+			if(i.getRow()==r && i.getCol()==c){
+				temp = (anyType) i.getVal();
+				list.remove(i);
+				//return (anyType) i.getVal();
+			}
 		return null;
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+		return list.size();
 	}
 
 	@Override
 	public int numRows() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numRows;
 	}
 
 	@Override
 	public int numColumns() {
+		return numCols;
+	}
+
+	@Override
+	public void clear() {
+		list.clear();
+	}
+
+	@Override
+	public boolean contains(anyType x) {
 		// TODO Auto-generated method stub
-		return 0;
+		if(list.contains(x))
+			return true;
+		return false;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		if(list.isEmpty())
+			return true;
+		return false;
+	}
+
+	@Override
+	public int[] getLocation(anyType x) {
+		for(int i=0;i<list.size();i++)
+			if(list.get(i) == x)
+				return null;
+		return null;
 	}
 }

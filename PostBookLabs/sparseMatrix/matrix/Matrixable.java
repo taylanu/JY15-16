@@ -8,15 +8,19 @@ package matrix;
       public int size();			//returns # actual elements stored
       public int numRows();		//returns # rows set in constructor
       public int numColumns();	//returns # cols set in constructor
+      public void clear();							//clears all elements out of the list
+      public boolean contains(anyType x);		//true if x exists in list
+      public boolean isEmpty();					//returns true if there are no actual elements stored
+      public int[] getLocation(anyType x);	//returns location [r,c] of where x exists in list, null otherwise
 
    	/*
-      public boolean contains(anyType x);		//true if x exists in list
-      public int[] getLocation(anyType x);	//returns location [r,c] of where x exists in list, null otherwise
+            public void setBlank(char blank);
+      
       public Object[][] toArray();				//returns equivalent structure in 2-D array form
-      public boolean isEmpty();					//returns true if there are no actual elements stored
-      public void clear();							//clears all elements out of the list
+      
+      
 		
-		public void setBlank(char blank);		//allows the client to set the character that a blank spot in the array is
+				//allows the client to set the character that a blank spot in the array is
 															//represented by in String toString()
    	*/
    }
