@@ -12,7 +12,7 @@ public class Cell<anyType> {
 	}
 	
 	public String toString() {
-		return "Cell []";
+		return "Cell []";//unsure what Cell should print on toString.
 	}
 
 	/**

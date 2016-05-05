@@ -1,6 +1,5 @@
 package matrix;
-   public interface Matrixable<anyType>
-   {
+   public interface Matrixable<anyType>{
       public anyType get(int r, int c);				//returns the element at row r, col c
       public anyType set(int r, int c, anyType x);	//changes element at (r,c), returns old value
       public void add(int r, int c, anyType x);	   //adds obj at row r, col c

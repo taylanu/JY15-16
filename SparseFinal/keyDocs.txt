@@ -1,0 +1,1 @@
+To use keys for the sparse matrix, you copy each element into a 1d array, the key of the value will be (row*numCols)-cols
