@@ -1,4 +1,4 @@
-package matrix;
+package dataStructure;
 
 public class Cell<anyType> {
 	private int row, col, key;

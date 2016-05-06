@@ -1,4 +1,4 @@
-package matrix;
+package dataStructure;
 import java.util.*;
 
 public class SparseMatrix<anyType> implements Matrixable<anyType>{
@@ -89,16 +89,23 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 	}
 
 	
-	public int size() {return list.size();}
+	public int size() {
+		return list.size();
+	}
+
+	public int numRows() {
+		return numRows;
+	}
 
 	
-	public int numRows() {return numRows;}
+	public int numColumns() {
+		return numCols;
+	}
 
 	
-	public int numColumns() {return numCols;}
-
-	
-	public void clear() {list.clear();}
+	public void clear() {
+		list.clear();
+	}
 
 	
 	public boolean contains(anyType x) {
@@ -122,7 +129,7 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 	}
 
 	
-	public void setBlank(char blank) {//what to set blank?
+	public void setBlank(char blank) {//what do I need to set blank
 		/*for(int r=0;r<list.size();r++)
 			for(int c)*/
 	}

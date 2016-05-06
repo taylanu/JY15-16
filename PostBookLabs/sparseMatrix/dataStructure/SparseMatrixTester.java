@@ -1,4 +1,4 @@
-package matrix;
+package dataStructure;
 public class SparseMatrixTester{
       public static void main(String[] arg){
     	  
