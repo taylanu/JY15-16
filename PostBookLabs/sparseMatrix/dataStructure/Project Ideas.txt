@@ -1,0 +1,5 @@
+Project Ideas:
+Meta-Tic-Tac-Toe
+Minesweeper
+Sudoku
+BattleShip
