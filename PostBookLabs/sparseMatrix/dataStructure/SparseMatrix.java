@@ -37,16 +37,18 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 		list = new ArrayList<Cell<anyType>>();
 	}
 
+	@Override
 	public anyType get(int r, int c) {//complete
 		int key = r * numCols + c;
 		for(int i = 0; i<list.size();i++){
 			if(key == ((Cell)list.get(i)).getKey()){//(temp.getRow()==r && temp.getCol()==c)
-				return (anyType) list.get(i).getVal();
+				return list.get(i).getVal();
 			}
 		}
 		return null;
 	}
 
+	@Override
 	public anyType set(int r, int c, anyType x) {
 		// temp = null;
 		Cell<anyType> temp = new Cell<anyType>(r, c, numCols,x);
@@ -55,13 +57,14 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 			if(key == ((Cell)list.get(i)).getKey()){
 				anyType replace = list.get(i).getVal();//swap method of sorts
 				list.set(i, temp);
-				return (anyType)(replace);
+				return (replace);
 			}
 		}
 		return null;//should be old value, so build a temp value to store old value
 	}
 
 	
+	@Override
 	public boolean add(int r, int c, Object x) {
 		Cell sub = new Cell(r, c, numCols, x);
 	      int key = r * numCols + c;
@@ -76,6 +79,7 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 	}
 		
 	
+	@Override
 	public anyType remove(int r, int c) {
 		int key = (r * numCols) + c;
 	      for(int i = 0; i<list.size(); i++){
@@ -89,25 +93,30 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 	}
 
 	
+	@Override
 	public int size() {
 		return list.size();
 	}
 
+	@Override
 	public int numRows() {
 		return numRows;
 	}
 
 	
+	@Override
 	public int numColumns() {
 		return numCols;
 	}
 
 	
+	@Override
 	public void clear() {
 		list.clear();
 	}
 
 	
+	@Override
 	public boolean contains(anyType x) {
 		// TODO Auto-generated method stub
 		if(list.contains(x))
@@ -115,12 +124,14 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 		return false;
 	}
 
+	@Override
 	public boolean isEmpty() {
 		if(list.isEmpty())
 			return true;
 		return false;
 	}
 
+	@Override
 	public int[] getLocation(anyType x) {
 		for(int i=0;i<list.size();i++)
 			if(list.get(i) == x)
@@ -129,11 +140,13 @@ public class SparseMatrix<anyType> implements Matrixable<anyType>{
 	}
 
 	
+	@Override
 	public void setBlank(char blank) {//what do I need to set blank
 		/*for(int r=0;r<list.size();r++)
 			for(int c)*/
 	}
 
+	@Override
 	public Object[][] toArray() {
 		// TODO Auto-generated method stub
 		return null;

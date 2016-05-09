@@ -1,0 +1,13 @@
+SudokuDocs
+-Board will be 9*9 so for loops will go from 0->9 exclusive or 0->8 inclusive
+-Board will have 9 sub-grids, each with 3*3 grids
+-The game will likely have prebuilt setups, instead of instantaneous generation.
+-Game can only have values of 1-9 in the cells. 
+
+Rules:
+Each subboard will have some cells filled out already with values from 1-9, but the board is guaranteed not to be filled completely.
+Each row can only contain one instance of the number, and each column can only include one instance of the number.
+Each subsection can also only contain one of the number.
+
+A row will have at least 1 value filled, but no more than 9 values filled upon instantiation.
+

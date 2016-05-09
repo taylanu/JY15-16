@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="Chapter3Labs"/>
-	<classpathentry kind="src" path="Chapter4Labs"/>
-	<classpathentry kind="src" path="Chapter5Labs"/>
-	<classpathentry kind="src" path="Chapter6Labs"/>
-	<classpathentry kind="src" path="Chapter9Labs"/>
-	<classpathentry kind="src" path="Chapter11Labs"/>
-	<classpathentry kind="src" path="Chapter10Labs"/>
 	<classpathentry kind="src" path="ReferenceClasses"/>
 	<classpathentry kind="src" path="PostBookLabs"/>
 	<classpathentry kind="src" path="Learning"/>
+	<classpathentry excluding="Java and JGrasp Tutorial &amp; Examples/|Java and JGrasp Tutorial &amp; Examples/" kind="src" path="APCS_A_2016 Reference"/>
+	<classpathentry kind="src" path="Java and JGrasp Tutorial &amp; Examples"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="Chapter12Labs"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

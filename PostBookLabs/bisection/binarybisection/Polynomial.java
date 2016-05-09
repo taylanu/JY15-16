@@ -116,7 +116,8 @@ public class Polynomial {
 	    }
 
 	    // convert to string representation
-	    public String toString() {
+	    @Override
+		public String toString() {
 	        if (deg ==  0) return "" + coef[0];
 	        if (deg ==  1) return coef[1] + "x + " + coef[0];
 	        String s = coef[deg] + "x^" + deg;
