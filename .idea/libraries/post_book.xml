@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="post book">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/APCS_A_2016 Reference/post book/heaps.zip!/" />
+      <root url="jar://$PROJECT_DIR$/APCS_A_2016 Reference/post book/LightsOn.zip!/" />
+      <root url="jar://$PROJECT_DIR$/APCS_A_2016 Reference/post book/pixoku_SHELL.zip!/" />
+      <root url="jar://$PROJECT_DIR$/APCS_A_2016 Reference/post book/sparseMatrix.zip!/" />
+      <root url="jar://$PROJECT_DIR$/APCS_A_2016 Reference/post book/MatrixLabs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/APCS_A_2016 Reference/post book/bisection.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

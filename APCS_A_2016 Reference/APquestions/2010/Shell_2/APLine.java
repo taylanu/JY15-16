@@ -1,4 +1,3 @@
-   public class APLine
-   {
-   
-   }
+public class APLine {
+
+}

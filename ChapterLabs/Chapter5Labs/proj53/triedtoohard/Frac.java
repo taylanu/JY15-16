@@ -1,47 +1,49 @@
-import java.math.*; import java.util.*; import java.io.*; public
-class Frac {
-		private int rnumer,rdenom,unumer,udenom,ufrac,rfrac,numer,denom;
-		private String frac;
-		Scanner input = new Scanner(System.in);
-		// Extra credit for reduced fractions and for equal statements.
-	//MATHS!
-	 public void addfrac(){
-      numer = unumer * rdenom + (rnumer * udenom);
-      denom = udenom * rdenom;
-	}
-    public void subfrac(){
-      numer = unumer * rdenom - (rnumer * udenom);
-      denom = udenom * rdenom;
-	}
-   public void multfrac(){
-      numer = unumer * rnumer;
-      denom = udenom * rdenom;
-	}
-   public void divfrac(){
-      numer = unumer * rdenom;
-      denom = rnumer * udenom;
-	}
+import java.util.Scanner;
 
-	public void askop(){
-		System.out.println("Type the letter of the operation you would like to perform");
-		System.out.println("[A = Addition] [S = Subtraction] [M = Multiplication] [D = Division]");
-		String opt = input.next();
-		if (opt.equals("A")){
-			addfrac();
-		}
-		else if (opt.equals("S")){
-			subfrac();
-			}
-		else if (opt.equals("M")){
-			multfrac();
-			}
-		else if (opt.equals("D")){
-			divfrac();
-			}
+public class Frac {
+    Scanner input = new Scanner(System.in);
+    private int rnumer, rdenom, unumer, udenom, ufrac, rfrac, numer, denom;
+    private String frac;
+
+    // Extra credit for reduced fractions and for equal statements.
+    //MATHS!
+    public void addfrac() {
+        numer = unumer * rdenom + (rnumer * udenom);
+        denom = udenom * rdenom;
+    }
+
+    public void subfrac() {
+        numer = unumer * rdenom - (rnumer * udenom);
+        denom = udenom * rdenom;
+    }
+
+    public void multfrac() {
+        numer = unumer * rnumer;
+        denom = udenom * rdenom;
+    }
+
+    public void divfrac() {
+        numer = unumer * rdenom;
+        denom = rnumer * udenom;
+    }
+
+    public void askop() {
+        System.out.println("Type the letter of the operation you would like to perform");
+        System.out.println("[A = Addition] [S = Subtraction] [M = Multiplication] [D = Division]");
+        String opt = input.next();
+        if (opt.equals("A")) {
+            addfrac();
+        } else if (opt.equals("S")) {
+            subfrac();
+        } else if (opt.equals("M")) {
+            multfrac();
+        } else if (opt.equals("D")) {
+            divfrac();
+        }
 /*	public String toString(){
-		return numer + "/" + denom;
+        return numer + "/" + denom;
 		}*/
-	}
+    }
 }
    /*public static boolean isEqual(Frac a, Frac b){
       Boolean e = new Boolean(false);

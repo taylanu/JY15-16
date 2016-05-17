@@ -3,10 +3,11 @@ package proj105;
 
 /**
  * @author taylanu
- *
  */
 public interface BankActions {
-	public void deposit(double d);
-	public void withdraw(double d);
-	public double checkBal();
+    public void deposit(double d);
+
+    public void withdraw(double d);
+
+    public double checkBal();
 }

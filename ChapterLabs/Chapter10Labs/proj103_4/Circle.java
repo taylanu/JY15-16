@@ -2,68 +2,69 @@ package proj103_4;
 
 //Jered Tupik - 11/15/2012
 //Taylan Unal - 1/13/16
-   import java.awt.*;
 
-   public class Circle extends AbstractShape{
+import java.awt.*;
 
-   //Data Fields
-      protected double radius;
+public class Circle extends AbstractShape {
 
-   //DEFAULT CONSTRUCTOR
-      public Circle(){
+    //Data Fields
+    protected double radius;
 
-         super();
-         radius = 1;
-      }
+    //DEFAULT CONSTRUCTOR
+    public Circle() {
 
-   //CUSTOM CONSTRUCTOR
-      public Circle(double xP, double yP, double r){
+        super();
+        radius = 1;
+    }
 
-         super(xP, yP);
-         radius = r;
-      }
+    //CUSTOM CONSTRUCTOR
+    public Circle(double xP, double yP, double r) {
 
-   //@Override
-      @Override
-	public String toString(){
-         String data = "";
-         data = data + "Circle" + "\nRadius: " + radius + "\n" + super.toString();
-         return data;
-      }
+        super(xP, yP);
+        radius = r;
+    }
 
-      public double getRadius(){
-         return radius;
-      }
+    //@Override
+    @Override
+    public String toString() {
+        String data = "";
+        data = data + "Circle" + "\nRadius: " + radius + "\n" + super.toString();
+        return data;
+    }
 
-      public void setRadius(double r){
-         radius = r;
-      }
+    public double getRadius() {
+        return radius;
+    }
 
-   //Pre: Radius != null
-   //Post: Returns the Area of the Circle
-      @Override
-	public double area(){
-         return Math.PI * (radius * radius);
-      }
+    public void setRadius(double r) {
+        radius = r;
+    }
 
-   //PROJ103 Added
-   //Pre: Radius != null
-   //Post: Returns the circumference of the circle
-      public double circum(){
-    	  return Math.PI * 2 * radius;
-      }
+    //Pre: Radius != null
+    //Post: Returns the Area of the Circle
+    @Override
+    public double area() {
+        return Math.PI * (radius * radius);
+    }
 
-   //Pre: G != null, Radius != null
-   //Post: Draws the Circle
-      @Override
-	public void draw(Graphics g){
-         g.drawOval((int)this.getXPos(), (int)this.getYPos(), (int)radius, (int)radius);
-      }
+    //PROJ103 Added
+    //Pre: Radius != null
+    //Post: Returns the circumference of the circle
+    public double circum() {
+        return Math.PI * 2 * radius;
+    }
 
-   //Pre: Factor != null
-   //Post: 'Stretches' the Circle by Factor
-      @Override
-	public void stretchBy(double factor){
-         radius *= factor;
-      }
-   }
+    //Pre: G != null, Radius != null
+    //Post: Draws the Circle
+    @Override
+    public void draw(Graphics g) {
+        g.drawOval((int) this.getXPos(), (int) this.getYPos(), (int) radius, (int) radius);
+    }
+
+    //Pre: Factor != null
+    //Post: 'Stretches' the Circle by Factor
+    @Override
+    public void stretchBy(double factor) {
+        radius *= factor;
+    }
+}

@@ -1,28 +1,31 @@
 package proj101;
 
-public class newt extends amphibia{
-	private int age;
-	private double weight;
-	private String color;
+public class newt extends amphibia {
+    private int age;
+    private double weight;
+    private String color;
 
-	public newt(String c, int a, double w){
-		super();
-		age=a;
-		weight=w;
-		color=c;
-	}
-	public int getAge(){
-		return age;
-	}
-	@Override
-	public String getColor(){
-		return color;
-	}
-	@Override
-	public double getWeight(){
-		return weight;
-	}
-	/*public void natSelect(){
+    public newt(String c, int a, double w) {
+        super();
+        age = a;
+        weight = w;
+        color = c;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public String getColor() {
+        return color;
+    }
+
+    @Override
+    public double getWeight() {
+        return weight;
+    }
+    /*public void natSelect(){
 		// Darwin ;) //
 			Scanner reader = new Scanner(System.);
 			setAlive(false);

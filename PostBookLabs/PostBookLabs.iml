@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/2012" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bisection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/heaps" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LightsOn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MMM_STUDENT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pixoku_Assignment" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sparseMatrix" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

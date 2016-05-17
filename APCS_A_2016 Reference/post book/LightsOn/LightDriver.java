@@ -1,10 +1,7 @@
-   
-    public class LightDriver
-   {
-   
-       public static void main(String[]arg)
-      {
-      
-      
-      }
-   }
+public class LightDriver {
+
+    public static void main(String[] arg) {
+
+
+    }
+}

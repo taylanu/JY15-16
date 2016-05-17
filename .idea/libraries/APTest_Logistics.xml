@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="APTest_Logistics">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Misc/APTest_Logistics/APCS2012.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Misc/APTest_Logistics/APCSFR2013.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

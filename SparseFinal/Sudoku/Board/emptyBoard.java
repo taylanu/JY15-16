@@ -1,14 +1,14 @@
 package Board;
 
-import javax.swing.JApplet;
+import javax.swing.*;
 
 public class emptyBoard extends JApplet {
 
-	/**
-	 * Create the applet.
-	 */
-	public emptyBoard() {
+    /**
+     * Create the applet.
+     */
+    public emptyBoard() {
 
-	}
+    }
 
 }

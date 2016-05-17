@@ -1,24 +1,24 @@
 package binarybisection;
 
-import java.util.*;
-import java.math.*;
+import java.util.Scanner;
 
 public class bisection {
-//take two non-linear functions, f(x) and g(x) and find point (x,y) where they intersect.
-	public static void bisection(){
-		Scanner input = new Scanner(System.in);
-		//double x^2 = 23;
-		
-		double tolerance;
-		int maxIter = 100;//temporary
-		System.out.println("What is the highest degree of your polynomial?");
-		int highest_Deg = input.nextInt();
-		System.out.println("Are there any sequential monomials that are missing from your equation?");
-		String ans = input.next();
-		if(ans.compareTo("y") == 0){ System.out.println("What degree(s) are you missing from your equation");
-		int missing_Deg = input.nextInt();
-		}
-	}
+    //take two non-linear functions, f(x) and g(x) and find point (x,y) where they intersect.
+    public static void bisection() {
+        Scanner input = new Scanner(System.in);
+        //double x^2 = 23;
+
+        double tolerance;
+        int maxIter = 100;//temporary
+        System.out.println("What is the highest degree of your polynomial?");
+        int highest_Deg = input.nextInt();
+        System.out.println("Are there any sequential monomials that are missing from your equation?");
+        String ans = input.next();
+        if (ans.compareTo("y") == 0) {
+            System.out.println("What degree(s) are you missing from your equation");
+            int missing_Deg = input.nextInt();
+        }
+    }
 }
 
 //Example taken from http://www.coderanch.com/t/622930/java/java/bisection-method-java

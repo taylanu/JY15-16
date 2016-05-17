@@ -6,22 +6,22 @@ wage. Write a program that takes as inputs the hourly wage, total regular
 hours, and total overtime hours and displays an employee's total weekly pay.
 */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class proj34 {
-    public static void main(String[] args){
-    Scanner reader = new Scanner(System.in);
-    double hrly, rghrs, othrs, rgrate, otrate, wkpay;
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        double hrly, rghrs, othrs, rgrate, otrate, wkpay;
         System.out.println("What is your hourly pay in $");
-    hrly = reader.nextDouble();
+        hrly = reader.nextDouble();
         System.out.println("How many hours do you work a week?");
-    rghrs = reader.nextDouble();
+        rghrs = reader.nextDouble();
         System.out.println("How many overtime hours do you work a week?");
-    othrs = reader.nextDouble();
+        othrs = reader.nextDouble();
 
-    rgrate = (hrly * rghrs);
-    otrate = (hrly * othrs * 1.5);
-    wkpay = (rgrate + otrate);
+        rgrate = (hrly * rghrs);
+        otrate = (hrly * othrs * 1.5);
+        wkpay = (rgrate + otrate);
         System.out.println("Your weekly pay is " + wkpay + " dollars");
     }
 }

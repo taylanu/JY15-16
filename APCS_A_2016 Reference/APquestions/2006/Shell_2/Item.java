@@ -1,4 +1,3 @@
-public interface Item
-{
-  double purchasePrice();
+public interface Item {
+    double purchasePrice();
 }

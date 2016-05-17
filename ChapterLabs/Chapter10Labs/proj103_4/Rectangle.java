@@ -2,84 +2,85 @@ package proj103_4;
 
 //Jered Tupik - 11/15/2012
 //Taylan Unal - 1/13/16
-   import java.awt.*;
 
-   public class Rectangle extends AbstractShape{
+import java.awt.*;
 
-   //Data Fields
-      private double width;
-      private double height;
+public class Rectangle extends AbstractShape {
 
-   //DEFAULT CONSTRUCTOR
-      public Rectangle(){
+    //Data Fields
+    private double width;
+    private double height;
 
-         super();
-         width = 1;
-         height = 1;
-      }
+    //DEFAULT CONSTRUCTOR
+    public Rectangle() {
 
-   //CUSTOM CONSTRUCTOR
-      public Rectangle(double xP, double yP, double W, double H){
+        super();
+        width = 1;
+        height = 1;
+    }
 
-         super(xP, yP);
-         width = W;
-         height = H;
-      }
+    //CUSTOM CONSTRUCTOR
+    public Rectangle(double xP, double yP, double W, double H) {
 
-   //@Override
-      @Override
-	public String toString(){
-         String data = "";
-         data = data + "Rectangle" + "\nWidth: " + width + "\nHeight: " + height + "\n" + super.toString();
-         return data;
-      }
+        super(xP, yP);
+        width = W;
+        height = H;
+    }
 
-      public double getWidth(){
-         return width;
-      }
+    //@Override
+    @Override
+    public String toString() {
+        String data = "";
+        data = data + "Rectangle" + "\nWidth: " + width + "\nHeight: " + height + "\n" + super.toString();
+        return data;
+    }
 
-      public void setWidth(double w){
-         width = w;
-      }
+    public double getWidth() {
+        return width;
+    }
 
-      public double getHeight(){
-         return height;
-      }
+    public void setWidth(double w) {
+        width = w;
+    }
 
-      public void setHeight(double h){
-         height = h;
-      }
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double h) {
+        height = h;
+    }
 
 
-   //Pre: Width != null, Height != null
-   //Post: Returns the Area of a Rectangle
-      @Override
-	public double area(){
-         return width * height;
-      }
+    //Pre: Width != null, Height != null
+    //Post: Returns the Area of a Rectangle
+    @Override
+    public double area() {
+        return width * height;
+    }
 
-   //Proj103 ADDED
-   //Pre: Width != null, Height != null
-   //Post: Returns the Perimeter of a Rectangle
-      public double perimeter(){
-    	  return 2*(width*height);
-      }
+    //Proj103 ADDED
+    //Pre: Width != null, Height != null
+    //Post: Returns the Perimeter of a Rectangle
+    public double perimeter() {
+        return 2 * (width * height);
+    }
 
-   //Pre: G != null, Width != null, Height != null, xPos != null, yPos != null
-   //Post: Draws the Rectangle
-      @Override
-	public void draw(Graphics G){
-         G.drawLine((int)this.getXPos(), (int)this.getYPos(), (int)(this.getXPos() + width), (int)this.getYPos());
-         G.drawLine((int)this.getXPos(), (int)this.getYPos(), (int)this.getXPos(), (int)(this.getYPos() + height));
-         G.drawLine((int)(this.getXPos() + width), (int)this.getYPos(), (int)(this.getXPos() + width), (int)(this.getYPos() + height));
-         G.drawLine((int)this.getXPos(), (int)(this.getYPos() + height), (int)(this.getXPos() + width), (int)(this.getYPos() + height));
-      }
+    //Pre: G != null, Width != null, Height != null, xPos != null, yPos != null
+    //Post: Draws the Rectangle
+    @Override
+    public void draw(Graphics G) {
+        G.drawLine((int) this.getXPos(), (int) this.getYPos(), (int) (this.getXPos() + width), (int) this.getYPos());
+        G.drawLine((int) this.getXPos(), (int) this.getYPos(), (int) this.getXPos(), (int) (this.getYPos() + height));
+        G.drawLine((int) (this.getXPos() + width), (int) this.getYPos(), (int) (this.getXPos() + width), (int) (this.getYPos() + height));
+        G.drawLine((int) this.getXPos(), (int) (this.getYPos() + height), (int) (this.getXPos() + width), (int) (this.getYPos() + height));
+    }
 
-   //Pre: Factor != null
-   //Post: 'Stretches' the Rectangle by Factor
-      @Override
-	public void stretchBy(double factor){
-         height += factor;
-         width += factor;
-      }
-   }
+    //Pre: Factor != null
+    //Post: 'Stretches' the Rectangle by Factor
+    @Override
+    public void stretchBy(double factor) {
+        height += factor;
+        width += factor;
+    }
+}

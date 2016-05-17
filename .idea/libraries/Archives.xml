@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Archives">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Java and JGrasp Tutorial &amp; Examples/Archives/Game Tutorials.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Java and JGrasp Tutorial &amp; Examples/Archives/Java Basics Sample Programs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Java and JGrasp Tutorial &amp; Examples/Archives/Textbooks.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Java and JGrasp Tutorial &amp; Examples/Archives/keyboard and file input examples.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,17 +1,15 @@
-public abstract class Animal
-{
-   private String name;
+public abstract class Animal {
+    private String name;
 
-   public abstract void move();
-   public abstract void breed();
+    public Animal(String n) {
+        name = n;
+    }
 
-   public Animal(String n)
-   {
-      name = n;
-   }
+    public abstract void move();
 
-   public String toString()
-   {
-      return name;
-   }
+    public abstract void breed();
+
+    public String toString() {
+        return name;
+    }
 }

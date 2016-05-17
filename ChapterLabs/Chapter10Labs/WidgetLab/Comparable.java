@@ -5,5 +5,5 @@ package WidgetLab;
  */
 
 public interface Comparable {
-	public abstract int compareTo(Object arg);
+    public abstract int compareTo(Object arg);
 }

@@ -1,10 +1,7 @@
-import java.util.*;
-import java.io.*;
+public class DoubleSort {
 
-public class DoubleSort{
-
-   public static void main(String arg[]){
-	         /*
+    public static void main(String arg[]) {
+             /*
       double[] avgList = new double[10];
       double[] greaterList = new double[10];
 
@@ -38,18 +35,18 @@ public class DoubleSort{
 }
 */
 
-   }
-    public static void arrayPrint(double[] list, double size){
-      if(size == 0){
-         System.out.println("Your Array Is Empty");
-      }
-      else{
-         String str = "[" + list[0];
-         for(int l = 1; l < size; l++){
-            str = str + ", " + list[l];
-         }
-         System.ou=t.println(str + "]");
-      }
+    }
+
+    public static void arrayPrint(double[] list, double size) {
+        if (size == 0) {
+            System.out.println("Your Array Is Empty");
+        } else {
+            String str = "[" + list[0];
+            for (int l = 1; l < size; l++) {
+                str = str + ", " + list[l];
+            }
+            System.ou = t.println(str + "]");
+        }
     }
 }//CLOSER
 
