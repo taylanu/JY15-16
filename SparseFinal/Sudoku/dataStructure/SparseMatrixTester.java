@@ -5,7 +5,6 @@ public class SparseMatrixTester {
 
         SparseMatrix<String> sm = new SparseMatrix(4, 5);
         //sm will be a 4 x 5 array of Strings
-main();
         sm.add(2, 1, "A");
         sm.add(0, 4, "B");
         sm.add(3, 3, "C");

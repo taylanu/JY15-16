@@ -11,3 +11,5 @@ Each subsection can also only contain one of the number.
 
 A row will have at least 1 value filled, but no more than 9 values filled upon instantiation.
 
+Look up pregenerated sudoku boards.
+
