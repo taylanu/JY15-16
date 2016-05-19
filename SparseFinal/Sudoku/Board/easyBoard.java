@@ -1,6 +1,10 @@
 package Board;
 
+import com.sun.org.apache.xerces.internal.impl.io.UTF8Reader;
 import dataStructure.*;
+
+import java.nio.charset.Charset;
+import java.nio.file.Files;
 import java.util.*;
 import java.io.*;
 
@@ -9,7 +13,7 @@ import java.io.*;
  */
 public class easyBoard {
 
-    public static void main(String[] arg) {
+    public static void main(String[] arg) throws IOException{
         SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9
         boolean randfill = true;
         /*//commented out temporarily to test file read in.
@@ -25,7 +29,7 @@ public class easyBoard {
         */
         for (int r = 0; r < 9; r++) {
             for (int c = 0; c < 9; c++) {
-                Files.
+                FileReader()
             }
         }
         System.out.println(sudoku);              //finally, show the contents of the sparse matrix
