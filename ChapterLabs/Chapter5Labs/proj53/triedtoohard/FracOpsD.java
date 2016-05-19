@@ -29,7 +29,7 @@ public class FracOpsD {
             divfrac();
         }
         /*public int ureturn(){
-		return unumer;
+        return unumer;
 		return udenom;
 		}
 		public int rreturn(){

@@ -71,7 +71,7 @@ public class ElevensBoard extends Board {
     @Override
     public boolean anotherPlayIsPossible() {
         return false;
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
+        /* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
     }
 
     /**

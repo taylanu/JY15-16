@@ -1,7 +1,5 @@
 package reference;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -110,7 +108,7 @@ public class QuicksortThreadDemo extends JPanel {
         running = false;
 
 	        /*
-	         * Wake the thread, in case it is sleeping, to get a more immediate
+             * Wake the thread, in case it is sleeping, to get a more immediate
 	         * reaction to the signal.
 	         */
 

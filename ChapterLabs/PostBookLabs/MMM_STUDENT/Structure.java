@@ -1,8 +1,6 @@
 //Mash, Mangle & Munch - Rev. Dr. Douglas R Oberle, June 2012   doug.oberle@fcps.edu
 //STRUCTURE OBJECT
 
-import javax.swing.*;
-
 public class Structure extends Entity {
     private int row;                    //start row for the player
     private int col;                    //start col for the player

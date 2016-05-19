@@ -1,8 +1,3 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-
-
 public class MyGridExample extends JPanel implements MouseListener, MouseMotionListener {
     private static final int SIZE = 40;    //size of cell being drawn
     protected static int mouseX;            //locations for the mouse pointer

@@ -1,9 +1,6 @@
 //Mash, Mangle & Munch - Rev Dr Douglas R Oberle, July 2012  doug.oberle@fcps.edu
 //DISPLAY UTILITIES  
 
-import javax.swing.*;
-import java.awt.*;
-
 //handles loading all images and showing the board, options and stats to the screen
 public class ImageDisplay extends MMMPanel {
     private static String[] compass = {"North", "East", "South", "West"};

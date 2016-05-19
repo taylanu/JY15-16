@@ -1,6 +1,5 @@
 //Rev. Dr. Douglas R Oberle, March 2013
 
-import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 

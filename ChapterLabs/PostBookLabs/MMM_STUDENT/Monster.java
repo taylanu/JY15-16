@@ -59,13 +59,13 @@ public abstract class Monster extends Player {
         return clawContents;
     }
 
+    public void setClawContents(String cc) {
+        clawContents[0] = cc;
+    }
+
     public void setClawContents(String[] cc) {
         clawContents[0] = cc[0];
         clawContents[1] = cc[1];
-    }
-
-    public void setClawContents(String cc) {
-        clawContents[0] = cc;
     }
 
     public void clearClawContents() {

@@ -58,7 +58,7 @@ if (e1 == e2){
       return numer + "/" + denom;
    }
 */
-	/*Accessors
+    /*Accessors
 	public int getNumer{
 		return numer
 	}

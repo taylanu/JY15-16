@@ -5,9 +5,6 @@ import javax.sound.midi.Instrument;
 import javax.sound.midi.MidiChannel;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 import java.util.ArrayList;
 
 

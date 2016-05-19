@@ -41,7 +41,7 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
         int key = r * numCols + c;
         for (int i = 0; i < list.size(); i++) {
             if (key == ((Cell) list.get(i)).getKey()) {//(temp.getRow()==r && temp.getCol()==c)
-                return (anyType) list.get(i).getVal();
+                return list.get(i).getVal();
             }
         }
         return null;
@@ -55,7 +55,7 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
             if (key == ((Cell) list.get(i)).getKey()) {
                 anyType replace = list.get(i).getVal();//swap method of sorts
                 list.set(i, temp);
-                return (anyType) (replace);
+                return replace;
             }
         }
         return null;//should be old value, so build a temp value to store old value
@@ -110,15 +110,11 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
 
     public boolean contains(anyType x) {
         // TODO Auto-generated method stub
-        if (list.contains(x))
-            return true;
-        return false;
+        return list.contains(x);
     }
 
     public boolean isEmpty() {
-        if (list.isEmpty())
-            return true;
-        return false;
+        return list.isEmpty();
     }
 
     public int[] getLocation(anyType x) {
@@ -131,7 +127,7 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
 
     public void setBlank(char blank) {//what do I need to set blank
         /*for(int r=0;r<list.size();r++)
-			for(int c)*/
+            for(int c)*/
     }
 
     public Object[][] toArray() {

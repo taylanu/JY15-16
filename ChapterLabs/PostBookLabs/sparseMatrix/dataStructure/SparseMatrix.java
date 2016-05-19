@@ -144,7 +144,7 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
     @Override
     public void setBlank(char blank) {//what do I need to set blank
         /*for(int r=0;r<list.size();r++)
-			for(int c)*/
+            for(int c)*/
     }
 
     @Override

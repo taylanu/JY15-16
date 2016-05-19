@@ -1,6 +1,3 @@
-import javax.swing.*;
-
-
 public class Entity {
     protected static final int UP = 0;        //movement directions to use as index for moveDir array
     protected static final int RIGHT = 1;

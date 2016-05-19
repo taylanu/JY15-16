@@ -62,7 +62,7 @@ public class Shuffler {
      * @param values is an array of integers simulating cards to be shuffled.
      */
     /*
-	 * The above algorithm shuffles 52 cards. If an odd number of cards is shuffled, 
+     * The above algorithm shuffles 52 cards. If an odd number of cards is shuffled,
 	 * the array shuffled has one more even-indexed position than odd-indexed positions.
 	 * Therefore, the first loop must copy one more card than the second loop does. 
 	 * This requires rounding up when calculating the index of the middle of the deck. 

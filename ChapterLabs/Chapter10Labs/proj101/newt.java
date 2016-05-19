@@ -26,7 +26,7 @@ public class newt extends amphibia {
         return weight;
     }
     /*public void natSelect(){
-		// Darwin ;) //
+        // Darwin ;) //
 			Scanner reader = new Scanner(System.);
 			setAlive(false);
 			System.out.println("Your newt has died.");

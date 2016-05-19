@@ -1,8 +1,5 @@
 //Rev. Dr. Douglas R Oberle, March 2013
 
-import javax.swing.*;
-import java.awt.*;
-import java.io.*;
 import java.util.ArrayList;
 
 public class Utilities extends Pixoku        //has access to items in Pixoku.java

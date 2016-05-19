@@ -40,7 +40,7 @@ public class Deck {
      * @return true if this deck is empty, false otherwise.
      */
     public boolean isEmpty() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
     }
 
     /**

@@ -42,7 +42,7 @@ public class Card {
      * @return this <code>Card's</code> suit.
      */
     public String suit() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+        /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
     }
 
     /**

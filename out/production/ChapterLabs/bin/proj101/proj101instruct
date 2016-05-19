@@ -1,0 +1,10 @@
+Project 10-1:
+Design a hierarchy of classes that models the classification of your favorite region of the animal kingdom.
+Your hierarchy should be at most three classes deep and should employ abstract classes on the first two levels.
+
+The Layers:
+KINGDOM PHYLUM CLASS ORDER FAMILY COMMONNAME
+
+Ask Dr. Oberle about the concept of allowing one class to have access to all superior classes' methods except for constructors.
+
+COMPLETE

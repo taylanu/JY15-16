@@ -69,7 +69,7 @@ public class FindPrimes {
         }
     }   
       /*	Hint:	Check the list to find the first non-prime factor.
-      			If all the numbers are prime, you are done.
+                  If all the numbers are prime, you are done.
       			Otherwise,	* find the smallest factor of the first non-prime and its cofactor.
       							* replace the first non-prime with its smallest factor and add the cofactor to the end
       							* repeat the whole process  */

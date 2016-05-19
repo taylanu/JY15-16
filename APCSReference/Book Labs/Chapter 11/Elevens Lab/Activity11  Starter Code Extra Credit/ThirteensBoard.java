@@ -66,7 +66,7 @@ public class ThirteensBoard extends Board {
      */
     @Override
     public boolean anotherPlayIsPossible() {
-		/* *** TO BE MODIFIED IN ACTIVITY 11 *** */
+        /* *** TO BE MODIFIED IN ACTIVITY 11 *** */
         List<Integer> cIndexes = cardIndexes();
         return containsPairSum13(cIndexes) || containsKing(cIndexes);
     }

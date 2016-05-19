@@ -3,7 +3,7 @@ package dataStructure;
 public class SparseMatrixTester {
     public static void main(String[] arg) {
 
-        SparseMatrix<String> sm = new SparseMatrix(4, 5);
+        SparseMatrix<String> sm = new SparseMatrix(5,4);
         //sm will be a 4 x 5 array of Strings
         sm.add(2, 1, "A");
         sm.add(0, 4, "B");

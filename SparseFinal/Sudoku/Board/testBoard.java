@@ -3,20 +3,19 @@ package Board;
 /**
  * Created by taylanu on 5/17/2016.
  */
-import java.util.*;
-import java.math.*;
+
 import dataStructure.*;
 
-public class testBoard{//essentially SparseMatrixTester
+public class testBoard {//essentially SparseMatrixTester
 
-    public static void main(String[] arg){
-        SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9
+    public static void main(String[] arg) {
+        SparseMatrix<Integer> sudoku = new SparseMatrix(9,9);//board is 9*9
         boolean randfill = true;
-       //unnecessary for now Integer potentialval = (int)(Math.random()*9)+1;
+        //unnecessary for now Integer potentialval = (int)(Math.random()*9)+1;
         //more complex looping filling of sparsematrix
-        for(int r = 0;r<9;r++){
-            for(int c = 0;c<9;c++){
-                if(randfill==true)
+        for (int r = 0; r < 9; r++) {
+            for (int c = 0; c < 9; c++) {
+                if (randfill == true)
                     sudoku.add(r, c, (int) (Math.random() * 9) + 1);
                 //else
                 //    sudoku.add(r,c,"");

@@ -1,0 +1,17 @@
+Project 12-2 Instruct
+
+Write a recursive method that returns a string with the characters in reverse order and test the method with a Tester program.
+The string and index position should be parameters. If the position is less than the string's length, recurse with the rest of
+the string after this position and return the result of appending the character at this position to the result,
+otherwise, return the empty string.
+
+Project 12.2 � the book asks for a method that shows the reverse of a string given a word and an index (to define substrings).  The recursive algorithm for finding the reverse of a string is best written as a single argument method, that given a string, returns the reverse of the string.
+So, better 12.2 specifications:  write a recursive method that is sent a single string argument (word), and returns a string that is the reverse of word.
+				public static String reverse (String word)
+The method can be called in a main function like this:
+				SOP(�Enter a word:�);
+				String word = input.next();
+				String ans = reverse(word);
+				SOP(�The reverse of �+ word � + � is � + ans);
+
+COMPLETE

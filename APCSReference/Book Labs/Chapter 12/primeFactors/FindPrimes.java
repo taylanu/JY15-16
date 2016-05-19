@@ -22,7 +22,7 @@ public class FindPrimes {
     //post:  returns the smallest factor of a number
     private static int findSmallestFactor(int num) {
          /* ex:findSmallestFactor(8) -> 2
-         		findSmallestFactor(9) -> 3
+                 findSmallestFactor(9) -> 3
       			findSmallestFactor(7) -> 7
          */
         return -1;        //temporary return so program compiles

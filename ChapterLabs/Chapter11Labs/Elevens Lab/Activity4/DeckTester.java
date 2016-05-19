@@ -59,7 +59,7 @@ public class DeckTester {
 
     }
     /*public void cleanShuffle(){
-		Deck standard = new Deck(str, str, num);
+        Deck standard = new Deck(str, str, num);
 		System.out.println("How many times would you like to shuffle your fresh deck?");
 		int numShuffle = input.nextInt();
 		for(int i = 0; i < numShuffle; i++){

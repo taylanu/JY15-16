@@ -1,9 +1,7 @@
 //Mash, Mangle & Munch - Rev. Dr. Douglas R Oberle, June 2012  doug.oberle@fcps.edu
 //MISCELANEOUS UTILITIES & FILE IO
 
-import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 

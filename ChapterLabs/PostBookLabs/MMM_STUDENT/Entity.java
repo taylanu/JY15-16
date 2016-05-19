@@ -1,8 +1,6 @@
 //Mash, Mangle & Munch - Rev. Dr. Douglas R Oberle, June 2012  doug.oberle@fcps.edu
 //ENTITY OBJECT
 
-import javax.swing.*;
-
 public class Entity {
     protected static final int UP = 0;        //movement directions to use as index for moveDir array
     protected static final int RIGHT = 1;

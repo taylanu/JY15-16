@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 public class Player {
     private static final int UP = 0;        //movement directions to use as index for moveDir array
     private static final int RIGHT = 1;

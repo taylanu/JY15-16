@@ -70,7 +70,7 @@ public class ElevensBoard extends Board {
      */
     @Override
     public boolean anotherPlayIsPossible() {
-		/* *** TO BE MODIFIED IN ACTIVITY 11 *** */
+        /* *** TO BE MODIFIED IN ACTIVITY 11 *** */
         List<Integer> cIndexes = cardIndexes();
         return containsPairSum11(cIndexes) || containsJQK(cIndexes);
     }

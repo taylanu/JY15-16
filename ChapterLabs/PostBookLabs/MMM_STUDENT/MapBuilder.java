@@ -1,7 +1,6 @@
 //Mash, Mangle & Munch - Rev. Dr. Douglas R Oberle, June 2012  doug.oberle@fcps.edu
 //WORLD GENERATOR UTILITIES
 
-import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 

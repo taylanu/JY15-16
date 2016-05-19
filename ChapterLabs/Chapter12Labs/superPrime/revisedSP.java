@@ -25,7 +25,7 @@ public class revisedSP {
             return false;
     }
     /* public static boolean isPrime(long n){//applies for long values
-	    if(n==1)
+        if(n==1)
 	    	return false;//1 isnt technically a prime number
 		for(int i=2;i<n/2;i++) {
 	        if(n%i==0)

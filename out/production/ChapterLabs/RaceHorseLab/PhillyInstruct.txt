@@ -1,0 +1,17 @@
+Part 3:
+
+Create a subclass of a Horse called a Philly, which has an extra data field that represents the Philly's power.
+Then override the inherited method raceStride.
+The power will then be used to determine whether or not a Philly advances in its version of raceStride.
+
+i.e., a Philly with a power of 78 will advance if the random chosen is less than 78.  That will be more likely to occur than a Philly with a power of 56.  In the Philly's constructors, have the power chosen randomly as a value between 30 and 90.
+
+Override the inherited toString to complete the same task as what is inherited, but with and added * at the end of the string.  i.e. |------2--------|*
+(The * at the end denotes that there is a Philly with index 2 on this track.
+Use the super command so that you don't have to recreate the wheel on this one.
+
+Now in the driver program, make the following modifications:
+
+Rather than individual instances of Horses, make an array of horses. When the program starts, ask the user how many horses they want to run, and adjust the code so that it works for an array of any size.
+
+Make it such that each of the horses in the array will have a 50% probability of initializing to a Philly as opposed to a regular Horse.
