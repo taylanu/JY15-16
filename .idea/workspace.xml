@@ -4,454 +4,17 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be2df447-2093-4f11-ab5e-eb8899e22ab5" name="Default" comment="committing for the night, look into reading in files on windows. Seems to be an issue every time I code with files to be read/changed">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/GUIBoard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/test" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/Book Labs/Chapter 12/primeFactors/~$B primeFactors.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/Book Labs/Chapter 3/javaTanks_SHELL/images/explosion/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/Book Labs/Chapter 4/~$ 4 handouts.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/Book Labs/Chapter 6/AngryEyebrows/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/Book Labs/Chapter 9/Picture Lab/classes/~WRL1689.tmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/Book Labs/Chapter 9/Picture Lab/images/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/BlackBox.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/LightsOn.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/LightsOn/LAB LightsOn.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/LightsOn/LightBulb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/LightsOn/LightDriver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/LightsOn/LightsInTheHallway.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/Area Fill/Area Fill.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/Area Fill/Areafill.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/Area Fill/Areafill_shell.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/Area Fill/area.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/Area Fill/area2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/Area Fill/area3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/MatrixLabs.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/checkers/CheckerBoard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/checkers/CheckerBoardDriver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/checkers/black.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/checkers/crossHair.GIF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/checkers/red.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/checkers/white.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/rectangle/Screen.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/MatrixLabs/rectangle/Screen.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/bisection.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/bisection/Binary Search and Bisection.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/bisection/Bisection Lab.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/1_Heaps_PriorityQueue.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/2_Animal_Guesser.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/animal guesser/Animal Guessing Game.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/animal guesser/animal.bmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/animal guesser/animal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/animal guesser/animalGuesserShell.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/heaps.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/heapsHW.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/priorityQ_STUDENT/HeapPriorityQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/priorityQ_STUDENT/HeapTester.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/priorityQ_STUDENT/PriorityQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/priorityQ_STUDENT/priorityQ.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/heaps/~$eapsHW.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/MethodTester.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/Pixoku Assignment.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/Pixoku.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/PixokuDriver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/Score.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/Utilities.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/black.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/blank.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/crossHair.GIF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/ex.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/mistake.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/numbers.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/paint.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/red.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/images/white.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipanimal9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipgame9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmachine9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/Flipmisc1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal13.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal14.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal16.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal17.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal18.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal19.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal20.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal21.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal22.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal23.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal24.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal25.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal26.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal27.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal28.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal29.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal30.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal31.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal32.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal33.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/animal9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/fileList.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game13.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game14.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game16.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game17.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game18.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game19.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game20.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game21.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game22.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game23.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game24.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game25.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game26.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game27.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game28.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game29.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game30.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game31.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game32.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game33.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/game9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine13.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine14.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine16.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine17.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine18.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine19.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine20.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine21.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine22.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine23.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine24.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine25.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine26.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine27.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine28.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine29.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine30.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine31.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine32.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine33.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/machine9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/misc1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/misc1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/randomScores.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word13.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word14.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word16.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word17.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word18.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word19.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word20.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word21.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word22.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word23.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word24.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word25.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word26.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word27.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word28.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word29.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word30.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word31.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word32.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word33.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/pixoku_SHELL/themes/word9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/post book.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/sparseMatrix.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/sparseMatrix/Matrixable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/sparseMatrix/SparseMatrixTester.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/sparseMatrix/SparseMatrix_1.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/sparseMatrix/SparseMatrix_2.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APCSReference/post book/sparseMatrix/sparseMatrixLab.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/Chapter6Labs/AngryEyebrows/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/bullet/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/crowds/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/explosion/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/monsters/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/monsters/beast/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/monsters/blop/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/monsters/boo/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/monsters/gob/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/mouseCursors/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/amusement/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/building/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/buisness/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/casinos/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/gasStations/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/houses/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/landmarks/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/tower/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/structures/waterTower/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/terrain/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/terrain/roads/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/terrain/tracks/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/terrain/trees/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/terrain/water/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/artillery/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/boat/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/car/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/flameTank/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/heli/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/jeep/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/missileLauncher/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/motorcycle/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/plane/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/police/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/tank/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterLabs/PostBookLabs/MMM_STUDENT/images/vehicles/train/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Board/trimvals" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Board/trimvals" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimvals" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimvals.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Board/easyBoard.class" afterPath="$PROJECT_DIR$/out/production/SparseFinal/Board/easyBoard.class" />
+    <list default="true" id="be2df447-2093-4f11-ab5e-eb8899e22ab5" name="Default" comment="readFile method is working properly in this edition, with all values except 0 being read into the sparseMatrix and being printed.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/AllEasy.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/FileBrowser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/fileChooser.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/Easy1011.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Board/Easy1011.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Board/easyBoard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Board/Easy1011.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/test" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimvals.txt" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/trimvals.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/easyBoard.java" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Board/easyBoard.java" />
     </list>
@@ -482,42 +45,77 @@
       <file leaf-file-name="easyBoard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/easyBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="231">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding>
+                <element signature="docComment;class#easyBoard#0" expanded="false" />
+                <element signature="method#readFile#0;class#easyBoard#0" expanded="false" />
+                <element signature="method#getFileLines#0;class#easyBoard#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileBrowser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/FileBrowser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="650" column="4" selection-start-line="650" selection-start-column="4" selection-end-line="650" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#easyBoard#0" expanded="false" />
-                <element signature="method#getFileSize#0;class#easyBoard#0" expanded="false" />
+                <element signature="e#19608#19615#0" expanded="true" />
+                <element signature="e#20635#20636#0" expanded="true" />
+                <element signature="e#20676#20677#0" expanded="true" />
+                <element signature="e#20716#20717#0" expanded="true" />
+                <element signature="e#20758#20759#0" expanded="true" />
+                <element signature="e#21775#21776#0" expanded="true" />
+                <element signature="e#21820#21821#0" expanded="true" />
+                <element signature="e#22368#22369#0" expanded="true" />
+                <element signature="e#22414#22415#0" expanded="true" />
+                <element signature="e#22450#22451#0" expanded="true" />
+                <element signature="e#22493#22494#0" expanded="true" />
+                <element signature="e#22533#22534#0" expanded="true" />
+                <element signature="e#22574#22575#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="trimvals.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimvals.txt">
+        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/trimvals.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
+            <state relative-caret-position="649">
               <caret line="104" column="81" selection-start-line="104" selection-start-column="81" selection-end-line="104" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/test">
+      <file leaf-file-name="AllEasy.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/AllEasy.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+            <state relative-caret-position="33">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Easy1011.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/Easy1011.txt">
+      <file leaf-file-name="E1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2442">
-              <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="0" column="81" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="E2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="81" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -528,8 +126,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -562,7 +160,12 @@
         <option value="$USER_HOME$/.IdeaIC2016/idea64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/test" />
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimvals" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/Easy1011.txt" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E2.txt" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E1.txt" />
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/easyBoard.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/FileBrowser.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/fileChooser.java" />
       </list>
     </option>
   </component>
@@ -793,6 +396,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SparseFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sudoku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Board" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyBoards" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JY15-16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JY15-16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ChapterLabs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -808,13 +437,15 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal" />
-      <recent name="C:\Users\taylanu\Documents\JY15-16\Learning\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal\Sudoku\Board\EasyBoards" />
       <recent name="C:\Users\taylanu\Documents\JY15-16\OXYMORON" />
       <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal\Sudoku\Board" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal\Sudoku\Board\EasyBoards" />
+      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal" />
+      <recent name="C:\Users\taylanu\Documents\JY15-16\Learning\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.easyBoard">
@@ -829,6 +460,26 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SparseFinal" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FileBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Board.FileBrowser" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -946,12 +597,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.easyBoard" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FileBrowser" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.easyBoard" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FileBrowser" />
       </list>
     </recent_temporary>
   </component>
@@ -976,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463620265843</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="readFile method is working properly in this edition, with all values except 0 being read into the sparseMatrix and being printed.">
+      <created>1464022991426</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464022991426</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <option name="updateEnabled" value="false" />
     <servers />
   </component>
@@ -985,15 +645,15 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44623202" sideWeight="0.5034347" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44623202" sideWeight="0.49950933" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938188" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31583405" sideWeight="0.50736016" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36325148" sideWeight="0.50049067" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20390625" sideWeight="0.4970364" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32853514" sideWeight="0.49263984" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853514" sideWeight="0.4867517" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20604396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3422292" sideWeight="0.5029636" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3996613" sideWeight="0.49811852" order="3" side_tool="false" content_ui="tabs" />
@@ -1023,7 +683,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="committing for the night, look into reading in files on windows. Seems to be an issue every time I code with files to be read/changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="committing for the night, look into reading in files on windows. Seems to be an issue every time I code with files to be read/changed" />
+    <MESSAGE value="readFile method is working properly in this edition, with all values except 0 being read into the sparseMatrix and being printed." />
+    <option name="LAST_COMMIT_MESSAGE" value="readFile method is working properly in this edition, with all values except 0 being read into the sparseMatrix and being printed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1036,10 +697,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Easy1011.txt" />
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Sudoku/Board/testBoard.java" />
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Sudoku/dataStructure/SparseMatrix.java" />
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Sudoku/Board/BoardDocs" />
     <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Sudoku/Board/easyBoard.java" />
     <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Easy1011.txt" />
     <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Sudoku/Board/testBoard.java" />
@@ -1134,7 +791,7 @@
         <state relative-caret-position="228">
           <caret line="2075" column="0" selection-start-line="2075" selection-start-column="0" selection-end-line="2075" selection-end-column="0" />
           <folding>
-            <element signature="e#78050#78051#0" expanded="true" />
+            <element signature="e#78050#78051#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1167,23 +824,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/Easy1011.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2442">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimvals.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="104" column="81" selection-start-line="104" selection-start-column="81" selection-end-line="104" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/test">
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/test">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
@@ -1191,14 +832,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/easyBoard.java">
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/trimvals.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="649">
+          <caret line="104" column="81" selection-start-line="104" selection-start-column="81" selection-end-line="104" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="81" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/AllEasy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/fileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/FileBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="650" column="4" selection-start-line="650" selection-start-column="4" selection-end-line="650" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#19608#19615#0" expanded="true" />
+            <element signature="e#20635#20636#0" expanded="true" />
+            <element signature="e#20676#20677#0" expanded="true" />
+            <element signature="e#20716#20717#0" expanded="true" />
+            <element signature="e#20758#20759#0" expanded="true" />
+            <element signature="e#21775#21776#0" expanded="true" />
+            <element signature="e#21820#21821#0" expanded="true" />
+            <element signature="e#22368#22369#0" expanded="true" />
+            <element signature="e#22414#22415#0" expanded="true" />
+            <element signature="e#22450#22451#0" expanded="true" />
+            <element signature="e#22493#22494#0" expanded="true" />
+            <element signature="e#22533#22534#0" expanded="true" />
+            <element signature="e#22574#22575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/E1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="81" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/easyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
             <element signature="docComment;class#easyBoard#0" expanded="false" />
-            <element signature="method#getFileSize#0;class#easyBoard#0" expanded="false" />
+            <element signature="method#readFile#0;class#easyBoard#0" expanded="false" />
+            <element signature="method#getFileLines#0;class#easyBoard#0" expanded="false" />
           </folding>
         </state>
       </provider>

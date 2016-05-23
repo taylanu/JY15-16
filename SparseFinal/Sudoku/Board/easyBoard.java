@@ -2,6 +2,7 @@ package Board;
 
 import dataStructure.SparseMatrix;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -11,8 +12,8 @@ import java.util.Scanner;
  * Created by taylanu on 5/17/2016.
  */
 public class easyBoard {
-
-    static String path = "C:\\Users\\taylanu\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Board\\test";
+    final JFileChooser fc = new JFileChooser();
+    static String path = "C:\\Users\\taylanu\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Board\\EasyBoards\\E1.txt";
     static File file = new File(path);
     static SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
 
@@ -25,7 +26,7 @@ public class easyBoard {
             int r = 0, c = 0;
                     for (int i = 0; i < temp.length(); i++) {
                         char curr = temp.charAt(i);
-                        if (curr > '0' && curr <= '9') {
+                        if (curr <= '9') {
                             int num = Integer.parseInt("" + curr);
                             if (c > sudoku.numColumns()) {
                                 c = 1;
@@ -38,7 +39,8 @@ public class easyBoard {
                 }
 }
 
-    public static int getFileSize(String fileName) throws IOException {//confirmed that getfilesize is working properly to return line count
+    @Deprecated
+    public static int getFileLines(String fileName) throws IOException {//confirmed that getfilesize is working properly to return line count
         Scanner input = new Scanner(new FileReader(fileName));
         int size = 0;
         while (input.hasNext()){
@@ -51,7 +53,6 @@ public class easyBoard {
 
 
     public static void main(String[] arg) throws IOException {
-
 
         readFile();//builds the board
         System.out.println(sudoku);              //finally, show the contents of the sparse matrix
