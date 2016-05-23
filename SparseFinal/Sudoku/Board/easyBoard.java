@@ -12,30 +12,33 @@ import java.util.Scanner;
  */
 public class easyBoard {
 
-    static String filename = "C:\\Users\\taylanu\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Board\\trimvals";
-    static File file = new File(filename);
+    static String path = "C:\\Users\\taylanu\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Board\\test";
+    static File file = new File(path);
     static SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
 
-    public static Integer[] readFile(String f) throws IOException {
-        int index = 0;
-        int size = getFileSize(filename);
-        Integer[] list = new Integer[size];
-        int val = 0;
-        Scanner reader = new Scanner(new FileReader(filename));
-        do if (reader.nextInt() == 0) {
-            list[index] = 0;
-            index++;
-        } else {
-            val = reader.nextInt();
-            list[index] = val;
-            index++;
-        }
-            while (reader.hasNext()) ;
-    reader.close();
-    return list;
+    public static void readFile() throws IOException {
+        Scanner input = new Scanner(new FileReader(file));
+        while(input.hasNextLine()) {
+            String temp = input.nextLine();
+            if (temp.length() != 81)//kills off process if file corrupted
+                break;
+            int r = 0, c = 0;
+                    for (int i = 0; i < temp.length(); i++) {
+                        char curr = temp.charAt(i);
+                        if (curr > '0' && curr <= '9') {
+                            int num = Integer.parseInt("" + curr);
+                            if (c > sudoku.numColumns()) {
+                                c = 1;
+                                r++;
+                            }
+                            sudoku.add(r, c, num);
+                            c++;
+                        }
+                    }
+                }
 }
 
-    public static int getFileSize(String fileName) throws IOException {//confirmed that getfilesize is working properly
+    public static int getFileSize(String fileName) throws IOException {//confirmed that getfilesize is working properly to return line count
         Scanner input = new Scanner(new FileReader(fileName));
         int size = 0;
         while (input.hasNext()){
@@ -46,41 +49,28 @@ public class easyBoard {
         return size;
     }
 
-   /* public static void toMatrix(SparseMatrix<Integer> s) throws IOException {
-        Scanner input = new Scanner(new FileReader(filename));
-        int index = 0;
-        for (int r = 0; r < 9; r++) {
-            for (int c = 0; c < 9; c++) {
-                if (index <= 81) {
-                    if (input.nextInt() == 0) {
-                        s.add(r, c, "-");
-                        index++;
-                    } else {
-                        s.add(r, c, input.next());
-                        index++;
-                    }
-                }
-            }
-        }
-    }
-*/
 
     public static void main(String[] arg) throws IOException {
-        //SparseMatrix sudoku = new SparseMatrix(9,9);//board is 9*9 Moved to class value
-       // input = new Scanner(new FileReader(filename));// concept should work
-        /*//commented out temporarily to test file read in.
-        for (int r = 0; r < 9; r++) {
-            for (int c = 0; c < 9; c++) {
-                if (randfill == true)
-                    sudoku.add(r, c, (int) (Math.random() * 9) + 1);
-                //else
-                //    sudoku.add(r,c,"");
-                randfill = !randfill;
-            }
-        }*/
 
+
+        readFile();//builds the board
         System.out.println(sudoku);              //finally, show the contents of the sparse matrix
-        System.out.println(getFileSize(filename));
+
     }
 
 }
+/*
+        Scanner reader = new Scanner(new FileReader(file));
+        //commented out temporarily to test file read in.
+       boolean flip = true;
+        int count = 0;
+       while(count<=81) {
+            for (int r = 0; r < 9; r++) {
+                for (int c = 0; c < 9; c++) {
+                    if(flip==true)
+                        sudoku.add(r, c, reader.nextLine());
+                    count++;
+                    flip=!flip;
+                }
+            }
+       }*/
