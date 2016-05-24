@@ -12,12 +12,14 @@ import java.util.Scanner;
  * Created by taylanu on 5/17/2016.
  */
 public class easyBoard {
-    final JFileChooser fc = new JFileChooser();
+    static JFileChooser fc = new JFileChooser();
     static String path = "C:\\Users\\taylanu\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Board\\EasyBoards\\E1.txt";
     static File file = new File(path);
     static SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
 
     public static void readFile() throws IOException {
+        fc.showOpenDialog(comp);
+        int returnVal = fc.showDialog(FileChooserDemo2.this, "Attach");
         Scanner input = new Scanner(new FileReader(file));
         while(input.hasNextLine()) {
             String temp = input.nextLine();
@@ -40,7 +42,7 @@ public class easyBoard {
 }
 
     @Deprecated
-    public static int getFileLines(String fileName) throws IOException {//confirmed that getfilesize is working properly to return line count
+    public static int getLinesCount(String fileName) throws IOException {//confirmed that getfilesize is working properly to return line count
         Scanner input = new Scanner(new FileReader(fileName));
         int size = 0;
         while (input.hasNext()){
@@ -51,9 +53,18 @@ public class easyBoard {
         return size;
     }
 
+    public static void chooseVal(int val){
+
+    }
 
     public static void main(String[] arg) throws IOException {
-
+        JFrame frame = new JFrame("JSudoku");    //window title
+        frame.setSize(800, 800);                    //Size of game window
+        frame.setLocation(100, 50);                //location of game window on the screen
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setContentPane();
+        frame.setVisible(true);
+        //frame.addKeyListener();        //Get input from the keyboard
         readFile();//builds the board
         System.out.println(sudoku);              //finally, show the contents of the sparse matrix
 
