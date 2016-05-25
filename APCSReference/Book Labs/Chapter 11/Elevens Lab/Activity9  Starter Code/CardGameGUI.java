@@ -74,7 +74,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
     private static final int LABEL_HEIGHT_INC = 35;
 
     /**
-     * The board (Board subclass).
+     * The board (Game subclass).
      */
     private Board board;
 
@@ -132,7 +132,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
     /**
      * Initialize the GUI.
      *
-     * @param gameBoard is a <code>Board</code> subclass.
+     * @param gameBoard is a <code>Game</code> subclass.
      */
     public CardGameGUI(Board gameBoard) {
         board = gameBoard;
@@ -208,12 +208,12 @@ public class CardGameGUI extends JFrame implements ActionListener {
         };
 
         // If board object's class name follows the standard format
-        // of ...Board or ...board, use the prefix for the JFrame title
+        // of ...Game or ...board, use the prefix for the JFrame title
         String className = board.getClass().getSimpleName();
         int classNameLen = className.length();
-        int boardLen = "Board".length();
+        int boardLen = "Game".length();
         String boardStr = className.substring(classNameLen - boardLen);
-        if (boardStr.equals("Board") || boardStr.equals("board")) {
+        if (boardStr.equals("Game") || boardStr.equals("board")) {
             int titleLength = classNameLen - boardLen;
             setTitle(className.substring(0, titleLength));
         }

@@ -1,4 +1,5 @@
 //Rev. Dr. Douglas R Oberle, March 2013
+package pixoku_Assignment;
 public class Score implements Comparable {
     private String fileName;            //name of text file that contains description, dimension, and cell values
     private String solutionImage;        //image that shows over the completed puzzle

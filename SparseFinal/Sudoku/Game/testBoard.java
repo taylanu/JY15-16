@@ -1,4 +1,4 @@
-package Board;
+package Game;
 
 /**
  * Created by taylanu on 5/17/2016.

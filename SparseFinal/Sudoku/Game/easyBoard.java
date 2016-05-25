@@ -1,25 +1,30 @@
-package Board;
+package Game;
 
 import dataStructure.SparseMatrix;
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.image.ImageObserver;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.AttributedCharacterIterator;
 import java.util.Scanner;
+
+
+import static javax.swing.text.StyleConstants.setBackground;
 
 /**
  * Created by taylanu on 5/17/2016.
  */
 public class easyBoard {
-    static JFileChooser fc = new JFileChooser();
-    static String path = "C:\\Users\\taylanu\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Board\\EasyBoards\\E1.txt";
+    static String path = "C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E1.txt";
     static File file = new File(path);
     static SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
 
     public static void readFile() throws IOException {
-        fc.showOpenDialog(comp);
-        int returnVal = fc.showDialog(FileChooserDemo2.this, "Attach");
+        //fc.showOpenDialog(comp);
+        //int returnVal = fc.showDialog(FileChooserDemo2.this, "Attach");
         Scanner input = new Scanner(new FileReader(file));
         while(input.hasNextLine()) {
             String temp = input.nextLine();
@@ -53,18 +58,18 @@ public class easyBoard {
         return size;
     }
 
-    public static void chooseVal(int val){
-
-    }
-
-    public static void main(String[] arg) throws IOException {
+    public static void GUI(){
         JFrame frame = new JFrame("JSudoku");    //window title
+        DrawPanel panel = new DrawPanel();
         frame.setSize(800, 800);                    //Size of game window
         frame.setLocation(100, 50);                //location of game window on the screen
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //frame.setContentPane();
         frame.setVisible(true);
-        //frame.addKeyListener();        //Get input from the keyboard
+        frame.add(panel);
+    }
+
+    public static void main(String[] arg) throws IOException {
+        GUI();
         readFile();//builds the board
         System.out.println(sudoku);              //finally, show the contents of the sparse matrix
 

@@ -1,5 +1,6 @@
 //tester program to see if your invert and mirrorFlip methods work.
-//use PixokiDriver program to test checkForWin
+//use PixokuDriver program to test checkForWin
+package pixoku_Assignment;
 public class MethodTester {
     public static void show(int[][] board) {
         for (int r = 0; r < board.length; r++) {

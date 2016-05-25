@@ -1,5 +1,5 @@
 //Rev. Dr. Douglas R Oberle, March 2013
-
+package pixoku_Assignment;
 import java.util.ArrayList;
 
 public class Utilities extends Pixoku        //has access to items in Pixoku.java
@@ -707,9 +707,7 @@ public class Utilities extends Pixoku        //has access to items in Pixoku.jav
         }
         Score temp = new Score("AAA", "none", "AAA", score, completionTime, size);
         Score current = list.get(scoreIndex);
-        if (temp.compareTo(current) > 0)
-            return true;
-        return false;
+        return temp.compareTo(current) > 0;
     }
 
     //post:  play the randomly selected scale and tone at the start of the game

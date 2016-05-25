@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class represents a Board that can be used in a collection
+ * This class represents a Game that can be used in a collection
  * of solitaire games similar to Elevens.  The variants differ in
  * card removal and the board size.
  */
@@ -22,7 +22,7 @@ public abstract class Board {
     private Deck deck;
 
     /**
-     * Creates a new <code>Board</code> instance.
+     * Creates a new <code>Game</code> instance.
      *
      * @param size        the number of cards in the board
      * @param ranks       the names of the card ranks needed to create the deck

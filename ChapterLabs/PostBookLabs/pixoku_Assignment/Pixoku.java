@@ -1,6 +1,6 @@
 //Rev. Dr. Douglas R Oberle, March 2013
 //Complete the following methods below:  invert(), mirrorFlip(), checkForWin()
-
+package pixoku_Assignment;
 import javax.sound.midi.Instrument;
 import javax.sound.midi.MidiChannel;
 import javax.sound.midi.MidiSystem;
@@ -499,7 +499,6 @@ public class Pixoku extends JPanel implements MouseListener, MouseMotionListener
                 pixelCount(guess);
             } else
                 createRandomBoard();
-            ;
         } else if (key == java.awt.event.KeyEvent.VK_T) {
             if (paintMode)        //user types in theme of their user made puzzle - used to generate the file name
             {
