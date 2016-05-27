@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="heaps"/>
+	<classpathentry kind="src" path="bisection"/>
+	<classpathentry kind="src" path="LightsOn"/>
+	<classpathentry kind="src" path="MMM_STUDENT"/>
+	<classpathentry kind="src" path="sparseMatrix"/>
+	<classpathentry kind="src" path="2012"/>
+	<classpathentry kind="src" path="pixoku_Assignment"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

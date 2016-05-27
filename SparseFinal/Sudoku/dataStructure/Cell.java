@@ -7,7 +7,7 @@ public class Cell<anyType> {
     public Cell(int r, int c, int cols, anyType v) {//constructor
         row = r;
         col = c;
-        key = (r * cols) + c;//(r*numCols)+cols
+        key = (r * cols) + c;//(r*numCols)+col
         val = v;
     }
 

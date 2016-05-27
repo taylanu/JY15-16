@@ -1,3 +1,7 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
 public class MyGridExample extends JPanel implements MouseListener, MouseMotionListener {
     private static final int SIZE = 40;    //size of cell being drawn
     protected static int mouseX;            //locations for the mouse pointer
@@ -75,7 +79,7 @@ public class MyGridExample extends JPanel implements MouseListener, MouseMotionL
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.setColor(Color.blue);        //draw a blue boarder around the board
+        g.setColor(Color.blue);        //draw a blue border around the board
         g.fillRect(0, 0, (board[0].length * SIZE), (board.length * SIZE));
         showBoard(g);                    //draw the contents of the array board on the screen
     }

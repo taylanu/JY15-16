@@ -1,0 +1,128 @@
+{\rtf1\ansi\ansicpg1252\deff0\uc1
+{\fonttbl
+{\f0\fnil\fcharset0\fprq0\fttruetype Times New Roman;}
+{\f1\fnil\fcharset0\fprq0\fttruetype Arial;}
+{\f2\fnil\fcharset0\fprq0\fttruetype Courier New;}}
+{\colortbl
+\red0\green0\blue0;
+\red255\green255\blue255;
+\red255\green255\blue255;}
+{\stylesheet
+{\s6\fi-431\li720\sbasedon28\snext28 Contents 1;}
+{\s7\fi-431\li1440\sbasedon28\snext28 Contents 2;}
+{\s1\fi-431\li720 Arrowhead List;}
+{\s27\fi-431\li720\sbasedon28 Lower Roman List;}
+{\s29\tx431\sbasedon20\snext28 Numbered Heading 1;}
+{\s30\tx431\sbasedon21\snext28 Numbered Heading 2;}
+{\s12\fi-431\li720 Diamond List;}
+{\s9\fi-431\li2880\sbasedon28\snext28 Contents 4;}
+{\s8\fi-431\li2160\sbasedon28\snext28 Contents 3;}
+{\s31\tx431\sbasedon22\snext28 Numbered Heading 3;}
+{\s32\fi-431\li720 Numbered List;}
+{\s15\sbasedon28 Endnote Text;}
+{\*\cs14\fs20\super Endnote Reference;}
+{\s4\fi-431\li720 Bullet List;}
+{\s5\tx1584\sbasedon29\snext28 Chapter Heading;}
+{\s35\fi-431\li720 Square List;}
+{\s11\fi-431\li720 Dashed List;}
+{\s22\sb440\sa60\f1\fs24\b\sbasedon28\snext28 Heading 3;}
+{\s37\f0\fs24\lang1033\snext37 Table Normal;}
+{\s24\fi-431\li720 Heart List;}
+{\s38\fi-431\li720 Tick List;}
+{\s41\fi-431\li720\sbasedon32 Upper Roman List;}
+{\s40\fi-431\li720\sbasedon32 Upper Case List;}
+{\s16\fi-288\li288\fs20\sbasedon28 Footnote;}
+{\s19\fi-431\li720 Hand List;}
+{\s18\fs20\sbasedon28 Footnote Text;}
+{\s20\sb440\sa60\f1\fs34\b\sbasedon28\snext28 Heading 1;}
+{\s21\sb440\sa60\f1\fs28\b\sbasedon28\snext28 Heading 2;}
+{\s10\qc\sb240\sa120\f1\fs32\b\sbasedon28\snext28 Contents Header;}
+{\s23\sb440\sa60\f1\fs24\b\sbasedon28\snext28 Heading 4;}
+{\s28\f0\fs24\lang1033\snext28 Normal;}
+{\s26\fi-431\li720\sbasedon32 Lower Case List;}
+{\s2\li1440\ri1440\sa120\sbasedon28 Block Text;}
+{\s33\f2\sbasedon28 Plain Text;}
+{\s34\tx1584\sbasedon29\snext28 Section Heading;}
+{\s25\fi-431\li720 Implies List;}
+{\s3\fi-431\li720 Box List;}
+{\s36\fi-431\li720 Star List;}
+{\*\cs17\fs20\super Footnote Reference;}
+{\s39\fi-431\li720 Triangle List;}
+{\s13\fi-288\li288\sbasedon28 Endnote;}}
+\kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\revprop3{\*\rdf}{\info\uc1{\author FCPS}{\company FCPS}}\deftab720\viewkind1\paperw12240\paperh15840\margl1440\margr1440\widowctrl
+\sectd\sbknone\colsx360\marglsxn1800\margrsxn1800\pgncont\ltrsect
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch Finding the roots of a polynomial using the bisection method.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch Given any regular polynomials of degree n (where n is the highest power of x), there are n roots (input values where the solution of the polynomial is zero).  }{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch So for x}{\s28\f0\fs30\super\lang1033{\*\listtag0}2}{\s28\f0\fs30\lang1033{\*\listtag0} \uc1\u8211\'96 2, there are two roots (-1.4142, 1.4142).  }{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch For x}{\s28\f0\fs30\super\lang1033{\*\listtag0}3}{\s28\f0\fs30\lang1033{\*\listtag0} + 2x}{\s28\f0\fs30\super\lang1033{\*\listtag0}2}{\s28\f0\fs30\lang1033{\*\listtag0} \uc1\u8211\'96 x \uc1\u8211\'96 2, there are three roots (-2, -1 and 1)}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch You can find roots of a polynomial y = f(x) by using the bisection method:  Send a bunch of consecutive integer values as inputs (x) into the polynomial to find their results (y).  Whenever successive results change signs (go from positive to negative), we know that the graph passes through zero in between them (or perhaps on one of them), and thus there is a root of the polynomial in there.  Let\uc1\u8217\'92s call the larger of the two successive input values the upper bound and the smaller of the two the lower bound (x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}u}{\s28\f0\fs30\lang1033{\*\listtag0} and x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}l}{\s28\f0\fs30\lang1033{\*\listtag0}).}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch See if f(x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}u}{\s28\f0\fs30\lang1033{\*\listtag0}) is a root as well as f(x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}l}{\s28\f0\fs30\lang1033{\*\listtag0}).  Regardless, there may be a root in between them.  So, take the average of x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}u}{\s28\f0\fs30\lang1033{\*\listtag0} and x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}l}{\s28\f0\fs30\lang1033{\*\listtag0}.  Call the average x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}a}{\s28\f0\fs30\lang1033{\*\listtag0}.  See if the average is a root (if f(x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}a}{\s28\f0\fs30\lang1033{\*\listtag0}) is zero).  If it is, you found the root and can move on to the next set of consecutive inputs where the results change signs.  If it is not a root, do the following:}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch If the average (x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}a}{\s28\f0\fs30\lang1033{\*\listtag0})  is positive, make the average the new upper bound (x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}u}{\s28\f0\fs30\lang1033{\*\listtag0}) and repeat.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch If the average (x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}a}{\s28\f0\fs30\lang1033{\*\listtag0}) is negative, make the average the new lower bound (x}{\s28\f0\fs30\sub\lang1033{\*\listtag0}l}{\s28\f0\fs30\lang1033{\*\listtag0}) and repeat.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch Issues:}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch *Allow polynomials to be built by sending a list of descending degree coefficients.  }{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch So x}{\s28\f0\fs30\super\lang1033{\*\listtag0}2}{\s28\f0\fs30\lang1033{\*\listtag0} \uc1\u8211\'96 2 can be built with the values [1, 0, -2],  i.e.  1x}{\s28\f0\fs30\super\lang1033{\*\listtag0}2}{\s28\f0\fs30\lang1033{\*\listtag0} + 0x \uc1\u8211\'96 2.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch x}{\s28\f0\fs30\super\lang1033{\*\listtag0}3}{\s28\f0\fs30\lang1033{\*\listtag0} + 2x}{\s28\f0\fs30\super\lang1033{\*\listtag0}2}{\s28\f0\fs30\lang1033{\*\listtag0} \uc1\u8211\'96 x \uc1\u8211\'96 2 can be built with [1, 2, -1, -2], i.e. 1x}{\s28\f0\fs30\super\lang1033{\*\listtag0}3}{\s28\f0\fs30\lang1033{\*\listtag0} + 2x}{\s28\f0\fs30\super\lang1033{\*\listtag0}2}{\s28\f0\fs30\lang1033{\*\listtag0} \uc1\u8211\'96 1x \uc1\u8211\'96 2.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch *If a solution is not a whole number, we will approach the solution as a limit.  So we will have to choose a value that is so close to zero that we can just assume that it is a solution.  Make that value the following:}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch private static final double ALMOST_ZERO = 0.0000000001;}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //Why final?  Because it will not need to be changed after it is defined, like a constant.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch If the absolute value of the potential solution is less than ALMOST_ZERO, then we can call it a solution.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch *We need to choose a range of successive input values (x) to send into the polynomial.  If we go from the minimum integer size to the maximum, the program will take too long to run.  Assume all solutions can be found between -100000 and 100000.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch private static final int RANGE = 100000;  //looks for roots from -RANGE to RANGE\line }{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch *Design decisions are paramount.  Should you create a Polynomial object?  What methods will be helpful to have?  Any sub-task within the process might make for a good method.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch EXTRA CREDIT: make a subclass of a Polynomial \uc1\u8211\'96 the Quadratic.  If a given polynomial is a Quadratic, have it find the solutions using the quadratic formula.}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch Homework\tab \tab \tab \tab \tab \tab \tab Name___________________}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch Complete the following methods:}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //post:  true if x and y  are both positive, both negative or both zero - otherwise false}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //}{\s28\f0\fs30\i\lang1033{\*\listtag0}sameSign}{\s28\f0\fs30\lang1033{\*\listtag0}(-3, -9) => true,  }{\s28\f0\fs30\i\lang1033{\*\listtag0}sameSign}{\s28\f0\fs30\lang1033{\*\listtag0}(-3, 0) => false,  }{\s28\f0\fs30\i\lang1033{\*\listtag0}sameSign}{\s28\f0\fs30\lang1033{\*\listtag0}(0,0) => true}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //}{\s28\f0\fs30\i\lang1033{\*\listtag0}sameSign}{\s28\f0\fs30\lang1033{\*\listtag0}(0, 4) => false,   }{\s28\f0\fs30\i\lang1033{\*\listtag0}sameSign}{\s28\f0\fs30\lang1033{\*\listtag0}(4, 9) => true,     }{\s28\f0\fs30\i\lang1033{\*\listtag0}sameSign}{\s28\f0\fs30\lang1033{\*\listtag0}(-3, 4) => false }{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\b\lang1033{\*\listtag0}\abinodiroverride\ltrch public static boolean}{\s28\f0\fs30\lang1033{\*\listtag0} }{\s28\f0\fs30\i\lang1033{\*\listtag0}sameSign}{\s28\f0\fs30\lang1033{\*\listtag0} (}{\s28\f0\fs30\b\lang1033{\*\listtag0}double}{\s28\f0\fs30\lang1033{\*\listtag0} x, }{\s28\f0\fs30\b\lang1033{\*\listtag0}double}{\s28\f0\fs30\lang1033{\*\listtag0} y)}{\s28\f0\fs30\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch \{}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch \}}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //post:  returns the average (mean) of x and y}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //}{\s28\f0\fs30\i\lang1033{\*\listtag0}average}{\s28\f0\fs30\lang1033{\*\listtag0}(5, 6) => 5.5}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\b\lang1033{\*\listtag0}\abinodiroverride\ltrch public static double}{\s28\f0\fs30\lang1033{\*\listtag0} }{\s28\f0\fs30\i\lang1033{\*\listtag0}average}{\s28\f0\fs30\lang1033{\*\listtag0}(}{\s28\f0\fs30\b\lang1033{\*\listtag0}double}{\s28\f0\fs30\lang1033{\*\listtag0} x, }{\s28\f0\fs30\b\lang1033{\*\listtag0}double}{\s28\f0\fs30\lang1033{\*\listtag0} y)}{\s28\f0\fs30\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch \{}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch \}}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //post:  coeff is an array of coefficients of decreasing powers of x in a polynomial}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //\tab returns the polynomial evaluated at value x}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //if coeff is [3, 5, -1], it equates to the polynomial 3x^2 + 5x^1 -1x^0}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch //so }{\s28\f0\fs30\i\lang1033{\*\listtag0}solve}{\s28\f0\fs30\lang1033{\*\listtag0}(coeff, 2) => 3(2^2) + 5(2^1) -1(2^0) => 21}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\b\lang1033{\*\listtag0}\abinodiroverride\ltrch public static double}{\s28\f0\fs30\lang1033{\*\listtag0} }{\s28\f0\fs30\i\lang1033{\*\listtag0}solve}{\s28\f0\fs30\lang1033{\*\listtag0}(}{\s28\f0\fs30\b\lang1033{\*\listtag0}double}{\s28\f0\fs30\lang1033{\*\listtag0}[] coeff, }{\s28\f0\fs30\b\lang1033{\*\listtag0}double}{\s28\f0\fs30\lang1033{\*\listtag0} x)}{\s28\f0\fs30\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch \{}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs30\lang1033{\*\listtag0}\abinodiroverride\ltrch \}}{\s28\f0\fs30\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\itap0{\f0\fs24\lang1033{\*\listtag0}\par}}

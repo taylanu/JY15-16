@@ -298,8 +298,8 @@ public class MyGridExample extends JPanel {
         }
         int currX = curr.getX();
         int currY = curr.getY();
-        int width = (int) (SIZE);
-        int height = (int) (SIZE);
+        int width = SIZE;
+        int height = SIZE;
         if (curr.isMovingDown())
             currY += (SPEED);
         else if (curr.isMovingRight())

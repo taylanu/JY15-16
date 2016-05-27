@@ -5,6 +5,8 @@ import javax.sound.midi.Instrument;
 import javax.sound.midi.MidiChannel;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
+import java.awt.*;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 public class Pixoku extends JPanel implements MouseListener, MouseMotionListener {
