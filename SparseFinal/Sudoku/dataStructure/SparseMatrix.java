@@ -62,7 +62,6 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
         return null;//should be old value, so build a temp value to store old value
     }
 
-
     public boolean add(int r, int c, Object x) {
         Cell sub = new Cell(r, c, numCols, x);
         int key = r * numCols + c;

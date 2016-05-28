@@ -1,7 +1,6 @@
 package Game;
 
 import dataStructure.SparseMatrix;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -14,15 +13,15 @@ import java.text.AttributedCharacterIterator;
 import java.util.Scanner;
 
 
-import static javax.swing.text.StyleConstants.setBackground;
-
 /**
  * Created by taylanu on 5/17/2016.
  */
-public class Sudoku {
+public class SudokuGame{
     static String path = "C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E1.txt";
     static File file = new File(path);
     static SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
+    static Scanner input = new Scanner(System.in);
+    static int userval,usercol,userrow;
 
     public static void readFile() throws IOException {
         //fc.showOpenDialog(comp);
@@ -48,10 +47,8 @@ public class Sudoku {
                 }
 }
 
-
-
     public static void GUI(){
-        JFrame frame = new JFrame("JSudoku");    //window title
+        JFrame frame = new JFrame("tSudo");    //window title
         frame.setSize(800, 800);                    //Size of game window
         frame.setLocation(100, 50);                //location of game window on the screen
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -60,7 +57,12 @@ public class Sudoku {
     }
 
     public static void modVal(int r,int c,int x){
-        sudoku.set(r,c,x);
+        boolean validRow = r >= 1 && r <= 9;
+        boolean validColumn = c >= 1 && c <= 9;
+        boolean validValue = x >= 1 && x <= 9;
+
+        if (validRow && validColumn && validValue)
+            sudoku.set(r, c, x);
     }
 
     public static void playGame() throws IOException {
@@ -76,11 +78,20 @@ public class Sudoku {
         System.out.println("                        ---------------                         ");
         //System.out.println("\n\n\n\n\n\n");
         //System.out.println("Please press the Enter key to begin...                          ");
-        readFile();
-        sudoGUI x = new sudoGUI();
-        x.
-        modVal(0,3,2);
+        readFile();//builds the grid for the first time
+        userInput();
+        System.out.println("Sudoku Board");//name of the grid
+        System.out.println(sudoku);//prints the grid
+        modVal(userrow,usercol,userval);
         System.out.println(sudoku);
+    }
+    public static void userInput(){
+        System.out.println("What row would you like to add to?");
+        userrow = input.nextInt();
+        System.out.println("What column would you like to add to?");
+        usercol = input.nextInt();
+        System.out.println("What value would you like to enter?");
+        userval = input.nextInt();
     }
 
     public static void main(String[] arg) throws IOException {

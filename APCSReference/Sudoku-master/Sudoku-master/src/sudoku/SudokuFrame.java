@@ -34,15 +34,10 @@ public class SudokuFrame extends JFrame {
 		JMenuItem twelveByTwelveGame = new JMenuItem("12 By 12 Game");
 		twelveByTwelveGame.addActionListener(new NewGameListener(SudokuPuzzleType.TWELVEBYTWELVE,20));
 		
-		/*
-		 * need to include this when solving algorithm is improved
-		 JMenuItem sixteenBySizteenGame = new JMenuItem("16 By 16 Game");
-		sixteenBySizteenGame.addActionListener(new NewGameListener(SudokuPuzzleType.SIXTEENBYSIXTEEN,16));
-		*/
+
 		newGame.add(sixBySixGame);
 		newGame.add(nineByNineGame);
 		newGame.add(twelveByTwelveGame);
-		//newGame.add(sixteenBySizteenGame);
 		file.add(newGame);
 		menuBar.add(file);
 		this.setJMenuBar(menuBar);
@@ -62,7 +57,7 @@ public class SudokuFrame extends JFrame {
 		
 		rebuildInterface(SudokuPuzzleType.NINEBYNINE, 26);
 	}
-	
+
 	public void rebuildInterface(SudokuPuzzleType puzzleType,int fontSize) {
 		SudokuPuzzle generatedPuzzle = new SudokuGenerator().generateRandomSudoku(puzzleType);
 		sPanel.newSudokuPuzzle(generatedPuzzle);
@@ -78,7 +73,7 @@ public class SudokuFrame extends JFrame {
 		buttonSelectionPanel.revalidate();
 		buttonSelectionPanel.repaint();
 	}
-	
+
 	private class NewGameListener implements ActionListener {
 
 		private SudokuPuzzleType puzzleType;

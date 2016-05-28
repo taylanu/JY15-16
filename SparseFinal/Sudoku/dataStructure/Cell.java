@@ -2,6 +2,7 @@ package dataStructure;
 
 public class Cell<anyType> {
     private int row, col, key;
+    private boolean mutable;
     private anyType val;
 
     public Cell(int r, int c, int cols, anyType v) {//constructor

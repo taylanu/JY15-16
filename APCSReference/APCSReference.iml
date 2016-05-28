@@ -6,6 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java and JGrasp Tutorial &amp; Examples/Game Tutorials/1b Simple Turn Based - board game - MOUSE" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java and JGrasp Tutorial &amp; Examples/exceptions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sudo-ku-master/sudo-ku-master/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sudoku-master/Sudoku-master/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sudoku-master/Sudoku-master/junit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sudoku-master/Sudoku-master" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
