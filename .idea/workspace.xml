@@ -5,40 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be2df447-2093-4f11-ab5e-eb8899e22ab5" name="Default" comment="cleaned up the area around easyBoard, also started to look at Pixoku for help with Graphics for sudoku">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/APCSReference/MyGridExample$Listener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/APCSReference/MyGridExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/APCSReference/MyGridExampleDriver$listen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/APCSReference/MyGridExampleDriver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/APCSReference/mathTempException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Battleship(Deprecated)/BattleshipDocs.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Battleship(Deprecated)/Rules for BattleShip.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Game/Sudoku.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/SparseFinal.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/BoardDocs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/AllEasy.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/Game/EasyBoards/E9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/dataStructure/Project Ideas.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/dataStructure/SparseMatrix_1(1).pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Sudoku/dataStructure/SparseMatrix_2(1).pptx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/Game/Sudoku.java" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Game/SudokuGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SparseFinal/Game/sudoGUI.class" afterPath="$PROJECT_DIR$/out/production/SparseFinal/Game/sudoGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SparseFinal/dataStructure/Cell.class" afterPath="$PROJECT_DIR$/out/production/SparseFinal/dataStructure/Cell.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SparseFinal/dataStructure/SparseMatrix.class" afterPath="$PROJECT_DIR$/out/production/SparseFinal/dataStructure/SparseMatrix.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Learning/bucky/bucky.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Learning/bucky/buckyFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Learning/bucky/buckyGUI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Learning/logiccrazychess/Sudoku.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Game/ideas" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APCSReference/APCSReference.iml" afterPath="$PROJECT_DIR$/APCSReference/APCSReference.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APCSReference/Sudoku-master/Sudoku-master/src/sudoku/SudokuFrame.java" afterPath="$PROJECT_DIR$/APCSReference/Sudoku-master/Sudoku-master/src/sudoku/SudokuFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparseFinal/SparseFinal.iml" afterPath="$PROJECT_DIR$/SparseFinal/SparseFinal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/Game/sudoGUI.java" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/Game/sudoGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/Cell.java" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/Cell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/SparseMatrix.java" afterPath="$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/SparseMatrix.java" />
     </list>
     <ignored path="JY15-16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,33 +38,7 @@
     <favorites_list name="JY15-16" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SudokuGame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/SudokuGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#readFile#0;class#SudokuGame#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sudoGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/sudoGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="525" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,15 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/BoardDocs" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/emptyBoard.java" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/buildBoard.java" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Sudoku/Board/easyBoard.java" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimmed vals" />
-        <option value="$PROJECT_DIR$/ChapterLabs/PostBookLabs/heaps/animalguesser/animalGuesserShell.java" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/testBoard.java" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/SparseMatrixTester.java" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/GUIBoard.java" />
         <option value="$USER_HOME$/.IdeaIC2016/idea64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/test" />
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Board/trimvals" />
@@ -164,16 +104,24 @@
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/Cell.java" />
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/SparseMatrix.java" />
         <option value="$PROJECT_DIR$/APCSReference/Sudoku-master/Sudoku-master/src/sudoku/SudokuFrame.java" />
-        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/sudoGUI.java" />
         <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/SudokuGame.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/bucky.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/buckyGUI.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/bucky/buckyGUI.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/bucky/buckyFX.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/ideas" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/logiccrazychess/Sudoku.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Sudoku/Game/sudoGUI.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Learning/bucky/buckyGUI.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Learning/bucky/bucky.java" />
+        <option value="$PROJECT_DIR$/SparseFinal/Learning/logiccrazychess/Sudoku.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="2952" />
-    <option name="height" value="1592" />
+    <option name="x" value="1269" />
+    <option name="width" value="1302" />
+    <option name="height" value="1381" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -273,9 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,8 +270,26 @@
               <option name="myItemId" value="Sudoku" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
+              <option name="myItemId" value="JY15-16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JY15-16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparseFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logiccrazychess" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,25 +307,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sudoku" />
+              <option name="myItemId" value="Learning" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dataStructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JY15-16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JY15-16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APCSReference" />
+              <option name="myItemId" value="bucky" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,64 +326,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="APCSReference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Java and JGrasp Tutorial &amp; Examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JY15-16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JY15-16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APCSReference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Java and JGrasp Tutorial &amp; Examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JY15-16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JY15-16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APCSReference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Java and JGrasp Tutorial &amp; Examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1b Simple Turn Based - board game - MOUSE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems">
           <PATH>
@@ -550,33 +449,36 @@
         </subPane>
         <subPane subId="Tests" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal\Sudoku\Board\EasyBoards" />
-      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal" />
-      <recent name="C:\Users\taylanu\Documents\JY15-16\Learning\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Game" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal\Sudoku\Board\EasyBoards" />
       <recent name="C:\Users\taylanu\Documents\JY15-16\OXYMORON" />
       <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal\Sudoku\Board" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Game" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tayla\Documents\JY15-16\SparseFinal\Learning" />
+      <recent name="C:\Users\tayla\Documents\JY15-16\SparseFinal" />
+      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal\Sudoku\Board\EasyBoards" />
+      <recent name="C:\Users\taylanu\Documents\JY15-16\SparseFinal" />
+      <recent name="C:\Users\taylanu\Documents\JY15-16\Learning\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SudokuGame">
-    <configuration default="false" name="SudokuGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Sudoku">
+    <configuration default="false" name="Sudoku" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Game.SudokuGame" />
+      <option name="MAIN_CLASS_NAME" value="logiccrazychess.Sudoku" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -665,11 +567,11 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.SudokuGame" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Sudoku" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.SudokuGame" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Sudoku" />
       </list>
     </recent_temporary>
   </component>
@@ -734,20 +636,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2952" height="1592" extended-state="6" />
-    <editor active="true" />
+    <frame x="1269" y="0" width="1302" height="1381" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44268206" sideWeight="0.4548872" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44110274" sideWeight="0.4548872" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3283208" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44268206" sideWeight="0.5451128" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45697576" sideWeight="0.5451128" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1770335" sideWeight="0.4970364" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804614" sideWeight="0.48359534" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20735525" sideWeight="0.4970364" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20604396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3422292" sideWeight="0.5029636" order="5" side_tool="true" content_ui="tabs" />
@@ -760,6 +661,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804614" sideWeight="0.48359534" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -792,7 +694,7 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -801,36 +703,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/EasyBoards/E2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/EasyBoards/E1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/FileBrowser.java" />
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/EasyBoards/E3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Board/EasyBoards/trimvals.txt" />
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/EasyBoards/E10.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/EasyBoards/E9.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -929,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,9 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#1584#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,10 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="685" column="29" selection-start-line="685" selection-start-column="29" selection-end-line="685" selection-end-column="29" />
-          <folding>
-            <element signature="method#pixelCount#0;class#Pixoku#0" expanded="false" />
-            <element signature="method#createRandomBoard#0;class#Pixoku#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,9 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="class#listen#0;class#PixokuDriver#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-39">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,31 +878,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/DrawPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/NewGameListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/DrawPanel.java" />
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/NewGameListener.java" />
     <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/dataStructure/testBoard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,9 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,10 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5745">
           <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
-          <folding>
-            <element signature="e#3067#3068#0" expanded="false" />
-            <element signature="e#3094#3095#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="175" column="33" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,9 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,9 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="method#NewGameListener#0;class#NewGameListener#0;class#SudokuFrame#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1158,7 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="7" column="32" selection-start-line="5" selection-start-column="4" selection-end-line="7" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,28 +991,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/ideas">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/sudoGUI.java">
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Learning/bucky/buckyFX.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/SudokuGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
+        <state relative-caret-position="3060">
           <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#readFile#0;class#SudokuGame#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Sudoku/Game/sudoGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Learning/bucky/buckyGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Learning/bucky/bucky.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Sudoku 6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparseFinal/Learning/logiccrazychess/Sudoku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
