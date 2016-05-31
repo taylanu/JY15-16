@@ -10,7 +10,6 @@
       <sourceFolder url="file://$MODULE_DIR$/proj64" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/proj65" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/proj66" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

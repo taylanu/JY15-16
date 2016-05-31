@@ -2,21 +2,36 @@ package Game;
 
 import dataStructure.SparseMatrix;
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.image.ImageObserver;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.AttributedCharacterIterator;
 import java.util.Scanner;
+import java.util.Stack;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Collections;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Dimension;
+import java.awt.FontMetrics;
+import java.awt.RenderingHints;
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import javax.swing.Timer;
+import javax.swing.JFrame;
+import javax.swing.JComponent;
 
 /**
  * Created by taylanu on 5/17/2016.
  */
-public class SudokuGame{
+public class SudokuGame extends JComponent implements KeyListener, MouseListener, Runnable {
     static String path = "C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E1.txt";
     static File file = new File(path);
     static SparseMatrix<Integer> sudoku = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
@@ -50,8 +65,10 @@ public class SudokuGame{
     public static void GUI(){
         JFrame frame = new JFrame("tSudo");    //window title
         frame.setSize(800, 800);                    //Size of game window
-        frame.setLocation(100, 50);                //location of game window on the screen
+        frame.setLocation(100, 50);//location of game window on the screen
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.add(sudoku);
+        frame.setResizable(false);
         frame.setVisible(true);
         //frame.setContentPane(sudoku);
     }
@@ -87,11 +104,25 @@ public class SudokuGame{
     }
     public static void userInput(){
         System.out.println("What row would you like to add to?");
-        userrow = input.nextInt();
+        userrow = input.nextInt() + 1;
         System.out.println("What column would you like to add to?");
-        usercol = input.nextInt();
+        usercol = input.nextInt() + 1;
         System.out.println("What value would you like to enter?");
         userval = input.nextInt();
+        if(isValid(userrow,usercol,sudoku));
+    }
+
+    public static boolean isValid(int x, int y, SparseMatrix s) {
+        String temp="";
+        for (int i=0;i<9;i++) {
+            //temp+=s.toString();//horizontal
+            //temp+=s.toString();//vertical
+            //temp+=s.toString((x/3)*3+i/3 + (y/3)*3+i%3);//square
+        }
+        int count=0, index=0;
+        //while ((index=temp.indexOf(Integer.toString(grid[x][y]), index))!=-1)
+        {index++; count++;}
+        return count==3;
     }
 
     public static void main(String[] arg) throws IOException {
@@ -102,6 +133,75 @@ public class SudokuGame{
         //System.out.println(sudoku);              //finally, show the contents of the sparse matrix
     }
 
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.isActionKey()) {
+            if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+               // moveSelected(-1, 0);
+            } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+              //  moveSelected(1, 0);
+            } else if (e.getKeyCode() == KeyEvent.VK_UP) {
+              //  moveSelected(0, -1);
+            } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+              //  moveSelected(0, 1);
+            }
+        }
+        if (e.getKeyCode() == KeyEvent.VK_DELETE
+                || e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
+           // if (selected != null) {
+             //   userSet(selected, (byte) 0);
+            }
+        }
+        //repaint();
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        requestFocusInWindow();
+        requestFocus();
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+       /* double px = e.getPoint().getX();
+        double py = e.getPoint().getY();
+        int x = (int) Math.floor((px - PADDING) / CELL_SIZE);
+        int y = (int) Math.floor((py - PADDING) / CELL_SIZE);
+        if (!setSelected(new Position((byte) x, (byte) y))) {
+            selected = null;
+        }
+        repaint(); */
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
+    }
+
+    @Override
+    public void run() {
+
+    }
 }
 /*
         Scanner reader = new Scanner(new FileReader(file));
