@@ -1,6 +1,6 @@
-package skeetosudoku;
+package Game.Experimental;
 
-import javax.swing.*;
+import javax.swing.JApplet;
 
 /**
  * Rather than a frame, put the game inside of an applet.

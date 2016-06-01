@@ -1,9 +1,10 @@
 package dataStructure;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class SparseMatrix<anyType> implements Matrixable<anyType> {
+public class SparseMatrix<anyType> extends JComponent implements Matrixable<anyType> {
     //needs to have util imported.
     //COMMENT.
     private int numRows, numCols;
@@ -47,6 +48,9 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
         }
         return null;
     }
+   /* public anyType[] getRow(int r){
+
+    }*/
 
     public anyType set(int r, int c, anyType x) {
         // temp = null;
@@ -60,6 +64,9 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
             }
         }
         return null;//should be old value, so build a temp value to store old value
+    }
+    public boolean isMutable(int r,int c){
+        return false;
     }
 
     public boolean add(int r, int c, Object x) {
@@ -88,8 +95,7 @@ public class SparseMatrix<anyType> implements Matrixable<anyType> {
         return null;
     }
 
-
-    public int size() {
+    public int listSize() {
         return list.size();
     }
 

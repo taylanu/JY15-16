@@ -1,12 +1,26 @@
-package skeetosudoku;
+package Game.Experimental;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Random;
 import java.util.Stack;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Collections;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Dimension;
+import java.awt.FontMetrics;
+import java.awt.RenderingHints;
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import javax.swing.Timer;
+import javax.swing.JFrame;
+import javax.swing.JComponent;
 
 /**
  * A Sudoku board capable of generating puzzles and interacting.

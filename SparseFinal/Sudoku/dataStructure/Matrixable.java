@@ -9,7 +9,7 @@ public interface Matrixable<anyType> {
 
     anyType remove(int r, int c);
 
-    int size();            //returns # actual elements stored
+    int listSize();            //returns # actual elements stored
 
     int numRows();        //returns # rows set in constructor
 

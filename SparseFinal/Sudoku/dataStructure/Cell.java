@@ -1,6 +1,8 @@
 package dataStructure;
 
-public class Cell<anyType> {
+import javax.swing.*;
+
+public class Cell<anyType> extends JComponent{
     private int row, col, key;
     private boolean mutable;
     private anyType val;
