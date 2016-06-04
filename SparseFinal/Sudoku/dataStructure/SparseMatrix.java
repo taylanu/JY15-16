@@ -1,10 +1,8 @@
 package dataStructure;
 
-import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 
-public class SparseMatrix<anyType> extends JComponent implements Matrixable<anyType> {
+public class SparseMatrix<anyType> implements Matrixable<anyType> {
     //needs to have util imported.
     //COMMENT.
     private int numRows, numCols;
@@ -51,35 +49,50 @@ public class SparseMatrix<anyType> extends JComponent implements Matrixable<anyT
    /* public anyType[] getRow(int r){
 
     }*/
+    public boolean isFull(){
+        boolean a=false;boolean b=false;
 
-    public anyType set(int r, int c, anyType x) {
-        // temp = null;
-        Cell<anyType> temp = new Cell<anyType>(r, c, numCols, x);
-        int key = r * numCols + c;
-        for (int i = 0; i < list.size(); i++) {
-            if (key == ((Cell) list.get(i)).getKey()) {
-                anyType replace = list.get(i).getVal();//swap method of sorts
-                list.set(i, temp);
-                return replace;
+        for(int i = 0; i<this.numCols;i++) {
+            if(isEmpty(list.get(i))==false)
+                a=true;
+            for (int j = 0; j < this.numRows; j++){
+                if(isEmpty(list.get(j))==false)
+                    b=true;
             }
         }
+        if(a && b)
+            return true;
+        return false;
+    }
+    public anyType set(int r, int c, anyType x) {
+        // temp = null;
+            Cell<anyType> temp = new Cell<>(r, c, numCols, x);
+            int key = (r * numCols) + c;
+            for (int i = 0; i < list.size(); i++) {
+                if (key == ((Cell) list.get(i)).getKey()) {
+                    anyType replace = list.get(i).getVal();//swap method of sorts
+                    list.set(i, temp);
+                    return replace;
+                }
+            }
         return null;//should be old value, so build a temp value to store old value
     }
+
     public boolean isMutable(int r,int c){
         return false;
     }
 
     public boolean add(int r, int c, Object x) {
-        Cell sub = new Cell(r, c, numCols, x);
-        int key = r * numCols + c;
-        for (int i = 0; i < list.size(); i++) {
-            if (key <= ((Cell) list.get(i)).getKey()) {
-                list.add(i, sub);
-                return true;
+            Cell sub = new Cell(r, c, numCols, x);
+            int key = r * numCols + c;
+            for (int i = 0; i < list.size(); i++) {
+                if (key <= ((Cell) list.get(i)).getKey()) {
+                    list.add(i, sub);
+                    return true;
+                }
             }
-        }
-        list.add(sub);
-        return true;
+            list.add(sub);
+            return true;
     }
 
 
@@ -95,7 +108,7 @@ public class SparseMatrix<anyType> extends JComponent implements Matrixable<anyT
         return null;
     }
 
-    public int listSize() {
+    public int size() {
         return list.size();
     }
 
@@ -119,7 +132,7 @@ public class SparseMatrix<anyType> extends JComponent implements Matrixable<anyT
         return list.contains(x);
     }
 
-    public boolean isEmpty() {
+    public boolean isEmpty(Cell<anyType> anyTypeCell) {
         return list.isEmpty();
     }
 

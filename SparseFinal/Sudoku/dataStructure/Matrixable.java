@@ -9,7 +9,7 @@ public interface Matrixable<anyType> {
 
     anyType remove(int r, int c);
 
-    int listSize();            //returns # actual elements stored
+    int size();            //returns # actual elements stored
 
     int numRows();        //returns # rows set in constructor
 
@@ -19,7 +19,7 @@ public interface Matrixable<anyType> {
 
     boolean contains(anyType x);        //true if x exists in list
 
-    boolean isEmpty();                    //returns true if there are no actual elements stored
+    boolean isEmpty(Cell<anyType> anyTypeCell);                    //returns true if there are no actual elements stored
 
     int[] getLocation(anyType x);    //returns location [r,c] of where x exists in list, null otherwise
 
