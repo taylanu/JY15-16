@@ -9,6 +9,8 @@ public interface Matrixable<anyType> {
 
     anyType remove(int r, int c);
 
+    //anyType clone();
+
     int size();            //returns # actual elements stored
 
     int numRows();        //returns # rows set in constructor

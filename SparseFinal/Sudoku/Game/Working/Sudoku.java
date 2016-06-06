@@ -1,6 +1,7 @@
 package Game.Working;
 
 import dataStructure.SparseMatrix;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -8,77 +9,114 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-import javax.swing.JFrame;
-
 /**
  * Created by taylanu on 5/17/2016.
+ * 6/5/16 decided to replace all ints with bytes to stick to the ideals of a memory efficient game
  */
-public class Sudoku<anyType> extends JPanel{
+public class Sudoku<anyType> extends JComponent{
 
     //Global Variables
-    static File EASY1 = new File("C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E1.txt");
-    static File EASY2 = new File("C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E2.txt");
-    static File EASY3 = new File("C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E3.txt");
-    private JLabel label;
+    private static final File EASY1 = new File("C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E1.txt");
+    private static final File EASY2 = new File("C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E2.txt");
+    private static final File EASY3 = new File("C:\\Users\\tayla\\Documents\\JY15-16\\SparseFinal\\Sudoku\\Game\\EasyBoards\\E3.txt");
     private JPanel panel;
-    static SparseMatrix<Integer> vals = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
-    static Scanner input = new Scanner(System.in);
-    static int userval,usercol,userrow;
-    static File temp = null;
-    private static JButton[][] jboard;//use buttons to change values.
+    private static final SparseMatrix<Byte> play = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
+    static SparseMatrix<Byte> orig = new SparseMatrix<>(9,9);
+    private static final Scanner input = new Scanner(System.in);
+    private static byte userval;
+    private static byte usercol;
+    private static byte userrow;
+    private static File temp = null;
+    private byte[][] grid;//full board
     //Global Variables
 
-    public Sudoku(){//builds game
+    private Sudoku(){//builds game visuals.
         setLayout(new BorderLayout());
-        JPanel north = new JPanel();
-        north.setLayout(new FlowLayout());
-        add(north, BorderLayout.NORTH);
-        label = new JLabel("Welcome to tSudo");
-        north.add(label);
-
+        JPanel board = new JPanel();
+        board.setLayout(new FlowLayout());
+        JLabel label = new JLabel("Welcome to tSudo");
+        board.add(label);
         JPanel center = new JPanel();
         center.setLayout(new GridLayout(9,9));
         add(center, BorderLayout.CENTER);
 
-        jboard = new JButton[9][9];
-        for(int r = 0; r < 9; r++)
-            for(int c = 0; c < 9; c++){
+        JButton[][] jboard = new JButton[9][9];
+        for(byte r = 0; r < 9; r++)
+            for(byte c = 0; c < 9; c++){
                 jboard[r][c] = new JButton();
-                //jboard[r][c].
                 jboard[r][c].setBackground(Color.lightGray);
                // board[r][c].addActionListener( new Handler1(r, c) );
-                center.add(jboard[r][c]);
+                center.add(jboard[r][c]);//finally adds the built board of jbuttons to the panel.
             }
     }
 
-    public static void readFile(File d) throws IOException {
+    public static boolean isValid(int x, int y, int[][] grid) {//No Byte.tostring methods availible, so Integers will be used here.
+        String temp="";
+        for (int i=0;i<9;i++) {
+            temp+=Integer.toString(grid[i][y]);//horizontal check
+            temp+=Integer.toString(grid[x][i]);//vertical check
+            temp+=Integer.toString(grid[(x/3)*3+i/3][(y/3)*3+i%3]);//square check
+        }
+        int count=0, index=0;
+        while ((index=temp.indexOf(Integer.toString(grid[x][y]), index))!=-1)
+        {index++; count++;}
+        return count==3;
+    }
+
+    public static void printGrid (int[][] grid) {
+        System.out.println();
+        for (int i=0;i<9;i++) {
+            for (int j=0;j<9;j++) {
+                System.out.print(grid[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
+    private void copy(SparseMatrix<Byte> from, byte[][] to) {//method for SparseMatrix to smaller 2D array 'quadrants'
+        for (byte r = 0; r < 2; r++) {
+            for (byte c = 0; c < 2; c++) {
+                to[r][c] = from.get(r,c);
+            }
+        }
+    }
+    private void copy(SparseMatrix<Byte> from, SparseMatrix<Byte> to) {//method for full SparseMatrix to SparseMatrix
+        for (byte r = 0; r < 9; r++)
+            for (byte c = 0; c < 9; c++) {
+                byte x=from.get(r,c);
+                to.set(r,c,x);
+            }
+    }
+
+    private static void readFile(File d) throws IOException {
         Scanner input = new Scanner(new FileReader(d));
         while(input.hasNextLine()) {
             String temp = input.nextLine();
             if (temp.length() != 81){break;}//kills off process if file corrupted
 
             int r = 0, c = 0;
-                    for (int i = 0; i < temp.length(); i++) {
+                    for (byte i = 0; i < temp.length(); i++) {
                         char curr = temp.charAt(i);
                         if (curr <= '9') {
-                            int num = Integer.parseInt("" + curr);
-                            if (c > vals.numColumns()) {
+                            byte num = Byte.parseByte("" + curr);
+                            if (c > play.numColumns()) {
                                 c = 1;
                                 r++;
                             }
-                            vals.add(r, c, num);
+                            play.add(r, c, num);
                             c++;
                         }
                     }
                 }
 }
 
-    public static void isComplete(){
-        if(vals.isFull()) {
+    private static void isComplete(){
+        if(play.isFull() && false) {//false will be replaced by check if values are complete.
             System.out.println("GAME OVER!");
-            vals.clear();
+            // vals.clear();
         }
     }
+
     public static void GUI(){
       /*  for(int i =0; i < 9;i++)//puts values from sparsematrix into gui
             for(int j=0; j < 9;j++)
@@ -95,16 +133,17 @@ public class Sudoku<anyType> extends JPanel{
         frame.setVisible(true);
     }
 
-    public static void modVal(int r,int c,int x){
-        boolean validRow = r >= 1 && r <= 9;
-        boolean validColumn = c >= 1 && c <= 9;
+    private static void modVal(byte r, byte c, byte x){
+        boolean validRow = r >= 0 && r <= 9;
+        boolean validColumn = c >= 0 && c <= 9;
         boolean validValue = x >= 1 && x <= 9;
 
-        if (validRow && validColumn && validValue)
-            vals.set(r, c, x);
+        if (validRow && validColumn && validValue)//checks if the inputs are valid in general
+            //if()//checks if move is valid for the board in general
+                play.set(r, c, x);
     }
 
-    public static void startMessage(){
+    private static void startMessage(){
     System.out.println("\n\n\n");
     System.out.println("                            tSUDO                               ");
     System.out.println("                        ---------------                         ");
@@ -119,33 +158,36 @@ public class Sudoku<anyType> extends JPanel{
     System.out.println("                      (1,2,3)                                   ");
     }
 
-    public static void userInput() throws IOException{
+    private static void userInput() {
         System.out.println("What row would you like to add to?");
-        userrow = input.nextInt();
+        userrow = input.nextByte();
         System.out.println("What column would you like to add to?");
-        usercol = input.nextInt();
+        usercol = input.nextByte();
         System.out.println("What value would you like to enter?");
-        userval = input.nextInt();
+        userval = input.nextByte();
         modVal(userrow,usercol,userval);
     }
     
-    public static void selectGame(){
+    private static void selectGame(){
         int selected = input.nextInt();
         if(selected==1) {temp=EASY1;}if(selected==2) {temp=EASY2;}if(selected==3) {temp=EASY3;}
     }
 
-    public static void gameLoop() throws IOException {
-        int count = 1;
-        do {System.out.println("Move: " + count);System.out.println(vals);
+    private static void gameLoop() throws IOException {
+        int count = 2;
+        System.out.println("Move: 1");
+        System.out.println(play);
+        while(count<10){//to be modified later to act as a check if board is valid/complete
             userInput();
             System.out.println("Move: " + count);
-            System.out.println(vals);
+            System.out.println(play);
             isComplete();
             count++;}
-        while(count<10);//to be modified to checking if board is valid/complete
     }
+
     public static void main(String[] arg) throws IOException {
-       // GUI();
+        //GUI();
+
         startMessage();
         selectGame();
         readFile(temp);//builds the grid for the first time
