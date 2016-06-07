@@ -1,2 +1,0 @@
-CREDIT TO SKEETO
-Sudoku program copied into my reference classes. Not used directly.

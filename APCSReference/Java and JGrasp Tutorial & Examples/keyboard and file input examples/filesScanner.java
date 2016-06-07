@@ -9,7 +9,6 @@ public class filesScanner {
     //post: returns the number of lines in fileName
 
     public static int getFileSize(String fileName) throws IOException
-
     {
         Scanner input = new Scanner(new FileReader(fileName));
         int size = 0;

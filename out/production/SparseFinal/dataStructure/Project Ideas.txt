@@ -1,4 +1,0 @@
-Project Ideas:
-Sudoku(going with it)
-BattleShip
-BlackBox
