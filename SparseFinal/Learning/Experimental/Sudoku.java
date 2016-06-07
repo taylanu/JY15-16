@@ -1,26 +1,12 @@
 package Experimental;
 
-import java.util.Stack;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Collections;
-
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Dimension;
-import java.awt.FontMetrics;
-import java.awt.RenderingHints;
-import java.awt.event.KeyListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-
-import javax.swing.Timer;
-import javax.swing.JFrame;
-import javax.swing.JComponent;
+import java.util.Random;
+import java.util.Stack;
 
 /**
  * A Sudoku board capable of generating puzzles and interacting.
@@ -305,7 +291,7 @@ public class Sudoku extends JComponent implements KeyListener, MouseListener, Ru
      *
      * @param array grid to be cleared
      */
-    private void clear(final byte[][] array) {
+    private void clear(final byte[][] array)x {
         for (byte y = 0; y < 9; y++) {
             for (byte x = 0; x < 9; x++) {
                 array[x][y] = 0;
