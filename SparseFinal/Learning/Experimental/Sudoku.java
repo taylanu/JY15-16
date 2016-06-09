@@ -291,7 +291,7 @@ public class Sudoku extends JComponent implements KeyListener, MouseListener, Ru
      *
      * @param array grid to be cleared
      */
-    private void clear(final byte[][] array)x {
+    private void clear(final byte[][] array) {
         for (byte y = 0; y < 9; y++) {
             for (byte x = 0; x < 9; x++) {
                 array[x][y] = 0;

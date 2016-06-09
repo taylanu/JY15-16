@@ -1,4 +1,0 @@
-fake data line 1
-fake data line 2
-fake data line 3
-fake data line 4
