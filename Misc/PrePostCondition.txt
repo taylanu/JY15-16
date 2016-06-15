@@ -1,0 +1,3 @@
+Pre-condition - a statement or set of statements that outlines a condition that should be true, or conditions that should be true, when the operation is called. The operation is not guaranteed to perform as it should unless the pre-conditions have been met.
+
+Post-condition - is a statement or statements describing the condition that will be true when the operation has completed its task.If the operation is correct and the pre-condition(s) met, then the post-condition is guaranteed to be true.

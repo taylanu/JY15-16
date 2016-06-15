@@ -24,6 +24,7 @@ public class Sudoku<anyType> extends JComponent{
     private static final SparseMatrix<Byte> play = new SparseMatrix(9, 9);//board is 9*9 This is a global variable.
     private static final Scanner input = new Scanner(System.in);
     private static File temp = null;
+    private static boolean playing = false;
     //Global Variables
 
     //pre: Depends startMessage(), selectGame(), readFile(), and gameLoop() to be working
@@ -95,8 +96,7 @@ public class Sudoku<anyType> extends JComponent{
         boolean validColumn = c >= 0 && c <= 9;
         boolean validValue = x >= 1 && x <= 9;
 
-        if ((validRow && validColumn && validValue) && isValid(r,c))//checks if the inputs are valid in general
-            //if()//checks if move is valid for the board in general
+        if ((validRow && validColumn && validValue) /*&& isValid(r,c)*/)//checks if the inputs are valid in general
             play.set(r, c, x);
         else
             System.out.println("\nInvalid Move!\n");
@@ -149,8 +149,12 @@ public class Sudoku<anyType> extends JComponent{
         System.out.println(play);
         while (count < 243) {
             userInput();
-            if (!isComplete()) {
-                System.out.println("Congratulations \n GAME OVER");
+            if (playing == false) {
+                if(isComplete())
+                    System.out.println("Congratulations \n GAME OVER");
+                else{
+                    System.out.println("Thanks for playing. Try Again!");
+                }
                 System.exit(-1);
             }
             System.out.println("Move: " + count);

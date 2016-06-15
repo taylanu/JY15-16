@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Sudoku</title>
+    <style>
+      p {
+        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body bgcolor="black" text="gray">
+    <center>
+      <h1>Sudoku</h1>
+      <applet code="com.nullprogram.sudoku.SudokuApplet"
+	      archive="Sudoku.jar" width="380" height="380">
+      </applet>
+    </center>
+    <p>
+      <b>1-9</b> - insert number into cell<br/>
+      <b>0, delete</b> - clear cell<br/>
+      <b>Mouse clicks</b> - move selector<br/>
+      <b>Arrow keys</b> - move selector<br/>
+      <b>h</b> - hint for the current position<br/>
+    </p>
+    <p>
+      <b>E</b> - generate a new easy sudoku<br/>
+      <b>M</b> - generate a new medium sudoku<br/>
+      <b>H</b> - generate a new hard sudoku (slow)<br/>
+    </p>
+    <p>
+      If the keys aren't responding, click in the applet to give it
+      keyboard focus.
+    </p>
+  </body>
+</html>

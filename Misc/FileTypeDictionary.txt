@@ -1,0 +1,175 @@
+FILE TYPE DICTIONARY
+
+.$$$
+-Temporary file
+.2GR
+-A file that allows Windows to display text and graphics in standard mode on a 286 or 386 computer (filename extension).
+.386
+-Swap file; enables computer running in enhanced mode to use Windows with virtual memory (filename extension).
+.3GR
+-A file that allows Windows to display text and graphics in enhanced mode on a 386, 486, or Pentium computer (filename extension).
+.906
+-Calcomp plotter
+.A3W
+-MacroMedia Authorware Windows 3.5 (filename extension).
+.ABK
+-AutoBackup, Corel Draw (filename extension).
+.ABR
+-Brush - Adobe Photoshop (filename extension).
+.ACL
+-Keyboard accelerator, Corel Draw 6 (filename extension).
+.ACM
+-Windows system directory file (filename extension).
+.ACV
+-Drivers for compressing or decompressing audio files, OS/2 (filename extension).
+.AD
+-After Dark
+.ADB
+-1. Appointment DataBase, HP 100LX (filename extension). 2. Body file type, Ada language (filename extension).
+.ADD
+-Adapter Driver - OS/2 (filename extension).
+.ADM
+-AfterDark MultiModule (filename extension).
+.ADR
+-AfterDark Randomizer (filename extension). AfterDark is a screensaver program that can be set to randomly display a variety of screensaver patterns one after another.
+.ADS
+-Specification file type, Ada language (filename extension).
+.AFM
+-Adobe Font Metrics - Type 1 font metrics (filename extension).
+.AG4
+-Access G4
+.AI
+-Adobe Illustrator
+.AIF
+-Audio Interchange File Format or AIFF (filename extension). A format developed by Apple Computer for storing high-quality sampled audio and musical instrument information. It can be played on PC and Mac.
+.aiff
+-Audio Interchange File Format. An uncompressed sound format developed by Apple Computer for storing high-quality sampled audio and musical instrument information. It can be played on PC and Mac, using QuickTime or Sound Player.
+.ALL
+-Arts and Letters Library (filename extension).
+.ANI
+-Animated cursor (filename extension).
+.ANS
+-ANSI text (filename extension).
+.API
+-Application Program Interface (filename extension). An interface between the operating system and application programs.
+.APP
+-MacroMedia Authorware package (filename extension).
+.ARC
+-ARC or ARC+ compressed
+.arj
+-A PC compressed format found on European sites (filename extension), which can be decoded with unArjMac, DeArj, and SITEX10.EXE (win).
+.ART
+-An art file, in some draw or paint applications (filename extension).
+.ASC
+-ASCII text file
+.ASF
+-Active Streaming File - HoTMetaL Pro (filename extension).
+.ASM
+-Assembly Source Code
+.ASP
+-Active Server Page - Microsoft (filename extension).
+.AST
+-Assistant file - Claris Works (filename extension). Assistants guide the user through a task by asking a series of questions and then use the answers to perform a task. Assistants in Claris Works can be used to create such useful items as calendars, newsletters, stationery, labels, and address lists, to make footnotes within a file, to find documents, etc.
+.ATT
+-AT&T
+.AU
+-A sound file format used on Sun Microsystems or other UNIX computers
+.AVI
+-AVI movie format
+.AVS
+-Intel video capture format (filename extension).
+.b64
+-Base 64 (filename extension), the encoding format used by the Multipurpose Internet Mail Extension.
+.BAK
+-Backup copy in DOS or OS/2
+.BAS
+-BASIC program file
+.BAT
+-Batch File
+.BFC
+-Briefcase document - Windows 95 (filename extension).
+.BG
+-Backgammon game (filename extension).
+.BI
+-Binary file (filename extension).
+.BIN
+-Binary Driver
+.bin
+-A MacBinary II encoded file (filename extension). This file type, downloaded as MacBinary or Binary, can be decompressed with Stuffit Expander.
+.BK
+-Backup copy
+.BK$
+-Backup file (filename extension).
+.BLT
+-Wordperfect for DOS (filename extension).
+.BMP
+-Bitmap
+.BNK
+-Sim City game file (filename extension).
+.BRX
+-Browse Index (filename extension). Found on multimedia CD-ROMs.
+.BTM
+-Batch file - Norton Utilities (filename extension).
+.C
+-C program file
+.CAB
+-Microsoft compressed format
+.CAL
+-Calendar or CALS
+.CAP
+-Caption
+.CBT
+-Computer-Based Training; a tutorial file (filename extension).
+.CCH
+-Corel chart (filename extension).
+.CCM
+-Lotus cc:Mail (filename extension).
+.CDA
+-CD Audio track (filename extension).
+.CDR
+-CorelDraw
+.CDT
+-Corel Draw template (filename extension).
+.CDX
+-Corel Draw compressed file (file extension).
+.CDX
+-Visual FoxPro database index (filename extension).
+.CFB
+-Comptone's multimedia encyclopedia (filename extension).
+.CFG
+-Configuration
+.CFL
+-Corel Flow (filename extension).
+.CGI
+-Common Gateway Interface (filename extension). A file that makes it possible for HTTP servers to interface with computer programs to provide interactive functions like fill-out forms.
+.CGM
+-CGM graphics
+.CHK
+-Checkdisk - DOS
+.CHP
+-Chapter - Ventura
+.CIF
+-Chapter Information - Venture
+.CIM
+-Sim City file (filename extension).
+.CIT
+-Intergraph scanned image
+.CLP
+-Clipboard
+.CMD
+-Command file -- OS/2
+.CMF
+-Corel MetaFile (filename extension).
+.CMF
+-SoundBlaster file (filename extension).
+.CMP
+-LEAD Technologies graphics
+.CMV
+-Corel Move animation (filename extension).
+.CNF
+-Configuration file (filename extension).
+.CNQ
+-Compuworks Design Shop (filename extension).
+
+Source:
+http://www.computeruser.com/file-types?name_directory_startswith=
