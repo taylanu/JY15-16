@@ -1,0 +1,4 @@
+In our setup, we are using an HP Tower (fill in details) as well as a custom-scrappily built computer that are linked by ethernet cabling.
+In our case, we intend to move to a network switch in order to allow for potential expansion, but currently have a Fast Ethernet NIC in both computers, and have each linked to one another using a CAT cable, and have each computer connecting to the internet through their main ethernet ports on their motherboards.
+In terms of networking, we have each computer being assigned an IP by the DHCP server of the school, and have manually assigned local 169.xxx.xxx.xxx IP addresses to both computers so that they are able to reference one another.
+Our version of Ubuntu of choice is version 14.04, because in version 15 and later, the references for network interfaces are much more obscure. In 14.04, network cards are labeled 'ethX' \n 'ethY'.

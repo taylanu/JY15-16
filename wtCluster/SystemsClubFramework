@@ -1,0 +1,26 @@
+NOVEMBER 2015
+
+Systems Club 
+An Intro to Linux & Software Architecture
+
+Goal: Build an extracurricular activity centered around educating students about computers and networks; to help them gain an interest in the field.
+ 
+Stretch goals: Eventually we will create a beowulf cluster of desktop computers with our goal to create a “supercomputer” to do parallel processing and host our ftp and VM.
+
+Audience: Those interested in learning computer science.Who want to build upon their own knowledge and experience collaborative systems engineering. 
+
+Documentation & Organization: All club documents will be stored on a central Google Drive and a server (VM) will be made available throughout the duration of the club for members to work on gaining levels of access, cleaning server connections, and learning about network structures
+
+Timeline: Interest meeting within the month, with prepared slides and clear message. Assigning tasks for people to complete and we gauge interest based on what they will learn, a basic curriculum will be set. Every meeting, we will put up our achievements on a wordpress blog made for our club.
+
+Resources:
+https://www.cs.berkeley.edu/~bh/hackers.html
+https://ctftime.org/
+https://antergos.com/ 
+https://www.vmware.com/products/player
+https://www.cygwin.com/ 
+https://c9.io/
+https://github.com/cabreraalex/the-art-of-command-line
+https://github.com/Junees
+
+
